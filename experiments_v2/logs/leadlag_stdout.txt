@@ -1,0 +1,45 @@
+80 episodes, 44603 pair-episodes
+C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\run_leadlag.py:96: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  by_u = df.groupby("universe").apply(stats)
+C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\run_leadlag.py:97: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  by_d = df.groupby("design").apply(stats)
+
+=== BY UNIVERSE ===
+universe                       BANK       N50
+real_share_dtw_lag0           0.549     0.285
+real_mean_abs_dtw_lag         1.240     2.531
+real_share_cc_lag0            0.858     0.558
+real_exact_agree              0.543     0.259
+real_sign_agree_nonzero       0.599     0.605
+real_spearman                 0.081     0.117
+placebo_share_dtw_lag0        0.099     0.119
+placebo_mean_abs_dtw_lag      6.208     4.494
+placebo_share_cc_lag0         0.081     0.085
+placebo_exact_agree           0.095     0.116
+placebo_sign_agree_nonzero    0.570     0.576
+placebo_spearman              0.086     0.102
+n_pair_episodes            2849.000 41754.000
+n_strong_cc_nonzero         179.000  6905.000
+strong_sign_agree             0.475     0.514
+strong_spearman               0.209     0.227
+
+=== BY DESIGN (universe x era) ===
+design                      2p_BANK_A  2p_BANK_B  2p_N50_A  2p_N50_B
+real_share_dtw_lag0             0.561      0.526     0.267     0.302
+real_mean_abs_dtw_lag           1.181      1.349     2.952     2.115
+real_share_cc_lag0              0.844      0.884     0.538     0.578
+real_exact_agree                0.561      0.510     0.241     0.277
+real_sign_agree_nonzero         0.593      0.618     0.598     0.612
+real_spearman                   0.085      0.074     0.106     0.128
+placebo_share_dtw_lag0          0.094      0.108     0.117     0.121
+placebo_mean_abs_dtw_lag        6.112      6.385     5.342     3.656
+placebo_share_cc_lag0           0.073      0.096     0.085     0.085
+placebo_exact_agree             0.093      0.100     0.113     0.119
+placebo_sign_agree_nonzero      0.566      0.577     0.573     0.579
+placebo_spearman                0.103      0.059     0.096     0.108
+n_pair_episodes              1848.000   1001.000 20769.000 20985.000
+n_strong_cc_nonzero           124.000     55.000  3551.000  3354.000
+strong_sign_agree               0.476      0.473     0.502     0.526
+strong_spearman                 0.142      0.354     0.215     0.239
+
+done in 125s

@@ -1,0 +1,250 @@
+=== pilot_2p_N50_B_1d: 12s ===
+
+1) BETAS, DTW vs Standard (common stocks; market ^NSEI; training data of each fold/regime)
+       fold   regime  n   corr  mean_ratio_dtw_over_std  median_ratio  std_min  std_max  std_mean  dtw_min  dtw_max  dtw_mean  std_n_neg  dtw_n_neg  S_im_mean  corr_with_mkt_mean
+fold1(2021)     Bear 47 -0.443                    0.588         0.581    0.309    1.788     0.928    0.047    0.732     0.450          0          0      0.292               0.544
+fold2(2022)     Bull 47 -0.288                    0.630         0.554    0.087    1.788     0.899    0.013    0.783     0.413          0          0      0.306               0.591
+fold2(2022) Sideways 47 -0.490                    0.628         0.566    0.341    1.693     0.968    0.128    0.785     0.506          0          0      0.281               0.481
+fold2(2022)     Bear 47 -0.437                    0.348         0.532   -0.161    1.789     0.951    0.036    0.815     0.494          2          0      0.305               0.495
+fold3(2023)     Bull 47 -0.320                    0.608         0.537    0.102    1.789     0.902    0.016    0.761     0.407          0          0      0.300               0.590
+fold3(2023) Sideways 47 -0.539                    0.637         0.608    0.312    1.861     1.009    0.076    0.815     0.525          0          0      0.302               0.513
+fold3(2023)     Bear 47 -0.257                    0.593         0.578    0.267    1.552     0.954    0.072    0.794     0.492          0          0      0.297               0.531
+fold4(2024)     Bull 47 -0.318                    0.615         0.542    0.100    1.805     0.900    0.015    0.768     0.411          0          0      0.304               0.591
+fold4(2024) Sideways 47 -0.484                    0.645         0.581    0.328    1.865     0.999    0.133    0.815     0.537          0          0      0.299               0.498
+fold4(2024)     Bear 47 -0.322                    0.601         0.612    0.298    1.648     0.952    0.042    0.806     0.494          0          0      0.289               0.506
+fold5(2025)     Bull 47 -0.447                    0.654         0.598    0.290    1.764     0.998    0.203    0.822     0.525          0          0      0.294               0.503
+fold5(2025) Sideways 47 -0.322                    0.637         0.543    0.074    1.786     0.897    0.016    0.741     0.407          0          0      0.294               0.577
+fold5(2025)     Bear 47 -0.387                    0.594         0.621    0.324    1.597     0.966    0.045    0.777     0.501          0          0      0.292               0.516
+
+2) WEIGHTS (non-zero > 1e-4; difference vs the Sharpe portfolio with the same covariance)
+       fold   regime       objective cov  n_stocks  n_nonzero  n_at_cap  max_weight  mean_abs_diff_vs_sharpe  half_l1_diff_vs_sharpe
+fold1(2021)     Bear          sharpe std        48         10         0       0.217                    0.000                   0.000
+fold1(2021)     Bear         sortino std        48         11         0       0.264                    0.009                   0.207
+fold1(2021)     Bear         treynor std        48          3         2       0.400                    0.029                   0.686
+fold1(2021)     Bear          sharpe dtw        47         22         0       0.125                    0.000                   0.000
+fold1(2021)     Bear         sortino dtw        47         20         0       0.147                    0.007                   0.172
+fold1(2021)     Bear         treynor dtw        47          3         2       0.400                    0.033                   0.786
+fold1(2021)     Bear sortino_estrada std        48          8         0       0.358                    0.017                   0.411
+fold2(2022)     Bull          sharpe std        47          8         0       0.359                    0.000                   0.000
+fold2(2022) Sideways          sharpe std        49         10         0       0.246                    0.000                   0.000
+fold2(2022)     Bear          sharpe std        48         12         0       0.188                    0.000                   0.000
+fold2(2022)     Bull         sortino std        47          8         1       0.400                    0.008                   0.186
+fold2(2022) Sideways         sortino std        49         10         0       0.366                    0.006                   0.144
+fold2(2022)     Bear         sortino std        48         11         0       0.175                    0.004                   0.103
+fold2(2022)     Bull         treynor std        47          3         2       0.400                    0.027                   0.641
+fold2(2022) Sideways         treynor std        49          3         2       0.400                    0.023                   0.559
+fold2(2022)     Bear         treynor std        48          4         2       0.400                    0.024                   0.583
+fold2(2022)     Bull          sharpe dtw        47         16         0       0.199                    0.000                   0.000
+fold2(2022) Sideways          sharpe dtw        47         20         0       0.143                    0.000                   0.000
+fold2(2022)     Bear          sharpe dtw        47         15         0       0.138                    0.000                   0.000
+fold2(2022)     Bull         sortino dtw        47         16         1       0.400                    0.011                   0.270
+fold2(2022) Sideways         sortino dtw        47         20         0       0.205                    0.005                   0.113
+fold2(2022)     Bear         sortino dtw        47         12         0       0.161                    0.004                   0.086
+fold2(2022)     Bull         treynor dtw        47          3         2       0.400                    0.032                   0.749
+fold2(2022) Sideways         treynor dtw        47          3         2       0.400                    0.030                   0.712
+fold2(2022)     Bear         treynor dtw        47          3         2       0.400                    0.036                   0.848
+fold2(2022)     Bull sortino_estrada std        47          6         1       0.400                    0.020                   0.466
+fold2(2022) Sideways sortino_estrada std        49          7         1       0.400                    0.010                   0.245
+fold2(2022)     Bear sortino_estrada std        48          8         0       0.310                    0.012                   0.291
+fold3(2023)     Bull          sharpe std        47          8         0       0.333                    0.000                   0.000
+fold3(2023) Sideways          sharpe std        49         10         0       0.241                    0.000                   0.000
+fold3(2023)     Bear          sharpe std        49          9         0       0.246                    0.000                   0.000
+fold3(2023)     Bull         sortino std        47          7         1       0.400                    0.007                   0.155
+fold3(2023) Sideways         sortino std        49          9         0       0.304                    0.005                   0.130
+fold3(2023)     Bear         sortino std        49          9         0       0.249                    0.003                   0.075
+fold3(2023)     Bull         treynor std        47          3         2       0.400                    0.028                   0.667
+fold3(2023) Sideways         treynor std        49          3         2       0.400                    0.021                   0.502
+fold3(2023)     Bear         treynor std        49          3         2       0.400                    0.025                   0.620
+fold3(2023)     Bull          sharpe dtw        47         17         0       0.194                    0.000                   0.000
+fold3(2023) Sideways          sharpe dtw        47         18         0       0.152                    0.000                   0.000
+fold3(2023)     Bear          sharpe dtw        47         22         0       0.173                    0.000                   0.000
+fold3(2023)     Bull         sortino dtw        47         11         1       0.400                    0.010                   0.243
+fold3(2023) Sideways         sortino dtw        47         18         0       0.190                    0.004                   0.094
+fold3(2023)     Bear         sortino dtw        47         22         0       0.183                    0.003                   0.068
+fold3(2023)     Bull         treynor dtw        47          3         2       0.400                    0.033                   0.773
+fold3(2023) Sideways         treynor dtw        47          3         2       0.400                    0.031                   0.718
+fold3(2023)     Bear         treynor dtw        47          3         2       0.400                    0.030                   0.701
+fold3(2023)     Bull sortino_estrada std        47          8         1       0.400                    0.015                   0.351
+fold3(2023) Sideways sortino_estrada std        49          5         1       0.400                    0.012                   0.290
+fold3(2023)     Bear sortino_estrada std        49          7         1       0.400                    0.016                   0.387
+fold4(2024)     Bull          sharpe std        47          8         0       0.333                    0.000                   0.000
+fold4(2024) Sideways          sharpe std        49         10         0       0.185                    0.000                   0.000
+fold4(2024)     Bear          sharpe std        50         15         0       0.238                    0.000                   0.000
+fold4(2024)     Bull         sortino std        47          7         1       0.400                    0.007                   0.158
+fold4(2024) Sideways         sortino std        49          9         0       0.199                    0.004                   0.094
+fold4(2024)     Bear         sortino std        50         14         0       0.239                    0.003                   0.068
+fold4(2024)     Bull         treynor std        47          3         2       0.400                    0.028                   0.667
+fold4(2024) Sideways         treynor std        49          3         2       0.400                    0.030                   0.732
+fold4(2024)     Bear         treynor std        50          3         2       0.400                    0.026                   0.658
+fold4(2024)     Bull          sharpe dtw        47         16         0       0.202                    0.000                   0.000
+fold4(2024) Sideways          sharpe dtw        47         19         0       0.125                    0.000                   0.000
+fold4(2024)     Bear          sharpe dtw        47         23         0       0.118                    0.000                   0.000
+fold4(2024)     Bull         sortino dtw        47         13         1       0.400                    0.010                   0.235
+fold4(2024) Sideways         sortino dtw        47         18         0       0.144                    0.003                   0.073
+fold4(2024)     Bear         sortino dtw        47         23         0       0.135                    0.003                   0.060
+fold4(2024)     Bull         treynor dtw        47          3         2       0.400                    0.033                   0.778
+fold4(2024) Sideways         treynor dtw        47          3         2       0.400                    0.029                   0.680
+fold4(2024)     Bear         treynor dtw        47          3         2       0.400                    0.037                   0.862
+fold4(2024)     Bull sortino_estrada std        47          8         1       0.400                    0.014                   0.340
+fold4(2024) Sideways sortino_estrada std        49          5         0       0.325                    0.016                   0.381
+fold4(2024)     Bear sortino_estrada std        50          8         0       0.316                    0.010                   0.246
+fold5(2025)     Bull          sharpe std        50          9         0       0.171                    0.000                   0.000
+fold5(2025) Sideways          sharpe std        47         11         0       0.338                    0.000                   0.000
+fold5(2025)     Bear          sharpe std        50          9         0       0.302                    0.000                   0.000
+fold5(2025)     Bull         sortino std        50          9         0       0.202                    0.004                   0.094
+fold5(2025) Sideways         sortino std        47         10         1       0.400                    0.009                   0.218
+fold5(2025)     Bear         sortino std        50          8         0       0.318                    0.002                   0.038
+fold5(2025)     Bull         treynor std        50          3         2       0.400                    0.023                   0.586
+fold5(2025) Sideways         treynor std        47          3         2       0.400                    0.026                   0.612
+fold5(2025)     Bear         treynor std        50          3         2       0.400                    0.023                   0.567
+fold5(2025)     Bull          sharpe dtw        47         17         0       0.118                    0.000                   0.000
+fold5(2025) Sideways          sharpe dtw        47         17         0       0.195                    0.000                   0.000
+fold5(2025)     Bear          sharpe dtw        47         26         0       0.137                    0.000                   0.000
+fold5(2025)     Bull         sortino dtw        47         17         0       0.149                    0.004                   0.091
+fold5(2025) Sideways         sortino dtw        47         11         1       0.400                    0.012                   0.293
+fold5(2025)     Bear         sortino dtw        47         24         0       0.164                    0.003                   0.078
+fold5(2025)     Bull         treynor dtw        47          3         2       0.400                    0.030                   0.709
+fold5(2025) Sideways         treynor dtw        47          3         2       0.400                    0.034                   0.788
+fold5(2025)     Bear         treynor dtw        47          3         2       0.400                    0.037                   0.872
+fold5(2025)     Bull sortino_estrada std        50          8         0       0.287                    0.011                   0.273
+fold5(2025) Sideways sortino_estrada std        47          6         1       0.400                    0.020                   0.465
+fold5(2025)     Bear sortino_estrada std        50          6         1       0.400                    0.009                   0.214
+
+   average over folds and regimes:
+                     n_stocks  n_nonzero  n_at_cap  max_weight  mean_abs_diff_vs_sharpe  half_l1_diff_vs_sharpe
+objective       cov                                                                                            
+sharpe          dtw    47.000     19.077     0.000       0.155                    0.000                   0.000
+                std    48.462      9.923     0.000       0.261                    0.000                   0.000
+sortino         dtw    47.000     17.308     0.308       0.237                    0.006                   0.144
+                std    48.462      9.385     0.308       0.301                    0.005                   0.129
+sortino_estrada std    48.462      6.923     0.615       0.369                    0.014                   0.335
+treynor         dtw    47.000      3.000     2.000       0.400                    0.033                   0.767
+                std    48.462      3.077     2.000       0.400                    0.026                   0.622
+
+3) WARNINGS
+DEGENERATE Treynor optimum: fold1(2021) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold1(2021) Bear dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Bear std: 4 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Bull dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Sideways dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold2(2022) Bear dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Bull dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Sideways dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold3(2023) Bear dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Bull dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Sideways dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold4(2024) Bear dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Bull dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Sideways dtw: 3 non-zero, 2 at the 40% cap
+DEGENERATE Treynor optimum: fold5(2025) Bear dtw: 3 non-zero, 2 at the 40% cap
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold2(2022) Bear treynor_std
+
+   Treynor solver (method used; SLSQP vs exact LP objective; w'beta):
+       fold   regime      matrix method  slsqp_obj  lp_obj  w_beta beta_constraint_binds
+fold1(2021)     Bear treynor_std     LP    0.00941 0.00950 0.37676                 False
+fold1(2021)     Bear treynor_dtw  SLSQP    0.02843 0.02843 0.14994                 False
+fold2(2022)     Bull treynor_std  SLSQP    0.02822 0.02822 0.24329                 False
+fold2(2022)     Bull treynor_dtw     LP    0.04234 0.04244 0.16864                 False
+fold2(2022) Sideways treynor_std     LP    0.00527 0.00529 0.96165                 False
+fold2(2022) Sideways treynor_dtw     LP    0.03868 0.03868 0.14617                 False
+fold2(2022)     Bear treynor_std  SLSQP    0.08700 0.08700 0.05000                  True
+fold2(2022)     Bear treynor_dtw     LP    0.03344 0.03344 0.09681                 False
+fold3(2023)     Bull treynor_std     LP    0.02511 0.02515 0.25699                 False
+fold3(2023)     Bull treynor_dtw     LP    0.03935 0.03935 0.16662                 False
+fold3(2023) Sideways treynor_std     LP    0.00453 0.00464 0.83739                 False
+fold3(2023) Sideways treynor_dtw  SLSQP    0.03615 0.03615 0.12013                 False
+fold3(2023)     Bear treynor_std     LP    0.00369 0.00401 0.47059                 False
+fold3(2023)     Bear treynor_dtw  SLSQP    0.02211 0.02211 0.14504                 False
+fold4(2024)     Bull treynor_std     LP    0.02483 0.02487 0.25531                 False
+fold4(2024)     Bull treynor_dtw     LP    0.03661 0.03661 0.16904                 False
+fold4(2024) Sideways treynor_std     LP    0.00401 0.00420 0.64725                 False
+fold4(2024) Sideways treynor_dtw  SLSQP    0.02747 0.02747 0.15404                 False
+fold4(2024)     Bear treynor_std     LP    0.00307 0.00319 0.48331                 False
+fold4(2024)     Bear treynor_dtw  SLSQP    0.02088 0.02088 0.09752                 False
+fold5(2025)     Bull treynor_std     LP    0.00304 0.00306 0.60550                 False
+fold5(2025)     Bull treynor_dtw  SLSQP    0.00989 0.00989 0.22439                 False
+fold5(2025) Sideways treynor_std     LP    0.03498 0.03510 0.21638                 False
+fold5(2025) Sideways treynor_dtw     LP    0.03412 0.03412 0.18120                 False
+fold5(2025)     Bear treynor_std     LP    0.00336 0.00341 0.50531                 False
+fold5(2025)     Bear treynor_dtw     LP    0.01520 0.01520 0.12376                 False
+
+   PSD check (min eigenvalue):
+       fold   regime         matrix   min_eig
+fold1(2021)     Bear Sigma_down_std  1.70e-05
+fold1(2021)     Bear    Estrada_std  6.19e-06
+fold1(2021)     Bear Sigma_down_dtw  4.02e-05
+fold1(2021)     Bear      S_ext_dtw  2.23e-01
+fold2(2022)     Bull Sigma_down_std  2.30e-06
+fold2(2022)     Bull    Estrada_std  1.27e-06
+fold2(2022)     Bull Sigma_down_dtw  3.63e-05
+fold2(2022)     Bull      S_ext_dtw  1.36e-01
+fold2(2022) Sideways Sigma_down_std  1.41e-05
+fold2(2022) Sideways    Estrada_std  5.07e-06
+fold2(2022) Sideways Sigma_down_dtw  2.49e-05
+fold2(2022) Sideways      S_ext_dtw  2.82e-01
+fold2(2022)     Bear Sigma_down_std  4.57e-06
+fold2(2022)     Bear    Estrada_std  2.02e-06
+fold2(2022)     Bear Sigma_down_dtw  1.40e-05
+fold2(2022)     Bear      S_ext_dtw  1.64e-01
+fold3(2023)     Bull Sigma_down_std  3.82e-06
+fold3(2023)     Bull    Estrada_std  1.22e-06
+fold3(2023)     Bull Sigma_down_dtw  4.01e-05
+fold3(2023)     Bull      S_ext_dtw  1.46e-01
+fold3(2023) Sideways Sigma_down_std  1.50e-05
+fold3(2023) Sideways    Estrada_std  7.85e-06
+fold3(2023) Sideways Sigma_down_dtw  2.86e-05
+fold3(2023) Sideways      S_ext_dtw  2.78e-01
+fold3(2023)     Bear Sigma_down_std  2.34e-05
+fold3(2023)     Bear    Estrada_std  1.59e-05
+fold3(2023)     Bear Sigma_down_dtw  3.96e-05
+fold3(2023)     Bear      S_ext_dtw  2.70e-01
+fold4(2024)     Bull Sigma_down_std  3.47e-06
+fold4(2024)     Bull    Estrada_std  1.23e-06
+fold4(2024)     Bull Sigma_down_dtw  3.93e-05
+fold4(2024)     Bull      S_ext_dtw  1.42e-01
+fold4(2024) Sideways Sigma_down_std  1.66e-05
+fold4(2024) Sideways    Estrada_std  1.11e-05
+fold4(2024) Sideways Sigma_down_dtw  2.67e-05
+fold4(2024) Sideways      S_ext_dtw  2.91e-01
+fold4(2024)     Bear Sigma_down_std  1.71e-05
+fold4(2024)     Bear    Estrada_std  1.02e-05
+fold4(2024)     Bear Sigma_down_dtw  3.63e-05
+fold4(2024)     Bear      S_ext_dtw  2.70e-01
+fold5(2025)     Bull Sigma_down_std  1.80e-05
+fold5(2025)     Bull    Estrada_std -1.38e-05
+fold5(2025)     Bull Sigma_down_dtw  3.81e-05
+fold5(2025)     Bull      S_ext_dtw  2.97e-01
+fold5(2025) Sideways Sigma_down_std  3.83e-06
+fold5(2025) Sideways    Estrada_std  1.80e-06
+fold5(2025) Sideways Sigma_down_dtw  4.72e-05
+fold5(2025) Sideways      S_ext_dtw  1.40e-01
+fold5(2025)     Bear Sigma_down_std  2.12e-05
+fold5(2025)     Bear    Estrada_std  1.44e-05
+fold5(2025)     Bear Sigma_down_dtw  3.75e-05
+fold5(2025)     Bear      S_ext_dtw  3.19e-01
+
+4) EVALUATION (pooled over folds; gap = DTW - Standard; p_one = P(boot diff <= 0); seed 20261021; days resampled jointly)
+ horizon       objective  metric  matched   std   dtw    gap  p_one  p_two  std_avg_beta  dtw_avg_beta
+       1          sharpe  sharpe     True 1.063 1.185  0.122  0.307  0.614         0.691         0.970
+       1          sharpe sortino    False 1.512 1.650  0.138  0.383  0.765         0.691         0.970
+       1          sharpe treynor    False 0.273 0.226 -0.046  0.830  0.340         0.691         0.970
+       1         sortino  sharpe    False 0.997 1.096  0.099  0.330  0.661         0.682         0.933
+       1         sortino sortino     True 1.412 1.520  0.108  0.403  0.805         0.682         0.933
+       1         sortino treynor    False 0.265 0.217 -0.048  0.833  0.334         0.682         0.933
+       1         treynor  sharpe    False 0.626 0.735  0.109  0.459  0.919         0.425         1.450
+       1         treynor sortino    False 0.920 1.009  0.090  0.495  0.991         0.425         1.450
+       1         treynor treynor     True 0.287 0.159 -0.127  0.789  0.422         0.425         1.450
+       1 sortino_estrada  sharpe    False 0.774 1.096  0.322  0.145  0.290         0.702         0.933
+       1 sortino_estrada sortino    False 1.072 1.520  0.447  0.218  0.436         0.702         0.933
+       1 sortino_estrada treynor    False 0.250 0.217 -0.033  0.665  0.670         0.702         0.933

@@ -1,0 +1,198 @@
+fold2(2021) Bear: treynor_cap10 volk infeasible
+fold3(2022) Bear: treynor_cap10 volk infeasible
+fold4(2023) Bear: treynor_cap10 volk infeasible
+fold5(2024) Bear: treynor_cap10 volk infeasible
+fold6(2025) Bear: treynor_cap10 volk infeasible
+DEGENERATE treynor optimum: fold1(2020) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Sideways volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2020) Bear volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bull volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Sideways volk: 11 non-zero, 9 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bear volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Sideways volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold1(2020) Bear volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bull invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2020) Bear invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor optimum: fold2(2021) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold2(2021) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bull volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Sideways volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bull volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold2(2021) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Bull invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold2(2021) Sideways invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor optimum: fold3(2022) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Bull volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Sideways volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold3(2022) Bear volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bull volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Sideways volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bull volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold3(2022) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold3(2022) Bull invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor optimum: fold4(2023) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Bull volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold4(2023) Bear volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bull volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Sideways volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold4(2023) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Bull invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold4(2023) Sideways invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor optimum: fold5(2024) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold5(2024) Bear volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bull volk: 11 non-zero, 9 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Sideways volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold5(2024) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold5(2024) Bull invvol: 14 non-zero, 2 at the 10% cap
+DEGENERATE treynor optimum: fold6(2025) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold6(2025) Bear volk: 3 non-zero, 1 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bull volk: 11 non-zero, 9 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Sideways volk: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Sideways volk: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_ownidx optimum: fold6(2025) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold6(2025) Bull invvol: 14 non-zero, 2 at the 10% cap
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Bull treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Sideways treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Sideways treynor_cap10_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Sideways treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2020) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold2(2021) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold2(2021) Bull treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold2(2021) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold2(2021) Bear treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold3(2022) Sideways treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold3(2022) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold3(2022) Bear treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold4(2023) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold4(2023) Bull treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold4(2023) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold4(2023) Bear treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold5(2024) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold5(2024) Bull treynor_cap10_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold5(2024) Bull treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold5(2024) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold5(2024) Bear treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold6(2025) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold6(2025) Bull treynor_cap10_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold6(2025) Bull treynor_ownidx_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold6(2025) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold6(2025) Bear treynor_ownidx_volk

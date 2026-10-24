@@ -1,0 +1,287 @@
+[00:02:40] === Nifty Midcap 100 data pipeline ===
+[00:02:40] Nifty Midcap 100 constituents: 100 symbols
+[00:03:14] Batch download shape: (2867, 100)
+[00:03:14] Retrying 29 flaky tickers: ['ABCAPITAL.NS', 'ASTRAL.NS', 'AUBANK.NS', 'AUROPHARMA.NS', 'BDL.NS', 'BIOCON.NS', 'COFORGE.NS', 'CONCOR.NS', 'DABUR.NS', 'EXIDEIND.NS', 'FEDERALBNK.NS', 'GMRAIRPORT.NS', 'GROWW.NS', 'GVT%26D.NS', 'ICICIAMC.NS', 'IDFCFIRSTB.NS', 'INDIANB.NS', 'INDUSINDBK.NS', 'JSWENERGY.NS', 'KEI.NS', 'LICHSGFIN.NS', 'MCX.NS', 'NAUKRI.NS', 'PATANJALI.NS', 'PAYTM.NS', 'PHOENIXLTD.NS', 'RVNL.NS', 'SAIL.NS', 'SUZLON.NS']
+[00:03:39] Final missing total: 47138
+[00:03:39] Stocks first listed after 2020-01-01: 16/100
+[00:03:39]   SBICARD.NS: first valid 2020-03-16
+[00:03:39]   POWERINDIA.NS: first valid 2020-03-30
+[00:03:39]   KALYANKJIL.NS: first valid 2021-03-26
+[00:03:39]   NYKAA.NS: first valid 2021-11-10
+[00:03:39]   POLICYBZR.NS: first valid 2021-11-15
+[00:03:39]   PAYTM.NS: first valid 2021-11-18
+[00:03:39]   MANKIND.NS: first valid 2023-05-09
+[00:03:39]   IREDA.NS: first valid 2023-11-29
+[00:03:39]   PREMIERENE.NS: first valid 2024-09-03
+[00:03:39]   WAAREEENER.NS: first valid 2024-10-28
+[00:03:39]   SWIGGY.NS: first valid 2024-11-13
+[00:03:39]   VMM.NS: first valid 2024-12-18
+[00:03:39]   LGEINDIA.NS: first valid 2025-10-14
+[00:03:39]   LENSKART.NS: first valid 2025-11-10
+[00:03:39]   GROWW.NS: first valid 2025-11-12
+[00:03:39]   ICICIAMC.NS: first valid 2025-12-19
+[00:03:40] NIFTY_MIDCAP_100.NS shape: (2838,)
+[00:03:40] market_features (midcap) shape: (2778, 4)
+[00:03:40] 
+======================================================================
+SIGMA SWEEP - Nifty Midcap 100, train 2015-01-01..2021-12-31
+======================================================================
+[00:03:49]   calibration episodes: 31, {'Bear': 12, 'Sideways': 10, 'Bull': 9}
+[00:11:39]   calibration DTW matrices built in 470.6s
+[00:11:39] 
+  Bull regime - sigma sensitivity (68 stocks):
+[00:11:39]   sigma_frac      sigma  cond_number  off_diag_std
+[00:11:39]         0.10     0.0990        113.3      0.000000
+[00:11:39]         0.20     0.1980        117.9      0.001448
+[00:11:39]         0.30     0.2969        153.9      0.015977
+[00:11:39]         0.50     0.4949        327.1      0.085142
+[00:11:39]         0.75     0.7423        866.1      0.120901
+[00:11:39]         1.00     0.9898       2605.3      0.109997
+[00:11:39]         1.50     1.4847      13885.0      0.071268
+[00:11:39] 
+  Sideways regime - sigma sensitivity (66 stocks):
+[00:11:39]   sigma_frac      sigma  cond_number  off_diag_std
+[00:11:39]         0.10     0.0842         10.5      0.000000
+[00:11:39]         0.20     0.1684         10.6      0.000474
+[00:11:39]         0.30     0.2525         11.7      0.012958
+[00:11:39]         0.50     0.4209         50.6      0.083228
+[00:11:39]         0.75     0.6314        298.5      0.120170
+[00:11:39]         1.00     0.8418        879.6      0.108544
+[00:11:39]         1.50     1.2627       3383.6      0.069456
+[00:11:39] 
+  Bear regime - sigma sensitivity (66 stocks):
+[00:11:39]   sigma_frac      sigma  cond_number  off_diag_std
+[00:11:39]         0.10     0.0776         16.1      0.000000
+[00:11:39]         0.20     0.1553         16.1      0.000899
+[00:11:39]         0.30     0.2329         18.7      0.015361
+[00:11:39]         0.50     0.3882         67.3      0.084446
+[00:11:39]         0.75     0.5823        407.9      0.121738
+[00:11:39]         1.00     0.7764       1198.0      0.111116
+[00:11:39]         1.50     1.1647       4621.9      0.071827
+[00:11:39] 
+======================================================================
+FOLD 1/6: train 2015-01-01..2019-12-31  test 2020-01-01..2020-12-31
+======================================================================
+[00:11:39]   train days=1168  test days=249
+[00:11:40]   seed=0: converged=True, log-likelihood=16563.98
+[00:11:40]   seed=7: converged=True, log-likelihood=16543.36
+[00:11:41]   seed=21: converged=True, log-likelihood=16655.01
+[00:11:42]   seed=42: converged=True, log-likelihood=16271.00
+[00:11:43]   seed=99: converged=True, log-likelihood=16449.54
+[00:11:43]   regime_map: {3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[00:11:43]   train regime dist: {'Bear': 842, 'Sideways': 199, 'Bull': 127}
+[00:11:43]   test regime dist: {'Bear': 238, 'Bull': 8, 'Sideways': 3}
+[00:11:43]   train episodes: 17 total, {'Bear': 8, 'Sideways': 6, 'Bull': 3}
+[00:11:43]   Bull: 123 pooled days across 3 episodes - OK
+[00:11:43]   Sideways: 192 pooled days across 6 episodes - OK
+[00:11:43]   Bear: 828 pooled days across 8 episodes - OK
+[00:11:43]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 71, 'Sideways': 82, 'Bear': 84}
+[00:12:17]     ...5/17 episodes done, 34s elapsed
+[00:12:38]     ...10/17 episodes done, 55s elapsed
+[00:13:17]     ...15/17 episodes done, 93s elapsed
+[00:15:20]     ...17/17 episodes done, 217s elapsed
+[00:15:21]   DTW episode loop: 17/17 usable, 17/17 completed, wall time 217.6s
+[00:15:21]   Bull: DTW cov built, sigma=0.2988, 68 stocks
+[00:15:21]   Sideways: DTW cov built, sigma=0.2432, 66 stocks
+[00:15:21]   Bear: DTW cov built, sigma=0.8133, 66 stocks
+[00:15:21]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:15:21]   STANDARD: Sharpe=0.888 AnnRet=28.97% AnnVol=32.62% MaxDD=-62.50% n=249
+[00:15:21]   DTW: Sharpe=1.029 AnnRet=32.77% AnnVol=31.83% MaxDD=-47.88% n=249
+[00:15:21]   BENCHMARK: Sharpe=0.670 AnnRet=20.02% AnnVol=29.86% MaxDD=-51.35% n=249
+[00:15:21]   Fold 1 done in 3.7 min. Total elapsed: 12.7 min
+[00:15:21] 
+======================================================================
+FOLD 2/6: train 2015-01-01..2020-12-31  test 2021-01-01..2021-12-31
+======================================================================
+[00:15:21]   train days=1417  test days=247
+[00:15:22]   seed=0: converged=True, log-likelihood=19937.30
+[00:15:23]   seed=7: converged=True, log-likelihood=19937.30
+[00:15:24]   seed=21: converged=True, log-likelihood=19445.73
+[00:15:24]   seed=42: converged=True, log-likelihood=19614.20
+[00:15:25]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[00:15:25]   WARNING: 1/5 HMM seeds failed to fit
+[00:15:25]   regime_map: {1: 'Bear', 2: 'Bear', 3: 'Sideways', 0: 'Bull'}
+[00:15:25]   train regime dist: {'Sideways': 595, 'Bull': 427, 'Bear': 395}
+[00:15:25]   test regime dist: {'Bear': 114, 'Bull': 114, 'Sideways': 19}
+[00:15:25]   train episodes: 27 total, {'Bear': 11, 'Sideways': 8, 'Bull': 8}
+[00:15:25]   Bull: 412 pooled days across 8 episodes - OK
+[00:15:25]   Sideways: 597 pooled days across 8 episodes - OK
+[00:15:25]   Bear: 387 pooled days across 11 episodes - OK
+[00:15:25]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 86, 'Sideways': 84, 'Bear': 86}
+[00:16:00]     ...5/27 episodes done, 35s elapsed
+[00:16:20]     ...10/27 episodes done, 55s elapsed
+[00:16:31]     ...15/27 episodes done, 66s elapsed
+[00:17:13]     ...20/27 episodes done, 108s elapsed
+[00:18:44]     ...25/27 episodes done, 198s elapsed
+[00:22:37]     ...27/27 episodes done, 432s elapsed
+[00:22:39]   DTW episode loop: 27/27 usable, 27/27 completed, wall time 433.7s
+[00:22:39]   Bull: DTW cov built, sigma=0.3898, 68 stocks
+[00:22:39]   Sideways: DTW cov built, sigma=0.5760, 66 stocks
+[00:22:39]   Bear: DTW cov built, sigma=0.3315, 66 stocks
+[00:22:39]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:22:40]   STANDARD: Sharpe=2.526 AnnRet=65.38% AnnVol=25.89% MaxDD=-19.97% n=247
+[00:22:40]   DTW: Sharpe=2.402 AnnRet=52.50% AnnVol=21.85% MaxDD=-12.59% n=247
+[00:22:40]   BENCHMARK: Sharpe=2.058 AnnRet=38.65% AnnVol=18.78% MaxDD=-13.13% n=247
+[00:22:40]   Fold 2 done in 7.3 min. Total elapsed: 20.0 min
+[00:22:40] 
+======================================================================
+FOLD 3/6: train 2015-01-01..2021-12-31  test 2022-01-01..2022-12-31
+======================================================================
+[00:22:40]   train days=1664  test days=247
+[00:22:42]   seed=0: converged=True, log-likelihood=23554.68
+[00:22:43]   seed=7: converged=True, log-likelihood=23174.04
+[00:22:45]   seed=21: converged=True, log-likelihood=23200.24
+[00:22:46]   seed=42: converged=True, log-likelihood=23137.65
+[00:22:48]   seed=99: converged=True, log-likelihood=23588.30
+[00:22:48]   regime_map: {2: 'Bear', 1: 'Bear', 3: 'Sideways', 0: 'Bull'}
+[00:22:49]   train regime dist: {'Bull': 577, 'Sideways': 558, 'Bear': 529}
+[00:22:49]   test regime dist: {'Sideways': 156, 'Bear': 62, 'Bull': 29}
+[00:22:49]   train episodes: 31 total, {'Bear': 12, 'Sideways': 10, 'Bull': 9}
+[00:22:49]   Bull: 562 pooled days across 9 episodes - OK
+[00:22:49]   Sideways: 559 pooled days across 10 episodes - OK
+[00:22:49]   Bear: 504 pooled days across 12 episodes - OK
+[00:22:50]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 87, 'Sideways': 84, 'Bear': 87}
+[00:23:50]     ...5/31 episodes done, 61s elapsed
+[00:24:24]     ...10/31 episodes done, 95s elapsed
+[00:24:59]     ...15/31 episodes done, 129s elapsed
+[00:25:48]     ...20/31 episodes done, 178s elapsed
+[00:26:20]     ...25/31 episodes done, 210s elapsed
+[00:27:16]     ...30/31 episodes done, 266s elapsed
+[00:27:51]     ...31/31 episodes done, 301s elapsed
+[00:27:51]   DTW episode loop: 31/31 usable, 31/31 completed, wall time 301.4s
+[00:27:51]   Bull: DTW cov built, sigma=0.4949, 68 stocks
+[00:27:51]   Sideways: DTW cov built, sigma=0.4209, 66 stocks
+[00:27:52]   Bear: DTW cov built, sigma=0.3882, 66 stocks
+[00:27:52]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:27:52]   STANDARD: Sharpe=0.164 AnnRet=3.46% AnnVol=21.15% MaxDD=-22.87% n=247
+[00:27:52]   DTW: Sharpe=-0.304 AnnRet=-6.42% AnnVol=21.10% MaxDD=-18.51% n=247
+[00:27:52]   BENCHMARK: Sharpe=0.168 AnnRet=3.51% AnnVol=20.87% MaxDD=-23.65% n=247
+[00:27:52]   Fold 3 done in 5.2 min. Total elapsed: 25.2 min
+[00:27:52] 
+======================================================================
+FOLD 4/6: train 2015-01-01..2022-12-31  test 2023-01-01..2023-12-31
+======================================================================
+[00:27:52]   train days=1911  test days=245
+[00:27:53]   seed=0: converged=True, log-likelihood=26936.88
+[00:27:53]   seed=7: converged=True, log-likelihood=26958.42
+[00:27:55]   seed=21: converged=True, log-likelihood=26711.08
+[00:27:56]   seed=42: converged=True, log-likelihood=26958.42
+[00:27:57]   seed=99: converged=True, log-likelihood=26952.71
+[00:27:57]   regime_map: {2: 'Bear', 3: 'Bear', 0: 'Sideways', 1: 'Bull'}
+[00:27:58]   train regime dist: {'Sideways': 711, 'Bear': 605, 'Bull': 595}
+[00:27:58]   test regime dist: {'Bull': 104, 'Sideways': 80, 'Bear': 61}
+[00:27:58]   train episodes: 34 total, {'Bear': 14, 'Sideways': 10, 'Bull': 10}
+[00:27:58]   Bull: 580 pooled days across 10 episodes - OK
+[00:27:58]   Sideways: 713 pooled days across 10 episodes - OK
+[00:27:58]   Bear: 582 pooled days across 14 episodes - OK
+[00:27:58]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 90, 'Sideways': 90, 'Bear': 90}
+[00:28:27]     ...5/34 episodes done, 29s elapsed
+[00:28:47]     ...10/34 episodes done, 50s elapsed
+[00:29:05]     ...15/34 episodes done, 67s elapsed
+[00:29:56]     ...20/34 episodes done, 118s elapsed
+[00:30:29]     ...25/34 episodes done, 151s elapsed
+[00:31:27]     ...30/34 episodes done, 209s elapsed
+[00:33:36]     ...34/34 episodes done, 338s elapsed
+[00:33:36]   DTW episode loop: 34/34 usable, 34/34 completed, wall time 338.5s
+[00:33:36]   Bull: DTW cov built, sigma=0.4570, 68 stocks
+[00:33:36]   Sideways: DTW cov built, sigma=0.5492, 66 stocks
+[00:33:36]   Bear: DTW cov built, sigma=0.3723, 66 stocks
+[00:33:36]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:33:37]   STANDARD: Sharpe=-0.325 AnnRet=-5.98% AnnVol=18.41% MaxDD=-41.78% n=245
+[00:33:37]   DTW: Sharpe=3.190 AnnRet=45.84% AnnVol=14.37% MaxDD=-7.57% n=245
+[00:33:37]   BENCHMARK: Sharpe=3.286 AnnRet=39.32% AnnVol=11.97% MaxDD=-8.37% n=245
+[00:33:37]   Fold 4 done in 5.7 min. Total elapsed: 30.9 min
+[00:33:37] 
+======================================================================
+FOLD 5/6: train 2015-01-01..2023-12-31  test 2024-01-01..2024-12-31
+======================================================================
+[00:33:37]   train days=2156  test days=244
+[00:33:38]   seed=0: converged=True, log-likelihood=30802.57
+[00:33:39]   seed=7: converged=True, log-likelihood=30802.67
+[00:33:40]   seed=21: converged=True, log-likelihood=30802.68
+[00:33:41]   seed=42: converged=True, log-likelihood=30802.57
+[00:33:42]   seed=99: converged=True, log-likelihood=29088.01
+[00:33:42]   regime_map: {2: 'Bear', 3: 'Bear', 0: 'Sideways', 1: 'Bull'}
+[00:33:42]   train regime dist: {'Sideways': 804, 'Bear': 739, 'Bull': 613}
+[00:33:42]   test regime dist: {'Bear': 133, 'Bull': 87, 'Sideways': 24}
+[00:33:42]   train episodes: 41 total, {'Bear': 19, 'Sideways': 11, 'Bull': 11}
+[00:33:42]   Bull: 579 pooled days across 11 episodes - OK
+[00:33:42]   Sideways: 805 pooled days across 11 episodes - OK
+[00:33:42]   Bear: 730 pooled days across 19 episodes - OK
+[00:33:42]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 91, 'Sideways': 90, 'Bear': 91}
+[00:34:10]     ...5/41 episodes done, 28s elapsed
+[00:34:33]     ...10/41 episodes done, 51s elapsed
+[00:34:55]     ...15/41 episodes done, 73s elapsed
+[00:35:26]     ...20/41 episodes done, 104s elapsed
+[00:36:06]     ...25/41 episodes done, 143s elapsed
+[00:36:23]     ...30/41 episodes done, 161s elapsed
+[00:37:17]     ...35/41 episodes done, 214s elapsed
+[00:38:34]     ...40/41 episodes done, 292s elapsed
+[00:39:46]     ...41/41 episodes done, 364s elapsed
+[00:39:47]   DTW episode loop: 41/41 usable, 41/41 completed, wall time 364.6s
+[00:39:47]   Bull: DTW cov built, sigma=0.4080, 68 stocks
+[00:39:47]   Sideways: DTW cov built, sigma=0.5555, 66 stocks
+[00:39:47]   Bear: DTW cov built, sigma=0.3285, 66 stocks
+[00:39:47]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:39:47]   STANDARD: Sharpe=2.158 AnnRet=40.86% AnnVol=18.93% MaxDD=-9.57% n=244
+[00:39:47]   DTW: Sharpe=1.906 AnnRet=36.52% AnnVol=19.17% MaxDD=-8.48% n=244
+[00:39:47]   BENCHMARK: Sharpe=1.162 AnnRet=22.10% AnnVol=19.02% MaxDD=-12.31% n=244
+[00:39:47]   Fold 5 done in 6.2 min. Total elapsed: 37.1 min
+[00:39:47] 
+======================================================================
+FOLD 6/6: train 2015-01-01..2024-12-31  test 2025-01-01..2025-12-31
+======================================================================
+[00:39:47]   train days=2400  test days=247
+[00:39:49]   seed=0: converged=True, log-likelihood=34325.12
+[00:39:50]   seed=7: converged=True, log-likelihood=34325.11
+[00:39:51]   seed=21: converged=True, log-likelihood=34375.12
+[00:39:52]   seed=42: converged=True, log-likelihood=34372.63
+[00:39:53]   seed=99: converged=True, log-likelihood=34372.70
+[00:39:53]   regime_map: {2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[00:39:54]   train regime dist: {'Sideways': 824, 'Bull': 791, 'Bear': 785}
+[00:39:54]   test regime dist: {'Bear': 130, 'Sideways': 75, 'Bull': 42}
+[00:39:54]   train episodes: 43 total, {'Bear': 17, 'Bull': 14, 'Sideways': 12}
+[00:39:54]   Bull: 767 pooled days across 14 episodes - OK
+[00:39:54]   Sideways: 825 pooled days across 12 episodes - OK
+[00:39:54]   Bear: 761 pooled days across 17 episodes - OK
+[00:39:54]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 93, 'Sideways': 91, 'Bear': 92}
+[00:40:21]     ...5/43 episodes done, 27s elapsed
+[00:40:42]     ...10/43 episodes done, 48s elapsed
+[00:41:08]     ...15/43 episodes done, 74s elapsed
+[00:41:39]     ...20/43 episodes done, 105s elapsed
+[00:42:22]     ...25/43 episodes done, 148s elapsed
+[00:43:20]     ...30/43 episodes done, 206s elapsed
+[00:43:41]     ...35/43 episodes done, 227s elapsed
+[00:44:55]     ...40/43 episodes done, 301s elapsed
+[00:45:54]     ...43/43 episodes done, 360s elapsed
+[00:45:55]   DTW episode loop: 43/43 usable, 43/43 completed, wall time 360.7s
+[00:45:55]   Bull: DTW cov built, sigma=0.4329, 68 stocks
+[00:45:55]   Sideways: DTW cov built, sigma=0.5187, 66 stocks
+[00:45:55]   Bear: DTW cov built, sigma=0.3801, 66 stocks
+[00:45:55]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:45:55]   STANDARD: Sharpe=-0.861 AnnRet=-18.31% AnnVol=21.27% MaxDD=-30.99% n=247
+[00:45:55]   DTW: Sharpe=0.443 AnnRet=8.36% AnnVol=18.89% MaxDD=-20.49% n=247
+[00:45:55]   BENCHMARK: Sharpe=0.314 AnnRet=5.70% AnnVol=18.17% MaxDD=-19.29% n=247
+[00:45:55]   Fold 6 done in 6.1 min. Total elapsed: 43.2 min
+[00:45:55] 
+40% weight-cap diagnostic: bound (>=0.395) in 4/36 frozen-weight vectors (11.1%)
+[00:45:55] 
+======================================================================
+POOLING RESULTS ACROSS 6 FOLDS (NIFTY MIDCAP 100)
+======================================================================
+[00:45:55] Pooled n_days: std= 1479 dtw= 1479 bench= 1479
+[00:45:55]   POOLED STANDARD: Sharpe=0.807 AnnRet=19.07% AnnVol=23.62% MaxDD=-62.50% n=1479
+[00:45:55]   POOLED DTW: Sharpe=1.290 AnnRet=28.23% AnnVol=21.89% MaxDD=-47.88% n=1479
+[00:45:55]   POOLED BENCHMARK: Sharpe=1.051 AnnRet=21.52% AnnVol=20.49% MaxDD=-51.35% n=1479
+[00:45:57] Bootstrap: observed_diff=0.483 p=0.0818 CI=[-0.173,1.225]
+[00:45:57] 
+Per-fold Sharpe gap table:
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe       gap
+    1      2020    0.888358    1.029432      0.670273  0.141074
+    2      2021    2.525522    2.402338      2.058029 -0.123184
+    3      2022    0.163622   -0.304092      0.168291 -0.467714
+    4      2023   -0.325082    3.189940      3.286050  3.515022
+    5      2024    2.158384    1.905758      1.162016 -0.252626
+    6      2025   -0.860909    0.442539      0.313511  1.303448
+[00:45:57] 
+ALL DONE. Total elapsed: 43.3 min. Saved to ./expanding_window_midcap_results.pkl

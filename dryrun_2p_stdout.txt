@@ -1,0 +1,407 @@
+[22:00:16 | +   0.0min] === TWO-PERIOD, MULTI-HORIZON STUDY STARTING ===
+[22:00:16 | +   0.0min] Checking Period A universe coverage (>= 2008-01-01, cutoff 2009-01-01 for 'qualifies')...
+[                       0%                       ][**                     4%                       ]  2 of 50 completed[***                    6%                       ]  3 of 50 completed[****                   8%                       ]  4 of 50 completed[*****                 10%                       ]  5 of 50 completed[******                12%                       ]  6 of 50 completed[******                12%                       ]  6 of 50 completed[********              16%                       ]  8 of 50 completed$INDIGO.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[*********             18%                       ]  9 of 50 completed$JIOFIN.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[**********            20%                       ]  10 of 50 completed$MAXHEALTH.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[***********           22%                       ]  11 of 50 completed[************          24%                       ]  12 of 50 completed[************          26%                       ]  13 of 50 completed[*************         28%                       ]  14 of 50 completed[**************        30%                       ]  15 of 50 completed[***************       32%                       ]  16 of 50 completed[****************      34%                       ]  17 of 50 completed[*****************     36%                       ]  18 of 50 completed[******************    38%                       ]  19 of 50 completed[*******************   40%                       ]  20 of 50 completed[********************  42%                       ]  21 of 50 completed[********************* 44%                       ]  22 of 50 completed[**********************46%                       ]  23 of 50 completed$COALINDIA.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[**********************48%                       ]  24 of 50 completed[**********************50%                       ]  25 of 50 completed[**********************52%                       ]  26 of 50 completed[**********************54%*                      ]  27 of 50 completed[**********************54%*                      ]  27 of 50 completed[**********************54%*                      ]  27 of 50 completed[**********************60%****                   ]  30 of 50 completed[**********************60%****                   ]  30 of 50 completed[**********************64%******                 ]  32 of 50 completed[**********************66%*******                ]  33 of 50 completed[**********************66%*******                ]  33 of 50 completed[**********************66%*******                ]  33 of 50 completed[**********************72%**********             ]  36 of 50 completed[**********************74%***********            ]  37 of 50 completed[**********************76%***********            ]  38 of 50 completed$SBILIFE.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[**********************78%************           ]  39 of 50 completed$ETERNAL.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[**********************80%*************          ]  40 of 50 completed[**********************80%*************          ]  40 of 50 completed[**********************88%*****************      ]  44 of 50 completed[**********************80%*************          ]  40 of 50 completed[**********************88%*****************      ]  44 of 50 completed[**********************80%*************          ]  40 of 50 completed[**********************92%*******************    ]  46 of 50 completed[**********************94%********************   ]  47 of 50 completed[**********************96%*********************  ]  48 of 50 completed$HDFCLIFE.NS: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[**********************98%********************** ]  49 of 50 completed[*********************100%***********************]  50 of 50 completed
+
+7 Failed downloads:
+['INDIGO.NS', 'JIOFIN.NS', 'MAXHEALTH.NS', 'COALINDIA.NS', 'SBILIFE.NS', 'ETERNAL.NS', 'HDFCLIFE.NS']: possibly delisted; no price data found  (1d 2008-01-01 -> 2009-06-01) (Yahoo error = "Data doesn't exist for startDate = 1199125800, endDate = 1243794600")
+[22:00:30 | +   0.2min] Period A qualifying universe: 43/50
+[22:00:30 | +   0.2min] Excluded (listed too late): [('COALINDIA.NS', None), ('ETERNAL.NS', None), ('HDFCLIFE.NS', None), ('INDIGO.NS', None), ('JIOFIN.NS', None), ('MAXHEALTH.NS', None), ('SBILIFE.NS', None)]
+[22:00:30 | +   0.2min] DECISION: 43 >= 30 threshold -> using CURRENT-CONSTITUENTS-FILTERED approach for Period A (not the historical-1008-list fallback).
+[22:00:30 | +   0.2min] DRY_RUN: Period A universe truncated to ['ADANIENT.NS', 'ADANIPORTS.NS', 'APOLLOHOSP.NS', 'ASIANPAINT.NS', 'AXISBANK.NS', 'BAJAJ-AUTO.NS']
+[22:00:30 | +   0.2min] 
+######################################################################
+# PERIOD A_2008_2019_calm
+######################################################################
+[22:00:30 | +   0.2min] --- STAGE START: A_2008_2019_calm data pull ---
+[                       0%                       ][****************      33%                       ]  2 of 6 completed[****************      33%                       ]  2 of 6 completed[**********************67%*******                ]  4 of 6 completed[**********************83%***************        ]  5 of 6 completed[*********************100%***********************]  6 of 6 completed
+[22:00:32 | +   0.3min]   batch download shape: (2951, 6)
+[22:00:32 | +   0.3min]   final missing total: 0
+[*********************100%***********************]  1 of 1 completed
+[22:00:33 | +   0.3min]   ^NSEI shape: (2929,), first=2008-01-01 00:00:00, last=2019-12-31 00:00:00
+[22:00:33 | +   0.3min] --- STAGE END: A_2008_2019_calm data pull (3.2s) ---
+[22:00:33 | +   0.3min]   market_features shape: (2869, 4), first=2008-03-28 00:00:00, last=2019-12-31 00:00:00
+[22:00:33 | +   0.3min]   sigma sweep calibration window: 2008-01-01..2013-12-31 (middle fold's train window)
+[22:00:33 | +   0.3min] --- STAGE START: A_2008_2019_calm sigma sweep calibration ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18017.312871918995 is not greater than 18017.42587538422. Delta is -0.11300346522330074
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18460.87907063651 is not greater than 18461.02650188635. Delta is -0.14743124983942835
+[22:01:02 | +   0.8min]   calibration episodes: 20, {'Bear': 10, 'Sideways': 7, 'Bull': 3}
+[22:01:24 | +   1.1min]     [Bull] ...3/3 calibration episodes done
+[22:01:54 | +   1.6min]     [Sideways] ...5/7 calibration episodes done
+[22:02:02 | +   1.8min]     [Sideways] ...7/7 calibration episodes done
+[22:02:18 | +   2.0min]     [Bear] ...5/10 calibration episodes done
+[22:02:20 | +   2.1min]     [Bear] ...10/10 calibration episodes done
+[22:02:21 | +   2.1min]   Bull regime - sigma sensitivity (6 stocks):
+[22:02:21 | +   2.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:02:21 | +   2.1min]         0.10     0.2045          2.9      0.000000
+[22:02:21 | +   2.1min]         0.20     0.4090          2.9      0.000106
+[22:02:21 | +   2.1min]         0.30     0.6135          3.0      0.009522
+[22:02:21 | +   2.1min]         0.50     1.0225          4.5      0.067748
+[22:02:21 | +   2.1min]         0.75     1.5337         12.7      0.080970
+[22:02:21 | +   2.1min]         1.00     2.0450         26.3      0.064869
+[22:02:21 | +   2.1min]         1.50     3.0675         67.0      0.037208
+[22:02:21 | +   2.1min]   Sideways regime - sigma sensitivity (6 stocks):
+[22:02:21 | +   2.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:02:21 | +   2.1min]         0.10     0.1227          4.3      0.000000
+[22:02:21 | +   2.1min]         0.20     0.2455          4.3      0.000299
+[22:02:21 | +   2.1min]         0.30     0.3682          4.4      0.014297
+[22:02:21 | +   2.1min]         0.50     0.6137          6.8      0.082052
+[22:02:21 | +   2.1min]         0.75     0.9206         20.2      0.095959
+[22:02:21 | +   2.1min]         1.00     1.2275         43.1      0.076873
+[22:02:21 | +   2.1min]         1.50     1.8412        113.4      0.044206
+[22:02:21 | +   2.1min]   Bear regime - sigma sensitivity (6 stocks):
+[22:02:21 | +   2.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:02:21 | +   2.1min]         0.10     0.1007          3.4      0.000000
+[22:02:21 | +   2.1min]         0.20     0.2015          3.4      0.000142
+[22:02:21 | +   2.1min]         0.30     0.3022          3.4      0.008886
+[22:02:21 | +   2.1min]         0.50     0.5036          5.2      0.060604
+[22:02:21 | +   2.1min]         0.75     0.7554         15.2      0.076387
+[22:02:21 | +   2.1min]         1.00     1.0073         32.3      0.062978
+[22:02:21 | +   2.1min]         1.50     1.5109         84.9      0.036989
+[22:02:21 | +   2.1min] --- STAGE END: A_2008_2019_calm sigma sweep calibration (108.4s) ---
+[22:02:21 | +   2.1min]   sigma_frac candidates and (median off_diag_std, median cond): {0.1: (2.6770747098838368e-14, 3.365663928633743), 0.2: (0.0001419908840340061, 3.3656672901340188), 0.3: (0.00952150129779417, 3.3805526251564824), 0.5: (0.06774835586852766, 5.222268379132607), 0.75: (0.08096972441060556, 15.193419222211729), 1.0: (0.06486905261696774, 32.33925212166967), 1.5: (0.037207731608985634, 84.85375693072841)}
+[22:02:21 | +   2.1min]   CHOSEN sigma_frac for A_2008_2019_calm: 0.5 (matches default 0.5)
+[22:02:21 | +   2.1min] ======================================================================
+[22:02:21 | +   2.1min] FOLD 1/2: train 2008-01-01..2012-12-31  test 2013-01-01..2013-12-31
+[22:02:21 | +   2.1min] ======================================================================
+[22:02:21 | +   2.1min]   train days=1160  test days=247
+[22:02:21 | +   2.1min] --- STAGE START: fold 1 HMM fit ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14891.022625169146 is not greater than 14891.025946410007. Delta is -0.0033212408616236644
+[22:02:24 | +   2.1min]   seed=0: converged=True, log-likelihood=14891.00
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14914.98249426991 is not greater than 14914.98365119711. Delta is -0.0011569271991902497
+[22:02:26 | +   2.2min]   seed=7: converged=True, log-likelihood=14914.98
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14962.511714870727 is not greater than 14962.514348050952. Delta is -0.002633180225529941
+[22:02:28 | +   2.2min]   seed=21: converged=True, log-likelihood=14962.51
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+[22:02:30 | +   2.2min]   seed=42: converged=True, log-likelihood=14718.24
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14284.874082404447 is not greater than 14284.992766288095. Delta is -0.11868388364746352
+[22:02:32 | +   2.3min]   seed=99: converged=True, log-likelihood=14285.08
+[22:02:32 | +   2.3min] --- STAGE END: fold 1 HMM fit (11.1s) ---
+[22:02:32 | +   2.3min]   regime_map: {1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'}
+[22:02:34 | +   2.3min]   train regime dist: {'Bear': 474, 'Sideways': 377, 'Bull': 309}
+[22:02:34 | +   2.3min]   test regime dist: {'Sideways': 204, 'Bull': 39, 'Bear': 4}
+[22:02:34 | +   2.3min] --- STAGE START: fold 1 episode extraction ---
+[22:02:34 | +   2.3min] --- STAGE END: fold 1 episode extraction (0.0s) ---
+[22:02:34 | +   2.3min]   train episodes: 19 total, {'Sideways': 9, 'Bear': 6, 'Bull': 4}
+[22:02:34 | +   2.3min]   Bull: 310 pooled days across 4 episodes - OK
+[22:02:34 | +   2.3min]   Sideways: 376 pooled days across 9 episodes - OK
+[22:02:34 | +   2.3min]   Bear: 474 pooled days across 6 episodes - OK
+[22:02:34 | +   2.3min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 6, 'Sideways': 6, 'Bear': 6}
+[22:02:34 | +   2.3min] --- STAGE START: fold 1 DTW loop (19 episodes) ---
+[22:02:48 | +   2.5min]     ...episode 5/19 done, 13s elapsed
+[22:02:49 | +   2.5min]     ...episode 10/19 done, 14s elapsed
+[22:02:49 | +   2.5min]     ...episode 15/19 done, 15s elapsed
+[22:02:54 | +   2.6min]     ...episode 19/19 done, 20s elapsed
+[22:02:56 | +   2.7min] --- STAGE END: fold 1 DTW loop (21.6s) ---
+[22:02:56 | +   2.7min]   DTW episode loop: 19/19 usable, 19/19 completed, wall time 21.6s
+[22:02:56 | +   2.7min]   Bull: DTW cov built, sigma=0.5571, 6 stocks
+[22:02:56 | +   2.7min]   Sideways: DTW cov built, sigma=0.3330, 6 stocks
+[22:02:56 | +   2.7min]   Bear: DTW cov built, sigma=0.8975, 6 stocks
+[22:02:56 | +   2.7min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:02:57 | +   2.7min]   STANDARD: Sharpe=0.106 AnnRet=2.44% AnnVol=22.98% MaxDD=-22.00% n=247
+[22:02:57 | +   2.7min]   DTW: Sharpe=0.126 AnnRet=2.93% AnnVol=23.18% MaxDD=-24.33% n=247
+[22:02:57 | +   2.7min]   BENCHMARK: Sharpe=0.367 AnnRet=6.67% AnnVol=18.17% MaxDD=-15.76% n=247
+[22:02:57 | +   2.7min]   Fold 1 done in 0.6 min.
+[22:02:57 | +   2.7min]   Period A_2008_2019_calm total elapsed so far: 2.5 min
+[22:02:57 | +   2.7min] ======================================================================
+[22:02:57 | +   2.7min] FOLD 2/2: train 2008-01-01..2013-12-31  test 2014-01-01..2014-12-31
+[22:02:57 | +   2.7min] ======================================================================
+[22:02:57 | +   2.7min]   train days=1407  test days=240
+[22:02:57 | +   2.7min] --- STAGE START: fold 2 HMM fit ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+[22:03:01 | +   2.7min]   seed=0: converged=True, log-likelihood=18160.49
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+[22:03:04 | +   2.8min]   seed=7: converged=True, log-likelihood=18417.49
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18017.312871919086 is not greater than 18017.425875384208. Delta is -0.11300346512143733
+[22:03:07 | +   2.8min]   seed=21: converged=True, log-likelihood=18017.38
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+[22:03:09 | +   2.9min]   seed=42: converged=True, log-likelihood=17681.62
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18460.87907063651 is not greater than 18461.02650188635. Delta is -0.14743124983942835
+[22:03:12 | +   2.9min]   seed=99: converged=True, log-likelihood=18460.16
+[22:03:12 | +   2.9min] --- STAGE END: fold 2 HMM fit (14.5s) ---
+[22:03:12 | +   2.9min]   regime_map: {3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'}
+[22:03:14 | +   3.0min]   train regime dist: {'Bear': 498, 'Sideways': 477, 'Bull': 432}
+[22:03:14 | +   3.0min]   test regime dist: {'Bull': 203, 'Bear': 37}
+[22:03:14 | +   3.0min] --- STAGE START: fold 2 episode extraction ---
+[22:03:14 | +   3.0min] --- STAGE END: fold 2 episode extraction (0.0s) ---
+[22:03:14 | +   3.0min]   train episodes: 20 total, {'Bear': 10, 'Sideways': 7, 'Bull': 3}
+[22:03:14 | +   3.0min]   Bull: 428 pooled days across 3 episodes - OK
+[22:03:14 | +   3.0min]   Sideways: 462 pooled days across 7 episodes - OK
+[22:03:14 | +   3.0min]   Bear: 489 pooled days across 10 episodes - OK
+[22:03:14 | +   3.0min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 6, 'Sideways': 6, 'Bear': 6}
+[22:03:14 | +   3.0min] --- STAGE START: fold 2 DTW loop (20 episodes) ---
+[22:03:26 | +   3.2min]     ...episode 5/20 done, 12s elapsed
+[22:03:27 | +   3.2min]     ...episode 10/20 done, 13s elapsed
+[22:03:27 | +   3.2min]     ...episode 15/20 done, 14s elapsed
+[22:03:30 | +   3.2min]     ...episode 20/20 done, 16s elapsed
+[22:03:31 | +   3.2min] --- STAGE END: fold 2 DTW loop (17.7s) ---
+[22:03:31 | +   3.2min]   DTW episode loop: 20/20 usable, 20/20 completed, wall time 17.7s
+[22:03:31 | +   3.2min]   Bull: DTW cov built, sigma=1.0225, 6 stocks
+[22:03:31 | +   3.2min]   Sideways: DTW cov built, sigma=0.6137, 6 stocks
+[22:03:32 | +   3.3min]   Bear: DTW cov built, sigma=0.5036, 6 stocks
+[22:03:32 | +   3.3min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:03:32 | +   3.3min]   STANDARD: Sharpe=1.895 AnnRet=33.29% AnnVol=17.56% MaxDD=-7.46% n=240
+[22:03:32 | +   3.3min]   DTW: Sharpe=2.111 AnnRet=37.48% AnnVol=17.76% MaxDD=-7.70% n=240
+[22:03:32 | +   3.3min]   BENCHMARK: Sharpe=2.240 AnnRet=28.66% AnnVol=12.79% MaxDD=-6.72% n=240
+[22:03:32 | +   3.3min]   Fold 2 done in 0.6 min.
+[22:03:32 | +   3.3min]   Period A_2008_2019_calm total elapsed so far: 3.0 min
+[22:03:32 | +   3.3min] 
+A_2008_2019_calm: 2/2 folds succeeded
+[22:03:32 | +   3.3min] 
+======================================================================
+POOLING + MULTI-HORIZON EVALUATION: A_2008_2019_calm
+======================================================================
+[22:03:32 | +   3.3min] pooled n_days (1-day): std=487 dtw=487 bench=487
+[22:03:32 | +   3.3min] --- STAGE START: A_2008_2019_calm horizon=1d aggregation + significance test ---
+[22:03:32 | +   3.3min]   [1d] STANDARD: Sharpe=0.861 AnnRet=17.64% AnnVol=20.49% MaxDD=-22.00% n=487
+[22:03:32 | +   3.3min]   [1d] DTW: Sharpe=0.964 AnnRet=19.96% AnnVol=20.70% MaxDD=-24.33% n=487
+[22:03:32 | +   3.3min]   [1d] BENCHMARK: Sharpe=1.111 AnnRet=17.51% AnnVol=15.75% MaxDD=-15.76% n=487
+[22:03:35 | +   3.3min]   [1d] bootstrap: n_obs=487, n_blocks/resample=24, observed_diff=0.103, p=0.2216, CI=[-0.122,0.328]
+[22:03:35 | +   3.3min] --- STAGE END: A_2008_2019_calm horizon=1d (2.6s) ---
+[22:03:35 | +   3.3min] --- STAGE START: A_2008_2019_calm horizon=5d aggregation + significance test ---
+[22:03:35 | +   3.3min]   [5d] STANDARD: Sharpe=0.896 AnnRet=17.93% AnnVol=20.01% MaxDD=-17.10% n=97
+[22:03:35 | +   3.3min]   [5d] DTW: Sharpe=0.973 AnnRet=19.96% AnnVol=20.50% MaxDD=-19.43% n=97
+[22:03:35 | +   3.3min]   [5d] BENCHMARK: Sharpe=1.076 AnnRet=17.35% AnnVol=16.12% MaxDD=-12.26% n=97
+[22:03:36 | +   3.3min]   [5d] bootstrap: n_obs=97, n_blocks/resample=4, observed_diff=0.078, p=0.2404, CI=[-0.171,0.358]
+[22:03:36 | +   3.3min]   WARNING: [5d] bootstrap resamples only 4 blocks of 20 from 97 observations - low resolution, treat p-value with real caution
+[22:03:36 | +   3.3min] --- STAGE END: A_2008_2019_calm horizon=5d (1.5s) ---
+[22:03:36 | +   3.3min] --- STAGE START: A_2008_2019_calm horizon=22d aggregation + significance test ---
+[22:03:36 | +   3.3min]   [22d] STANDARD: Sharpe=0.945 AnnRet=16.98% AnnVol=17.97% MaxDD=-10.55% n=22
+[22:03:36 | +   3.3min]   [22d] DTW: Sharpe=0.975 AnnRet=19.00% AnnVol=19.48% MaxDD=-12.56% n=22
+[22:03:36 | +   3.3min]   [22d] BENCHMARK: Sharpe=0.979 AnnRet=17.10% AnnVol=17.47% MaxDD=-8.32% n=22
+[22:03:38 | +   3.4min]   [22d] bootstrap: n_obs=22, n_blocks/resample=1, observed_diff=0.031, p=0.0000, CI=[0.011,0.033]
+[22:03:38 | +   3.4min]   WARNING: [22d] bootstrap resamples only 1 blocks of 20 from 22 observations - low resolution, treat p-value with real caution
+[22:03:38 | +   3.4min] --- STAGE END: A_2008_2019_calm horizon=22d (1.7s) ---
+[22:03:38 | +   3.4min] 
+A_2008_2019_calm per-fold Sharpe gap table (1-day):
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe      gap  failed
+    1      2013    0.106363    0.126333      0.366940 0.019970   False
+    2      2014    1.895259    2.110670      2.240463 0.215411   False
+[22:03:38 | +   3.4min] 
+PERIOD A_2008_2019_calm COMPLETE. Total elapsed: 3.1 min
+[22:03:38 | +   3.4min] Period A checkpoint saved.
+[22:03:38 | +   3.4min] 
+######################################################################
+# PERIOD B_2020_2026_recent
+######################################################################
+[22:03:38 | +   3.4min] --- STAGE START: B_2020_2026_recent data pull ---
+[                       0%                       ][****************      33%                       ]  2 of 6 completed[**********************50%                       ]  3 of 6 completed[**********************67%*******                ]  4 of 6 completed[**********************83%***************        ]  5 of 6 completed[*********************100%***********************]  6 of 6 completed
+[22:03:39 | +   3.4min]   batch download shape: (1638, 6)
+[22:03:39 | +   3.4min]   final missing total: 0
+[*********************100%***********************]  1 of 1 completed
+[22:03:40 | +   3.4min]   ^NSEI shape: (1633,), first=2020-01-01 00:00:00, last=2026-08-07 00:00:00
+[22:03:40 | +   3.4min]   STRICT SEPARATION CHECK PASSED: earliest data point is 2020-01-01 00:00:00, on/after required 2020-01-01
+[22:03:40 | +   3.4min] --- STAGE END: B_2020_2026_recent data pull (2.0s) ---
+[22:03:40 | +   3.4min]   market_features shape: (1573, 4), first=2020-03-27 00:00:00, last=2026-08-07 00:00:00
+[22:03:40 | +   3.4min]   sigma sweep calibration window: 2020-01-01..2021-12-31 (middle fold's train window)
+[22:03:40 | +   3.4min] --- STAGE START: B_2020_2026_recent sigma sweep calibration ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+Model is not converging.  Current: 6030.385496443522 is not greater than 6030.836528191267. Delta is -0.45103174774430954
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:03:47 | +   3.5min]   calib seed=42: FIT FAILED: 'covars' must be symmetric, positive-definite
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:03:48 | +   3.5min]   calib seed=99: FIT FAILED: 'covars' must be symmetric, positive-definite
+[22:03:48 | +   3.5min]   calibration episodes: 7, {'Bear': 3, 'Bull': 2, 'Sideways': 2}
+[22:03:57 | +   3.7min]     [Bull] ...2/2 calibration episodes done
+[22:04:08 | +   3.9min]     [Sideways] ...2/2 calibration episodes done
+[22:04:21 | +   4.1min]     [Bear] ...3/3 calibration episodes done
+[22:04:22 | +   4.1min]   Bull regime - sigma sensitivity (6 stocks):
+[22:04:22 | +   4.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:04:22 | +   4.1min]         0.10     0.0621          5.0      0.000000
+[22:04:22 | +   4.1min]         0.20     0.1242          5.0      0.000055
+[22:04:22 | +   4.1min]         0.30     0.1863          5.0      0.007137
+[22:04:22 | +   4.1min]         0.50     0.3106          6.1      0.087167
+[22:04:22 | +   4.1min]         0.75     0.4658         11.2      0.153098
+[22:04:22 | +   4.1min]         1.00     0.6211         23.2      0.146213
+[22:04:22 | +   4.1min]         1.50     0.9317         63.8      0.096426
+[22:04:22 | +   4.1min]   Sideways regime - sigma sensitivity (6 stocks):
+[22:04:22 | +   4.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:04:22 | +   4.1min]         0.10     0.2099          3.8      0.000000
+[22:04:22 | +   4.1min]         0.20     0.4199          3.8      0.000132
+[22:04:22 | +   4.1min]         0.30     0.6298          3.9      0.009028
+[22:04:22 | +   4.1min]         0.50     1.0496          5.4      0.072944
+[22:04:22 | +   4.1min]         0.75     1.5744         14.4      0.101116
+[22:04:22 | +   4.1min]         1.00     2.0993         30.8      0.086878
+[22:04:22 | +   4.1min]         1.50     3.1489         81.9      0.052716
+[22:04:22 | +   4.1min]   Bear regime - sigma sensitivity (6 stocks):
+[22:04:22 | +   4.1min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:04:22 | +   4.1min]         0.10     0.0528          4.7      0.000000
+[22:04:22 | +   4.1min]         0.20     0.1057          4.7      0.002122
+[22:04:22 | +   4.1min]         0.30     0.1585          5.1      0.035953
+[22:04:22 | +   4.1min]         0.50     0.2641         10.6      0.140221
+[22:04:22 | +   4.1min]         0.75     0.3962         30.7      0.159874
+[22:04:22 | +   4.1min]         1.00     0.5283         68.0      0.129294
+[22:04:22 | +   4.1min]         1.50     0.7924        190.9      0.075352
+[22:04:22 | +   4.1min] --- STAGE END: B_2020_2026_recent sigma sweep calibration (42.3s) ---
+[22:04:22 | +   4.1min]   sigma_frac candidates and (median off_diag_std, median cond): {0.1: (2.0574438686867618e-14, 4.721369726249911), 0.2: (0.00013222237633155786, 4.723097532945591), 0.3: (0.00902834420764155, 4.983567096219613), 0.5: (0.08716707987575943, 6.097598716258231), 0.75: (0.15309770357603442, 14.38539351234764), 1.0: (0.12929358232698152, 30.779338064240083), 1.5: (0.07535152264005489, 81.93893438644083)}
+[22:04:22 | +   4.1min]   CHOSEN sigma_frac for B_2020_2026_recent: 0.5 (matches default 0.5)
+[22:04:22 | +   4.1min] ======================================================================
+[22:04:22 | +   4.1min] FOLD 1/2: train 2020-01-01..2020-12-31  test 2021-01-01..2021-12-31
+[22:04:22 | +   4.1min] ======================================================================
+[22:04:22 | +   4.1min]   train days=190  test days=248
+[22:04:22 | +   4.1min] --- STAGE START: fold 1 HMM fit ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+Model is not converging.  Current: 2561.307362752745 is not greater than 2563.6153943306504. Delta is -2.30803157790524
+[22:04:23 | +   4.1min]   seed=0: converged=True, log-likelihood=2561.33
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+Model is not converging.  Current: 2567.50330773518 is not greater than 2582.258868704529. Delta is -14.755560969349062
+[22:04:25 | +   4.1min]   seed=7: converged=True, log-likelihood=2619.90
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+Model is not converging.  Current: 2542.6947953443887 is not greater than 2593.7716776384455. Delta is -51.07688229405676
+[22:04:27 | +   4.2min]   seed=21: converged=True, log-likelihood=2543.73
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+[22:04:28 | +   4.2min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+[22:04:30 | +   4.2min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[22:04:30 | +   4.2min] --- STAGE END: fold 1 HMM fit (7.7s) ---
+[22:04:30 | +   4.2min]   WARNING: 2/5 HMM seeds failed to fit
+[22:04:30 | +   4.2min]   regime_map: {3: 'Bear', 0: 'Bear', 2: 'Sideways', 1: 'Bull'}
+[22:04:30 | +   4.2min]   train regime dist: {'Bear': 182, 'Sideways': 6, 'Bull': 2}
+[22:04:30 | +   4.2min]   test regime dist: {'Bear': 248}
+[22:04:30 | +   4.2min] --- STAGE START: fold 1 episode extraction ---
+[22:04:30 | +   4.2min] --- STAGE END: fold 1 episode extraction (0.0s) ---
+[22:04:30 | +   4.2min]   train episodes: 2 total, {'Bear': 2}
+[22:04:30 | +   4.2min]   WARNING (DEGENERATE): only 1/3 regimes have any surviving episodes at all
+[22:04:30 | +   4.2min]   WARNING: Bull: 0 pooled days - regime absent from train
+[22:04:30 | +   4.2min]   WARNING: Sideways: 0 pooled days - regime absent from train
+[22:04:30 | +   4.2min]   Bear: 182 pooled days across 2 episodes - OK
+[22:04:30 | +   4.2min]   standard frozen weights built for: ['Bear'] | stock counts: {'Bear': 6}
+[22:04:30 | +   4.2min] --- STAGE START: fold 1 DTW loop (2 episodes) ---
+[22:04:40 | +   4.4min]     ...episode 2/2 done, 10s elapsed
+[22:04:41 | +   4.4min] --- STAGE END: fold 1 DTW loop (10.7s) ---
+[22:04:41 | +   4.4min]   DTW episode loop: 2/2 usable, 2/2 completed, wall time 10.7s
+[22:04:41 | +   4.4min]   Bear: DTW cov built, sigma=0.8592, 6 stocks
+[22:04:41 | +   4.4min]   DTW frozen weights built for: ['Bear']
+[22:04:41 | +   4.4min]   WARNING: fold 1 could not build all 3 regimes' frozen weights for both methods (std=['Bear'], dtw=['Bear']) - proceeding, but test days in a missing regime will be skipped, not filled in
+[22:04:42 | +   4.4min]   STANDARD: Sharpe=2.549 AnnRet=67.03% AnnVol=26.30% MaxDD=-11.58% n=248
+[22:04:42 | +   4.4min]   DTW: Sharpe=2.487 AnnRet=63.38% AnnVol=25.48% MaxDD=-11.26% n=248
+[22:04:42 | +   4.4min]   BENCHMARK: Sharpe=1.402 AnnRet=21.96% AnnVol=15.66% MaxDD=-10.63% n=248
+[22:04:42 | +   4.4min]   Fold 1 done in 0.3 min.
+[22:04:42 | +   4.4min]   Period B_2020_2026_recent total elapsed so far: 1.1 min
+[22:04:42 | +   4.4min] ======================================================================
+[22:04:42 | +   4.4min] FOLD 2/2: train 2020-01-01..2021-12-31  test 2022-01-01..2022-12-31
+[22:04:42 | +   4.4min] ======================================================================
+[22:04:42 | +   4.4min]   train days=438  test days=248
+[22:04:42 | +   4.4min] --- STAGE START: fold 2 HMM fit ---
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:04:44 | +   4.5min]   seed=0: converged=True, log-likelihood=6281.12
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+Model is not converging.  Current: 6030.385496443522 is not greater than 6030.836528191267. Delta is -0.45103174774430954
+[22:04:46 | +   4.5min]   seed=7: converged=True, log-likelihood=5991.41
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:04:48 | +   4.5min]   seed=21: converged=True, log-likelihood=6271.31
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:04:49 | +   4.5min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+[22:04:51 | +   4.6min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[22:04:51 | +   4.6min] --- STAGE END: fold 2 HMM fit (9.2s) ---
+[22:04:51 | +   4.6min]   WARNING: 2/5 HMM seeds failed to fit
+[22:04:51 | +   4.6min]   regime_map: {1: 'Bear', 2: 'Bear', 0: 'Sideways', 3: 'Bull'}
+[22:04:52 | +   4.6min]   train regime dist: {'Sideways': 282, 'Bear': 94, 'Bull': 62}
+[22:04:52 | +   4.6min]   test regime dist: {'Bear': 214, 'Sideways': 18, 'Bull': 16}
+[22:04:52 | +   4.6min] --- STAGE START: fold 2 episode extraction ---
+[22:04:52 | +   4.6min] --- STAGE END: fold 2 episode extraction (0.0s) ---
+[22:04:52 | +   4.6min]   train episodes: 7 total, {'Bear': 3, 'Bull': 2, 'Sideways': 2}
+[22:04:52 | +   4.6min]   WARNING: Bull: only 62 pooled days across 2 episode(s) - thin
+[22:04:52 | +   4.6min]   Sideways: 276 pooled days across 2 episodes - OK
+[22:04:52 | +   4.6min]   WARNING: Bear: only 94 pooled days across 3 episode(s) - thin
+[22:04:52 | +   4.6min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 6, 'Sideways': 6, 'Bear': 6}
+[22:04:52 | +   4.6min] --- STAGE START: fold 2 DTW loop (7 episodes) ---
+[22:05:05 | +   4.8min]     ...episode 5/7 done, 13s elapsed
+[22:05:07 | +   4.8min]     ...episode 7/7 done, 15s elapsed
+[22:05:08 | +   4.9min] --- STAGE END: fold 2 DTW loop (15.8s) ---
+[22:05:08 | +   4.9min]   DTW episode loop: 7/7 usable, 7/7 completed, wall time 15.8s
+[22:05:08 | +   4.9min]   Bull: DTW cov built, sigma=0.3106, 6 stocks
+[22:05:08 | +   4.9min]   Sideways: DTW cov built, sigma=1.0496, 6 stocks
+[22:05:08 | +   4.9min]   Bear: DTW cov built, sigma=0.2641, 6 stocks
+[22:05:08 | +   4.9min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:05:09 | +   4.9min]   STANDARD: Sharpe=0.463 AnnRet=10.64% AnnVol=22.97% MaxDD=-20.55% n=248
+[22:05:09 | +   4.9min]   DTW: Sharpe=0.656 AnnRet=15.29% AnnVol=23.32% MaxDD=-20.31% n=248
+[22:05:09 | +   4.9min]   BENCHMARK: Sharpe=0.248 AnnRet=4.31% AnnVol=17.36% MaxDD=-17.99% n=248
+[22:05:09 | +   4.9min]   Fold 2 done in 0.4 min.
+[22:05:09 | +   4.9min]   Period B_2020_2026_recent total elapsed so far: 1.5 min
+[22:05:09 | +   4.9min] 
+B_2020_2026_recent: 2/2 folds succeeded
+[22:05:09 | +   4.9min] 
+======================================================================
+POOLING + MULTI-HORIZON EVALUATION: B_2020_2026_recent
+======================================================================
+[22:05:09 | +   4.9min] pooled n_days (1-day): std=496 dtw=496 bench=496
+[22:05:09 | +   4.9min] --- STAGE START: B_2020_2026_recent horizon=1d aggregation + significance test ---
+[22:05:09 | +   4.9min]   [1d] STANDARD: Sharpe=1.570 AnnRet=38.84% AnnVol=24.73% MaxDD=-20.55% n=496
+[22:05:09 | +   4.9min]   [1d] DTW: Sharpe=1.609 AnnRet=39.34% AnnVol=24.45% MaxDD=-20.31% n=496
+[22:05:09 | +   4.9min]   [1d] BENCHMARK: Sharpe=0.795 AnnRet=13.13% AnnVol=16.52% MaxDD=-18.91% n=496
+[22:05:12 | +   4.9min]   [1d] bootstrap: n_obs=496, n_blocks/resample=24, observed_diff=0.039, p=0.3280, CI=[-0.141,0.197]
+[22:05:12 | +   4.9min] --- STAGE END: B_2020_2026_recent horizon=1d (3.3s) ---
+[22:05:12 | +   4.9min] --- STAGE START: B_2020_2026_recent horizon=5d aggregation + significance test ---
+[22:05:12 | +   4.9min]   [5d] STANDARD: Sharpe=1.625 AnnRet=38.90% AnnVol=23.94% MaxDD=-17.33% n=99
+[22:05:12 | +   4.9min]   [5d] DTW: Sharpe=1.683 AnnRet=39.37% AnnVol=23.39% MaxDD=-17.34% n=99
+[22:05:12 | +   4.9min]   [5d] BENCHMARK: Sharpe=0.819 AnnRet=13.40% AnnVol=16.36% MaxDD=-17.38% n=99
+[22:05:14 | +   5.0min]   [5d] bootstrap: n_obs=99, n_blocks/resample=4, observed_diff=0.059, p=0.3492, CI=[-0.138,0.199]
+[22:05:14 | +   5.0min]   WARNING: [5d] bootstrap resamples only 4 blocks of 20 from 99 observations - low resolution, treat p-value with real caution
+[22:05:14 | +   5.0min] --- STAGE END: B_2020_2026_recent horizon=5d (1.5s) ---
+[22:05:14 | +   5.0min] --- STAGE START: B_2020_2026_recent horizon=22d aggregation + significance test ---
+[22:05:14 | +   5.0min]   [22d] STANDARD: Sharpe=1.700 AnnRet=42.41% AnnVol=24.95% MaxDD=-11.02% n=22
+[22:05:14 | +   5.0min]   [22d] DTW: Sharpe=1.779 AnnRet=43.11% AnnVol=24.23% MaxDD=-10.10% n=22
+[22:05:14 | +   5.0min]   [22d] BENCHMARK: Sharpe=0.957 AnnRet=15.03% AnnVol=15.71% MaxDD=-14.44% n=22
+[22:05:15 | +   5.0min]   [22d] bootstrap: n_obs=22, n_blocks/resample=1, observed_diff=0.081, p=0.0000, CI=[0.043,0.057]
+[22:05:15 | +   5.0min]   WARNING: [22d] bootstrap resamples only 1 blocks of 20 from 22 observations - low resolution, treat p-value with real caution
+[22:05:15 | +   5.0min] --- STAGE END: B_2020_2026_recent horizon=22d (1.3s) ---
+[22:05:15 | +   5.0min] 
+B_2020_2026_recent per-fold Sharpe gap table (1-day):
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe       gap  failed
+    1      2021    2.548694    2.487083      1.402346 -0.061610   False
+    2      2022    0.463258    0.655535      0.248055  0.192276   False
+[22:05:15 | +   5.0min] 
+PERIOD B_2020_2026_recent COMPLETE. Total elapsed: 1.6 min
+[22:05:15 | +   5.0min] 
+=== ALL DONE. Total elapsed: 5.0 min ===

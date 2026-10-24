@@ -1,0 +1,46 @@
+DEGENERATE treynor optimum: fold1(2022) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull exactL1_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways exactL1_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear exactL1_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull exactL1_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways exactL1_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear exactL1_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull exactL1_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways exactL1_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear exactL1_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull exactL1_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways exactL1_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear exactL1_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull dtw2_raw: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways dtw2_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear dtw2_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull dtw2_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways dtw2_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear dtw2_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull dtw2_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways dtw2_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear dtw2_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull dtw2_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways dtw2_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear dtw2_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull sdtw_raw: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways sdtw_raw: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear sdtw_raw: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull sdtw_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways sdtw_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear sdtw_raw: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull sdtw_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways sdtw_z: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear sdtw_z: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull sdtw_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways sdtw_z: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear sdtw_z: 10 non-zero, 10 at the 10% cap
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bull treynor_dtw2_raw
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bull treynor_sdtw_raw
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bear treynor_sdtw_raw
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bear treynor_sdtw_z

@@ -1,0 +1,357 @@
+[22:30:00] === Data pipeline: downloading stock universe ===
+[22:30:18] Batch download shape: (2867, 50)
+[22:30:21] Final missing total: 6738
+[22:30:21] market_features shape: (2795, 4)
+[22:30:21] 
+======================================================================
+FOLD 1/6: train 2015-01-01..2019-12-31  test 2020-01-01..2020-12-31
+======================================================================
+[22:30:21]   train days=1162  test days=250
+[22:30:23]   seed=0: converged=True, log-likelihood=17781.25
+[22:30:25]   seed=7: converged=True, log-likelihood=17450.73
+[22:30:27]   seed=21: converged=True, log-likelihood=17793.02
+[22:30:28]   seed=42: converged=True, log-likelihood=17610.36
+[22:30:30]   seed=99: converged=True, log-likelihood=17758.52
+[22:30:30]   regime_map: {0: 'Bear', 2: 'Bear', 3: 'Sideways', 1: 'Bull'}
+[22:30:31]   causal_predict on test (250 days) took 0.4s
+[22:30:31]   train regime dist: {'Bear': 825, 'Bull': 259, 'Sideways': 78}
+[22:30:31]   test regime dist: {'Bear': 210, 'Sideways': 35, 'Bull': 5}
+[22:30:31]   train episodes: 13 total, {'Bear': 6, 'Bull': 5, 'Sideways': 2}
+[22:30:31]   Bull: 259 pooled days across 5 episodes - OK
+[22:30:31]   WARNING: Sideways: only 58 pooled days across 2 episode(s) - thin, treat this regime's result with caution
+[22:30:31]   Bear: 819 pooled days across 6 episodes - OK
+[22:30:31]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:30:31]   DTW loop: dispatching 13 episodes across 10 worker processes
+[22:30:45]     episode 1 (Bull) done in 7.3s [1/13 complete, 14s elapsed]
+[22:30:53]     episode 10 (Bull) done in 7.7s [2/13 complete, 22s elapsed]
+[22:31:01]     episode 6 (Bull) done in 22.7s [3/13 complete, 30s elapsed]
+[22:31:01]     episode 2 (Sideways) done in 22.8s [4/13 complete, 30s elapsed]
+[22:31:04]     episode 11 (Sideways) done in 11.6s [5/13 complete, 34s elapsed]
+[22:31:22]     episode 8 (Bull) done in 43.9s [6/13 complete, 51s elapsed]
+[22:31:22]     episode 5 (Bear) done in 44.4s [7/13 complete, 51s elapsed]
+[22:31:45]     episode 7 (Bear) done in 66.7s [8/13 complete, 74s elapsed]
+[22:31:45]     episode 3 (Bear) done in 67.1s [9/13 complete, 74s elapsed]
+[22:32:01]     episode 9 (Bear) done in 82.6s [10/13 complete, 90s elapsed]
+[22:32:05]     episode 4 (Bull) done in 87.7s [11/13 complete, 95s elapsed]
+[22:32:18]     episode 12 (Bear) done in 77.6s [12/13 complete, 107s elapsed]
+[22:33:20]     episode 0 (Bear) done in 162.7s [13/13 complete, 170s elapsed]
+[22:33:21]   DTW episode loop: 13/13 usable episodes, 13/13 completed, wall time 170.4s
+[22:33:21]   Bull: DTW cov built, sigma=0.3191, 45 stocks
+[22:33:21]   Sideways: DTW cov built, sigma=0.1586, 45 stocks
+[22:33:21]   Bear: DTW cov built, sigma=0.8827, 44 stocks
+[22:33:21]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:33:22]   STANDARD: Sharpe=0.457 AnnRet=16.18% AnnVol=35.41% MaxDD=-51.15% n=250
+[22:33:22]   DTW: Sharpe=0.509 AnnRet=20.04% AnnVol=39.40% MaxDD=-57.33% n=250
+[22:33:22]   BENCHMARK: Sharpe=0.440 AnnRet=14.00% AnnVol=31.82% MaxDD=-48.52% n=250
+[22:33:22]   Fold 1 done in 3.0 min. Total elapsed so far: 3.4 min
+[22:33:22] 
+======================================================================
+FOLD 2/6: train 2015-01-01..2020-12-31  test 2021-01-01..2021-12-31
+======================================================================
+[22:33:22]   train days=1412  test days=248
+[22:33:24]   seed=0: converged=True, log-likelihood=21194.51
+[22:33:25]   seed=7: converged=True, log-likelihood=20775.92
+[22:33:27]   seed=21: converged=True, log-likelihood=21194.51
+[22:33:28]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite) - skipping this seed
+[22:33:30]   seed=99: converged=True, log-likelihood=20777.75
+[22:33:30]   WARNING: 1/5 HMM seeds failed to fit (non-PD covariance) - best model chosen from the remaining 4
+[22:33:30]   regime_map: {2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[22:33:31]   causal_predict on test (248 days) took 0.3s
+[22:33:31]   train regime dist: {'Sideways': 522, 'Bull': 489, 'Bear': 401}
+[22:33:31]   test regime dist: {'Bull': 126, 'Bear': 107, 'Sideways': 15}
+[22:33:31]   train episodes: 19 total, {'Bear': 7, 'Bull': 7, 'Sideways': 5}
+[22:33:31]   Bull: 481 pooled days across 7 episodes - OK
+[22:33:31]   Sideways: 517 pooled days across 5 episodes - OK
+[22:33:31]   Bear: 397 pooled days across 7 episodes - OK
+[22:33:31]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:33:31]   DTW loop: dispatching 19 episodes across 10 worker processes
+[22:33:58]     episode 3 (Bear) done in 19.4s [1/19 complete, 26s elapsed]
+[22:34:14]     episode 1 (Bear) done in 35.8s [2/19 complete, 43s elapsed]
+[22:34:43]     episode 4 (Sideways) done in 64.4s [3/19 complete, 71s elapsed]
+[22:34:44]     episode 2 (Bull) done in 65.6s [4/19 complete, 73s elapsed]
+[22:34:44]     episode 7 (Bull) done in 65.6s [5/19 complete, 73s elapsed]
+[22:34:51]     episode 6 (Bear) done in 72.8s [6/19 complete, 80s elapsed]
+[22:34:54]     episode 8 (Sideways) done in 76.2s [7/19 complete, 83s elapsed]
+[22:35:00]     episode 11 (Bear) done in 46.0s [8/19 complete, 89s elapsed]
+[22:35:15]     episode 13 (Bear) done in 31.6s [9/19 complete, 104s elapsed]
+[22:35:16]     episode 9 (Bull) done in 98.1s [10/19 complete, 105s elapsed]
+[22:35:18]     episode 17 (Bull) done in 18.6s [11/19 complete, 107s elapsed]
+[22:35:27]     episode 10 (Sideways) done in 89.4s [12/19 complete, 116s elapsed]
+[22:35:27]     episode 12 (Bull) done in 44.9s [13/19 complete, 116s elapsed]
+[22:35:29]     episode 14 (Sideways) done in 45.1s [14/19 complete, 118s elapsed]
+[22:35:34]     episode 15 (Bull) done in 42.6s [15/19 complete, 123s elapsed]
+[22:35:45]     episode 5 (Bull) done in 127.0s [16/19 complete, 134s elapsed]
+[22:35:48]     episode 18 (Bear) done in 32.4s [17/19 complete, 137s elapsed]
+[22:36:14]     episode 16 (Bear) done in 79.4s [18/19 complete, 163s elapsed]
+[22:36:46]     episode 0 (Sideways) done in 187.5s [19/19 complete, 195s elapsed]
+[22:36:47]   DTW episode loop: 19/19 usable episodes, 19/19 completed, wall time 195.5s
+[22:36:47]   Bull: DTW cov built, sigma=0.4232, 45 stocks
+[22:36:47]   Sideways: DTW cov built, sigma=0.6724, 44 stocks
+[22:36:47]   Bear: DTW cov built, sigma=0.4410, 45 stocks
+[22:36:47]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:36:47]   STANDARD: Sharpe=3.302 AnnRet=65.75% AnnVol=19.91% MaxDD=-11.91% n=248
+[22:36:47]   DTW: Sharpe=2.643 AnnRet=54.41% AnnVol=20.59% MaxDD=-11.88% n=248
+[22:36:47]   BENCHMARK: Sharpe=1.402 AnnRet=21.96% AnnVol=15.66% MaxDD=-10.63% n=248
+[22:36:47]   Fold 2 done in 3.4 min. Total elapsed so far: 6.8 min
+[22:36:47] 
+======================================================================
+FOLD 3/6: train 2015-01-01..2021-12-31  test 2022-01-01..2022-12-31
+======================================================================
+[22:36:47]   train days=1660  test days=248
+[22:36:48]   seed=0: converged=True, log-likelihood=25028.81
+[22:36:50]   seed=7: converged=True, log-likelihood=25019.37
+[22:36:52]   seed=21: converged=True, log-likelihood=25019.39
+[22:36:53]   seed=42: converged=True, log-likelihood=24565.94
+[22:36:55]   seed=99: converged=True, log-likelihood=25019.39
+[22:36:55]   regime_map: {1: 'Bear', 0: 'Bear', 2: 'Sideways', 3: 'Bull'}
+[22:36:56]   causal_predict on test (248 days) took 0.3s
+[22:36:56]   train regime dist: {'Bull': 669, 'Bear': 496, 'Sideways': 495}
+[22:36:56]   test regime dist: {'Sideways': 161, 'Bear': 59, 'Bull': 28}
+[22:36:56]   train episodes: 26 total, {'Bear': 10, 'Bull': 10, 'Sideways': 6}
+[22:36:56]   Bull: 669 pooled days across 10 episodes - OK
+[22:36:56]   Sideways: 486 pooled days across 6 episodes - OK
+[22:36:56]   Bear: 483 pooled days across 10 episodes - OK
+[22:36:56]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:36:56]   DTW loop: dispatching 26 episodes across 10 worker processes
+[22:37:05]     episode 9 (Bull) done in 4.5s [1/26 complete, 9s elapsed]
+[22:37:10]     episode 10 (Bear) done in 4.5s [2/26 complete, 14s elapsed]
+[22:37:14]     episode 1 (Bear) done in 13.0s [3/26 complete, 18s elapsed]
+[22:37:20]     episode 5 (Bear) done in 19.4s [4/26 complete, 24s elapsed]
+[22:37:22]     episode 3 (Bear) done in 21.2s [5/26 complete, 26s elapsed]
+[22:37:23]     episode 8 (Bear) done in 21.6s [6/26 complete, 26s elapsed]
+[22:37:33]     episode 6 (Sideways) done in 32.3s [7/26 complete, 37s elapsed]
+[22:37:42]     episode 15 (Bear) done in 19.9s [8/26 complete, 46s elapsed]
+[22:37:46]     episode 4 (Bull) done in 44.8s [9/26 complete, 49s elapsed]
+[22:37:48]     episode 11 (Bull) done in 38.4s [10/26 complete, 52s elapsed]
+[22:37:56]     episode 0 (Sideways) done in 54.9s [11/26 complete, 60s elapsed]
+[22:37:56]     episode 12 (Sideways) done in 42.0s [12/26 complete, 60s elapsed]
+[22:38:08]     episode 17 (Bear) done in 26.0s [13/26 complete, 72s elapsed]
+[22:38:09]     episode 16 (Bull) done in 35.5s [14/26 complete, 72s elapsed]
+[22:38:11]     episode 14 (Sideways) done in 48.8s [15/26 complete, 75s elapsed]
+[22:38:12]     episode 21 (Bull) done in 15.6s [16/26 complete, 75s elapsed]
+[22:38:19]     episode 13 (Bull) done in 58.8s [17/26 complete, 83s elapsed]
+[22:38:25]     episode 18 (Sideways) done in 39.4s [18/26 complete, 89s elapsed]
+[22:38:26]     episode 19 (Bull) done in 37.7s [19/26 complete, 90s elapsed]
+[22:38:30]     episode 2 (Sideways) done in 89.6s [20/26 complete, 94s elapsed]
+[22:38:32]     episode 7 (Bull) done in 90.9s [21/26 complete, 96s elapsed]
+[22:38:35]     episode 23 (Bull) done in 26.5s [22/26 complete, 99s elapsed]
+[22:38:41]     episode 22 (Bear) done in 33.0s [23/26 complete, 105s elapsed]
+[22:38:58]     episode 24 (Bear) done in 47.3s [24/26 complete, 122s elapsed]
+[22:39:10]     episode 20 (Bear) done in 74.0s [25/26 complete, 134s elapsed]
+[22:39:19]     episode 25 (Bull) done in 67.6s [26/26 complete, 143s elapsed]
+[22:39:20]   DTW episode loop: 26/26 usable episodes, 26/26 completed, wall time 143.7s
+[22:39:20]   Bull: DTW cov built, sigma=0.4125, 45 stocks
+[22:39:20]   Sideways: DTW cov built, sigma=0.5219, 44 stocks
+[22:39:20]   Bear: DTW cov built, sigma=0.3703, 44 stocks
+[22:39:20]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:39:20]   STANDARD: Sharpe=0.080 AnnRet=1.71% AnnVol=21.55% MaxDD=-22.65% n=248
+[22:39:20]   DTW: Sharpe=0.621 AnnRet=14.68% AnnVol=23.64% MaxDD=-25.00% n=248
+[22:39:20]   BENCHMARK: Sharpe=0.248 AnnRet=4.31% AnnVol=17.36% MaxDD=-17.99% n=248
+[22:39:20]   Fold 3 done in 2.6 min. Total elapsed so far: 9.3 min
+[22:39:20] 
+======================================================================
+FOLD 4/6: train 2015-01-01..2022-12-31  test 2023-01-01..2023-12-31
+======================================================================
+[22:39:20]   train days=1908  test days=245
+[22:39:22]   seed=0: converged=True, log-likelihood=28591.97
+[22:39:24]   seed=7: converged=True, log-likelihood=28074.60
+[22:39:25]   seed=21: converged=True, log-likelihood=28591.97
+[22:39:27]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite) - skipping this seed
+[22:39:28]   seed=99: converged=True, log-likelihood=26157.79
+[22:39:28]   WARNING: 1/5 HMM seeds failed to fit (non-PD covariance) - best model chosen from the remaining 4
+[22:39:28]   regime_map: {2: 'Bear', 1: 'Bear', 3: 'Sideways', 0: 'Bull'}
+[22:39:29]   causal_predict on test (245 days) took 0.3s
+[22:39:29]   train regime dist: {'Sideways': 728, 'Bull': 709, 'Bear': 471}
+[22:39:29]   test regime dist: {'Sideways': 103, 'Bear': 77, 'Bull': 65}
+[22:39:29]   train episodes: 27 total, {'Bear': 10, 'Bull': 10, 'Sideways': 7}
+[22:39:29]   Bull: 696 pooled days across 10 episodes - OK
+[22:39:29]   Sideways: 724 pooled days across 7 episodes - OK
+[22:39:29]   Bear: 459 pooled days across 10 episodes - OK
+[22:39:29]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:39:29]   DTW loop: dispatching 27 episodes across 10 worker processes
+[22:39:40]     episode 7 (Bear) done in 7.0s [1/27 complete, 11s elapsed]
+[22:39:52]     episode 1 (Bear) done in 18.6s [2/27 complete, 23s elapsed]
+[22:39:52]     episode 3 (Bear) done in 19.3s [3/27 complete, 24s elapsed]
+[22:39:56]     episode 6 (Bear) done in 23.0s [4/27 complete, 27s elapsed]
+[22:40:07]     episode 4 (Sideways) done in 34.1s [5/27 complete, 38s elapsed]
+[22:40:10]     episode 8 (Bull) done in 37.2s [6/27 complete, 42s elapsed]
+[22:40:12]     episode 12 (Bear) done in 20.0s [7/27 complete, 43s elapsed]
+[22:40:15]     episode 9 (Sideways) done in 41.5s [8/27 complete, 46s elapsed]
+[22:40:18]     episode 2 (Bull) done in 45.1s [9/27 complete, 49s elapsed]
+[22:40:31]     episode 14 (Bear) done in 23.5s [10/27 complete, 62s elapsed]
+[22:40:35]     episode 13 (Bull) done in 38.5s [11/27 complete, 66s elapsed]
+[22:40:35]     episode 18 (Bull) done in 16.5s [12/27 complete, 66s elapsed]
+[22:40:40]     episode 10 (Bull) done in 59.5s [13/27 complete, 71s elapsed]
+[22:40:41]     episode 11 (Sideways) done in 49.5s [14/27 complete, 72s elapsed]
+[22:40:51]     episode 22 (Sideways) done in 11.0s [15/27 complete, 82s elapsed]
+[22:40:52]     episode 15 (Sideways) done in 41.5s [16/27 complete, 83s elapsed]
+[22:40:52]     episode 16 (Bull) done in 40.0s [17/27 complete, 84s elapsed]
+[22:41:01]     episode 19 (Bear) done in 30.4s [18/27 complete, 92s elapsed]
+[22:41:09]     episode 5 (Bull) done in 95.9s [19/27 complete, 100s elapsed]
+[22:41:09]     episode 26 (Bull) done in 17.0s [20/27 complete, 100s elapsed]
+[22:41:10]     episode 20 (Bull) done in 35.6s [21/27 complete, 101s elapsed]
+[22:41:16]     episode 21 (Bear) done in 41.1s [22/27 complete, 107s elapsed]
+[22:41:18]     episode 25 (Bear) done in 25.8s [23/27 complete, 109s elapsed]
+[22:41:37]     episode 17 (Bear) done in 82.3s [24/27 complete, 128s elapsed]
+[22:41:55]     episode 23 (Bull) done in 73.8s [25/27 complete, 146s elapsed]
+[22:42:11]     episode 0 (Sideways) done in 158.2s [26/27 complete, 162s elapsed]
+[22:42:42]     episode 24 (Sideways) done in 111.3s [27/27 complete, 193s elapsed]
+[22:42:43]   DTW episode loop: 27/27 usable episodes, 27/27 completed, wall time 194.0s
+[22:42:43]   Bull: DTW cov built, sigma=0.4268, 45 stocks
+[22:42:43]   Sideways: DTW cov built, sigma=0.6699, 44 stocks
+[22:42:43]   Bear: DTW cov built, sigma=0.3514, 45 stocks
+[22:42:43]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:42:43]   STANDARD: Sharpe=2.764 AnnRet=38.96% AnnVol=14.09% MaxDD=-8.70% n=245
+[22:42:43]   DTW: Sharpe=2.436 AnnRet=33.38% AnnVol=13.70% MaxDD=-11.77% n=245
+[22:42:43]   BENCHMARK: Sharpe=1.914 AnnRet=18.78% AnnVol=9.81% MaxDD=-7.32% n=245
+[22:42:43]   Fold 4 done in 3.4 min. Total elapsed so far: 12.7 min
+[22:42:43] 
+======================================================================
+FOLD 5/6: train 2015-01-01..2023-12-31  test 2024-01-01..2024-12-31
+======================================================================
+[22:42:43]   train days=2153  test days=246
+[22:42:45]   seed=0: converged=True, log-likelihood=32485.83
+[22:42:47]   seed=7: converged=True, log-likelihood=31817.60
+[22:42:48]   seed=21: converged=True, log-likelihood=32482.90
+[22:42:49]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite) - skipping this seed
+[22:42:51]   seed=99: converged=True, log-likelihood=30476.89
+[22:42:51]   WARNING: 1/5 HMM seeds failed to fit (non-PD covariance) - best model chosen from the remaining 4
+[22:42:51]   regime_map: {2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[22:42:52]   causal_predict on test (246 days) took 0.3s
+[22:42:52]   train regime dist: {'Bear': 938, 'Bull': 821, 'Sideways': 394}
+[22:42:52]   test regime dist: {'Sideways': 130, 'Bull': 77, 'Bear': 39}
+[22:42:52]   train episodes: 32 total, {'Bull': 12, 'Sideways': 11, 'Bear': 9}
+[22:42:52]   Bull: 809 pooled days across 12 episodes - OK
+[22:42:52]   Sideways: 379 pooled days across 11 episodes - OK
+[22:42:52]   Bear: 934 pooled days across 9 episodes - OK
+[22:42:52]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:42:52]   DTW loop: dispatching 32 episodes across 10 worker processes
+[22:43:03]     episode 7 (Sideways) done in 7.0s [1/32 complete, 11s elapsed]
+[22:43:14]     episode 1 (Sideways) done in 18.0s [2/32 complete, 22s elapsed]
+[22:43:15]     episode 3 (Sideways) done in 19.1s [3/32 complete, 23s elapsed]
+[22:43:19]     episode 6 (Sideways) done in 23.0s [4/32 complete, 27s elapsed]
+[22:43:31]     episode 4 (Bear) done in 34.7s [5/32 complete, 39s elapsed]
+[22:43:32]     episode 8 (Bull) done in 35.7s [6/32 complete, 40s elapsed]
+[22:43:35]     episode 12 (Sideways) done in 20.3s [7/32 complete, 43s elapsed]
+[22:43:40]     episode 9 (Bear) done in 43.7s [8/32 complete, 48s elapsed]
+[22:43:41]     episode 2 (Bull) done in 45.2s [9/32 complete, 49s elapsed]
+[22:43:53]     episode 14 (Sideways) done in 22.8s [10/32 complete, 61s elapsed]
+[22:43:56]     episode 13 (Bull) done in 37.0s [11/32 complete, 64s elapsed]
+[22:43:57]     episode 17 (Sideways) done in 16.8s [12/32 complete, 65s elapsed]
+[22:44:02]     episode 10 (Bull) done in 58.7s [13/32 complete, 70s elapsed]
+[22:44:03]     episode 11 (Bear) done in 49.3s [14/32 complete, 71s elapsed]
+[22:44:11]     episode 16 (Bull) done in 35.5s [15/32 complete, 79s elapsed]
+[22:44:16]     episode 19 (Bull) done in 22.6s [16/32 complete, 84s elapsed]
+[22:44:17]     episode 22 (Sideways) done in 15.1s [17/32 complete, 85s elapsed]
+[22:44:19]     episode 15 (Bear) done in 46.8s [18/32 complete, 87s elapsed]
+[22:44:23]     episode 20 (Sideways) done in 26.5s [19/32 complete, 91s elapsed]
+[22:44:28]     episode 26 (Bull) done in 10.9s [20/32 complete, 96s elapsed]
+[22:44:32]     episode 5 (Bull) done in 96.0s [21/32 complete, 100s elapsed]
+[22:44:32]     episode 27 (Sideways) done in 13.6s [22/32 complete, 100s elapsed]
+[22:44:36]     episode 21 (Bull) done in 38.9s [23/32 complete, 104s elapsed]
+[22:44:37]     episode 23 (Bear) done in 33.4s [24/32 complete, 105s elapsed]
+[22:44:39]     episode 18 (Bear) done in 58.1s [25/32 complete, 107s elapsed]
+[22:44:53]     episode 28 (Bull) done in 30.3s [26/32 complete, 121s elapsed]
+[22:45:09]     episode 30 (Bull) done in 37.3s [27/32 complete, 137s elapsed]
+[22:45:13]     episode 29 (Bear) done in 45.2s [28/32 complete, 141s elapsed]
+[22:45:17]     episode 31 (Sideways) done in 44.9s [29/32 complete, 145s elapsed]
+[22:45:21]     episode 24 (Bull) done in 69.8s [30/32 complete, 149s elapsed]
+[22:45:36]     episode 0 (Bear) done in 159.6s [31/32 complete, 164s elapsed]
+[22:46:05]     episode 25 (Bear) done in 109.2s [32/32 complete, 193s elapsed]
+[22:46:06]   DTW episode loop: 32/32 usable episodes, 32/32 completed, wall time 194.1s
+[22:46:06]   Bull: DTW cov built, sigma=0.4031, 45 stocks
+[22:46:06]   Sideways: DTW cov built, sigma=0.2333, 45 stocks
+[22:46:06]   Bear: DTW cov built, sigma=0.6828, 44 stocks
+[22:46:06]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:46:07]   STANDARD: Sharpe=2.019 AnnRet=36.09% AnnVol=17.88% MaxDD=-11.72% n=246
+[22:46:07]   DTW: Sharpe=0.619 AnnRet=11.81% AnnVol=19.07% MaxDD=-14.01% n=246
+[22:46:07]   BENCHMARK: Sharpe=0.612 AnnRet=8.64% AnnVol=14.13% MaxDD=-11.58% n=246
+[22:46:07]   Fold 5 done in 3.4 min. Total elapsed so far: 16.1 min
+[22:46:07] 
+======================================================================
+FOLD 6/6: train 2015-01-01..2024-12-31  test 2025-01-01..2025-12-31
+======================================================================
+[22:46:07]   train days=2399  test days=249
+[22:46:08]   seed=0: converged=True, log-likelihood=36321.56
+[22:46:10]   seed=7: converged=True, log-likelihood=36321.56
+[22:46:12]   seed=21: converged=True, log-likelihood=35567.79
+[22:46:13]   seed=42: converged=True, log-likelihood=36321.59
+[22:46:15]   seed=99: converged=True, log-likelihood=36330.61
+[22:46:15]   regime_map: {2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[22:46:16]   causal_predict on test (249 days) took 0.4s
+[22:46:16]   train regime dist: {'Bear': 938, 'Bull': 937, 'Sideways': 524}
+[22:46:16]   test regime dist: {'Sideways': 129, 'Bear': 99, 'Bull': 21}
+[22:46:16]   train episodes: 39 total, {'Bull': 15, 'Sideways': 14, 'Bear': 10}
+[22:46:16]   Bull: 925 pooled days across 15 episodes - OK
+[22:46:16]   Sideways: 518 pooled days across 14 episodes - OK
+[22:46:16]   Bear: 938 pooled days across 10 episodes - OK
+[22:46:16]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:46:16]   DTW loop: dispatching 39 episodes across 10 worker processes
+[22:46:26]     episode 7 (Sideways) done in 5.9s [1/39 complete, 10s elapsed]
+[22:46:38]     episode 3 (Sideways) done in 18.0s [2/39 complete, 22s elapsed]
+[22:46:38]     episode 1 (Sideways) done in 18.1s [3/39 complete, 22s elapsed]
+[22:46:42]     episode 6 (Sideways) done in 21.9s [4/39 complete, 26s elapsed]
+[22:46:54]     episode 4 (Bear) done in 34.1s [5/39 complete, 38s elapsed]
+[22:46:56]     episode 12 (Sideways) done in 18.1s [6/39 complete, 40s elapsed]
+[22:46:59]     episode 8 (Bull) done in 38.4s [7/39 complete, 43s elapsed]
+[22:47:04]     episode 9 (Bear) done in 43.2s [8/39 complete, 47s elapsed]
+[22:47:06]     episode 2 (Bull) done in 45.5s [9/39 complete, 49s elapsed]
+[22:47:15]     episode 13 (Bull) done in 32.7s [10/39 complete, 59s elapsed]
+[22:47:21]     episode 17 (Sideways) done in 16.8s [11/39 complete, 64s elapsed]
+[22:47:21]     episode 19 (Sideways) done in 6.2s [12/39 complete, 65s elapsed]
+[22:47:23]     episode 14 (Sideways) done in 28.2s [13/39 complete, 66s elapsed]
+[22:47:23]     episode 10 (Bull) done in 57.1s [14/39 complete, 67s elapsed]
+[22:47:27]     episode 11 (Bear) done in 48.7s [15/39 complete, 71s elapsed]
+[22:47:37]     episode 15 (Bear) done in 40.4s [16/39 complete, 81s elapsed]
+[22:47:37]     episode 24 (Bear) done in 10.3s [17/39 complete, 81s elapsed]
+[22:47:38]     episode 20 (Bull) done in 17.2s [18/39 complete, 82s elapsed]
+[22:47:40]     episode 16 (Bull) done in 41.2s [19/39 complete, 84s elapsed]
+[22:47:49]     episode 27 (Bull) done in 10.9s [20/39 complete, 92s elapsed]
+[22:47:49]     episode 21 (Sideways) done in 27.8s [21/39 complete, 93s elapsed]
+[22:47:54]     episode 28 (Sideways) done in 14.3s [22/39 complete, 98s elapsed]
+[22:47:55]     episode 5 (Bull) done in 94.7s [23/39 complete, 99s elapsed]
+[22:47:58]     episode 22 (Bull) done in 35.6s [24/39 complete, 102s elapsed]
+[22:48:00]     episode 18 (Bear) done in 54.3s [25/39 complete, 104s elapsed]
+[22:48:04]     episode 23 (Sideways) done in 40.4s [26/39 complete, 108s elapsed]
+[22:48:06]     episode 34 (Sideways) done in 5.5s [27/39 complete, 109s elapsed]
+[22:48:11]     episode 35 (Bull) done in 6.7s [28/39 complete, 114s elapsed]
+[22:48:20]     episode 29 (Bull) done in 31.7s [29/39 complete, 124s elapsed]
+[22:48:43]     episode 38 (Bear) done in 22.8s [30/39 complete, 147s elapsed]
+[22:48:45]     episode 31 (Bull) done in 50.2s [31/39 complete, 148s elapsed]
+[22:48:46]     episode 37 (Bull) done in 35.0s [32/39 complete, 149s elapsed]
+[22:48:47]     episode 33 (Bull) done in 49.3s [33/39 complete, 151s elapsed]
+[22:48:49]     episode 30 (Bear) done in 60.1s [34/39 complete, 153s elapsed]
+[22:48:54]     episode 32 (Sideways) done in 59.3s [35/39 complete, 158s elapsed]
+[22:48:57]     episode 36 (Sideways) done in 51.3s [36/39 complete, 160s elapsed]
+[22:49:00]     episode 25 (Bull) done in 82.7s [37/39 complete, 163s elapsed]
+[22:49:15]     episode 0 (Bear) done in 174.8s [38/39 complete, 179s elapsed]
+[22:49:41]     episode 26 (Bear) done in 123.6s [39/39 complete, 205s elapsed]
+[22:49:42]   DTW episode loop: 39/39 usable episodes, 39/39 completed, wall time 205.3s
+[22:49:42]   Bull: DTW cov built, sigma=0.3644, 45 stocks
+[22:49:42]   Sideways: DTW cov built, sigma=0.2479, 45 stocks
+[22:49:42]   Bear: DTW cov built, sigma=0.6092, 44 stocks
+[22:49:42]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:49:42]   STANDARD: Sharpe=0.898 AnnRet=14.53% AnnVol=16.17% MaxDD=-10.32% n=249
+[22:49:42]   DTW: Sharpe=0.826 AnnRet=12.79% AnnVol=15.49% MaxDD=-9.32% n=249
+[22:49:42]   BENCHMARK: Sharpe=0.858 AnnRet=10.11% AnnVol=11.79% MaxDD=-9.11% n=249
+[22:49:42]   Fold 6 done in 3.6 min. Total elapsed so far: 19.7 min
+[22:49:42] 
+======================================================================
+POOLING RESULTS ACROSS 6 FOLDS
+======================================================================
+[22:49:42] Pooled n_days: std= 1486 dtw= 1486 bench= 1486
+[22:49:42]   POOLED STANDARD: Sharpe=1.309 AnnRet=28.81% AnnVol=22.00% MaxDD=-51.15% n=1486
+[22:49:42]   POOLED DTW: Sharpe=1.040 AnnRet=24.50% AnnVol=23.57% MaxDD=-57.33% n=1486
+[22:49:42]   POOLED BENCHMARK: Sharpe=0.710 AnnRet=12.96% AnnVol=18.24% MaxDD=-48.52% n=1486
+[22:49:45] Bootstrap (2.6s): observed_diff=-0.270 p=0.9450 CI=[-0.622,0.066]
+[22:49:45] 
+Per-fold Sharpe gap table:
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe       gap
+    1      2020    0.457060    0.508652      0.440060  0.051592
+    2      2021    3.302446    2.642686      1.402346 -0.659760
+    3      2022    0.079505    0.620900      0.248055  0.541396
+    4      2023    2.764194    2.435852      1.913682 -0.328342
+    5      2024    2.018526    0.618982      0.611966 -1.399543
+    6      2025    0.898186    0.826006      0.857521 -0.072180
+[22:49:45] 
+ALL DONE. Total elapsed: 19.7 min. Saved to ./expanding_window_results.pkl

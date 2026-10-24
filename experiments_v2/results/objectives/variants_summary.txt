@@ -1,0 +1,667 @@
+
+=== RUNNING VARIANT COUNT ===
+RUNNING VARIANT COUNT (variants_log.csv, excluding step0 reruns): 2709 logged tests (2709 distinct); 12 in the primary family; covariance methods tried vs Standard: ['dtw', 'dtw2_raw', 'dtw2_z', 'dtwz', 'exactL1_raw', 'exactL1_z', 'invvol', 'sdtw_raw', 'sdtw_z', 'volk', 'vollev']; matched-metric tests only: 902
+
+=== SUMMARY BY METHOD vs STANDARD (matched metric; descriptive except the primary family of 12) ===
+     method objective     wins wins_2p_1d  mean_gap  n_p2_lt_05               sig_favours  gap_beta_mean  alpha_ann_mean  n_alpha_p_lt_05  train_beta_minus_std  corr_gaps_with_raw_dtw
+        dtw    sharpe 10 of 15     3 of 4     0.008           1                       Std          0.120          -0.012                0                 0.170                     NaN
+        dtw   sortino  9 of 15     3 of 4    -0.010           1                       Std          0.114          -0.020                0                 0.159                     NaN
+        dtw   treynor  3 of 15     1 of 4    -0.071           0                         -          0.416           0.006                0                 0.509                     NaN
+       dtwz    sharpe  7 of 15     2 of 4    -0.015           0                         -          0.054          -0.022                0                 0.094                   0.625
+       dtwz   sortino  5 of 15     1 of 4    -0.035           0                         -          0.054          -0.026                0                 0.093                   0.625
+       dtwz   treynor  4 of 15     1 of 4    -0.045           4        method,Std,Std,Std          0.200          -0.010                0                 0.169                   0.625
+     vollev    sharpe 10 of 15     3 of 4     0.010           0                         -          0.139          -0.014                0                 0.197                   0.923
+     vollev   sortino 10 of 15     3 of 4     0.018           0                         -          0.131          -0.017                0                 0.185                   0.923
+     vollev   treynor  3 of 15     1 of 4    -0.064           0                         -          0.398           0.001                0                 0.497                   0.923
+exactL1_raw    sharpe 10 of 15     3 of 4     0.009           0                         -          0.125          -0.012                0                 0.174                   0.992
+exactL1_raw   sortino 10 of 15     3 of 4    -0.008           0                         -          0.118          -0.021                0                 0.163                   0.992
+exactL1_raw   treynor  3 of 15     1 of 4    -0.076           0                         -          0.427           0.002                0                 0.534                   0.992
+  exactL1_z    sharpe  7 of 15     2 of 4    -0.019           0                         -          0.057          -0.024                0                 0.098                   0.646
+  exactL1_z   sortino  5 of 15     1 of 4    -0.035           0                         -          0.057          -0.027                0                 0.097                   0.646
+  exactL1_z   treynor  3 of 15     1 of 4    -0.056           2                   Std,Std          0.230          -0.023                0                 0.186                   0.646
+   dtw2_raw    sharpe 10 of 15     3 of 4     0.005           1                       Std          0.121          -0.014                0                 0.169                   0.977
+   dtw2_raw   sortino  9 of 15     3 of 4    -0.013           1                       Std          0.112          -0.022                0                 0.157                   0.977
+   dtw2_raw   treynor  6 of 15     2 of 4    -0.057           1                       Std          0.414           0.012                1                 0.546                   0.977
+     dtw2_z    sharpe  6 of 15     1 of 4    -0.030           0                         -          0.056          -0.026                1                 0.098                   0.626
+     dtw2_z   sortino  5 of 15     1 of 4    -0.051           0                         -          0.055          -0.029                1                 0.097                   0.626
+     dtw2_z   treynor  3 of 15     1 of 4    -0.061           2                method,Std          0.201          -0.029                0                 0.199                   0.626
+   sdtw_raw    sharpe  9 of 15     3 of 4    -0.000           1                       Std          0.148          -0.014                0                 0.197                   0.939
+   sdtw_raw   sortino  8 of 15     3 of 4     0.008           1                       Std          0.141          -0.016                0                 0.187                   0.939
+   sdtw_raw   treynor  0 of 15     0 of 4    -0.100           1                       Std          0.442          -0.049                0                 0.518                   0.939
+     sdtw_z    sharpe  6 of 15     1 of 4    -0.027           0                         -          0.055          -0.022                1                 0.100                   0.560
+     sdtw_z   sortino  4 of 15     1 of 4    -0.041           0                         -          0.054          -0.024                1                 0.099                   0.560
+     sdtw_z   treynor  3 of 15     1 of 4    -0.116           5 method,method,Std,Std,Std          0.181          -0.074                1                 0.213                   0.560
+
+=== ALL MATCHED TESTS: Standard, method, gap, one-sided and two-sided p ===
+    design  horizon objective      method   std    alt    gap  p_one  p_two
+  2p_N50_A        1    sharpe         dtw 1.190  1.215  0.025  0.453  0.906
+  2p_N50_A        1    sharpe        dtwz 1.190  1.121 -0.070  0.831  0.337
+  2p_N50_A        1    sharpe      vollev 1.190  1.240  0.049  0.403  0.806
+  2p_N50_A        1    sharpe exactL1_raw 1.190  1.217  0.027  0.442  0.884
+  2p_N50_A        1    sharpe   exactL1_z 1.190  1.115 -0.075  0.838  0.324
+  2p_N50_A        1    sharpe    dtw2_raw 1.190  1.231  0.041  0.392  0.783
+  2p_N50_A        1    sharpe      dtw2_z 1.190  1.100 -0.090  0.876  0.247
+  2p_N50_A        1    sharpe    sdtw_raw 1.190  1.291  0.100  0.286  0.572
+  2p_N50_A        1    sharpe      sdtw_z 1.190  1.116 -0.074  0.770  0.459
+  2p_N50_A        5    sharpe         dtw 1.095  1.135  0.040  0.317  0.633
+  2p_N50_A        5    sharpe        dtwz 1.095  1.029 -0.066  0.771  0.457
+  2p_N50_A        5    sharpe      vollev 1.095  1.152  0.057  0.299  0.598
+  2p_N50_A        5    sharpe exactL1_raw 1.095  1.141  0.046  0.287  0.574
+  2p_N50_A        5    sharpe   exactL1_z 1.095  1.025 -0.070  0.776  0.448
+  2p_N50_A        5    sharpe    dtw2_raw 1.095  1.153  0.058  0.248  0.496
+  2p_N50_A        5    sharpe      dtw2_z 1.095  1.008 -0.087  0.845  0.310
+  2p_N50_A        5    sharpe    sdtw_raw 1.095  1.223  0.128  0.170  0.339
+  2p_N50_A        5    sharpe      sdtw_z 1.095  1.020 -0.075  0.729  0.542
+  2p_N50_A       22    sharpe         dtw 1.117  1.134  0.017  0.160  0.320
+  2p_N50_A       22    sharpe        dtwz 1.117  1.018 -0.099  0.602  0.796
+  2p_N50_A       22    sharpe      vollev 1.117  1.139  0.022  0.156  0.312
+  2p_N50_A       22    sharpe exactL1_raw 1.117  1.143  0.026  0.133  0.266
+  2p_N50_A       22    sharpe   exactL1_z 1.117  1.020 -0.097  0.596  0.809
+  2p_N50_A       22    sharpe    dtw2_raw 1.117  1.145  0.027  0.136  0.272
+  2p_N50_A       22    sharpe      dtw2_z 1.117  1.004 -0.113  0.699  0.602
+  2p_N50_A       22    sharpe    sdtw_raw 1.117  1.210  0.093  0.066  0.133
+  2p_N50_A       22    sharpe      sdtw_z 1.117  1.023 -0.094  0.731  0.538
+  2p_N50_A        1   sortino         dtw 1.817  1.874  0.057  0.403  0.806
+  2p_N50_A        1   sortino        dtwz 1.817  1.753 -0.063  0.742  0.517
+  2p_N50_A        1   sortino      vollev 1.817  1.916  0.099  0.350  0.700
+  2p_N50_A        1   sortino exactL1_raw 1.817  1.885  0.068  0.377  0.754
+  2p_N50_A        1   sortino   exactL1_z 1.817  1.749 -0.068  0.741  0.518
+  2p_N50_A        1   sortino    dtw2_raw 1.817  1.895  0.078  0.348  0.696
+  2p_N50_A        1   sortino      dtw2_z 1.817  1.723 -0.094  0.807  0.387
+  2p_N50_A        1   sortino    sdtw_raw 1.817  1.977  0.161  0.267  0.534
+  2p_N50_A        1   sortino      sdtw_z 1.817  1.721 -0.095  0.747  0.506
+  2p_N50_A        5   sortino         dtw 1.748  1.855  0.107  0.233  0.466
+  2p_N50_A        5   sortino        dtwz 1.748  1.692 -0.056  0.650  0.700
+  2p_N50_A        5   sortino      vollev 1.748  1.895  0.148  0.210  0.419
+  2p_N50_A        5   sortino exactL1_raw 1.748  1.877  0.130  0.194  0.388
+  2p_N50_A        5   sortino   exactL1_z 1.748  1.692 -0.056  0.643  0.714
+  2p_N50_A        5   sortino    dtw2_raw 1.748  1.886  0.138  0.168  0.336
+  2p_N50_A        5   sortino      dtw2_z 1.748  1.662 -0.085  0.730  0.540
+  2p_N50_A        5   sortino    sdtw_raw 1.748  2.010  0.262  0.113  0.226
+  2p_N50_A        5   sortino      sdtw_z 1.748  1.662 -0.085  0.649  0.703
+  2p_N50_A       22   sortino         dtw 1.774  1.850  0.075  0.102  0.204
+  2p_N50_A       22   sortino        dtwz 1.774  1.655 -0.120  0.515  0.969
+  2p_N50_A       22   sortino      vollev 1.774  1.905  0.130  0.082  0.165
+  2p_N50_A       22   sortino exactL1_raw 1.774  1.874  0.099  0.083  0.167
+  2p_N50_A       22   sortino   exactL1_z 1.774  1.657 -0.117  0.522  0.956
+  2p_N50_A       22   sortino    dtw2_raw 1.774  1.855  0.080  0.098  0.197
+  2p_N50_A       22   sortino      dtw2_z 1.774  1.618 -0.156  0.619  0.762
+  2p_N50_A       22   sortino    sdtw_raw 1.774  2.017  0.242  0.037  0.074
+  2p_N50_A       22   sortino      sdtw_z 1.774  1.653 -0.122  0.569  0.862
+  2p_N50_A        1   treynor         dtw 0.385  0.328 -0.057  0.658  0.684
+  2p_N50_A        1   treynor        dtwz 0.385  0.383 -0.003  0.527  0.946
+  2p_N50_A        1   treynor      vollev 0.385  0.364 -0.022  0.548  0.904
+  2p_N50_A        1   treynor exactL1_raw 0.385  0.338 -0.047  0.627  0.746
+  2p_N50_A        1   treynor   exactL1_z 0.385  0.345 -0.040  0.624  0.751
+  2p_N50_A        1   treynor    dtw2_raw 0.385  0.419  0.034  0.375  0.751
+  2p_N50_A        1   treynor      dtw2_z 0.385  0.318 -0.067  0.775  0.449
+  2p_N50_A        1   treynor    sdtw_raw 0.385  0.354 -0.031  0.575  0.849
+  2p_N50_A        1   treynor      sdtw_z 0.385  0.143 -0.242  0.959  0.081
+  2p_N50_A        5   treynor         dtw 0.386  0.328 -0.058  0.621  0.759
+  2p_N50_A        5   treynor        dtwz 0.386  0.379 -0.007  0.515  0.969
+  2p_N50_A        5   treynor      vollev 0.386  0.364 -0.022  0.488  0.975
+  2p_N50_A        5   treynor exactL1_raw 0.386  0.338 -0.048  0.578  0.843
+  2p_N50_A        5   treynor   exactL1_z 0.386  0.342 -0.044  0.628  0.744
+  2p_N50_A        5   treynor    dtw2_raw 0.386  0.419  0.033  0.320  0.640
+  2p_N50_A        5   treynor      dtw2_z 0.386  0.315 -0.071  0.817  0.367
+  2p_N50_A        5   treynor    sdtw_raw 0.386  0.355 -0.032  0.522  0.956
+  2p_N50_A        5   treynor      sdtw_z 0.386  0.144 -0.242  0.971  0.057
+  2p_N50_A       22   treynor         dtw 0.377  0.326 -0.051  0.662  0.676
+  2p_N50_A       22   treynor        dtwz 0.377  0.375 -0.002  0.510  0.981
+  2p_N50_A       22   treynor      vollev 0.377  0.362 -0.015  0.386  0.772
+  2p_N50_A       22   treynor exactL1_raw 0.377  0.336 -0.041  0.594  0.812
+  2p_N50_A       22   treynor   exactL1_z 0.377  0.337 -0.040  0.596  0.807
+  2p_N50_A       22   treynor    dtw2_raw 0.377  0.418  0.041  0.257  0.514
+  2p_N50_A       22   treynor      dtw2_z 0.377  0.308 -0.070  0.688  0.625
+  2p_N50_A       22   treynor    sdtw_raw 0.377  0.355 -0.022  0.534  0.932
+  2p_N50_A       22   treynor      sdtw_z 0.377  0.144 -0.233  1.000  0.000
+  2p_N50_B        1    sharpe         dtw 1.063  1.185  0.122  0.307  0.614
+  2p_N50_B        1    sharpe        dtwz 1.063  1.066  0.003  0.512  0.976
+  2p_N50_B        1    sharpe      vollev 1.063  1.153  0.090  0.382  0.764
+  2p_N50_B        1    sharpe exactL1_raw 1.063  1.160  0.097  0.359  0.718
+  2p_N50_B        1    sharpe   exactL1_z 1.063  1.068  0.005  0.508  0.983
+  2p_N50_B        1    sharpe    dtw2_raw 1.063  1.171  0.108  0.344  0.687
+  2p_N50_B        1    sharpe      dtw2_z 1.063  1.061 -0.002  0.549  0.902
+  2p_N50_B        1    sharpe    sdtw_raw 1.063  1.194  0.132  0.341  0.683
+  2p_N50_B        1    sharpe      sdtw_z 1.063  1.039 -0.024  0.611  0.777
+  2p_N50_B        5    sharpe         dtw 1.057  1.240  0.183  0.194  0.387
+  2p_N50_B        5    sharpe        dtwz 1.057  1.091  0.034  0.338  0.677
+  2p_N50_B        5    sharpe      vollev 1.057  1.216  0.159  0.241  0.482
+  2p_N50_B        5    sharpe exactL1_raw 1.057  1.219  0.162  0.239  0.478
+  2p_N50_B        5    sharpe   exactL1_z 1.057  1.094  0.037  0.356  0.712
+  2p_N50_B        5    sharpe    dtw2_raw 1.057  1.228  0.171  0.231  0.462
+  2p_N50_B        5    sharpe      dtw2_z 1.057  1.085  0.028  0.391  0.782
+  2p_N50_B        5    sharpe    sdtw_raw 1.057  1.257  0.200  0.196  0.392
+  2p_N50_B        5    sharpe      sdtw_z 1.057  1.066  0.009  0.446  0.892
+  2p_N50_B       22    sharpe         dtw 1.007  1.180  0.173  0.092  0.183
+  2p_N50_B       22    sharpe        dtwz 1.007  1.061  0.054  0.231  0.463
+  2p_N50_B       22    sharpe      vollev 1.007  1.152  0.144  0.177  0.355
+  2p_N50_B       22    sharpe exactL1_raw 1.007  1.156  0.149  0.159  0.318
+  2p_N50_B       22    sharpe   exactL1_z 1.007  1.061  0.054  0.266  0.533
+  2p_N50_B       22    sharpe    dtw2_raw 1.007  1.163  0.155  0.127  0.255
+  2p_N50_B       22    sharpe      dtw2_z 1.007  1.046  0.039  0.317  0.634
+  2p_N50_B       22    sharpe    sdtw_raw 1.007  1.180  0.173  0.098  0.196
+  2p_N50_B       22    sharpe      sdtw_z 1.007  1.017  0.010  0.407  0.814
+  2p_N50_B        1   sortino         dtw 1.412  1.520  0.108  0.403  0.805
+  2p_N50_B        1   sortino        dtwz 1.412  1.318 -0.094  0.683  0.635
+  2p_N50_B        1   sortino      vollev 1.412  1.462  0.050  0.493  0.986
+  2p_N50_B        1   sortino exactL1_raw 1.412  1.490  0.078  0.454  0.908
+  2p_N50_B        1   sortino   exactL1_z 1.412  1.328 -0.084  0.676  0.648
+  2p_N50_B        1   sortino    dtw2_raw 1.412  1.499  0.087  0.449  0.898
+  2p_N50_B        1   sortino      dtw2_z 1.412  1.319 -0.093  0.705  0.590
+  2p_N50_B        1   sortino    sdtw_raw 1.412  1.554  0.141  0.406  0.812
+  2p_N50_B        1   sortino      sdtw_z 1.412  1.294 -0.119  0.743  0.514
+  2p_N50_B        5   sortino         dtw 1.516  1.772  0.256  0.284  0.568
+  2p_N50_B        5   sortino        dtwz 1.516  1.470 -0.046  0.519  0.962
+  2p_N50_B        5   sortino      vollev 1.516  1.708  0.191  0.363  0.727
+  2p_N50_B        5   sortino exactL1_raw 1.516  1.745  0.229  0.329  0.659
+  2p_N50_B        5   sortino   exactL1_z 1.516  1.487 -0.029  0.519  0.961
+  2p_N50_B        5   sortino    dtw2_raw 1.516  1.758  0.242  0.324  0.648
+  2p_N50_B        5   sortino      dtw2_z 1.516  1.478 -0.038  0.565  0.871
+  2p_N50_B        5   sortino    sdtw_raw 1.516  1.828  0.312  0.266  0.533
+  2p_N50_B        5   sortino      sdtw_z 1.516  1.452 -0.065  0.598  0.803
+  2p_N50_B       22   sortino         dtw 1.655  2.072  0.417  0.065  0.130
+  2p_N50_B       22   sortino        dtwz 1.655  1.683  0.028  0.321  0.641
+  2p_N50_B       22   sortino      vollev 1.655  1.972  0.316  0.170  0.340
+  2p_N50_B       22   sortino exactL1_raw 1.655  2.028  0.373  0.110  0.220
+  2p_N50_B       22   sortino   exactL1_z 1.655  1.693  0.038  0.363  0.726
+  2p_N50_B       22   sortino    dtw2_raw 1.655  2.055  0.400  0.086  0.171
+  2p_N50_B       22   sortino      dtw2_z 1.655  1.674  0.019  0.415  0.831
+  2p_N50_B       22   sortino    sdtw_raw 1.655  2.180  0.524  0.058  0.115
+  2p_N50_B       22   sortino      sdtw_z 1.655  1.649 -0.007  0.452  0.903
+  2p_N50_B        1   treynor         dtw 0.287  0.159 -0.127  0.789  0.422
+  2p_N50_B        1   treynor        dtwz 0.287  0.101 -0.186  0.901  0.198
+  2p_N50_B        1   treynor      vollev 0.287  0.164 -0.123  0.785  0.430
+  2p_N50_B        1   treynor exactL1_raw 0.287  0.152 -0.135  0.802  0.397
+  2p_N50_B        1   treynor   exactL1_z 0.287  0.140 -0.147  0.831  0.337
+  2p_N50_B        1   treynor    dtw2_raw 0.287  0.183 -0.104  0.766  0.468
+  2p_N50_B        1   treynor      dtw2_z 0.287  0.158 -0.129  0.799  0.401
+  2p_N50_B        1   treynor    sdtw_raw 0.287  0.148 -0.138  0.802  0.397
+  2p_N50_B        1   treynor      sdtw_z 0.287  0.142 -0.145  0.819  0.362
+  2p_N50_B        5   treynor         dtw 0.283  0.157 -0.126  0.951  0.099
+  2p_N50_B        5   treynor        dtwz 0.283  0.099 -0.184  0.989  0.022
+  2p_N50_B        5   treynor      vollev 0.283  0.162 -0.121  0.941  0.118
+  2p_N50_B        5   treynor exactL1_raw 0.283  0.150 -0.133  0.961  0.077
+  2p_N50_B        5   treynor   exactL1_z 0.283  0.139 -0.145  0.976  0.049
+  2p_N50_B        5   treynor    dtw2_raw 0.283  0.181 -0.102  0.938  0.124
+  2p_N50_B        5   treynor      dtw2_z 0.283  0.156 -0.128  0.971  0.057
+  2p_N50_B        5   treynor    sdtw_raw 0.283  0.146 -0.137  0.952  0.096
+  2p_N50_B        5   treynor      sdtw_z 0.283  0.140 -0.143  0.961  0.079
+  2p_N50_B       22   treynor         dtw 0.298  0.159 -0.139  0.947  0.107
+  2p_N50_B       22   treynor        dtwz 0.298  0.106 -0.192  0.998  0.005
+  2p_N50_B       22   treynor      vollev 0.298  0.162 -0.136  0.926  0.147
+  2p_N50_B       22   treynor exactL1_raw 0.298  0.150 -0.149  0.950  0.099
+  2p_N50_B       22   treynor   exactL1_z 0.298  0.145 -0.154  0.984  0.032
+  2p_N50_B       22   treynor    dtw2_raw 0.298  0.182 -0.117  0.912  0.176
+  2p_N50_B       22   treynor      dtw2_z 0.298  0.163 -0.136  0.991  0.018
+  2p_N50_B       22   treynor    sdtw_raw 0.298  0.148 -0.150  0.937  0.125
+  2p_N50_B       22   treynor      sdtw_z 0.298  0.147 -0.152  0.943  0.113
+ 2p_BANK_A        1    sharpe         dtw 0.821  0.699 -0.122  0.927  0.146
+ 2p_BANK_A        1    sharpe        dtwz 0.821  0.728 -0.093  0.881  0.239
+ 2p_BANK_A        1    sharpe      vollev 0.821  0.695 -0.125  0.920  0.159
+ 2p_BANK_A        1    sharpe exactL1_raw 0.821  0.701 -0.119  0.922  0.157
+ 2p_BANK_A        1    sharpe   exactL1_z 0.821  0.722 -0.098  0.894  0.212
+ 2p_BANK_A        1    sharpe    dtw2_raw 0.821  0.684 -0.137  0.941  0.118
+ 2p_BANK_A        1    sharpe      dtw2_z 0.821  0.709 -0.111  0.913  0.175
+ 2p_BANK_A        1    sharpe    sdtw_raw 0.821  0.636 -0.185  0.956  0.088
+ 2p_BANK_A        1    sharpe      sdtw_z 0.821  0.689 -0.131  0.917  0.167
+ 2p_BANK_A        5    sharpe         dtw 0.793  0.667 -0.126  0.975  0.050
+ 2p_BANK_A        5    sharpe        dtwz 0.793  0.695 -0.099  0.957  0.086
+ 2p_BANK_A        5    sharpe      vollev 0.793  0.662 -0.131  0.971  0.057
+ 2p_BANK_A        5    sharpe exactL1_raw 0.793  0.670 -0.123  0.974  0.052
+ 2p_BANK_A        5    sharpe   exactL1_z 0.793  0.690 -0.103  0.960  0.080
+ 2p_BANK_A        5    sharpe    dtw2_raw 0.793  0.653 -0.140  0.983  0.034
+ 2p_BANK_A        5    sharpe      dtw2_z 0.793  0.677 -0.117  0.969  0.062
+ 2p_BANK_A        5    sharpe    sdtw_raw 0.793  0.612 -0.181  0.983  0.035
+ 2p_BANK_A        5    sharpe      sdtw_z 0.793  0.660 -0.133  0.963  0.074
+ 2p_BANK_A       22    sharpe         dtw 0.851  0.708 -0.144  0.951  0.098
+ 2p_BANK_A       22    sharpe        dtwz 0.851  0.736 -0.116  0.939  0.123
+ 2p_BANK_A       22    sharpe      vollev 0.851  0.706 -0.146  0.955  0.091
+ 2p_BANK_A       22    sharpe exactL1_raw 0.851  0.711 -0.140  0.956  0.087
+ 2p_BANK_A       22    sharpe   exactL1_z 0.851  0.731 -0.120  0.949  0.101
+ 2p_BANK_A       22    sharpe    dtw2_raw 0.851  0.695 -0.157  0.954  0.092
+ 2p_BANK_A       22    sharpe      dtw2_z 0.851  0.720 -0.131  0.956  0.087
+ 2p_BANK_A       22    sharpe    sdtw_raw 0.851  0.654 -0.198  0.913  0.174
+ 2p_BANK_A       22    sharpe      sdtw_z 0.851  0.706 -0.146  0.934  0.132
+ 2p_BANK_A        1   sortino         dtw 1.252  1.061 -0.191  0.937  0.126
+ 2p_BANK_A        1   sortino        dtwz 1.252  1.109 -0.143  0.892  0.216
+ 2p_BANK_A        1   sortino      vollev 1.252  1.060 -0.192  0.926  0.149
+ 2p_BANK_A        1   sortino exactL1_raw 1.252  1.063 -0.189  0.934  0.132
+ 2p_BANK_A        1   sortino   exactL1_z 1.252  1.100 -0.152  0.904  0.192
+ 2p_BANK_A        1   sortino    dtw2_raw 1.252  1.042 -0.209  0.943  0.114
+ 2p_BANK_A        1   sortino      dtw2_z 1.252  1.080 -0.172  0.918  0.165
+ 2p_BANK_A        1   sortino    sdtw_raw 1.252  0.975 -0.277  0.958  0.084
+ 2p_BANK_A        1   sortino      sdtw_z 1.252  1.040 -0.211  0.931  0.138
+ 2p_BANK_A        5   sortino         dtw 1.270  1.065 -0.205  0.976  0.048
+ 2p_BANK_A        5   sortino        dtwz 1.270  1.111 -0.158  0.959  0.082
+ 2p_BANK_A        5   sortino      vollev 1.270  1.067 -0.202  0.966  0.068
+ 2p_BANK_A        5   sortino exactL1_raw 1.270  1.069 -0.200  0.975  0.051
+ 2p_BANK_A        5   sortino   exactL1_z 1.270  1.103 -0.166  0.959  0.082
+ 2p_BANK_A        5   sortino    dtw2_raw 1.270  1.048 -0.222  0.979  0.041
+ 2p_BANK_A        5   sortino      dtw2_z 1.270  1.084 -0.185  0.967  0.066
+ 2p_BANK_A        5   sortino    sdtw_raw 1.270  0.980 -0.289  0.982  0.037
+ 2p_BANK_A        5   sortino      sdtw_z 1.270  1.042 -0.227  0.963  0.074
+ 2p_BANK_A       22   sortino         dtw 1.428  1.194 -0.234  0.938  0.125
+ 2p_BANK_A       22   sortino        dtwz 1.428  1.253 -0.175  0.921  0.157
+ 2p_BANK_A       22   sortino      vollev 1.428  1.189 -0.239  0.931  0.138
+ 2p_BANK_A       22   sortino exactL1_raw 1.428  1.196 -0.232  0.944  0.113
+ 2p_BANK_A       22   sortino   exactL1_z 1.428  1.241 -0.187  0.941  0.118
+ 2p_BANK_A       22   sortino    dtw2_raw 1.428  1.181 -0.247  0.931  0.137
+ 2p_BANK_A       22   sortino      dtw2_z 1.428  1.226 -0.202  0.943  0.115
+ 2p_BANK_A       22   sortino    sdtw_raw 1.428  1.116 -0.312  0.905  0.191
+ 2p_BANK_A       22   sortino      sdtw_z 1.428  1.192 -0.236  0.941  0.118
+ 2p_BANK_A        1   treynor         dtw 0.178  0.122 -0.056  0.822  0.355
+ 2p_BANK_A        1   treynor        dtwz 0.178  0.159 -0.019  0.639  0.722
+ 2p_BANK_A        1   treynor      vollev 0.178  0.160 -0.018  0.627  0.746
+ 2p_BANK_A        1   treynor exactL1_raw 0.178  0.111 -0.067  0.840  0.319
+ 2p_BANK_A        1   treynor   exactL1_z 0.178  0.145 -0.034  0.748  0.504
+ 2p_BANK_A        1   treynor    dtw2_raw 0.178  0.102 -0.076  0.853  0.294
+ 2p_BANK_A        1   treynor      dtw2_z 0.178  0.140 -0.038  0.771  0.458
+ 2p_BANK_A        1   treynor    sdtw_raw 0.178  0.049 -0.130  0.939  0.121
+ 2p_BANK_A        1   treynor      sdtw_z 0.178  0.111 -0.067  0.820  0.360
+ 2p_BANK_A        5   treynor         dtw 0.178  0.121 -0.057  0.864  0.272
+ 2p_BANK_A        5   treynor        dtwz 0.178  0.158 -0.020  0.645  0.710
+ 2p_BANK_A        5   treynor      vollev 0.178  0.159 -0.019  0.737  0.527
+ 2p_BANK_A        5   treynor exactL1_raw 0.178  0.111 -0.067  0.871  0.259
+ 2p_BANK_A        5   treynor   exactL1_z 0.178  0.143 -0.034  0.736  0.529
+ 2p_BANK_A        5   treynor    dtw2_raw 0.178  0.102 -0.076  0.890  0.220
+ 2p_BANK_A        5   treynor      dtw2_z 0.178  0.139 -0.039  0.784  0.433
+ 2p_BANK_A        5   treynor    sdtw_raw 0.178  0.050 -0.128  0.935  0.130
+ 2p_BANK_A        5   treynor      sdtw_z 0.178  0.111 -0.067  0.838  0.325
+ 2p_BANK_A       22   treynor         dtw 0.179  0.123 -0.056  0.839  0.321
+ 2p_BANK_A       22   treynor        dtwz 0.179  0.160 -0.019  0.756  0.488
+ 2p_BANK_A       22   treynor      vollev 0.179  0.161 -0.018  0.697  0.606
+ 2p_BANK_A       22   treynor exactL1_raw 0.179  0.113 -0.067  0.843  0.314
+ 2p_BANK_A       22   treynor   exactL1_z 0.179  0.146 -0.033  0.831  0.337
+ 2p_BANK_A       22   treynor    dtw2_raw 0.179  0.104 -0.076  0.846  0.308
+ 2p_BANK_A       22   treynor      dtw2_z 0.179  0.141 -0.038  0.875  0.250
+ 2p_BANK_A       22   treynor    sdtw_raw 0.179  0.050 -0.129  0.843  0.314
+ 2p_BANK_A       22   treynor      sdtw_z 0.179  0.113 -0.066  0.834  0.332
+ 2p_BANK_B        1    sharpe         dtw 0.908  0.961  0.053  0.383  0.765
+ 2p_BANK_B        1    sharpe        dtwz 0.908  1.074  0.166  0.098  0.197
+ 2p_BANK_B        1    sharpe      vollev 0.908  1.037  0.128  0.168  0.336
+ 2p_BANK_B        1    sharpe exactL1_raw 0.908  0.989  0.081  0.267  0.534
+ 2p_BANK_B        1    sharpe   exactL1_z 0.908  1.079  0.171  0.087  0.174
+ 2p_BANK_B        1    sharpe    dtw2_raw 0.908  0.988  0.079  0.282  0.565
+ 2p_BANK_B        1    sharpe      dtw2_z 0.908  1.078  0.169  0.090  0.180
+ 2p_BANK_B        1    sharpe    sdtw_raw 0.908  0.937  0.028  0.480  0.960
+ 2p_BANK_B        1    sharpe      sdtw_z 0.908  1.078  0.169  0.105  0.210
+ 2p_BANK_B        5    sharpe         dtw 0.932  0.990  0.058  0.511  0.978
+ 2p_BANK_B        5    sharpe        dtwz 0.932  1.097  0.165  0.127  0.254
+ 2p_BANK_B        5    sharpe      vollev 0.932  1.067  0.135  0.285  0.569
+ 2p_BANK_B        5    sharpe exactL1_raw 0.932  1.018  0.086  0.392  0.785
+ 2p_BANK_B        5    sharpe   exactL1_z 0.932  1.100  0.168  0.109  0.218
+ 2p_BANK_B        5    sharpe    dtw2_raw 0.932  1.015  0.083  0.401  0.801
+ 2p_BANK_B        5    sharpe      dtw2_z 0.932  1.096  0.164  0.124  0.248
+ 2p_BANK_B        5    sharpe    sdtw_raw 0.932  0.958  0.026  0.595  0.810
+ 2p_BANK_B        5    sharpe      sdtw_z 0.932  1.089  0.157  0.145  0.289
+ 2p_BANK_B       22    sharpe         dtw 1.019  1.053  0.034  0.552  0.896
+ 2p_BANK_B       22    sharpe        dtwz 1.019  1.187  0.168  0.120  0.240
+ 2p_BANK_B       22    sharpe      vollev 1.019  1.155  0.137  0.303  0.606
+ 2p_BANK_B       22    sharpe exactL1_raw 1.019  1.085  0.066  0.473  0.947
+ 2p_BANK_B       22    sharpe   exactL1_z 1.019  1.188  0.169  0.050  0.100
+ 2p_BANK_B       22    sharpe    dtw2_raw 1.019  1.078  0.060  0.504  0.992
+ 2p_BANK_B       22    sharpe      dtw2_z 1.019  1.191  0.172  0.096  0.192
+ 2p_BANK_B       22    sharpe    sdtw_raw 1.019  1.000 -0.019  0.575  0.850
+ 2p_BANK_B       22    sharpe      sdtw_z 1.019  1.186  0.168  0.123  0.246
+ 2p_BANK_B        1   sortino         dtw 1.243  1.306  0.063  0.407  0.814
+ 2p_BANK_B        1   sortino        dtwz 1.243  1.458  0.215  0.139  0.278
+ 2p_BANK_B        1   sortino      vollev 1.243  1.412  0.169  0.196  0.392
+ 2p_BANK_B        1   sortino exactL1_raw 1.243  1.334  0.091  0.330  0.659
+ 2p_BANK_B        1   sortino   exactL1_z 1.243  1.471  0.229  0.120  0.239
+ 2p_BANK_B        1   sortino    dtw2_raw 1.243  1.333  0.090  0.340  0.681
+ 2p_BANK_B        1   sortino      dtw2_z 1.243  1.469  0.226  0.121  0.242
+ 2p_BANK_B        1   sortino    sdtw_raw 1.243  1.284  0.041  0.466  0.932
+ 2p_BANK_B        1   sortino      sdtw_z 1.243  1.482  0.239  0.123  0.246
+ 2p_BANK_B        5   sortino         dtw 1.436  1.518  0.081  0.544  0.912
+ 2p_BANK_B        5   sortino        dtwz 1.436  1.704  0.268  0.196  0.392
+ 2p_BANK_B        5   sortino      vollev 1.436  1.656  0.220  0.341  0.682
+ 2p_BANK_B        5   sortino exactL1_raw 1.436  1.547  0.110  0.492  0.984
+ 2p_BANK_B        5   sortino   exactL1_z 1.436  1.722  0.285  0.166  0.332
+ 2p_BANK_B        5   sortino    dtw2_raw 1.436  1.549  0.113  0.484  0.968
+ 2p_BANK_B        5   sortino      dtw2_z 1.436  1.716  0.280  0.172  0.345
+ 2p_BANK_B        5   sortino    sdtw_raw 1.436  1.477  0.040  0.591  0.817
+ 2p_BANK_B        5   sortino      sdtw_z 1.436  1.719  0.283  0.167  0.334
+ 2p_BANK_B       22   sortino         dtw 2.021  2.016 -0.005  0.617  0.766
+ 2p_BANK_B       22   sortino        dtwz 2.021  2.430  0.409  0.193  0.386
+ 2p_BANK_B       22   sortino      vollev 2.021  2.290  0.269  0.474  0.947
+ 2p_BANK_B       22   sortino exactL1_raw 2.021  2.073  0.052  0.593  0.814
+ 2p_BANK_B       22   sortino   exactL1_z 2.021  2.439  0.418  0.105  0.210
+ 2p_BANK_B       22   sortino    dtw2_raw 2.021  2.043  0.022  0.616  0.768
+ 2p_BANK_B       22   sortino      dtw2_z 2.021  2.444  0.423  0.194  0.389
+ 2p_BANK_B       22   sortino    sdtw_raw 2.021  1.902 -0.119  0.633  0.734
+ 2p_BANK_B       22   sortino      sdtw_z 2.021  2.517  0.496  0.162  0.324
+ 2p_BANK_B        1   treynor         dtw 0.147  0.168  0.021  0.285  0.570
+ 2p_BANK_B        1   treynor        dtwz 0.147  0.208  0.061  0.090  0.180
+ 2p_BANK_B        1   treynor      vollev 0.147  0.151  0.003  0.431  0.861
+ 2p_BANK_B        1   treynor exactL1_raw 0.147  0.157  0.010  0.414  0.827
+ 2p_BANK_B        1   treynor   exactL1_z 0.147  0.193  0.046  0.145  0.290
+ 2p_BANK_B        1   treynor    dtw2_raw 0.147  0.167  0.020  0.334  0.668
+ 2p_BANK_B        1   treynor      dtw2_z 0.147  0.237  0.090  0.044  0.087
+ 2p_BANK_B        1   treynor    sdtw_raw 0.147  0.146 -0.001  0.549  0.902
+ 2p_BANK_B        1   treynor      sdtw_z 0.147  0.277  0.130  0.025  0.049
+ 2p_BANK_B        5   treynor         dtw 0.147  0.168  0.021  0.420  0.840
+ 2p_BANK_B        5   treynor        dtwz 0.147  0.208  0.061  0.141  0.281
+ 2p_BANK_B        5   treynor      vollev 0.147  0.151  0.003  0.615  0.771
+ 2p_BANK_B        5   treynor exactL1_raw 0.147  0.157  0.010  0.553  0.894
+ 2p_BANK_B        5   treynor   exactL1_z 0.147  0.193  0.046  0.261  0.522
+ 2p_BANK_B        5   treynor    dtw2_raw 0.147  0.167  0.020  0.492  0.984
+ 2p_BANK_B        5   treynor      dtw2_z 0.147  0.237  0.090  0.068  0.136
+ 2p_BANK_B        5   treynor    sdtw_raw 0.147  0.146 -0.001  0.662  0.677
+ 2p_BANK_B        5   treynor      sdtw_z 0.147  0.277  0.130  0.033  0.066
+ 2p_BANK_B       22   treynor         dtw 0.145  0.164  0.020  0.347  0.694
+ 2p_BANK_B       22   treynor        dtwz 0.145  0.205  0.060  0.002  0.003
+ 2p_BANK_B       22   treynor      vollev 0.145  0.147  0.002  0.588  0.824
+ 2p_BANK_B       22   treynor exactL1_raw 0.145  0.154  0.009  0.495  0.990
+ 2p_BANK_B       22   treynor   exactL1_z 0.145  0.190  0.045  0.134  0.269
+ 2p_BANK_B       22   treynor    dtw2_raw 0.145  0.164  0.019  0.556  0.888
+ 2p_BANK_B       22   treynor      dtw2_z 0.145  0.234  0.089  0.014  0.028
+ 2p_BANK_B       22   treynor    sdtw_raw 0.145  0.143 -0.002  0.584  0.833
+ 2p_BANK_B       22   treynor      sdtw_z 0.145  0.273  0.128  0.000  0.000
+single_N50        1    sharpe         dtw 0.541  0.669  0.128  0.298  0.597
+single_N50        1    sharpe        dtwz 0.541  0.736  0.195  0.143  0.286
+single_N50        1    sharpe      vollev 0.541  0.683  0.142  0.303  0.605
+single_N50        1    sharpe exactL1_raw 0.541  0.648  0.107  0.331  0.661
+single_N50        1    sharpe   exactL1_z 0.541  0.714  0.173  0.172  0.345
+single_N50        1    sharpe    dtw2_raw 0.541  0.611  0.070  0.384  0.768
+single_N50        1    sharpe      dtw2_z 0.541  0.679  0.138  0.227  0.453
+single_N50        1    sharpe    sdtw_raw 0.541  0.645  0.104  0.339  0.679
+single_N50        1    sharpe      sdtw_z 0.541  0.665  0.124  0.269  0.537
+single_N50        1   sortino         dtw 0.836  0.877  0.041  0.464  0.929
+single_N50        1   sortino        dtwz 0.836  0.985  0.149  0.303  0.606
+single_N50        1   sortino      vollev 0.836  0.899  0.063  0.454  0.908
+single_N50        1   sortino exactL1_raw 0.836  0.852  0.016  0.492  0.984
+single_N50        1   sortino   exactL1_z 0.836  0.961  0.125  0.333  0.666
+single_N50        1   sortino    dtw2_raw 0.836  0.805 -0.031  0.544  0.911
+single_N50        1   sortino      dtw2_z 0.836  0.921  0.086  0.385  0.770
+single_N50        1   sortino    sdtw_raw 0.836  0.835 -0.000  0.505  0.991
+single_N50        1   sortino      sdtw_z 0.836  0.936  0.100  0.373  0.745
+single_N50        1   treynor         dtw 0.232  0.166 -0.066  0.687  0.625
+single_N50        1   treynor        dtwz 0.232  0.317  0.085  0.314  0.627
+single_N50        1   treynor      vollev 0.232  0.130 -0.102  0.749  0.501
+single_N50        1   treynor exactL1_raw 0.232  0.165 -0.068  0.686  0.628
+single_N50        1   treynor   exactL1_z 0.232  0.230 -0.002  0.565  0.869
+single_N50        1   treynor    dtw2_raw 0.232  0.137 -0.095  0.738  0.524
+single_N50        1   treynor      dtw2_z 0.232  0.083 -0.149  0.892  0.216
+single_N50        1   treynor    sdtw_raw 0.232  0.077 -0.155  0.815  0.370
+single_N50        1   treynor      sdtw_z 0.232 -0.124 -0.356  0.992  0.016
+   exp_N50        1    sharpe         dtw 1.309  1.040 -0.269  0.948  0.103
+   exp_N50        1    sharpe        dtwz 1.309  1.055 -0.255  0.955  0.090
+   exp_N50        1    sharpe      vollev 1.309  1.001 -0.309  0.958  0.084
+   exp_N50        1    sharpe exactL1_raw 1.309  1.022 -0.287  0.958  0.084
+   exp_N50        1    sharpe   exactL1_z 1.309  1.043 -0.266  0.962  0.076
+   exp_N50        1    sharpe    dtw2_raw 1.309  1.009 -0.300  0.966  0.068
+   exp_N50        1    sharpe      dtw2_z 1.309  1.037 -0.273  0.962  0.075
+   exp_N50        1    sharpe    sdtw_raw 1.309  0.976 -0.333  0.968  0.063
+   exp_N50        1    sharpe      sdtw_z 1.309  1.024 -0.285  0.962  0.076
+   exp_N50        1   sortino         dtw 1.786  1.361 -0.425  0.953  0.094
+   exp_N50        1   sortino        dtwz 1.786  1.380 -0.406  0.962  0.076
+   exp_N50        1   sortino      vollev 1.786  1.316 -0.470  0.956  0.089
+   exp_N50        1   sortino exactL1_raw 1.786  1.334 -0.453  0.960  0.080
+   exp_N50        1   sortino   exactL1_z 1.786  1.364 -0.422  0.967  0.067
+   exp_N50        1   sortino    dtw2_raw 1.786  1.324 -0.462  0.964  0.073
+   exp_N50        1   sortino      dtw2_z 1.786  1.361 -0.426  0.966  0.068
+   exp_N50        1   sortino    sdtw_raw 1.786  1.277 -0.510  0.970  0.059
+   exp_N50        1   sortino      sdtw_z 1.786  1.345 -0.441  0.965  0.070
+   exp_N50        1   treynor         dtw 0.552  0.272 -0.279  0.962  0.075
+   exp_N50        1   treynor        dtwz 0.552  0.272 -0.279  0.983  0.035
+   exp_N50        1   treynor      vollev 0.552  0.243 -0.309  0.975  0.051
+   exp_N50        1   treynor exactL1_raw 0.552  0.265 -0.286  0.969  0.063
+   exp_N50        1   treynor   exactL1_z 0.552  0.283 -0.268  0.963  0.074
+   exp_N50        1   treynor    dtw2_raw 0.552  0.244 -0.308  0.977  0.045
+   exp_N50        1   treynor      dtw2_z 0.552  0.270 -0.281  0.972  0.056
+   exp_N50        1   treynor    sdtw_raw 0.552  0.166 -0.386  0.996  0.008
+   exp_N50        1   treynor      sdtw_z 0.552  0.222 -0.329  0.986  0.029
+  exp_BANK        1    sharpe         dtw 0.396  0.345 -0.051  0.586  0.829
+  exp_BANK        1    sharpe        dtwz 0.396  0.184 -0.211  0.832  0.336
+  exp_BANK        1    sharpe      vollev 0.396  0.197 -0.198  0.819  0.362
+  exp_BANK        1    sharpe exactL1_raw 0.396  0.350 -0.046  0.579  0.841
+  exp_BANK        1    sharpe   exactL1_z 0.396  0.162 -0.233  0.856  0.287
+  exp_BANK        1    sharpe    dtw2_raw 0.396  0.345 -0.050  0.588  0.824
+  exp_BANK        1    sharpe      dtw2_z 0.396  0.163 -0.232  0.855  0.289
+  exp_BANK        1    sharpe    sdtw_raw 0.396  0.326 -0.069  0.623  0.754
+  exp_BANK        1    sharpe      sdtw_z 0.396  0.322 -0.074  0.625  0.751
+  exp_BANK        1   sortino         dtw 0.558  0.259 -0.298  0.844  0.312
+  exp_BANK        1   sortino        dtwz 0.558  0.231 -0.327  0.865  0.270
+  exp_BANK        1   sortino      vollev 0.558  0.277 -0.281  0.831  0.339
+  exp_BANK        1   sortino exactL1_raw 0.558  0.260 -0.297  0.842  0.316
+  exp_BANK        1   sortino   exactL1_z 0.558  0.219 -0.339  0.875  0.250
+  exp_BANK        1   sortino    dtw2_raw 0.558  0.281 -0.277  0.820  0.359
+  exp_BANK        1   sortino      dtw2_z 0.558  0.213 -0.344  0.878  0.244
+  exp_BANK        1   sortino    sdtw_raw 0.558  0.460 -0.097  0.627  0.746
+  exp_BANK        1   sortino      sdtw_z 0.558  0.433 -0.124  0.659  0.683
+  exp_BANK        1   treynor         dtw 0.119  0.066 -0.054  0.790  0.420
+  exp_BANK        1   treynor        dtwz 0.119  0.086 -0.034  0.725  0.549
+  exp_BANK        1   treynor      vollev 0.119  0.053 -0.067  0.850  0.299
+  exp_BANK        1   treynor exactL1_raw 0.119  0.055 -0.064  0.819  0.362
+  exp_BANK        1   treynor   exactL1_z 0.119  0.078 -0.041  0.781  0.438
+  exp_BANK        1   treynor    dtw2_raw 0.119  0.052 -0.068  0.812  0.377
+  exp_BANK        1   treynor      dtw2_z 0.119  0.078 -0.041  0.780  0.439
+  exp_BANK        1   treynor    sdtw_raw 0.119  0.061 -0.058  0.770  0.461
+  exp_BANK        1   treynor      sdtw_z 0.119  0.040 -0.080  0.917  0.167
+
+=== DAILY (METHOD - STANDARD) ON ^NSEI: mean gap, alpha (annualised), HAC alpha p, beta; training betas ===
+    design objective      method  mean_diff_ann  alpha_ann  alpha_p_hac   beta  beta_p_hac  std_avg_beta  alt_avg_beta
+  2p_N50_A    sharpe         dtw          0.021      0.008        0.736  0.126       0.000         0.564         0.729
+  2p_N50_A    sharpe        dtwz         -0.012     -0.018        0.216  0.055       0.000         0.564         0.643
+  2p_N50_A    sharpe      vollev          0.028      0.013        0.633  0.144       0.000         0.564         0.759
+  2p_N50_A    sharpe exactL1_raw          0.021      0.008        0.739  0.128       0.000         0.564         0.732
+  2p_N50_A    sharpe   exactL1_z         -0.012     -0.018        0.201  0.059       0.000         0.564         0.643
+  2p_N50_A    sharpe    dtw2_raw          0.023      0.010        0.664  0.124       0.000         0.564         0.722
+  2p_N50_A    sharpe      dtw2_z         -0.016     -0.021        0.145  0.052       0.000         0.564         0.641
+  2p_N50_A    sharpe    sdtw_raw          0.042      0.024        0.418  0.167       0.000         0.564         0.775
+  2p_N50_A    sharpe      sdtw_z         -0.016     -0.020        0.283  0.038       0.001         0.564         0.643
+  2p_N50_A   sortino         dtw          0.025      0.013        0.539  0.112       0.000         0.569         0.712
+  2p_N50_A   sortino        dtwz         -0.006     -0.011        0.418  0.048       0.000         0.569         0.638
+  2p_N50_A   sortino      vollev          0.031      0.018        0.459  0.124       0.000         0.569         0.735
+  2p_N50_A   sortino exactL1_raw          0.026      0.014        0.512  0.115       0.000         0.569         0.716
+  2p_N50_A   sortino   exactL1_z         -0.006     -0.011        0.400  0.052       0.000         0.569         0.640
+  2p_N50_A   sortino    dtw2_raw          0.026      0.015        0.471  0.108       0.000         0.569         0.707
+  2p_N50_A   sortino      dtw2_z         -0.009     -0.014        0.308  0.046       0.000         0.569         0.637
+  2p_N50_A   sortino    sdtw_raw          0.043      0.028        0.301  0.143       0.000         0.569         0.753
+  2p_N50_A   sortino      sdtw_z         -0.012     -0.015        0.392  0.032       0.003         0.569         0.640
+  2p_N50_A   treynor         dtw          0.133      0.095        0.254  0.358       0.000         0.487         0.977
+  2p_N50_A   treynor        dtwz          0.032      0.020        0.735  0.114       0.000         0.487         0.575
+  2p_N50_A   treynor      vollev          0.150      0.116        0.147  0.313       0.000         0.487         0.927
+  2p_N50_A   treynor exactL1_raw          0.152      0.113        0.185  0.364       0.000         0.487         1.006
+  2p_N50_A   treynor   exactL1_z          0.013      0.002        0.972  0.104       0.001         0.487         0.581
+  2p_N50_A   treynor    dtw2_raw          0.215      0.182        0.041  0.311       0.000         0.487         0.961
+  2p_N50_A   treynor      dtw2_z         -0.001     -0.009        0.871  0.079       0.004         0.487         0.588
+  2p_N50_A   treynor    sdtw_raw          0.164      0.124        0.167  0.373       0.000         0.487         0.992
+  2p_N50_A   treynor      sdtw_z         -0.092     -0.094        0.238  0.015       0.756         0.487         0.665
+  2p_N50_B    sharpe         dtw          0.031      0.007        0.820  0.187       0.000         0.691         0.970
+  2p_N50_B    sharpe        dtwz         -0.010     -0.018        0.487  0.068       0.000         0.691         0.817
+  2p_N50_B    sharpe      vollev          0.033      0.004        0.910  0.224       0.000         0.691         1.023
+  2p_N50_B    sharpe exactL1_raw          0.029      0.003        0.927  0.201       0.000         0.691         0.983
+  2p_N50_B    sharpe   exactL1_z         -0.008     -0.017        0.504  0.072       0.000         0.691         0.821
+  2p_N50_B    sharpe    dtw2_raw          0.029      0.005        0.889  0.191       0.000         0.691         0.976
+  2p_N50_B    sharpe      dtw2_z         -0.009     -0.018        0.482  0.067       0.000         0.691         0.823
+  2p_N50_B    sharpe    sdtw_raw          0.040      0.010        0.791  0.235       0.000         0.691         1.033
+  2p_N50_B    sharpe      sdtw_z         -0.010     -0.020        0.441  0.076       0.000         0.691         0.841
+  2p_N50_B   sortino         dtw          0.022      0.000        0.997  0.169       0.000         0.682         0.933
+  2p_N50_B   sortino        dtwz         -0.019     -0.026        0.319  0.061       0.002         0.682         0.797
+  2p_N50_B   sortino      vollev          0.020     -0.005        0.876  0.198       0.000         0.682         0.977
+  2p_N50_B   sortino exactL1_raw          0.019     -0.004        0.902  0.182       0.000         0.682         0.945
+  2p_N50_B   sortino   exactL1_z         -0.017     -0.025        0.337  0.064       0.001         0.682         0.799
+  2p_N50_B   sortino    dtw2_raw          0.018     -0.004        0.903  0.172       0.000         0.682         0.939
+  2p_N50_B   sortino      dtw2_z         -0.018     -0.026        0.308  0.059       0.002         0.682         0.800
+  2p_N50_B   sortino    sdtw_raw          0.032      0.004        0.919  0.221       0.000         0.682         0.999
+  2p_N50_B   sortino      sdtw_z         -0.018     -0.028        0.285  0.072       0.000         0.682         0.821
+  2p_N50_B   treynor         dtw          0.109     -0.006        0.965  0.904       0.000         0.425         1.450
+  2p_N50_B   treynor        dtwz         -0.047     -0.095        0.281  0.372       0.000         0.425         0.740
+  2p_N50_B   treynor      vollev          0.117     -0.001        0.995  0.922       0.000         0.425         1.459
+  2p_N50_B   treynor exactL1_raw          0.100     -0.015        0.914  0.906       0.000         0.425         1.466
+  2p_N50_B   treynor   exactL1_z         -0.012     -0.078        0.472  0.518       0.000         0.425         0.787
+  2p_N50_B   treynor    dtw2_raw          0.134      0.027        0.842  0.839       0.000         0.425         1.398
+  2p_N50_B   treynor      dtw2_z          0.010     -0.059        0.593  0.547       0.000         0.425         0.837
+  2p_N50_B   treynor    sdtw_raw          0.072     -0.039        0.775  0.871       0.000         0.425         1.307
+  2p_N50_B   treynor      sdtw_z          0.019     -0.062        0.595  0.634       0.000         0.425         0.991
+ 2p_BANK_A    sharpe         dtw         -0.029     -0.037        0.104  0.066       0.000         1.069         1.126
+ 2p_BANK_A    sharpe        dtwz         -0.027     -0.032        0.116  0.041       0.000         1.069         1.104
+ 2p_BANK_A    sharpe      vollev         -0.026     -0.035        0.164  0.089       0.000         1.069         1.141
+ 2p_BANK_A    sharpe exactL1_raw         -0.029     -0.036        0.109  0.067       0.000         1.069         1.129
+ 2p_BANK_A    sharpe   exactL1_z         -0.029     -0.033        0.107  0.045       0.000         1.069         1.109
+ 2p_BANK_A    sharpe    dtw2_raw         -0.034     -0.041        0.080  0.065       0.000         1.069         1.126
+ 2p_BANK_A    sharpe      dtw2_z         -0.030     -0.036        0.096  0.049       0.000         1.069         1.111
+ 2p_BANK_A    sharpe    sdtw_raw         -0.045     -0.053        0.060  0.079       0.000         1.069         1.142
+ 2p_BANK_A    sharpe      sdtw_z         -0.037     -0.042        0.086  0.049       0.000         1.069         1.114
+ 2p_BANK_A   sortino         dtw         -0.029     -0.036        0.089  0.064       0.000         1.068         1.122
+ 2p_BANK_A   sortino        dtwz         -0.027     -0.031        0.099  0.038       0.000         1.068         1.101
+ 2p_BANK_A   sortino      vollev         -0.026     -0.035        0.144  0.087       0.000         1.068         1.136
+ 2p_BANK_A   sortino exactL1_raw         -0.029     -0.035        0.096  0.064       0.000         1.068         1.125
+ 2p_BANK_A   sortino   exactL1_z         -0.028     -0.032        0.093  0.041       0.000         1.068         1.106
+ 2p_BANK_A   sortino    dtw2_raw         -0.033     -0.039        0.074  0.062       0.000         1.068         1.122
+ 2p_BANK_A   sortino      dtw2_z         -0.030     -0.035        0.079  0.047       0.000         1.068         1.108
+ 2p_BANK_A   sortino    sdtw_raw         -0.041     -0.049        0.065  0.076       0.000         1.068         1.138
+ 2p_BANK_A   sortino      sdtw_z         -0.037     -0.042        0.075  0.046       0.000         1.068         1.110
+ 2p_BANK_A   treynor         dtw         -0.035     -0.060        0.432  0.230       0.000         1.072         1.288
+ 2p_BANK_A   treynor        dtwz         -0.014     -0.029        0.570  0.145       0.000         1.072         1.138
+ 2p_BANK_A   treynor      vollev          0.008     -0.009        0.898  0.158       0.000         1.072         1.241
+ 2p_BANK_A   treynor exactL1_raw         -0.051     -0.076        0.329  0.240       0.000         1.072         1.286
+ 2p_BANK_A   treynor   exactL1_z         -0.027     -0.045        0.389  0.166       0.000         1.072         1.157
+ 2p_BANK_A   treynor    dtw2_raw         -0.061     -0.090        0.272  0.270       0.000         1.072         1.293
+ 2p_BANK_A   treynor      dtw2_z         -0.031     -0.051        0.350  0.183       0.000         1.072         1.163
+ 2p_BANK_A   treynor    sdtw_raw         -0.129     -0.160        0.118  0.296       0.000         1.072         1.326
+ 2p_BANK_A   treynor      sdtw_z         -0.067     -0.092        0.233  0.241       0.000         1.072         1.180
+ 2p_BANK_B    sharpe         dtw          0.015      0.009        0.687  0.044       0.001         1.302         1.299
+ 2p_BANK_B    sharpe        dtwz          0.029      0.026        0.267  0.024       0.090         1.302         1.264
+ 2p_BANK_B    sharpe      vollev          0.035      0.027        0.284  0.068       0.000         1.302         1.327
+ 2p_BANK_B    sharpe exactL1_raw          0.021      0.015        0.469  0.043       0.000         1.302         1.305
+ 2p_BANK_B    sharpe   exactL1_z          0.030      0.026        0.245  0.028       0.048         1.302         1.273
+ 2p_BANK_B    sharpe    dtw2_raw          0.020      0.015        0.504  0.042       0.001         1.302         1.304
+ 2p_BANK_B    sharpe      dtw2_z          0.031      0.027        0.240  0.031       0.037         1.302         1.272
+ 2p_BANK_B    sharpe    sdtw_raw          0.012      0.007        0.791  0.043       0.008         1.302         1.300
+ 2p_BANK_B    sharpe      sdtw_z          0.032      0.028        0.272  0.030       0.072         1.302         1.257
+ 2p_BANK_B   sortino         dtw          0.014      0.009        0.667  0.041       0.001         1.294         1.300
+ 2p_BANK_B   sortino        dtwz          0.025      0.023        0.302  0.021       0.147         1.294         1.271
+ 2p_BANK_B   sortino      vollev          0.033      0.025        0.282  0.062       0.000         1.294         1.328
+ 2p_BANK_B   sortino exactL1_raw          0.018      0.012        0.534  0.041       0.001         1.294         1.310
+ 2p_BANK_B   sortino   exactL1_z          0.027      0.024        0.265  0.024       0.088         1.294         1.280
+ 2p_BANK_B   sortino    dtw2_raw          0.017      0.012        0.572  0.039       0.002         1.294         1.306
+ 2p_BANK_B   sortino      dtw2_z          0.028      0.024        0.266  0.026       0.078         1.294         1.279
+ 2p_BANK_B   sortino    sdtw_raw          0.015      0.010        0.704  0.041       0.008         1.294         1.299
+ 2p_BANK_B   sortino      sdtw_z          0.031      0.028        0.263  0.025       0.133         1.294         1.263
+ 2p_BANK_B   treynor         dtw          0.043      0.031        0.596  0.098       0.016         1.162         1.276
+ 2p_BANK_B   treynor        dtwz          0.063      0.052        0.285  0.087       0.003         1.162         1.127
+ 2p_BANK_B   treynor      vollev          0.023      0.008        0.889  0.124       0.000         1.162         1.290
+ 2p_BANK_B   treynor exactL1_raw          0.029      0.016        0.786  0.099       0.016         1.162         1.271
+ 2p_BANK_B   treynor   exactL1_z          0.050      0.041        0.372  0.068       0.008         1.162         1.147
+ 2p_BANK_B   treynor    dtw2_raw          0.046      0.034        0.629  0.101       0.058         1.162         1.303
+ 2p_BANK_B   treynor      dtw2_z          0.108      0.092        0.110  0.126       0.000         1.162         1.178
+ 2p_BANK_B   treynor    sdtw_raw          0.015      0.006        0.919  0.073       0.078         1.162         1.274
+ 2p_BANK_B   treynor      sdtw_z          0.147      0.126        0.099  0.164       0.001         1.162         1.150
+single_N50    sharpe         dtw          0.032      0.020        0.642  0.157       0.000         0.698         0.995
+single_N50    sharpe        dtwz          0.029      0.025        0.491  0.054       0.108         0.698         0.895
+single_N50    sharpe      vollev          0.038      0.025        0.600  0.179       0.000         0.698         1.031
+single_N50    sharpe exactL1_raw          0.029      0.016        0.707  0.162       0.000         0.698         0.997
+single_N50    sharpe   exactL1_z          0.026      0.021        0.562  0.056       0.097         0.698         0.897
+single_N50    sharpe    dtw2_raw          0.022      0.009        0.828  0.158       0.000         0.698         0.986
+single_N50    sharpe      dtw2_z          0.019      0.015        0.676  0.049       0.106         0.698         0.893
+single_N50    sharpe    sdtw_raw          0.032      0.017        0.711  0.190       0.000         0.698         1.015
+single_N50    sharpe      sdtw_z          0.015      0.012        0.756  0.035       0.315         0.698         0.875
+single_N50   sortino         dtw          0.019      0.006        0.893  0.162       0.000         0.688         0.969
+single_N50   sortino        dtwz          0.018      0.013        0.722  0.063       0.066         0.688         0.878
+single_N50   sortino      vollev          0.024      0.010        0.836  0.180       0.000         0.688         1.001
+single_N50   sortino exactL1_raw          0.016      0.003        0.949  0.166       0.000         0.688         0.971
+single_N50   sortino   exactL1_z          0.015      0.010        0.783  0.064       0.067         0.688         0.881
+single_N50   sortino    dtw2_raw          0.009     -0.003        0.938  0.161       0.000         0.688         0.959
+single_N50   sortino      dtw2_z          0.010      0.006        0.881  0.057       0.069         0.688         0.876
+single_N50   sortino    sdtw_raw          0.018      0.003        0.952  0.190       0.000         0.688         0.986
+single_N50   sortino      sdtw_z          0.010      0.006        0.872  0.043       0.223         0.688         0.860
+single_N50   treynor         dtw          0.083      0.034        0.789  0.626       0.000         0.488         1.181
+single_N50   treynor        dtwz          0.125      0.106        0.174  0.246       0.011         0.488         0.753
+single_N50   treynor      vollev          0.045     -0.001        0.995  0.593       0.000         0.488         1.218
+single_N50   treynor exactL1_raw          0.091      0.039        0.769  0.670       0.000         0.488         1.242
+single_N50   treynor   exactL1_z          0.068      0.044        0.595  0.309       0.002         0.488         0.791
+single_N50   treynor    dtw2_raw          0.069      0.019        0.875  0.640       0.000         0.488         1.323
+single_N50   treynor      dtw2_z         -0.049     -0.061        0.453  0.163       0.002         0.488         0.781
+single_N50   treynor    sdtw_raw         -0.017     -0.067        0.606  0.654       0.000         0.488         1.247
+single_N50   treynor      sdtw_z         -0.198     -0.203        0.017  0.063       0.294         0.488         0.681
+   exp_N50    sharpe         dtw         -0.043     -0.063        0.148  0.154       0.000         0.709         1.000
+   exp_N50    sharpe        dtwz         -0.066     -0.073        0.059  0.052       0.045         0.709         0.900
+   exp_N50    sharpe      vollev         -0.043     -0.067        0.156  0.191       0.000         0.709         1.041
+   exp_N50    sharpe exactL1_raw         -0.045     -0.067        0.128  0.168       0.000         0.709         1.001
+   exp_N50    sharpe   exactL1_z         -0.068     -0.075        0.053  0.057       0.032         0.709         0.902
+   exp_N50    sharpe    dtw2_raw         -0.049     -0.070        0.106  0.165       0.000         0.709         0.996
+   exp_N50    sharpe      dtw2_z         -0.069     -0.077        0.049  0.057       0.027         0.709         0.906
+   exp_N50    sharpe    sdtw_raw         -0.047     -0.075        0.112  0.216       0.000         0.709         1.038
+   exp_N50    sharpe      sdtw_z         -0.075     -0.081        0.043  0.047       0.098         0.709         0.904
+   exp_N50   sortino         dtw         -0.048     -0.067        0.134  0.148       0.000         0.697         0.982
+   exp_N50   sortino        dtwz         -0.070     -0.077        0.056  0.053       0.053         0.697         0.890
+   exp_N50   sortino      vollev         -0.046     -0.070        0.149  0.181       0.000         0.697         1.020
+   exp_N50   sortino exactL1_raw         -0.050     -0.071        0.115  0.160       0.000         0.697         0.983
+   exp_N50   sortino   exactL1_z         -0.072     -0.079        0.051  0.059       0.035         0.697         0.892
+   exp_N50   sortino    dtw2_raw         -0.053     -0.074        0.100  0.155       0.000         0.697         0.978
+   exp_N50   sortino      dtw2_z         -0.072     -0.080        0.050  0.057       0.033         0.697         0.896
+   exp_N50   sortino    sdtw_raw         -0.050     -0.077        0.109  0.206       0.000         0.697         1.018
+   exp_N50   sortino      sdtw_z         -0.078     -0.084        0.045  0.046       0.116         0.697         0.894
+   exp_N50   treynor         dtw          0.083      0.014        0.905  0.530       0.000         0.501         1.320
+   exp_N50   treynor        dtwz         -0.042     -0.084        0.334  0.330       0.000         0.501         0.863
+   exp_N50   treynor      vollev          0.044     -0.021        0.859  0.504       0.000         0.501         1.321
+   exp_N50   treynor exactL1_raw          0.082      0.015        0.900  0.522       0.000         0.501         1.353
+   exp_N50   treynor   exactL1_z         -0.038     -0.078        0.411  0.311       0.000         0.501         0.842
+   exp_N50   treynor    dtw2_raw          0.065     -0.004        0.970  0.537       0.000         0.501         1.400
+   exp_N50   treynor      dtw2_z         -0.044     -0.068        0.441  0.183       0.000         0.501         0.860
+   exp_N50   treynor    sdtw_raw         -0.054     -0.134        0.271  0.618       0.000         0.501         1.345
+   exp_N50   treynor      sdtw_z         -0.098     -0.094        0.255 -0.028       0.678         0.501         0.803
+  exp_BANK    sharpe         dtw         -0.012     -0.026        0.608  0.105       0.008         1.070         1.179
+  exp_BANK    sharpe        dtwz         -0.055     -0.066        0.200  0.085       0.042         1.070         1.142
+  exp_BANK    sharpe      vollev         -0.051     -0.062        0.248  0.081       0.059         1.070         1.163
+  exp_BANK    sharpe exactL1_raw         -0.011     -0.025        0.629  0.105       0.008         1.070         1.178
+  exp_BANK    sharpe   exactL1_z         -0.061     -0.072        0.163  0.086       0.038         1.070         1.144
+  exp_BANK    sharpe    dtw2_raw         -0.012     -0.026        0.621  0.105       0.010         1.070         1.179
+  exp_BANK    sharpe      dtw2_z         -0.060     -0.071        0.168  0.085       0.042         1.070         1.144
+  exp_BANK    sharpe    sdtw_raw         -0.016     -0.030        0.564  0.105       0.010         1.070         1.183
+  exp_BANK    sharpe      sdtw_z         -0.019     -0.032        0.533  0.107       0.007         1.070         1.170
+  exp_BANK   sortino         dtw         -0.055     -0.068        0.187  0.097       0.021         1.071         1.164
+  exp_BANK   sortino        dtwz         -0.062     -0.074        0.148  0.093       0.024         1.071         1.148
+  exp_BANK   sortino      vollev         -0.052     -0.064        0.228  0.087       0.041         1.071         1.166
+  exp_BANK   sortino exactL1_raw         -0.055     -0.068        0.189  0.097       0.021         1.071         1.162
+  exp_BANK   sortino   exactL1_z         -0.064     -0.076        0.135  0.094       0.023         1.071         1.149
+  exp_BANK   sortino    dtw2_raw         -0.052     -0.063        0.232  0.089       0.036         1.071         1.158
+  exp_BANK   sortino      dtw2_z         -0.065     -0.077        0.134  0.093       0.025         1.071         1.150
+  exp_BANK   sortino    sdtw_raw         -0.016     -0.030        0.560  0.110       0.006         1.071         1.188
+  exp_BANK   sortino      sdtw_z         -0.023     -0.037        0.459  0.113       0.004         1.071         1.175
+  exp_BANK   treynor         dtw         -0.043     -0.065        0.450  0.166       0.007         1.057         1.260
+  exp_BANK   treynor        dtwz         -0.025     -0.038        0.503  0.103       0.014         1.057         1.181
+  exp_BANK   treynor      vollev         -0.062     -0.085        0.292  0.175       0.004         1.057         1.217
+  exp_BANK   treynor exactL1_raw         -0.054     -0.079        0.385  0.189       0.004         1.057         1.306
+  exp_BANK   treynor   exactL1_z         -0.033     -0.051        0.348  0.135       0.002         1.057         1.188
+  exp_BANK   treynor    dtw2_raw         -0.057     -0.083        0.392  0.199       0.006         1.057         1.334
+  exp_BANK   treynor      dtw2_z         -0.034     -0.050        0.362  0.124       0.005         1.057         1.177
+  exp_BANK   treynor    sdtw_raw         -0.045     -0.072        0.461  0.208       0.004         1.057         1.324
+  exp_BANK   treynor      sdtw_z         -0.078     -0.101        0.191  0.177       0.003         1.057         1.215
+
+=== SHARPE-PORTFOLIO OVERLAP WITH RAW DTW (half-L1: 0 = identical, 1 = disjoint), mean over folds/regimes ===
+    design  dtwz  vollev  exactL1_raw  exactL1_z  dtw2_raw  dtw2_z  sdtw_raw  sdtw_z
+ 2p_BANK_A 0.078   0.065        0.021      0.076     0.035   0.082     0.083   0.109
+ 2p_BANK_B 0.114   0.109        0.040      0.120     0.055   0.130     0.105   0.163
+  2p_N50_A 0.240   0.096        0.039      0.232     0.081   0.243     0.164   0.291
+  2p_N50_B 0.240   0.128        0.054      0.235     0.088   0.243     0.154   0.250
+  exp_BANK 0.105   0.055        0.014      0.107     0.036   0.102     0.085   0.079
+   exp_N50 0.218   0.103        0.037      0.222     0.064   0.217     0.164   0.256
+single_N50 0.211   0.088        0.032      0.216     0.061   0.213     0.139   0.266
+
+=== WHAT EACH SIMILARITY MATRIX TRACKS (off-diagonal correlations, mean over all designs/folds/regimes) ===
+     method  with_sample_corr  with_pair_vol  with_raw_dtw
+        dtw             0.289         -0.689         1.000
+       dtwz             0.557         -0.107         0.524
+     vollev            -0.117         -0.924         0.797
+exactL1_raw             0.240         -0.731         0.969
+  exactL1_z             0.541         -0.148         0.507
+   dtw2_raw             0.280         -0.709         0.930
+     dtw2_z             0.565         -0.247         0.521
+   sdtw_raw             0.254         -0.679         0.923
+     sdtw_z             0.543         -0.257         0.534
+
+=== METHOD LABELS ===
+     method                                   description
+        dtw          raw FastDTW (PRIMARY, pre-specified)
+       dtwz normalised FastDTW (main extension, post hoc)
+     vollev          control (d): volatility-level kernel
+exactL1_raw                             exact L1 DTW, raw
+  exactL1_z                      exact L1 DTW, normalised
+   dtw2_raw                      dtw2 (squared cost), raw
+     dtw2_z               dtw2 (squared cost), normalised
+   sdtw_raw                      soft-DTW divergence, raw
+     sdtw_z               soft-DTW divergence, normalised

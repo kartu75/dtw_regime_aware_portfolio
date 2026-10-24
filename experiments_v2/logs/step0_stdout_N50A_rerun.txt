@@ -1,0 +1,138 @@
+[2026-10-21 11:40:54 | +   0.0min] Step 0 regression run: designs=['2p_N50_A'], MAX_WORKERS=10, snapshot=C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\data\snapshot_20261021
+[2026-10-21 11:40:54 | +   0.0min] === 2p_N50_A: stocks (2951, 43), features (2869, 4) 2008-03-28..2019-12-31, markets ['NSEI']
+[2026-10-21 11:40:54 | +   0.0min] FOLD 1: train 2008-01-01..2012-12-31 (1160 d)  test 2013-01-01..2013-12-31 (247 d)
+C:\Users\karth\anaconda3\Lib\site-packages\joblib\externals\loky\backend\context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Users\karth\anaconda3\Lib\site-packages\joblib\externals\loky\backend\context.py", line 257, in _count_physical_cores
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\karth\anaconda3\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karth\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\karth\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14891.022625169146 is not greater than 14891.025946410007. Delta is -0.0033212408616236644
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14914.98249426991 is not greater than 14914.98365119711. Delta is -0.0011569271991902497
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14962.511714870616 is not greater than 14962.514348050958. Delta is -0.0026331803419452626
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=5.
+  warnings.warn(
+Model is not converging.  Current: 14284.874082404447 is not greater than 14284.992766288095. Delta is -0.11868388364746352
+[2026-10-21 11:42:08 | +   1.2min]   fold 1 done in 1.2 min (DTW 67s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 310, 'Sideways': 376, 'Bear': 474} warnings=[]
+[2026-10-21 11:42:08 | +   1.2min] FOLD 2: train 2008-01-01..2013-12-31 (1407 d)  test 2014-01-01..2014-12-31 (240 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18017.312871919086 is not greater than 18017.425875384208. Delta is -0.11300346512143733
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=6.
+  warnings.warn(
+Model is not converging.  Current: 18460.87907063651 is not greater than 18461.02650188635. Delta is -0.14743124983942835
+[2026-10-21 11:43:47 | +   2.9min]   fold 2 done in 1.7 min (DTW 95s); map={3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 428, 'Sideways': 462, 'Bear': 489} warnings=[]
+[2026-10-21 11:43:47 | +   2.9min] FOLD 3: train 2008-01-01..2014-12-31 (1647 d)  test 2015-01-01..2015-12-31 (244 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+Model is not converging.  Current: 22142.767201973722 is not greater than 22142.803517114215. Delta is -0.03631514049266116
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+Model is not converging.  Current: 22199.843808145077 is not greater than 22199.847342438086. Delta is -0.0035342930095794145
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+Model is not converging.  Current: 22083.8515177624 is not greater than 22086.552082226208. Delta is -2.700564463808405
+[2026-10-21 11:45:45 | +   4.8min]   fold 3 done in 2.0 min (DTW 113s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 389, 'Sideways': 710, 'Bear': 517} warnings=[]
+[2026-10-21 11:45:45 | +   4.8min] FOLD 4: train 2008-01-01..2015-12-31 (1891 d)  test 2016-01-01..2016-12-31 (244 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
+  warnings.warn(
+Model is not converging.  Current: 25704.899400741768 is not greater than 25704.899439180226. Delta is -3.843845843221061e-05
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
+  warnings.warn(
+Model is not converging.  Current: 25262.07029846117 is not greater than 25271.032547700124. Delta is -8.962249238953518
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
+  warnings.warn(
+Model is not converging.  Current: 25687.52092367486 is not greater than 25687.64393396685. Delta is -0.12301029199079494
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
+  warnings.warn(
+Model is not converging.  Current: 25544.205788708216 is not greater than 25544.240981165105. Delta is -0.03519245688949013
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
+  warnings.warn(
+Model is not converging.  Current: 25670.148649695977 is not greater than 25670.50707206259. Delta is -0.35842236661483184
+[2026-10-21 11:47:35 | +   6.7min]   fold 4 done in 1.8 min (DTW 105s); map={3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 738, 'Sideways': 418, 'Bear': 722} warnings=[]
+[2026-10-21 11:47:35 | +   6.7min] FOLD 5: train 2008-01-01..2016-12-31 (2135 d)  test 2017-01-01..2017-12-31 (248 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=9.
+  warnings.warn(
+Model is not converging.  Current: 29364.924957431762 is not greater than 29364.92502280988. Delta is -6.537811714224517e-05
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=9.
+  warnings.warn(
+Model is not converging.  Current: 29364.938169352576 is not greater than 29364.93825467913. Delta is -8.532655556336977e-05
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=9.
+  warnings.warn(
+Model is not converging.  Current: 29373.877955869364 is not greater than 29373.881694813765. Delta is -0.0037389444005384576
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=9.
+  warnings.warn(
+Model is not converging.  Current: 29259.87824923685 is not greater than 29259.87880537. Delta is -0.0005561331527133007
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=9.
+  warnings.warn(
+Model is not converging.  Current: 29373.56992137703 is not greater than 29373.861166871036. Delta is -0.2912454940051248
+[2026-10-21 11:49:30 | +   8.6min]   fold 5 done in 1.9 min (DTW 110s); map={0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 900, 'Sideways': 480, 'Bear': 723} warnings=[]
+[2026-10-21 11:49:30 | +   8.6min] FOLD 6: train 2008-01-01..2017-12-31 (2383 d)  test 2018-01-01..2018-12-31 (245 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=10.
+  warnings.warn(
+Model is not converging.  Current: 32958.91495871314 is not greater than 32958.9235427798. Delta is -0.008584066657931544
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=10.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=10.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=10.
+  warnings.warn(
+Model is not converging.  Current: 33337.81376849837 is not greater than 33337.86333946358. Delta is -0.04957096521684434
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=10.
+  warnings.warn(
+Model is not converging.  Current: 32783.74475861311 is not greater than 32783.93914014315. Delta is -0.19438153004011838
+[2026-10-21 11:51:40 | +  10.8min]   fold 6 done in 2.2 min (DTW 124s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 551, 'Sideways': 809, 'Bear': 977} warnings=[]
+[2026-10-21 11:51:40 | +  10.8min] FOLD 7: train 2008-01-01..2018-12-31 (2628 d)  test 2019-01-01..2019-12-31 (241 d)
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=11.
+  warnings.warn(
+Model is not converging.  Current: 37139.506342730725 is not greater than 37139.595693246454. Delta is -0.08935051572916564
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=11.
+  warnings.warn(
+Model is not converging.  Current: 37139.56440633443 is not greater than 37139.60483353609. Delta is -0.040427201660349965
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=11.
+  warnings.warn(
+Model is not converging.  Current: 36680.13705472873 is not greater than 36680.14496660033. Delta is -0.007911871602118481
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=11.
+  warnings.warn(
+C:\Users\karth\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=11.
+  warnings.warn(
+[2026-10-21 11:54:01 | +  13.1min]   fold 7 done in 2.4 min (DTW 135s); map={1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 532, 'Sideways': 306, 'Bear': 1761} warnings=[]
+[2026-10-21 11:54:04 | +  13.2min]   fold 1 daily-return check: std max|diff|=2.66e-07 (n 247 vs 247), dtw max|diff|=1.19e-04 (n 247 vs 247)
+[2026-10-21 11:54:04 | +  13.2min]   fold 2 daily-return check: std max|diff|=2.40e-07 (n 240 vs 240), dtw max|diff|=5.57e-05 (n 240 vs 240)
+[2026-10-21 11:54:04 | +  13.2min]   fold 3 daily-return check: std max|diff|=2.39e-07 (n 244 vs 244), dtw max|diff|=1.60e-04 (n 244 vs 244)
+[2026-10-21 11:54:04 | +  13.2min]   fold 4 daily-return check: std max|diff|=3.11e-07 (n 244 vs 244), dtw max|diff|=1.47e-04 (n 244 vs 244)
+[2026-10-21 11:54:04 | +  13.2min]   fold 5 daily-return check: std max|diff|=2.05e-07 (n 248 vs 248), dtw max|diff|=1.34e-04 (n 248 vs 248)
+[2026-10-21 11:54:04 | +  13.2min]   fold 6 daily-return check: std max|diff|=3.17e-07 (n 245 vs 245), dtw max|diff|=9.36e-05 (n 245 vs 245)
+[2026-10-21 11:54:04 | +  13.2min]   fold 7 daily-return check: std max|diff|=2.01e-07 (n 241 vs 241), dtw max|diff|=5.56e-05 (n 241 vs 241)
+[2026-10-21 11:54:04 | +  13.2min]   [1d] Sharpe std 1.1904 (orig 1.1904) | dtw 1.2150 (orig 1.2141) | p_one 0.4530 (orig 0.4432) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min]   [5d] Sharpe std 1.0949 (orig 1.0949) | dtw 1.1350 (orig 1.1342) | p_one 0.3088 (orig 0.3120) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min]   [22d] Sharpe std 1.1172 (orig 1.1172) | dtw 1.1340 (orig 1.1334) | p_one 0.1596 (orig 0.1598) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min] === 2p_N50_A finished in 13.2 min
+[2026-10-21 11:54:04 | +  13.2min] ALL DONE

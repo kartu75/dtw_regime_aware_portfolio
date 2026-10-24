@@ -1,0 +1,24 @@
+DEGENERATE treynor optimum: fold1(2022) Bull std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear std: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear std: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear dtwz: 3 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear dtwz: 10 non-zero, 10 at the 10% cap
+DEGENERATE treynor optimum: fold1(2022) Bull volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Sideways volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor optimum: fold1(2022) Bear volk: 4 non-zero, 2 at the 40% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bull volk: 11 non-zero, 9 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Sideways volk: 11 non-zero, 9 at the 10% cap
+DEGENERATE treynor_cap10 optimum: fold1(2022) Bear volk: 11 non-zero, 9 at the 10% cap
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bull treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bull treynor_cap10_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Sideways treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Sideways treynor_cap10_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bear treynor_volk
+BETA CONSTRAINT BINDS (w'beta = 0.0500): fold1(2022) Bear treynor_cap10_volk

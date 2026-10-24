@@ -1,0 +1,45 @@
+[2026-10-21 14:18:56]   2p_N50_A fold1(2013) done
+[2026-10-21 14:18:58]   2p_N50_A fold2(2014) done
+[2026-10-21 14:19:00]   2p_N50_A fold3(2015) done
+[2026-10-21 14:19:02]   2p_N50_A fold4(2016) done
+[2026-10-21 14:19:04]   2p_N50_A fold5(2017) done
+[2026-10-21 14:19:06]   2p_N50_A fold6(2018) done
+[2026-10-21 14:19:07]   2p_N50_A fold7(2019) done
+[2026-10-21 14:19:25] 2p_N50_A: done in 31s, 84 warnings
+[2026-10-21 14:19:27]   2p_N50_B fold1(2021) done
+[2026-10-21 14:19:29]   2p_N50_B fold2(2022) done
+[2026-10-21 14:19:31]   2p_N50_B fold3(2023) done
+[2026-10-21 14:19:33]   2p_N50_B fold4(2024) done
+[2026-10-21 14:19:36]   2p_N50_B fold5(2025) done
+[2026-10-21 14:20:23] 2p_N50_B: done in 58s, 53 warnings
+[2026-10-21 14:20:25]   2p_BANK_A fold1(2013) done
+[2026-10-21 14:20:26]   2p_BANK_A fold2(2014) done
+[2026-10-21 14:20:28]   2p_BANK_A fold3(2015) done
+[2026-10-21 14:20:51]   2p_BANK_A fold4(2016) done
+[2026-10-21 14:21:13]   2p_BANK_A fold5(2017) done
+[2026-10-21 14:21:22]   2p_BANK_A fold6(2018) done
+[2026-10-21 14:21:23]   2p_BANK_A fold7(2019) done
+[2026-10-21 14:22:39] 2p_BANK_A: done in 136s, 126 warnings
+[2026-10-21 14:22:44]   2p_BANK_B fold1(2021) done
+[2026-10-21 14:22:48]   2p_BANK_B fold2(2022) done
+[2026-10-21 14:22:52]   2p_BANK_B fold3(2023) done
+[2026-10-21 14:22:56]   2p_BANK_B fold4(2024) done
+[2026-10-21 14:22:59]   2p_BANK_B fold5(2025) done
+[2026-10-21 14:27:11] 2p_BANK_B: done in 273s, 85 warnings
+[2026-10-21 14:29:33]   single_N50 fold1(2022) done
+[2026-10-21 14:32:08] single_N50: done in 297s, 12 warnings
+[2026-10-21 14:32:47]   exp_N50 fold1(2020) done
+[2026-10-21 14:32:55]   exp_N50 fold2(2021) done
+[2026-10-21 14:33:02]   exp_N50 fold3(2022) done
+[2026-10-21 14:33:06]   exp_N50 fold4(2023) done
+[2026-10-21 14:33:09]   exp_N50 fold5(2024) done
+[2026-10-21 14:33:12]   exp_N50 fold6(2025) done
+[2026-10-21 14:33:22] exp_N50: done in 74s, 74 warnings
+[2026-10-21 14:33:24]   exp_BANK fold1(2020) done
+[2026-10-21 14:33:26]   exp_BANK fold2(2021) done
+[2026-10-21 14:33:28]   exp_BANK fold3(2022) done
+[2026-10-21 14:33:29]   exp_BANK fold4(2023) done
+[2026-10-21 14:33:30]   exp_BANK fold5(2024) done
+[2026-10-21 14:33:32]   exp_BANK fold6(2025) done
+[2026-10-21 14:33:42] exp_BANK: done in 20s, 108 warnings
+[2026-10-21 14:33:42] VOLLEV DONE

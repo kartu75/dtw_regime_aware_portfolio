@@ -1,0 +1,247 @@
+{
+  "n": 16,
+  "bonferroni_threshold": 0.003125,
+  "bh_cutoff_rank": 0,
+  "tests": [
+    {
+      "id": "2p_Nifty_Bank_period_a_5d",
+      "label": "Two-period, Nifty Bank, Period A (calm), 5-day horizon",
+      "p_raw": 0.9754,
+      "observed_diff": -0.12609274265322223,
+      "ci": [
+        -0.3342973177659423,
+        -0.0017072536205174746
+      ],
+      "p_two_sided": 0.04919999999999991,
+      "bh_rank": 1,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_Bank_period_a_22d",
+      "label": "Two-period, Nifty Bank, Period A (calm), 22-day horizon",
+      "p_raw": 0.9462,
+      "observed_diff": -0.1442147100829151,
+      "ci": [
+        -0.4871742471440327,
+        0.027821191732776543
+      ],
+      "p_two_sided": 0.10759999999999992,
+      "bh_rank": 2,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "expwin_Nifty_50",
+      "label": "Expanding-window, Nifty 50, pooled 2020-2025, daily",
+      "p_raw": 0.945,
+      "observed_diff": -0.269950281480402,
+      "ci": [
+        -0.6223355103782406,
+        0.06624486214228838
+      ],
+      "p_two_sided": 0.1100000000000001,
+      "bh_rank": 3,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_Bank_period_a_1d",
+      "label": "Two-period, Nifty Bank, Period A (calm), 1-day horizon",
+      "p_raw": 0.9182,
+      "observed_diff": -0.12160665203806809,
+      "ci": [
+        -0.30832591121672187,
+        0.050605776076860884
+      ],
+      "p_two_sided": 0.16359999999999997,
+      "bh_rank": 4,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "expwin_Nifty_Midcap_100",
+      "label": "Expanding-window, Nifty Midcap 100, pooled 2020-2025, daily",
+      "p_raw": 0.0818,
+      "observed_diff": 0.4825047128182828,
+      "ci": [
+        -0.1725890298497707,
+        1.2251546733320324
+      ],
+      "p_two_sided": 0.1636,
+      "bh_rank": 5,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_b_22d",
+      "label": "Two-period, Nifty 50, Period B (recent, strict-sep), 22-day horizon",
+      "p_raw": 0.0958,
+      "observed_diff": 0.17403606024894214,
+      "ci": [
+        -0.107972228315657,
+        0.3042826702763757
+      ],
+      "p_two_sided": 0.1916,
+      "bh_rank": 6,
+      "bh_adjusted_p": 0.5109333333333334,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_a_22d",
+      "label": "Two-period, Nifty 50, Period A (calm), 22-day horizon",
+      "p_raw": 0.1598,
+      "observed_diff": 0.016317374344049007,
+      "ci": [
+        -0.14162164349143805,
+        0.30455310561996113
+      ],
+      "p_two_sided": 0.3196,
+      "bh_rank": 7,
+      "bh_adjusted_p": 0.7305142857142857,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_b_5d",
+      "label": "Two-period, Nifty 50, Period B (recent, strict-sep), 5-day horizon",
+      "p_raw": 0.1924,
+      "observed_diff": 0.18284773060644466,
+      "ci": [
+        -0.20420759080046516,
+        0.43416181460169595
+      ],
+      "p_two_sided": 0.3848,
+      "bh_rank": 8,
+      "bh_adjusted_p": 0.7696,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_b_1d",
+      "label": "Two-period, Nifty 50, Period B (recent, strict-sep), 1-day horizon",
+      "p_raw": 0.293,
+      "observed_diff": 0.12125043195358054,
+      "ci": [
+        -0.2570511335900108,
+        0.43103454802296104
+      ],
+      "p_two_sided": 0.586,
+      "bh_rank": 9,
+      "bh_adjusted_p": 0.9076363636363637,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "single_split",
+      "label": "Single-split (train 2015-2021 / test 2022-2026), daily",
+      "p_raw": 0.3002,
+      "observed_diff": 0.128,
+      "ci": [
+        -0.319,
+        0.543
+      ],
+      "p_two_sided": 0.6004,
+      "bh_rank": 10,
+      "bh_adjusted_p": 0.9076363636363637,
+      "bonferroni_pass": false,
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_a_5d",
+      "label": "Two-period, Nifty 50, Period A (calm), 5-day horizon",
+      "p_raw": 0.312,
+      "observed_diff": 0.0393415251758249,
+      "ci": [
+        -0.1844318480595159,
+        0.31536265950135156
+      ],
+      "p_two_sided": 0.624,
+      "bh_rank": 11,
+      "bh_adjusted_p": 0.9076363636363637,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_Bank_period_b_1d",
+      "label": "Two-period, Nifty Bank, Period B (recent, strict-sep), 1-day horizon",
+      "p_raw": 0.3616,
+      "observed_diff": 0.05234075821888251,
+      "ci": [
+        -0.16736263517098843,
+        0.23335121652729318
+      ],
+      "p_two_sided": 0.7232,
+      "bh_rank": 12,
+      "bh_adjusted_p": 0.9454933333333333,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_Bank_period_b_22d",
+      "label": "Two-period, Nifty Bank, Period B (recent, strict-sep), 22-day horizon",
+      "p_raw": 0.5684,
+      "observed_diff": 0.033929259327861505,
+      "ci": [
+        -0.4309135402222358,
+        0.1798877767576028
+      ],
+      "p_two_sided": 0.8632,
+      "bh_rank": 13,
+      "bh_adjusted_p": 0.9454933333333333,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "expwin_Nifty_Bank",
+      "label": "Expanding-window, Nifty Bank, pooled 2020-2025, daily",
+      "p_raw": 0.5652,
+      "observed_diff": -0.05105752426865878,
+      "ci": [
+        -0.450345770019162,
+        0.3392918462483292
+      ],
+      "p_two_sided": 0.8695999999999999,
+      "bh_rank": 14,
+      "bh_adjusted_p": 0.9454933333333333,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_50_period_a_1d",
+      "label": "Two-period, Nifty 50, Period A (calm), 1-day horizon",
+      "p_raw": 0.4432,
+      "observed_diff": 0.023763718730706263,
+      "ci": [
+        -0.24401323105583803,
+        0.27476612922909144
+      ],
+      "p_two_sided": 0.8864,
+      "bh_rank": 15,
+      "bh_adjusted_p": 0.9454933333333333,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    },
+    {
+      "id": "2p_Nifty_Bank_period_b_5d",
+      "label": "Two-period, Nifty Bank, Period B (recent, strict-sep), 5-day horizon",
+      "p_raw": 0.5046,
+      "observed_diff": 0.057882669022667255,
+      "ci": [
+        -0.21742215244309457,
+        0.21244474543864553
+      ],
+      "p_two_sided": 0.9907999999999999,
+      "bh_rank": 16,
+      "bh_adjusted_p": 0.9907999999999999,
+      "bonferroni_pass": "False",
+      "bh_pass": "False"
+    }
+  ]
+}

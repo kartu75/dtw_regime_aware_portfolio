@@ -1,0 +1,38 @@
+
+# BY UNIVERSE
+	BANK	N50
+real_share_dtw_lag0	0.5490	0.2847
+real_mean_abs_dtw_lag	1.2403	2.5314
+real_share_cc_lag0	0.8578	0.5581
+real_exact_agree	0.5433	0.2590
+real_sign_agree_nonzero	0.5994	0.6048
+real_spearman	0.0813	0.1170
+placebo_share_dtw_lag0	0.0986	0.1191
+placebo_mean_abs_dtw_lag	6.2078	4.4945
+placebo_share_cc_lag0	0.0811	0.0852
+placebo_exact_agree	0.0955	0.1162
+placebo_sign_agree_nonzero	0.5696	0.5762
+placebo_spearman	0.0861	0.1020
+n_pair_episodes	2849.0000	41754.0000
+n_strong_cc_nonzero	179.0000	6905.0000
+strong_sign_agree	0.4749	0.5137
+strong_spearman	0.2091	0.2273
+
+# BY DESIGN (universe x era)
+	2p_BANK_A	2p_BANK_B	2p_N50_A	2p_N50_B
+real_share_dtw_lag0	0.5611	0.5265	0.2673	0.3020
+real_mean_abs_dtw_lag	1.1813	1.3492	2.9517	2.1155
+real_share_cc_lag0	0.8436	0.8841	0.5380	0.5780
+real_exact_agree	0.5611	0.5105	0.2406	0.2772
+real_sign_agree_nonzero	0.5932	0.6184	0.5980	0.6122
+real_spearman	0.0855	0.0739	0.1065	0.1280
+placebo_share_dtw_lag0	0.0936	0.1079	0.1169	0.1213
+placebo_mean_abs_dtw_lag	6.1120	6.3846	5.3421	3.6556
+placebo_share_cc_lag0	0.0731	0.0959	0.0854	0.0850
+placebo_exact_agree	0.0931	0.0999	0.1131	0.1193
+placebo_sign_agree_nonzero	0.5656	0.5774	0.5729	0.5794
+placebo_spearman	0.1033	0.0594	0.0959	0.1078
+n_pair_episodes	1848.0000	1001.0000	20769.0000	20985.0000
+n_strong_cc_nonzero	124.0000	55.0000	3551.0000	3354.0000
+strong_sign_agree	0.4758	0.4727	0.5018	0.5262
+strong_spearman	0.1421	0.3544	0.2153	0.2394

@@ -1,0 +1,109 @@
+[23:44:21] === Nifty Midcap 100 data pipeline ===
+[23:44:21] Nifty Midcap 100 constituents: 100 symbols
+[23:44:58] Batch download shape: (2867, 100)
+[23:44:58] Retrying 24 flaky tickers: ['360ONE.NS', 'ABCAPITAL.NS', 'AUROPHARMA.NS', 'BANKINDIA.NS', 'BDL.NS', 'BHEL.NS', 'BSE.NS', 'COCHINSHIP.NS', 'COFORGE.NS', 'DABUR.NS', 'DIXON.NS', 'FEDERALBNK.NS', 'GROWW.NS', 'INDIANB.NS', 'KALYANKJIL.NS', 'KPITTECH.NS', 'LTF.NS', 'NATIONALUM.NS', 'POLICYBZR.NS', 'SRF.NS', 'SUPREMEIND.NS', 'SUZLON.NS', 'VOLTAS.NS', 'WAAREEENER.NS']
+[23:45:06] Final missing total: 47163
+[23:45:06] Stocks first listed after 2020-01-01: 16/100
+[23:45:06]   SBICARD.NS: first valid 2020-03-16
+[23:45:06]   POWERINDIA.NS: first valid 2020-03-30
+[23:45:06]   KALYANKJIL.NS: first valid 2021-03-26
+[23:45:06]   NYKAA.NS: first valid 2021-11-10
+[23:45:06]   POLICYBZR.NS: first valid 2021-11-15
+[23:45:06]   PAYTM.NS: first valid 2021-11-18
+[23:45:06]   MANKIND.NS: first valid 2023-05-09
+[23:45:06]   IREDA.NS: first valid 2023-11-29
+[23:45:06]   PREMIERENE.NS: first valid 2024-09-03
+[23:45:06]   WAAREEENER.NS: first valid 2024-10-28
+[23:45:06]   SWIGGY.NS: first valid 2024-11-13
+[23:45:06]   VMM.NS: first valid 2024-12-18
+[23:45:06]   LGEINDIA.NS: first valid 2025-10-14
+[23:45:06]   LENSKART.NS: first valid 2025-11-10
+[23:45:06]   GROWW.NS: first valid 2025-11-12
+[23:45:06]   ICICIAMC.NS: first valid 2025-12-19
+[23:45:06] NIFTY_MIDCAP_100.NS shape: (2838,)
+[23:45:06] market_features (midcap) shape: (2778, 4)
+[23:45:06] 
+======================================================================
+SIGMA SWEEP - Nifty Midcap 100, train 2015-01-01..2021-12-31
+======================================================================
+[23:45:14]   calibration episodes: 31, {'Bear': 12, 'Sideways': 10, 'Bull': 9}
+[23:54:22]   calibration DTW matrices built in 547.7s
+[23:54:22] 
+  Bull regime - sigma sensitivity (68 stocks):
+[23:54:22]   sigma_frac      sigma  cond_number  off_diag_std
+[23:54:22]         0.10     0.0990        113.3      0.000000
+[23:54:22]         0.20     0.1981        117.9      0.001459
+[23:54:22]         0.30     0.2971        154.2      0.016026
+[23:54:22]         0.50     0.4952        328.7      0.085225
+[23:54:22]         0.75     0.7428        876.2      0.120897
+[23:54:22]         1.00     0.9904       2658.1      0.109943
+[23:54:22]         1.50     1.4856      14426.8      0.071207
+[23:54:22] 
+  Sideways regime - sigma sensitivity (66 stocks):
+[23:54:22]   sigma_frac      sigma  cond_number  off_diag_std
+[23:54:22]         0.10     0.0842         10.5      0.000000
+[23:54:22]         0.20     0.1684         10.6      0.000473
+[23:54:22]         0.30     0.2525         11.7      0.012951
+[23:54:22]         0.50     0.4209         50.6      0.083231
+[23:54:22]         0.75     0.6314        299.5      0.120166
+[23:54:22]         1.00     0.8418        888.0      0.108530
+[23:54:22]         1.50     1.2627       3462.8      0.069442
+[23:54:22] 
+  Bear regime - sigma sensitivity (66 stocks):
+[23:54:22]   sigma_frac      sigma  cond_number  off_diag_std
+[23:54:22]         0.10     0.0776         16.1      0.000000
+[23:54:22]         0.20     0.1553         16.1      0.000899
+[23:54:22]         0.30     0.2329         18.7      0.015362
+[23:54:22]         0.50     0.3882         67.2      0.084442
+[23:54:22]         0.75     0.5823        406.1      0.121733
+[23:54:22]         1.00     0.7764       1187.3      0.111108
+[23:54:22]         1.50     1.1647       4497.7      0.071817
+[23:54:22] FOLDS_LIMIT set: running only first 1 fold(s)
+[23:54:22] 
+======================================================================
+FOLD 1/1: train 2015-01-01..2019-12-31  test 2020-01-01..2020-12-31
+======================================================================
+[23:54:22]   train days=1168  test days=249
+[23:54:23]   seed=0: converged=True, log-likelihood=16563.98
+[23:54:24]   seed=7: converged=True, log-likelihood=16543.36
+[23:54:26]   seed=21: converged=True, log-likelihood=16655.01
+[23:54:28]   seed=42: converged=True, log-likelihood=16271.00
+[23:54:29]   seed=99: converged=True, log-likelihood=16449.54
+[23:54:29]   regime_map: {3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[23:54:30]   train regime dist: {'Bear': 842, 'Sideways': 199, 'Bull': 127}
+[23:54:30]   test regime dist: {'Bear': 238, 'Bull': 8, 'Sideways': 3}
+[23:54:30]   train episodes: 17 total, {'Bear': 8, 'Sideways': 6, 'Bull': 3}
+[23:54:30]   Bull: 123 pooled days across 3 episodes - OK
+[23:54:30]   Sideways: 192 pooled days across 6 episodes - OK
+[23:54:30]   Bear: 828 pooled days across 8 episodes - OK
+[23:54:30]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 71, 'Sideways': 82, 'Bear': 84}
+[23:55:22]     ...5/17 episodes done, 51s elapsed
+[23:55:56]     ...10/17 episodes done, 85s elapsed
+[23:56:59]     ...15/17 episodes done, 149s elapsed
+[00:02:05]     ...17/17 episodes done, 455s elapsed
+[00:02:06]   DTW episode loop: 17/17 usable, 17/17 completed, wall time 455.6s
+[00:02:06]   Bull: DTW cov built, sigma=0.2987, 68 stocks
+[00:02:06]   Sideways: DTW cov built, sigma=0.2432, 66 stocks
+[00:02:06]   Bear: DTW cov built, sigma=0.8135, 66 stocks
+[00:02:06]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[00:02:06]   STANDARD: Sharpe=0.888 AnnRet=28.97% AnnVol=32.62% MaxDD=-62.50% n=249
+[00:02:06]   DTW: Sharpe=1.031 AnnRet=32.83% AnnVol=31.83% MaxDD=-47.83% n=249
+[00:02:06]   BENCHMARK: Sharpe=0.670 AnnRet=20.02% AnnVol=29.86% MaxDD=-51.35% n=249
+[00:02:06]   Fold 1 done in 7.7 min. Total elapsed: 17.8 min
+[00:02:06] 
+40% weight-cap diagnostic: bound (>=0.395) in 0/6 frozen-weight vectors (0.0%)
+[00:02:06] 
+======================================================================
+POOLING RESULTS ACROSS 1 FOLDS (NIFTY MIDCAP 100)
+======================================================================
+[00:02:06] Pooled n_days: std= 249 dtw= 249 bench= 249
+[00:02:06]   POOLED STANDARD: Sharpe=0.888 AnnRet=28.97% AnnVol=32.62% MaxDD=-62.50% n=249
+[00:02:06]   POOLED DTW: Sharpe=1.031 AnnRet=32.83% AnnVol=31.83% MaxDD=-47.83% n=249
+[00:02:06]   POOLED BENCHMARK: Sharpe=0.670 AnnRet=20.02% AnnVol=29.86% MaxDD=-51.35% n=249
+[00:02:07] Bootstrap: observed_diff=0.143 p=0.5086 CI=[-1.482,1.110]
+[00:02:07] 
+Per-fold Sharpe gap table:
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe      gap
+    1      2020    0.888355    1.031274      0.670273 0.142919
+[00:02:07] 
+ALL DONE. Total elapsed: 17.8 min. Saved to ./sanity_midcap_results.pkl

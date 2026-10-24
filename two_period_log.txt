@@ -1,0 +1,634 @@
+[22:06:30 | +   0.0min] === TWO-PERIOD, MULTI-HORIZON STUDY STARTING ===
+[22:06:30 | +   0.0min] Checking Period A universe coverage (>= 2008-01-01, cutoff 2009-01-01 for 'qualifies')...
+[22:06:51 | +   0.3min] Period A qualifying universe: 43/50
+[22:06:51 | +   0.3min] Excluded (listed too late): [('COALINDIA.NS', None), ('ETERNAL.NS', None), ('HDFCLIFE.NS', None), ('INDIGO.NS', None), ('JIOFIN.NS', None), ('MAXHEALTH.NS', None), ('SBILIFE.NS', None)]
+[22:06:51 | +   0.3min] DECISION: 43 >= 30 threshold -> using CURRENT-CONSTITUENTS-FILTERED approach for Period A (not the historical-1008-list fallback).
+[22:06:51 | +   0.3min] 
+######################################################################
+# PERIOD A_2008_2019_calm
+######################################################################
+[22:06:51 | +   0.3min] --- STAGE START: A_2008_2019_calm data pull ---
+[22:07:47 | +   1.3min]   batch download shape: (2951, 43)
+[22:07:47 | +   1.3min]   retrying 7 flaky tickers: ['ADANIENT.NS', 'AXISBANK.NS', 'DRREDDY.NS', 'HCLTECH.NS', 'KOTAKBANK.NS', 'SBIN.NS', 'TCS.NS']
+[22:08:06 | +   1.6min]   final missing total: 0
+[22:08:07 | +   1.6min]   ^NSEI shape: (2929,), first=2008-01-01 00:00:00, last=2019-12-31 00:00:00
+[22:08:07 | +   1.6min] --- STAGE END: A_2008_2019_calm data pull (76.4s) ---
+[22:08:07 | +   1.6min]   market_features shape: (2869, 4), first=2008-03-28 00:00:00, last=2019-12-31 00:00:00
+[22:08:07 | +   1.6min]   sigma sweep calibration window: 2008-01-01..2015-12-31 (middle fold's train window)
+[22:08:07 | +   1.6min] --- STAGE START: A_2008_2019_calm sigma sweep calibration ---
+[22:08:32 | +   2.0min]   calibration episodes: 25, {'Bear': 12, 'Bull': 7, 'Sideways': 6}
+[22:10:15 | +   3.8min]     [Bull] ...5/7 calibration episodes done
+[22:12:35 | +   6.1min]     [Bull] ...7/7 calibration episodes done
+[22:14:27 | +   8.0min]     [Sideways] ...5/6 calibration episodes done
+[22:14:47 | +   8.3min]     [Sideways] ...6/6 calibration episodes done
+[22:15:44 | +   9.2min]     [Bear] ...5/12 calibration episodes done
+[22:16:34 | +  10.1min]     [Bear] ...10/12 calibration episodes done
+[22:17:00 | +  10.5min]     [Bear] ...12/12 calibration episodes done
+[22:17:02 | +  10.5min]   Bull regime - sigma sensitivity (43 stocks):
+[22:17:02 | +  10.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:17:02 | +  10.5min]         0.10     0.1387         17.1      0.000000
+[22:17:02 | +  10.5min]         0.20     0.2775         17.1      0.000158
+[22:17:02 | +  10.5min]         0.30     0.4162         18.0      0.009183
+[22:17:02 | +  10.5min]         0.50     0.6937         33.0      0.071077
+[22:17:02 | +  10.5min]         0.75     1.0406        141.1      0.096992
+[22:17:02 | +  10.5min]         1.00     1.3874        368.2      0.082951
+[22:17:02 | +  10.5min]         1.50     2.0811       1155.7      0.050201
+[22:17:02 | +  10.5min]   Sideways regime - sigma sensitivity (43 stocks):
+[22:17:02 | +  10.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:17:02 | +  10.5min]         0.10     0.1366         23.9      0.000000
+[22:17:02 | +  10.5min]         0.20     0.2732         23.9      0.000494
+[22:17:02 | +  10.5min]         0.30     0.4097         24.4      0.015342
+[22:17:02 | +  10.5min]         0.50     0.6829         99.9      0.091170
+[22:17:02 | +  10.5min]         0.75     1.0243        558.9      0.117057
+[22:17:02 | +  10.5min]         1.00     1.3658       1743.4      0.098342
+[22:17:02 | +  10.5min]         1.50     2.0486       8319.0      0.058847
+[22:17:02 | +  10.5min]   Bear regime - sigma sensitivity (43 stocks):
+[22:17:02 | +  10.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[22:17:02 | +  10.5min]         0.10     0.0926         47.4      0.000000
+[22:17:02 | +  10.5min]         0.20     0.1852         47.4      0.000151
+[22:17:02 | +  10.5min]         0.30     0.2778         47.8      0.008604
+[22:17:02 | +  10.5min]         0.50     0.4629         63.2      0.068457
+[22:17:02 | +  10.5min]         0.75     0.6944        138.5      0.095181
+[22:17:02 | +  10.5min]         1.00     0.9259        332.7      0.082300
+[22:17:02 | +  10.5min]         1.50     1.3888       1030.0      0.050325
+[22:17:02 | +  10.5min] --- STAGE END: A_2008_2019_calm sigma sweep calibration (535.1s) ---
+[22:17:02 | +  10.5min]   sigma_frac candidates and (median off_diag_std, median cond): {0.1: (1.4468947770769672e-12, 23.8828541655957), 0.2: (0.00015824982044782118, 23.883909341480837), 0.3: (0.00918260915840389, 24.36553452293881), 0.5: (0.07107713561986559, 63.16328358521739), 0.75: (0.09699206484094139, 141.06046187523197), 1.0: (0.08295050514757712, 368.2337119563722), 1.5: (0.0503245899680212, 1155.67709195349)}
+[22:17:02 | +  10.5min]   CHOSEN sigma_frac for A_2008_2019_calm: 0.5 (matches default 0.5)
+[22:17:02 | +  10.5min] ======================================================================
+[22:17:02 | +  10.5min] FOLD 1/7: train 2008-01-01..2012-12-31  test 2013-01-01..2013-12-31
+[22:17:02 | +  10.5min] ======================================================================
+[22:17:02 | +  10.5min]   train days=1160  test days=247
+[22:17:02 | +  10.5min] --- STAGE START: fold 1 HMM fit ---
+[22:17:04 | +  10.6min]   seed=0: converged=True, log-likelihood=14891.00
+[22:17:06 | +  10.6min]   seed=7: converged=True, log-likelihood=14914.98
+[22:17:08 | +  10.6min]   seed=21: converged=True, log-likelihood=14962.51
+[22:17:10 | +  10.7min]   seed=42: converged=True, log-likelihood=14718.24
+[22:17:13 | +  10.7min]   seed=99: converged=True, log-likelihood=14285.08
+[22:17:13 | +  10.7min] --- STAGE END: fold 1 HMM fit (10.5s) ---
+[22:17:13 | +  10.7min]   regime_map: {1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'}
+[22:17:14 | +  10.7min]   train regime dist: {'Bear': 474, 'Sideways': 377, 'Bull': 309}
+[22:17:14 | +  10.7min]   test regime dist: {'Sideways': 204, 'Bull': 39, 'Bear': 4}
+[22:17:14 | +  10.7min] --- STAGE START: fold 1 episode extraction ---
+[22:17:14 | +  10.7min] --- STAGE END: fold 1 episode extraction (0.0s) ---
+[22:17:14 | +  10.7min]   train episodes: 19 total, {'Sideways': 9, 'Bear': 6, 'Bull': 4}
+[22:17:14 | +  10.7min]   Bull: 310 pooled days across 4 episodes - OK
+[22:17:14 | +  10.7min]   Sideways: 376 pooled days across 9 episodes - OK
+[22:17:14 | +  10.7min]   Bear: 474 pooled days across 6 episodes - OK
+[22:17:14 | +  10.7min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:17:14 | +  10.7min] --- STAGE START: fold 1 DTW loop (19 episodes) ---
+[22:18:03 | +  11.6min]     ...episode 5/19 done, 49s elapsed
+[22:18:20 | +  11.8min]     ...episode 10/19 done, 66s elapsed
+[22:19:20 | +  12.8min]     ...episode 15/19 done, 126s elapsed
+[22:21:02 | +  14.5min]     ...episode 19/19 done, 228s elapsed
+[22:21:03 | +  14.6min] --- STAGE END: fold 1 DTW loop (229.4s) ---
+[22:21:03 | +  14.6min]   DTW episode loop: 19/19 usable, 19/19 completed, wall time 229.4s
+[22:21:03 | +  14.6min]   Bull: DTW cov built, sigma=0.5184, 43 stocks
+[22:21:03 | +  14.6min]   Sideways: DTW cov built, sigma=0.3108, 43 stocks
+[22:21:04 | +  14.6min]   Bear: DTW cov built, sigma=0.8141, 43 stocks
+[22:21:04 | +  14.6min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:21:04 | +  14.6min]   STANDARD: Sharpe=0.836 AnnRet=13.85% AnnVol=16.57% MaxDD=-18.28% n=247
+[22:21:04 | +  14.6min]   DTW: Sharpe=0.821 AnnRet=13.55% AnnVol=16.50% MaxDD=-14.64% n=247
+[22:21:04 | +  14.6min]   BENCHMARK: Sharpe=0.367 AnnRet=6.67% AnnVol=18.17% MaxDD=-15.76% n=247
+[22:21:04 | +  14.6min]   Fold 1 done in 4.0 min.
+[22:21:04 | +  14.6min]   Period A_2008_2019_calm total elapsed so far: 14.2 min
+[22:21:04 | +  14.6min] ======================================================================
+[22:21:04 | +  14.6min] FOLD 2/7: train 2008-01-01..2013-12-31  test 2014-01-01..2014-12-31
+[22:21:04 | +  14.6min] ======================================================================
+[22:21:04 | +  14.6min]   train days=1407  test days=240
+[22:21:04 | +  14.6min] --- STAGE START: fold 2 HMM fit ---
+[22:21:07 | +  14.6min]   seed=0: converged=True, log-likelihood=18160.49
+[22:21:09 | +  14.7min]   seed=7: converged=True, log-likelihood=18417.49
+[22:21:11 | +  14.7min]   seed=21: converged=True, log-likelihood=18017.38
+[22:21:13 | +  14.7min]   seed=42: converged=True, log-likelihood=17681.62
+[22:21:16 | +  14.8min]   seed=99: converged=True, log-likelihood=18460.16
+[22:21:16 | +  14.8min] --- STAGE END: fold 2 HMM fit (11.6s) ---
+[22:21:16 | +  14.8min]   regime_map: {3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'}
+[22:21:17 | +  14.8min]   train regime dist: {'Bear': 498, 'Sideways': 477, 'Bull': 432}
+[22:21:17 | +  14.8min]   test regime dist: {'Bull': 203, 'Bear': 37}
+[22:21:17 | +  14.8min] --- STAGE START: fold 2 episode extraction ---
+[22:21:17 | +  14.8min] --- STAGE END: fold 2 episode extraction (0.0s) ---
+[22:21:17 | +  14.8min]   train episodes: 20 total, {'Bear': 10, 'Sideways': 7, 'Bull': 3}
+[22:21:17 | +  14.8min]   Bull: 428 pooled days across 3 episodes - OK
+[22:21:17 | +  14.8min]   Sideways: 462 pooled days across 7 episodes - OK
+[22:21:17 | +  14.8min]   Bear: 489 pooled days across 10 episodes - OK
+[22:21:17 | +  14.8min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:21:17 | +  14.8min] --- STAGE START: fold 2 DTW loop (20 episodes) ---
+[22:21:49 | +  15.3min]     ...episode 5/20 done, 31s elapsed
+[22:22:46 | +  16.3min]     ...episode 10/20 done, 89s elapsed
+[22:23:14 | +  16.7min]     ...episode 15/20 done, 117s elapsed
+[22:25:59 | +  19.5min]     ...episode 20/20 done, 282s elapsed
+[22:26:01 | +  19.5min] --- STAGE END: fold 2 DTW loop (283.2s) ---
+[22:26:01 | +  19.5min]   DTW episode loop: 20/20 usable, 20/20 completed, wall time 283.2s
+[22:26:01 | +  19.5min]   Bull: DTW cov built, sigma=0.9295, 43 stocks
+[22:26:01 | +  19.5min]   Sideways: DTW cov built, sigma=0.5292, 43 stocks
+[22:26:01 | +  19.5min]   Bear: DTW cov built, sigma=0.4872, 43 stocks
+[22:26:01 | +  19.5min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:26:01 | +  19.5min]   STANDARD: Sharpe=3.111 AnnRet=43.42% AnnVol=13.96% MaxDD=-6.29% n=240
+[22:26:01 | +  19.5min]   DTW: Sharpe=3.156 AnnRet=47.66% AnnVol=15.10% MaxDD=-7.11% n=240
+[22:26:01 | +  19.5min]   BENCHMARK: Sharpe=2.240 AnnRet=28.66% AnnVol=12.79% MaxDD=-6.72% n=240
+[22:26:01 | +  19.5min]   Fold 2 done in 5.0 min.
+[22:26:01 | +  19.5min]   Period A_2008_2019_calm total elapsed so far: 19.2 min
+[22:26:01 | +  19.5min] ======================================================================
+[22:26:01 | +  19.5min] FOLD 3/7: train 2008-01-01..2014-12-31  test 2015-01-01..2015-12-31
+[22:26:01 | +  19.5min] ======================================================================
+[22:26:01 | +  19.5min]   train days=1647  test days=244
+[22:26:01 | +  19.5min] --- STAGE START: fold 3 HMM fit ---
+[22:26:04 | +  19.6min]   seed=0: converged=True, log-likelihood=22061.22
+[22:26:06 | +  19.6min]   seed=7: converged=True, log-likelihood=22142.70
+[22:26:09 | +  19.7min]   seed=21: converged=True, log-likelihood=22199.81
+[22:26:11 | +  19.7min]   seed=42: converged=True, log-likelihood=22061.22
+[22:26:14 | +  19.7min]   seed=99: converged=True, log-likelihood=22081.37
+[22:26:14 | +  19.7min] --- STAGE END: fold 3 HMM fit (12.5s) ---
+[22:26:14 | +  19.7min]   regime_map: {3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'}
+[22:26:16 | +  19.8min]   train regime dist: {'Sideways': 721, 'Bear': 530, 'Bull': 396}
+[22:26:16 | +  19.8min]   test regime dist: {'Sideways': 130, 'Bear': 99, 'Bull': 15}
+[22:26:16 | +  19.8min] --- STAGE START: fold 3 episode extraction ---
+[22:26:16 | +  19.8min] --- STAGE END: fold 3 episode extraction (0.0s) ---
+[22:26:16 | +  19.8min]   train episodes: 31 total, {'Bear': 14, 'Sideways': 9, 'Bull': 8}
+[22:26:16 | +  19.8min]   Bull: 389 pooled days across 8 episodes - OK
+[22:26:16 | +  19.8min]   Sideways: 710 pooled days across 9 episodes - OK
+[22:26:16 | +  19.8min]   Bear: 517 pooled days across 14 episodes - OK
+[22:26:16 | +  19.8min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:26:16 | +  19.8min] --- STAGE START: fold 3 DTW loop (31 episodes) ---
+[22:26:44 | +  20.2min]     ...episode 5/31 done, 28s elapsed
+[22:26:58 | +  20.5min]     ...episode 10/31 done, 42s elapsed
+[22:27:36 | +  21.1min]     ...episode 15/31 done, 80s elapsed
+[22:27:56 | +  21.4min]     ...episode 20/31 done, 100s elapsed
+[22:28:12 | +  21.7min]     ...episode 25/31 done, 116s elapsed
+[22:28:39 | +  22.2min]     ...episode 30/31 done, 143s elapsed
+[22:32:01 | +  25.5min]     ...episode 31/31 done, 345s elapsed
+[22:32:08 | +  25.6min] --- STAGE END: fold 3 DTW loop (351.5s) ---
+[22:32:08 | +  25.6min]   DTW episode loop: 31/31 usable, 31/31 completed, wall time 351.5s
+[22:32:08 | +  25.6min]   Bull: DTW cov built, sigma=0.3250, 43 stocks
+[22:32:08 | +  25.6min]   Sideways: DTW cov built, sigma=0.7048, 43 stocks
+[22:32:08 | +  25.6min]   Bear: DTW cov built, sigma=0.2871, 43 stocks
+[22:32:08 | +  25.6min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:32:09 | +  25.6min]   STANDARD: Sharpe=0.520 AnnRet=10.43% AnnVol=20.05% MaxDD=-14.85% n=244
+[22:32:09 | +  25.6min]   DTW: Sharpe=0.696 AnnRet=14.15% AnnVol=20.32% MaxDD=-15.02% n=244
+[22:32:09 | +  25.6min]   BENCHMARK: Sharpe=-0.260 AnnRet=-4.28% AnnVol=16.44% MaxDD=-17.41% n=244
+[22:32:09 | +  25.6min]   Fold 3 done in 6.1 min.
+[22:32:09 | +  25.6min]   Period A_2008_2019_calm total elapsed so far: 25.3 min
+[22:32:09 | +  25.6min] ======================================================================
+[22:32:09 | +  25.6min] FOLD 4/7: train 2008-01-01..2015-12-31  test 2016-01-01..2016-12-31
+[22:32:09 | +  25.6min] ======================================================================
+[22:32:09 | +  25.6min]   train days=1891  test days=244
+[22:32:09 | +  25.6min] --- STAGE START: fold 4 HMM fit ---
+[22:32:13 | +  25.7min]   seed=0: converged=True, log-likelihood=25704.90
+[22:32:17 | +  25.8min]   seed=7: converged=True, log-likelihood=25296.83
+[22:32:25 | +  25.9min]   seed=21: converged=True, log-likelihood=25687.29
+[22:32:30 | +  26.0min]   seed=42: converged=True, log-likelihood=25544.14
+[22:32:38 | +  26.1min]   seed=99: converged=True, log-likelihood=25669.51
+[22:32:38 | +  26.1min] --- STAGE END: fold 4 HMM fit (29.0s) ---
+[22:32:38 | +  26.1min]   regime_map: {3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'}
+[22:32:43 | +  26.2min]   train regime dist: {'Bull': 738, 'Bear': 729, 'Sideways': 424}
+[22:32:43 | +  26.2min]   test regime dist: {'Bull': 138, 'Bear': 82, 'Sideways': 24}
+[22:32:43 | +  26.2min] --- STAGE START: fold 4 episode extraction ---
+[22:32:43 | +  26.2min] --- STAGE END: fold 4 episode extraction (0.0s) ---
+[22:32:43 | +  26.2min]   train episodes: 25 total, {'Bear': 12, 'Bull': 7, 'Sideways': 6}
+[22:32:43 | +  26.2min]   Bull: 738 pooled days across 7 episodes - OK
+[22:32:43 | +  26.2min]   Sideways: 418 pooled days across 6 episodes - OK
+[22:32:43 | +  26.2min]   Bear: 722 pooled days across 12 episodes - OK
+[22:32:45 | +  26.2min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:32:45 | +  26.2min] --- STAGE START: fold 4 DTW loop (25 episodes) ---
+[22:33:38 | +  27.1min]     ...episode 5/25 done, 53s elapsed
+[22:34:27 | +  27.9min]     ...episode 10/25 done, 102s elapsed
+[22:35:21 | +  28.9min]     ...episode 15/25 done, 156s elapsed
+[22:36:12 | +  29.7min]     ...episode 20/25 done, 207s elapsed
+[22:41:38 | +  35.1min]     ...episode 25/25 done, 533s elapsed
+[22:41:47 | +  35.3min] --- STAGE END: fold 4 DTW loop (542.6s) ---
+[22:41:47 | +  35.3min]   DTW episode loop: 25/25 usable, 25/25 completed, wall time 542.6s
+[22:41:47 | +  35.3min]   Bull: DTW cov built, sigma=0.6937, 43 stocks
+[22:41:47 | +  35.3min]   Sideways: DTW cov built, sigma=0.6829, 43 stocks
+[22:41:48 | +  35.3min]   Bear: DTW cov built, sigma=0.4629, 43 stocks
+[22:41:48 | +  35.3min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:41:49 | +  35.3min]   STANDARD: Sharpe=0.593 AnnRet=9.89% AnnVol=16.66% MaxDD=-16.02% n=244
+[22:41:49 | +  35.3min]   DTW: Sharpe=0.654 AnnRet=12.25% AnnVol=18.73% MaxDD=-19.09% n=244
+[22:41:49 | +  35.3min]   BENCHMARK: Sharpe=0.202 AnnRet=3.07% AnnVol=15.20% MaxDD=-12.40% n=244
+[22:41:49 | +  35.3min]   Fold 4 done in 9.7 min.
+[22:41:49 | +  35.3min]   Period A_2008_2019_calm total elapsed so far: 35.0 min
+[22:41:49 | +  35.3min] ======================================================================
+[22:41:49 | +  35.3min] FOLD 5/7: train 2008-01-01..2016-12-31  test 2017-01-01..2017-12-31
+[22:41:49 | +  35.3min] ======================================================================
+[22:41:49 | +  35.3min]   train days=2135  test days=248
+[22:41:49 | +  35.3min] --- STAGE START: fold 5 HMM fit ---
+[22:41:52 | +  35.4min]   seed=0: converged=True, log-likelihood=29364.92
+[22:41:55 | +  35.4min]   seed=7: converged=True, log-likelihood=29364.93
+[22:41:58 | +  35.5min]   seed=21: converged=True, log-likelihood=29373.87
+[22:42:01 | +  35.5min]   seed=42: converged=True, log-likelihood=29259.88
+[22:42:05 | +  35.6min]   seed=99: converged=True, log-likelihood=29373.21
+[22:42:05 | +  35.6min] --- STAGE END: fold 5 HMM fit (16.5s) ---
+[22:42:05 | +  35.6min]   regime_map: {0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'}
+[22:42:07 | +  35.6min]   train regime dist: {'Bull': 900, 'Bear': 742, 'Sideways': 493}
+[22:42:07 | +  35.6min]   test regime dist: {'Bull': 231, 'Bear': 13, 'Sideways': 4}
+[22:42:07 | +  35.6min] --- STAGE START: fold 5 episode extraction ---
+[22:42:07 | +  35.6min] --- STAGE END: fold 5 episode extraction (0.0s) ---
+[22:42:07 | +  35.6min]   train episodes: 26 total, {'Bear': 12, 'Sideways': 7, 'Bull': 7}
+[22:42:07 | +  35.6min]   Bull: 900 pooled days across 7 episodes - OK
+[22:42:07 | +  35.6min]   Sideways: 480 pooled days across 7 episodes - OK
+[22:42:07 | +  35.6min]   Bear: 723 pooled days across 12 episodes - OK
+[22:42:08 | +  35.6min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:42:08 | +  35.6min] --- STAGE START: fold 5 DTW loop (26 episodes) ---
+[22:42:59 | +  36.5min]     ...episode 5/26 done, 51s elapsed
+[22:43:23 | +  36.9min]     ...episode 10/26 done, 75s elapsed
+[22:44:18 | +  37.8min]     ...episode 15/26 done, 130s elapsed
+[22:45:14 | +  38.7min]     ...episode 20/26 done, 186s elapsed
+[22:47:53 | +  41.4min]     ...episode 25/26 done, 345s elapsed
+[22:48:21 | +  41.9min]     ...episode 26/26 done, 373s elapsed
+[22:48:29 | +  42.0min] --- STAGE END: fold 5 DTW loop (381.0s) ---
+[22:48:29 | +  42.0min]   DTW episode loop: 26/26 usable, 26/26 completed, wall time 381.0s
+[22:48:29 | +  42.0min]   Bull: DTW cov built, sigma=0.8476, 43 stocks
+[22:48:29 | +  42.0min]   Sideways: DTW cov built, sigma=0.4933, 43 stocks
+[22:48:29 | +  42.0min]   Bear: DTW cov built, sigma=0.5706, 43 stocks
+[22:48:29 | +  42.0min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:48:31 | +  42.0min]   STANDARD: Sharpe=1.959 AnnRet=24.06% AnnVol=12.28% MaxDD=-5.82% n=248
+[22:48:31 | +  42.0min]   DTW: Sharpe=2.607 AnnRet=38.32% AnnVol=14.70% MaxDD=-6.69% n=248
+[22:48:31 | +  42.0min]   BENCHMARK: Sharpe=2.837 AnnRet=25.60% AnnVol=9.02% MaxDD=-4.20% n=248
+[22:48:31 | +  42.0min]   Fold 5 done in 6.7 min.
+[22:48:31 | +  42.0min]   Period A_2008_2019_calm total elapsed so far: 41.7 min
+[22:48:31 | +  42.0min] ======================================================================
+[22:48:31 | +  42.0min] FOLD 6/7: train 2008-01-01..2017-12-31  test 2018-01-01..2018-12-31
+[22:48:31 | +  42.0min] ======================================================================
+[22:48:31 | +  42.0min]   train days=2383  test days=245
+[22:48:31 | +  42.0min] --- STAGE START: fold 6 HMM fit ---
+[22:48:36 | +  42.1min]   seed=0: converged=True, log-likelihood=32958.90
+[22:48:44 | +  42.2min]   seed=7: converged=True, log-likelihood=32958.53
+[22:48:53 | +  42.4min]   seed=21: converged=True, log-likelihood=33485.93
+[22:49:01 | +  42.5min]   seed=42: converged=True, log-likelihood=33337.76
+[22:49:02 | +  42.5min]   seed=99: converged=True, log-likelihood=32784.15
+[22:49:02 | +  42.5min] --- STAGE END: fold 6 HMM fit (31.9s) ---
+[22:49:02 | +  42.5min]   regime_map: {3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'}
+[22:49:10 | +  42.7min]   train regime dist: {'Bear': 1002, 'Sideways': 815, 'Bull': 566}
+[22:49:10 | +  42.7min]   test regime dist: {'Sideways': 123, 'Bull': 109, 'Bear': 13}
+[22:49:10 | +  42.7min] --- STAGE START: fold 6 episode extraction ---
+[22:49:10 | +  42.7min] --- STAGE END: fold 6 episode extraction (0.0s) ---
+[22:49:10 | +  42.7min]   train episodes: 38 total, {'Bear': 17, 'Bull': 11, 'Sideways': 10}
+[22:49:10 | +  42.7min]   Bull: 551 pooled days across 11 episodes - OK
+[22:49:10 | +  42.7min]   Sideways: 809 pooled days across 10 episodes - OK
+[22:49:10 | +  42.7min]   Bear: 977 pooled days across 17 episodes - OK
+[22:49:10 | +  42.7min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:49:10 | +  42.7min] --- STAGE START: fold 6 DTW loop (38 episodes) ---
+[22:49:37 | +  43.1min]     ...episode 5/38 done, 27s elapsed
+[22:50:08 | +  43.6min]     ...episode 10/38 done, 57s elapsed
+[22:50:43 | +  44.2min]     ...episode 15/38 done, 93s elapsed
+[22:51:14 | +  44.7min]     ...episode 20/38 done, 123s elapsed
+[22:51:44 | +  45.2min]     ...episode 25/38 done, 153s elapsed
+[22:52:27 | +  45.9min]     ...episode 30/38 done, 196s elapsed
+[22:54:04 | +  47.6min]     ...episode 35/38 done, 294s elapsed
+[22:58:39 | +  52.2min]     ...episode 38/38 done, 568s elapsed
+[22:58:52 | +  52.4min] --- STAGE END: fold 6 DTW loop (581.5s) ---
+[22:58:52 | +  52.4min]   DTW episode loop: 38/38 usable, 38/38 completed, wall time 581.5s
+[22:58:52 | +  52.4min]   Bull: DTW cov built, sigma=0.3109, 43 stocks
+[22:58:53 | +  52.4min]   Sideways: DTW cov built, sigma=0.5880, 43 stocks
+[22:58:53 | +  52.4min]   Bear: DTW cov built, sigma=0.4853, 43 stocks
+[22:58:53 | +  52.4min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[22:58:54 | +  52.4min]   STANDARD: Sharpe=0.191 AnnRet=3.25% AnnVol=16.99% MaxDD=-25.84% n=245
+[22:58:54 | +  52.4min]   DTW: Sharpe=-0.049 AnnRet=-0.92% AnnVol=18.87% MaxDD=-28.65% n=245
+[22:58:54 | +  52.4min]   BENCHMARK: Sharpe=0.247 AnnRet=3.19% AnnVol=12.90% MaxDD=-15.73% n=245
+[22:58:54 | +  52.4min]   Fold 6 done in 10.4 min.
+[22:58:54 | +  52.4min]   Period A_2008_2019_calm total elapsed so far: 52.1 min
+[22:58:54 | +  52.4min] ======================================================================
+[22:58:54 | +  52.4min] FOLD 7/7: train 2008-01-01..2018-12-31  test 2019-01-01..2019-12-31
+[22:58:54 | +  52.4min] ======================================================================
+[22:58:54 | +  52.4min]   train days=2628  test days=241
+[22:58:54 | +  52.4min] --- STAGE START: fold 7 HMM fit ---
+[22:59:01 | +  52.5min]   seed=0: converged=True, log-likelihood=37139.36
+[22:59:04 | +  52.6min]   seed=7: converged=True, log-likelihood=37139.44
+[22:59:10 | +  52.7min]   seed=21: converged=True, log-likelihood=36680.11
+[22:59:14 | +  52.7min]   seed=42: converged=True, log-likelihood=37306.84
+[22:59:24 | +  52.9min]   seed=99: converged=True, log-likelihood=37306.84
+[22:59:24 | +  52.9min] --- STAGE END: fold 7 HMM fit (29.7s) ---
+[22:59:24 | +  52.9min]   regime_map: {1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'}
+[22:59:29 | +  53.0min]   train regime dist: {'Bear': 1759, 'Bull': 559, 'Sideways': 310}
+[22:59:29 | +  53.0min]   test regime dist: {'Bear': 146, 'Bull': 94, 'Sideways': 1}
+[22:59:29 | +  53.0min] --- STAGE START: fold 7 episode extraction ---
+[22:59:29 | +  53.0min] --- STAGE END: fold 7 episode extraction (0.0s) ---
+[22:59:29 | +  53.0min]   train episodes: 27 total, {'Bear': 16, 'Bull': 9, 'Sideways': 2}
+[22:59:29 | +  53.0min]   Bull: 532 pooled days across 9 episodes - OK
+[22:59:29 | +  53.0min]   Sideways: 306 pooled days across 2 episodes - OK
+[22:59:29 | +  53.0min]   Bear: 1761 pooled days across 16 episodes - OK
+[22:59:29 | +  53.0min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 43, 'Sideways': 43, 'Bear': 43}
+[22:59:29 | +  53.0min] --- STAGE START: fold 7 DTW loop (27 episodes) ---
+[23:00:46 | +  54.3min]     ...episode 5/27 done, 77s elapsed
+[23:01:13 | +  54.7min]     ...episode 10/27 done, 104s elapsed
+[23:02:01 | +  55.5min]     ...episode 15/27 done, 152s elapsed
+[23:03:43 | +  57.2min]     ...episode 20/27 done, 254s elapsed
+[23:06:36 | +  60.1min]     ...episode 25/27 done, 427s elapsed
+[23:10:44 | +  64.2min]     ...episode 27/27 done, 675s elapsed
+[23:10:45 | +  64.3min] --- STAGE END: fold 7 DTW loop (675.9s) ---
+[23:10:45 | +  64.3min]   DTW episode loop: 27/27 usable, 27/27 completed, wall time 675.9s
+[23:10:45 | +  64.3min]   Bull: DTW cov built, sigma=0.3675, 43 stocks
+[23:10:45 | +  64.3min]   Sideways: DTW cov built, sigma=1.8212, 43 stocks
+[23:10:45 | +  64.3min]   Bear: DTW cov built, sigma=0.7758, 43 stocks
+[23:10:45 | +  64.3min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[23:10:46 | +  64.3min]   STANDARD: Sharpe=1.902 AnnRet=31.59% AnnVol=16.61% MaxDD=-6.75% n=241
+[23:10:46 | +  64.3min]   DTW: Sharpe=1.363 AnnRet=25.84% AnnVol=18.96% MaxDD=-9.32% n=241
+[23:10:46 | +  64.3min]   BENCHMARK: Sharpe=0.856 AnnRet=11.87% AnnVol=13.87% MaxDD=-12.16% n=241
+[23:10:46 | +  64.3min]   Fold 7 done in 11.9 min.
+[23:10:46 | +  64.3min]   Period A_2008_2019_calm total elapsed so far: 63.9 min
+[23:10:46 | +  64.3min] 
+A_2008_2019_calm: 7/7 folds succeeded
+[23:10:46 | +  64.3min] 
+======================================================================
+POOLING + MULTI-HORIZON EVALUATION: A_2008_2019_calm
+======================================================================
+[23:10:46 | +  64.3min] pooled n_days (1-day): std=1709 dtw=1709 bench=1709
+[23:10:46 | +  64.3min] --- STAGE START: A_2008_2019_calm horizon=1d aggregation + significance test ---
+[23:10:46 | +  64.3min]   [1d] STANDARD: Sharpe=1.190 AnnRet=19.41% AnnVol=16.31% MaxDD=-25.84% n=1709
+[23:10:46 | +  64.3min]   [1d] DTW: Sharpe=1.214 AnnRet=21.49% AnnVol=17.70% MaxDD=-28.65% n=1709
+[23:10:46 | +  64.3min]   [1d] BENCHMARK: Sharpe=0.745 AnnRet=10.66% AnnVol=14.31% MaxDD=-25.51% n=1709
+[23:10:52 | +  64.4min]   [1d] bootstrap: n_obs=1709, n_blocks/resample=85, observed_diff=0.024, p=0.4432, CI=[-0.244,0.275]
+[23:10:52 | +  64.4min] --- STAGE END: A_2008_2019_calm horizon=1d (6.6s) ---
+[23:10:52 | +  64.4min] --- STAGE START: A_2008_2019_calm horizon=5d aggregation + significance test ---
+[23:10:52 | +  64.4min]   [5d] STANDARD: Sharpe=1.095 AnnRet=19.46% AnnVol=17.78% MaxDD=-24.02% n=341
+[23:10:52 | +  64.4min]   [5d] DTW: Sharpe=1.134 AnnRet=21.48% AnnVol=18.94% MaxDD=-26.17% n=341
+[23:10:52 | +  64.4min]   [5d] BENCHMARK: Sharpe=0.712 AnnRet=10.74% AnnVol=15.09% MaxDD=-24.71% n=341
+[23:10:55 | +  64.4min]   [5d] bootstrap: n_obs=341, n_blocks/resample=17, observed_diff=0.039, p=0.3120, CI=[-0.184,0.315]
+[23:10:55 | +  64.4min] --- STAGE END: A_2008_2019_calm horizon=5d (3.1s) ---
+[23:10:55 | +  64.4min] --- STAGE START: A_2008_2019_calm horizon=22d aggregation + significance test ---
+[23:10:55 | +  64.4min]   [22d] STANDARD: Sharpe=1.117 AnnRet=19.12% AnnVol=17.12% MaxDD=-20.16% n=77
+[23:10:55 | +  64.4min]   [22d] DTW: Sharpe=1.133 AnnRet=21.16% AnnVol=18.67% MaxDD=-21.15% n=77
+[23:10:55 | +  64.4min]   [22d] BENCHMARK: Sharpe=0.703 AnnRet=10.47% AnnVol=14.89% MaxDD=-24.67% n=77
+[23:10:58 | +  64.5min]   [22d] bootstrap: n_obs=77, n_blocks/resample=3, observed_diff=0.016, p=0.1598, CI=[-0.142,0.305]
+[23:10:58 | +  64.5min]   WARNING: [22d] bootstrap resamples only 3 blocks of 20 from 77 observations - low resolution, treat p-value with real caution
+[23:10:58 | +  64.5min] --- STAGE END: A_2008_2019_calm horizon=22d (2.4s) ---
+[23:10:58 | +  64.5min] 
+A_2008_2019_calm per-fold Sharpe gap table (1-day):
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe       gap  failed
+    1      2013    0.836183    0.821241      0.366940 -0.014942   False
+    2      2014    3.110763    3.156469      2.240463  0.045706   False
+    3      2015    0.520347    0.696417     -0.260423  0.176070   False
+    4      2016    0.593356    0.653738      0.201773  0.060382   False
+    5      2017    1.959399    2.606748      2.837311  0.647350   False
+    6      2018    0.191493   -0.048690      0.247427 -0.240183   False
+    7      2019    1.902020    1.363069      0.856136 -0.538951   False
+[23:10:58 | +  64.5min] 
+PERIOD A_2008_2019_calm COMPLETE. Total elapsed: 64.1 min
+[23:10:58 | +  64.5min] Period A checkpoint saved.
+[23:10:58 | +  64.5min] 
+######################################################################
+# PERIOD B_2020_2026_recent
+######################################################################
+[23:10:58 | +  64.5min] --- STAGE START: B_2020_2026_recent data pull ---
+[23:11:06 | +  64.6min]   batch download shape: (1638, 50)
+[23:11:06 | +  64.6min]   final missing total: 1451
+[23:11:07 | +  64.6min]   ^NSEI shape: (1633,), first=2020-01-01 00:00:00, last=2026-08-07 00:00:00
+[23:11:07 | +  64.6min]   STRICT SEPARATION CHECK PASSED: earliest data point is 2020-01-01 00:00:00, on/after required 2020-01-01
+[23:11:07 | +  64.6min] --- STAGE END: B_2020_2026_recent data pull (9.0s) ---
+[23:11:07 | +  64.6min]   market_features shape: (1573, 4), first=2020-03-27 00:00:00, last=2026-08-07 00:00:00
+[23:11:07 | +  64.6min]   sigma sweep calibration window: 2020-01-01..2022-12-31 (middle fold's train window)
+[23:11:07 | +  64.6min] --- STAGE START: B_2020_2026_recent sigma sweep calibration ---
+[23:11:15 | +  64.8min]   calib seed=99: FIT FAILED: 'covars' must be symmetric, positive-definite
+[23:11:16 | +  64.8min]   calibration episodes: 11, {'Bear': 5, 'Sideways': 4, 'Bull': 2}
+[23:12:03 | +  65.6min]     [Bull] ...2/2 calibration episodes done
+[23:13:48 | +  67.3min]     [Sideways] ...4/4 calibration episodes done
+[23:18:56 | +  72.4min]     [Bear] ...5/5 calibration episodes done
+[23:18:57 | +  72.5min]   Bull regime - sigma sensitivity (47 stocks):
+[23:18:57 | +  72.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[23:18:57 | +  72.5min]         0.10     0.0662         10.4      0.000000
+[23:18:57 | +  72.5min]         0.20     0.1323         10.4      0.000727
+[23:18:57 | +  72.5min]         0.30     0.1985         11.0      0.014521
+[23:18:57 | +  72.5min]         0.50     0.3308         44.1      0.091936
+[23:18:57 | +  72.5min]         0.75     0.4962 2437500625.2      0.140492
+[23:18:57 | +  72.5min]         1.00     0.6616 3878307115.0      0.132624
+[23:18:57 | +  72.5min]         1.50     0.9924 6088212968.3      0.089114
+[23:18:57 | +  72.5min]   Sideways regime - sigma sensitivity (47 stocks):
+[23:18:57 | +  72.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[23:18:57 | +  72.5min]         0.10     0.0726          7.8      0.000000
+[23:18:57 | +  72.5min]         0.20     0.1452          7.9      0.000795
+[23:18:57 | +  72.5min]         0.30     0.2178          9.2      0.016448
+[23:18:57 | +  72.5min]         0.50     0.3629         42.8      0.093571
+[23:18:57 | +  72.5min]         0.75     0.5444        333.1      0.125979
+[23:18:57 | +  72.5min]         1.00     0.7259       1999.6      0.109259
+[23:18:57 | +  72.5min]         1.50     1.0888 5336993015.1      0.067274
+[23:18:57 | +  72.5min]   Bear regime - sigma sensitivity (47 stocks):
+[23:18:57 | +  72.5min]   sigma_frac      sigma  cond_number  off_diag_std
+[23:18:57 | +  72.5min]         0.10     0.1027          4.3      0.000000
+[23:18:57 | +  72.5min]         0.20     0.2054          4.3      0.000633
+[23:18:57 | +  72.5min]         0.30     0.3081          4.5      0.013316
+[23:18:57 | +  72.5min]         0.50     0.5135         32.4      0.082670
+[23:18:57 | +  72.5min]         0.75     0.7702        385.6      0.110053
+[23:18:57 | +  72.5min]         1.00     1.0270 3161408245.2      0.093753
+[23:18:57 | +  72.5min]         1.50     1.5405 5358792008.3      0.056616
+[23:18:57 | +  72.5min] --- STAGE END: B_2020_2026_recent sigma sweep calibration (470.5s) ---
+[23:18:57 | +  72.5min]   sigma_frac candidates and (median off_diag_std, median cond): {0.1: (1.2919650038930667e-09, 7.778228896429797), 0.2: (0.0007269905198283261, 7.868973601242261), 0.3: (0.014521251656551415, 9.161803962336839), 0.5: (0.0919360872223857, 42.776461331029445), 0.75: (0.12597897794321353, 385.6391598673407), 1.0: (0.10925853827693188, 3161408245.198366), 1.5: (0.06727352638813486, 5358792008.341967)}
+[23:18:57 | +  72.5min]   CHOSEN sigma_frac for B_2020_2026_recent: 0.5 (matches default 0.5)
+[23:18:57 | +  72.5min] ======================================================================
+[23:18:57 | +  72.5min] FOLD 1/5: train 2020-01-01..2020-12-31  test 2021-01-01..2021-12-31
+[23:18:57 | +  72.5min] ======================================================================
+[23:18:57 | +  72.5min]   train days=190  test days=248
+[23:18:57 | +  72.5min] --- STAGE START: fold 1 HMM fit ---
+[23:18:59 | +  72.5min]   seed=0: converged=True, log-likelihood=2561.33
+[23:19:00 | +  72.5min]   seed=7: converged=True, log-likelihood=2619.90
+[23:19:01 | +  72.5min]   seed=21: converged=True, log-likelihood=2543.73
+[23:19:02 | +  72.5min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:19:03 | +  72.5min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:19:03 | +  72.5min] --- STAGE END: fold 1 HMM fit (5.4s) ---
+[23:19:03 | +  72.5min]   WARNING: 2/5 HMM seeds failed to fit
+[23:19:03 | +  72.5min]   regime_map: {3: 'Bear', 0: 'Bear', 2: 'Sideways', 1: 'Bull'}
+[23:19:03 | +  72.6min]   train regime dist: {'Bear': 182, 'Sideways': 6, 'Bull': 2}
+[23:19:03 | +  72.6min]   test regime dist: {'Bear': 248}
+[23:19:03 | +  72.6min] --- STAGE START: fold 1 episode extraction ---
+[23:19:03 | +  72.6min] --- STAGE END: fold 1 episode extraction (0.0s) ---
+[23:19:03 | +  72.6min]   train episodes: 2 total, {'Bear': 2}
+[23:19:03 | +  72.6min]   WARNING (DEGENERATE): only 1/3 regimes have any surviving episodes at all
+[23:19:03 | +  72.6min]   WARNING: Bull: 0 pooled days - regime absent from train
+[23:19:03 | +  72.6min]   WARNING: Sideways: 0 pooled days - regime absent from train
+[23:19:03 | +  72.6min]   Bear: 182 pooled days across 2 episodes - OK
+[23:19:03 | +  72.6min]   standard frozen weights built for: ['Bear'] | stock counts: {'Bear': 48}
+[23:19:04 | +  72.6min] --- STAGE START: fold 1 DTW loop (2 episodes) ---
+[23:21:50 | +  75.3min]     ...episode 2/2 done, 166s elapsed
+[23:21:51 | +  75.4min] --- STAGE END: fold 1 DTW loop (167.2s) ---
+[23:21:51 | +  75.4min]   DTW episode loop: 2/2 usable, 2/2 completed, wall time 167.2s
+[23:21:51 | +  75.4min]   Bear: DTW cov built, sigma=0.7775, 47 stocks
+[23:21:51 | +  75.4min]   DTW frozen weights built for: ['Bear']
+[23:21:51 | +  75.4min]   WARNING: fold 1 could not build all 3 regimes' frozen weights for both methods (std=['Bear'], dtw=['Bear']) - proceeding, but test days in a missing regime will be skipped, not filled in
+[23:21:52 | +  75.4min]   STANDARD: Sharpe=2.811 AnnRet=51.78% AnnVol=18.42% MaxDD=-6.98% n=248
+[23:21:52 | +  75.4min]   DTW: Sharpe=2.656 AnnRet=52.33% AnnVol=19.70% MaxDD=-8.53% n=248
+[23:21:52 | +  75.4min]   BENCHMARK: Sharpe=1.402 AnnRet=21.96% AnnVol=15.66% MaxDD=-10.63% n=248
+[23:21:52 | +  75.4min]   Fold 1 done in 2.9 min.
+[23:21:52 | +  75.4min]   Period B_2020_2026_recent total elapsed so far: 10.9 min
+[23:21:52 | +  75.4min] ======================================================================
+[23:21:52 | +  75.4min] FOLD 2/5: train 2020-01-01..2021-12-31  test 2022-01-01..2022-12-31
+[23:21:52 | +  75.4min] ======================================================================
+[23:21:52 | +  75.4min]   train days=438  test days=248
+[23:21:52 | +  75.4min] --- STAGE START: fold 2 HMM fit ---
+[23:21:53 | +  75.4min]   seed=0: converged=True, log-likelihood=6281.12
+[23:21:54 | +  75.4min]   seed=7: converged=True, log-likelihood=5991.41
+[23:21:56 | +  75.4min]   seed=21: converged=True, log-likelihood=6271.31
+[23:21:57 | +  75.5min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:21:59 | +  75.5min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:21:59 | +  75.5min] --- STAGE END: fold 2 HMM fit (7.0s) ---
+[23:21:59 | +  75.5min]   WARNING: 2/5 HMM seeds failed to fit
+[23:21:59 | +  75.5min]   regime_map: {1: 'Bear', 2: 'Bear', 0: 'Sideways', 3: 'Bull'}
+[23:22:00 | +  75.5min]   train regime dist: {'Sideways': 282, 'Bear': 94, 'Bull': 62}
+[23:22:00 | +  75.5min]   test regime dist: {'Bear': 214, 'Sideways': 18, 'Bull': 16}
+[23:22:00 | +  75.5min] --- STAGE START: fold 2 episode extraction ---
+[23:22:00 | +  75.5min] --- STAGE END: fold 2 episode extraction (0.0s) ---
+[23:22:00 | +  75.5min]   train episodes: 7 total, {'Bear': 3, 'Bull': 2, 'Sideways': 2}
+[23:22:00 | +  75.5min]   WARNING: Bull: only 62 pooled days across 2 episode(s) - thin
+[23:22:00 | +  75.5min]   Sideways: 276 pooled days across 2 episodes - OK
+[23:22:00 | +  75.5min]   WARNING: Bear: only 94 pooled days across 3 episode(s) - thin
+[23:22:00 | +  75.5min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 47, 'Sideways': 49, 'Bear': 48}
+[23:22:00 | +  75.5min] --- STAGE START: fold 2 DTW loop (7 episodes) ---
+[23:22:57 | +  76.4min]     ...episode 5/7 done, 56s elapsed
+[23:24:47 | +  78.3min]     ...episode 7/7 done, 167s elapsed
+[23:24:48 | +  78.3min] --- STAGE END: fold 2 DTW loop (167.4s) ---
+[23:24:48 | +  78.3min]   DTW episode loop: 7/7 usable, 7/7 completed, wall time 167.4s
+[23:24:48 | +  78.3min]   Bull: DTW cov built, sigma=0.3245, 47 stocks
+[23:24:48 | +  78.3min]   Sideways: DTW cov built, sigma=0.9530, 47 stocks
+[23:24:48 | +  78.3min]   Bear: DTW cov built, sigma=0.1985, 47 stocks
+[23:24:48 | +  78.3min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[23:24:49 | +  78.3min]   STANDARD: Sharpe=-0.124 AnnRet=-2.03% AnnVol=16.39% MaxDD=-15.49% n=248
+[23:24:49 | +  78.3min]   DTW: Sharpe=0.296 AnnRet=5.56% AnnVol=18.77% MaxDD=-20.66% n=248
+[23:24:49 | +  78.3min]   BENCHMARK: Sharpe=0.248 AnnRet=4.31% AnnVol=17.36% MaxDD=-17.99% n=248
+[23:24:49 | +  78.3min]   Fold 2 done in 3.0 min.
+[23:24:49 | +  78.3min]   Period B_2020_2026_recent total elapsed so far: 13.9 min
+[23:24:49 | +  78.3min] ======================================================================
+[23:24:49 | +  78.3min] FOLD 3/5: train 2020-01-01..2022-12-31  test 2023-01-01..2023-12-31
+[23:24:49 | +  78.3min] ======================================================================
+[23:24:49 | +  78.3min]   train days=686  test days=245
+[23:24:49 | +  78.3min] --- STAGE START: fold 3 HMM fit ---
+[23:24:50 | +  78.3min]   seed=0: converged=True, log-likelihood=9677.20
+[23:24:52 | +  78.4min]   seed=7: converged=True, log-likelihood=9684.08
+[23:24:54 | +  78.4min]   seed=21: converged=True, log-likelihood=9803.76
+[23:24:56 | +  78.4min]   seed=42: converged=True, log-likelihood=9715.46
+[23:24:57 | +  78.5min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:24:57 | +  78.5min] --- STAGE END: fold 3 HMM fit (7.8s) ---
+[23:24:57 | +  78.5min]   WARNING: 1/5 HMM seeds failed to fit
+[23:24:57 | +  78.5min]   regime_map: {0: 'Bear', 3: 'Bear', 1: 'Sideways', 2: 'Bull'}
+[23:24:58 | +  78.5min]   train regime dist: {'Bear': 392, 'Sideways': 230, 'Bull': 64}
+[23:24:58 | +  78.5min]   test regime dist: {'Bear': 170, 'Sideways': 74, 'Bull': 1}
+[23:24:58 | +  78.5min] --- STAGE START: fold 3 episode extraction ---
+[23:24:58 | +  78.5min] --- STAGE END: fold 3 episode extraction (0.0s) ---
+[23:24:58 | +  78.5min]   train episodes: 11 total, {'Bear': 5, 'Sideways': 4, 'Bull': 2}
+[23:24:58 | +  78.5min]   WARNING: Bull: only 64 pooled days across 2 episode(s) - thin
+[23:24:58 | +  78.5min]   Sideways: 220 pooled days across 4 episodes - OK
+[23:24:58 | +  78.5min]   Bear: 392 pooled days across 5 episodes - OK
+[23:24:58 | +  78.5min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 47, 'Sideways': 49, 'Bear': 49}
+[23:24:58 | +  78.5min] --- STAGE START: fold 3 DTW loop (11 episodes) ---
+[23:25:41 | +  79.2min]     ...episode 5/11 done, 43s elapsed
+[23:26:46 | +  80.3min]     ...episode 10/11 done, 108s elapsed
+[23:30:07 | +  83.6min]     ...episode 11/11 done, 309s elapsed
+[23:30:08 | +  83.6min] --- STAGE END: fold 3 DTW loop (309.7s) ---
+[23:30:08 | +  83.6min]   DTW episode loop: 11/11 usable, 11/11 completed, wall time 309.7s
+[23:30:08 | +  83.6min]   Bull: DTW cov built, sigma=0.3308, 47 stocks
+[23:30:08 | +  83.6min]   Sideways: DTW cov built, sigma=0.3629, 47 stocks
+[23:30:08 | +  83.6min]   Bear: DTW cov built, sigma=0.5135, 47 stocks
+[23:30:08 | +  83.6min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[23:30:09 | +  83.7min]   STANDARD: Sharpe=1.030 AnnRet=22.99% AnnVol=22.32% MaxDD=-29.27% n=245
+[23:30:09 | +  83.7min]   DTW: Sharpe=1.424 AnnRet=26.87% AnnVol=18.87% MaxDD=-24.20% n=245
+[23:30:09 | +  83.7min]   BENCHMARK: Sharpe=1.914 AnnRet=18.78% AnnVol=9.81% MaxDD=-7.32% n=245
+[23:30:09 | +  83.7min]   Fold 3 done in 5.3 min.
+[23:30:09 | +  83.7min]   Period B_2020_2026_recent total elapsed so far: 19.2 min
+[23:30:09 | +  83.7min] ======================================================================
+[23:30:09 | +  83.7min] FOLD 4/5: train 2020-01-01..2023-12-31  test 2024-01-01..2024-12-31
+[23:30:09 | +  83.7min] ======================================================================
+[23:30:09 | +  83.7min]   train days=931  test days=246
+[23:30:09 | +  83.7min] --- STAGE START: fold 4 HMM fit ---
+[23:30:11 | +  83.7min]   seed=0: converged=True, log-likelihood=13604.52
+[23:30:12 | +  83.7min]   seed=7: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[23:30:14 | +  83.7min]   seed=21: converged=True, log-likelihood=13453.29
+[23:30:15 | +  83.8min]   seed=42: converged=True, log-likelihood=13343.35
+[23:30:17 | +  83.8min]   seed=99: converged=True, log-likelihood=13450.15
+[23:30:17 | +  83.8min] --- STAGE END: fold 4 HMM fit (7.4s) ---
+[23:30:17 | +  83.8min]   WARNING: 1/5 HMM seeds failed to fit
+[23:30:17 | +  83.8min]   regime_map: {0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'}
+[23:30:18 | +  83.8min]   train regime dist: {'Bear': 611, 'Sideways': 257, 'Bull': 63}
+[23:30:18 | +  83.8min]   test regime dist: {'Bear': 177, 'Sideways': 68, 'Bull': 1}
+[23:30:18 | +  83.8min] --- STAGE START: fold 4 episode extraction ---
+[23:30:18 | +  83.8min] --- STAGE END: fold 4 episode extraction (0.0s) ---
+[23:30:18 | +  83.8min]   train episodes: 12 total, {'Bear': 6, 'Sideways': 4, 'Bull': 2}
+[23:30:18 | +  83.8min]   WARNING: Bull: only 63 pooled days across 2 episode(s) - thin
+[23:30:18 | +  83.8min]   Sideways: 251 pooled days across 4 episodes - OK
+[23:30:18 | +  83.8min]   Bear: 617 pooled days across 6 episodes - OK
+[23:30:18 | +  83.8min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 47, 'Sideways': 49, 'Bear': 50}
+[23:30:18 | +  83.8min] --- STAGE START: fold 4 DTW loop (12 episodes) ---
+[23:31:16 | +  84.8min]     ...episode 5/12 done, 57s elapsed
+[23:32:08 | +  85.6min]     ...episode 10/12 done, 110s elapsed
+[23:38:05 | +  91.6min]     ...episode 12/12 done, 467s elapsed
+[23:38:06 | +  91.6min] --- STAGE END: fold 4 DTW loop (467.9s) ---
+[23:38:06 | +  91.6min]   DTW episode loop: 12/12 usable, 12/12 completed, wall time 467.9s
+[23:38:06 | +  91.6min]   Bull: DTW cov built, sigma=0.3287, 47 stocks
+[23:38:06 | +  91.6min]   Sideways: DTW cov built, sigma=0.3926, 47 stocks
+[23:38:06 | +  91.6min]   Bear: DTW cov built, sigma=0.6162, 47 stocks
+[23:38:06 | +  91.6min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[23:38:07 | +  91.6min]   STANDARD: Sharpe=1.833 AnnRet=28.72% AnnVol=15.67% MaxDD=-7.88% n=246
+[23:38:07 | +  91.6min]   DTW: Sharpe=0.975 AnnRet=18.85% AnnVol=19.32% MaxDD=-12.73% n=246
+[23:38:07 | +  91.6min]   BENCHMARK: Sharpe=0.612 AnnRet=8.64% AnnVol=14.13% MaxDD=-11.58% n=246
+[23:38:07 | +  91.6min]   Fold 4 done in 8.0 min.
+[23:38:07 | +  91.6min]   Period B_2020_2026_recent total elapsed so far: 27.2 min
+[23:38:07 | +  91.6min] ======================================================================
+[23:38:07 | +  91.6min] FOLD 5/5: train 2020-01-01..2024-12-31  test 2025-01-01..2025-12-31
+[23:38:07 | +  91.6min] ======================================================================
+[23:38:07 | +  91.6min]   train days=1177  test days=249
+[23:38:07 | +  91.6min] --- STAGE START: fold 5 HMM fit ---
+[23:38:08 | +  91.6min]   seed=0: converged=True, log-likelihood=17065.44
+[23:38:10 | +  91.7min]   seed=7: converged=True, log-likelihood=17112.43
+[23:38:12 | +  91.7min]   seed=21: converged=True, log-likelihood=17388.62
+[23:38:14 | +  91.7min]   seed=42: converged=True, log-likelihood=17122.38
+[23:38:16 | +  91.8min]   seed=99: converged=True, log-likelihood=17167.03
+[23:38:16 | +  91.8min] --- STAGE END: fold 5 HMM fit (8.9s) ---
+[23:38:16 | +  91.8min]   regime_map: {3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'}
+[23:38:18 | +  91.8min]   train regime dist: {'Bear': 685, 'Bull': 417, 'Sideways': 75}
+[23:38:18 | +  91.8min]   test regime dist: {'Bear': 221, 'Bull': 27, 'Sideways': 1}
+[23:38:18 | +  91.8min] --- STAGE START: fold 5 episode extraction ---
+[23:38:18 | +  91.8min] --- STAGE END: fold 5 episode extraction (0.0s) ---
+[23:38:18 | +  91.8min]   train episodes: 19 total, {'Bear': 9, 'Bull': 8, 'Sideways': 2}
+[23:38:18 | +  91.8min]   Bull: 414 pooled days across 8 episodes - OK
+[23:38:18 | +  91.8min]   WARNING: Sideways: only 70 pooled days across 2 episode(s) - thin
+[23:38:18 | +  91.8min]   Bear: 670 pooled days across 9 episodes - OK
+[23:38:18 | +  91.8min]   standard frozen weights built for: ['Bull', 'Sideways', 'Bear'] | stock counts: {'Bull': 50, 'Sideways': 47, 'Bear': 50}
+[23:38:18 | +  91.8min] --- STAGE START: fold 5 DTW loop (19 episodes) ---
+[23:39:27 | +  93.0min]     ...episode 5/19 done, 69s elapsed
+[23:40:23 | +  93.9min]     ...episode 10/19 done, 125s elapsed
+[23:40:53 | +  94.4min]     ...episode 15/19 done, 155s elapsed
+[23:42:04 | +  95.6min]     ...episode 19/19 done, 226s elapsed
+[23:42:05 | +  95.6min] --- STAGE END: fold 5 DTW loop (226.9s) ---
+[23:42:05 | +  95.6min]   DTW episode loop: 19/19 usable, 19/19 completed, wall time 226.9s
+[23:42:05 | +  95.6min]   Bull: DTW cov built, sigma=0.3124, 47 stocks
+[23:42:05 | +  95.6min]   Sideways: DTW cov built, sigma=0.3550, 47 stocks
+[23:42:05 | +  95.6min]   Bear: DTW cov built, sigma=0.4308, 47 stocks
+[23:42:05 | +  95.6min]   DTW frozen weights built for: ['Bull', 'Sideways', 'Bear']
+[23:42:06 | +  95.6min]   STANDARD: Sharpe=-0.473 AnnRet=-6.99% AnnVol=14.77% MaxDD=-19.41% n=249
+[23:42:06 | +  95.6min]   DTW: Sharpe=0.395 AnnRet=6.22% AnnVol=15.74% MaxDD=-14.23% n=249
+[23:42:06 | +  95.6min]   BENCHMARK: Sharpe=0.858 AnnRet=10.11% AnnVol=11.79% MaxDD=-9.11% n=249
+[23:42:06 | +  95.6min]   Fold 5 done in 4.0 min.
+[23:42:06 | +  95.6min]   Period B_2020_2026_recent total elapsed so far: 31.1 min
+[23:42:06 | +  95.6min] 
+B_2020_2026_recent: 5/5 folds succeeded
+[23:42:06 | +  95.6min] 
+======================================================================
+POOLING + MULTI-HORIZON EVALUATION: B_2020_2026_recent
+======================================================================
+[23:42:06 | +  95.6min] pooled n_days (1-day): std=1236 dtw=1236 bench=1236
+[23:42:06 | +  95.6min] --- STAGE START: B_2020_2026_recent horizon=1d aggregation + significance test ---
+[23:42:06 | +  95.6min]   [1d] STANDARD: Sharpe=1.063 AnnRet=18.85% AnnVol=17.73% MaxDD=-35.12% n=1236
+[23:42:06 | +  95.6min]   [1d] DTW: Sharpe=1.184 AnnRet=21.95% AnnVol=18.53% MaxDD=-28.71% n=1236
+[23:42:06 | +  95.6min]   [1d] BENCHMARK: Sharpe=0.911 AnnRet=12.75% AnnVol=14.00% MaxDD=-18.91% n=1236
+[23:42:11 | +  95.7min]   [1d] bootstrap: n_obs=1236, n_blocks/resample=61, observed_diff=0.121, p=0.2930, CI=[-0.257,0.431]
+[23:42:11 | +  95.7min] --- STAGE END: B_2020_2026_recent horizon=1d (5.6s) ---
+[23:42:11 | +  95.7min] --- STAGE START: B_2020_2026_recent horizon=5d aggregation + significance test ---
+[23:42:11 | +  95.7min]   [5d] STANDARD: Sharpe=1.057 AnnRet=18.76% AnnVol=17.75% MaxDD=-32.45% n=247
+[23:42:11 | +  95.7min]   [5d] DTW: Sharpe=1.239 AnnRet=21.79% AnnVol=17.59% MaxDD=-25.76% n=247
+[23:42:11 | +  95.7min]   [5d] BENCHMARK: Sharpe=0.934 AnnRet=12.61% AnnVol=13.50% MaxDD=-17.38% n=247
+[23:42:14 | +  95.7min]   [5d] bootstrap: n_obs=247, n_blocks/resample=12, observed_diff=0.183, p=0.1924, CI=[-0.204,0.434]
+[23:42:14 | +  95.7min] --- STAGE END: B_2020_2026_recent horizon=5d (2.9s) ---
+[23:42:14 | +  95.7min] --- STAGE START: B_2020_2026_recent horizon=22d aggregation + significance test ---
+[23:42:14 | +  95.7min]   [22d] STANDARD: Sharpe=1.007 AnnRet=19.15% AnnVol=19.01% MaxDD=-23.92% n=56
+[23:42:14 | +  95.7min]   [22d] DTW: Sharpe=1.180 AnnRet=22.02% AnnVol=18.67% MaxDD=-21.74% n=56
+[23:42:14 | +  95.7min]   [22d] BENCHMARK: Sharpe=0.936 AnnRet=12.80% AnnVol=13.67% MaxDD=-15.59% n=56
+[23:42:17 | +  95.8min]   [22d] bootstrap: n_obs=56, n_blocks/resample=2, observed_diff=0.174, p=0.0958, CI=[-0.108,0.304]
+[23:42:17 | +  95.8min]   WARNING: [22d] bootstrap resamples only 2 blocks of 20 from 56 observations - low resolution, treat p-value with real caution
+[23:42:17 | +  95.8min] --- STAGE END: B_2020_2026_recent horizon=22d (2.3s) ---
+[23:42:17 | +  95.8min] 
+B_2020_2026_recent per-fold Sharpe gap table (1-day):
+ fold test_year  std_sharpe  dtw_sharpe  bench_sharpe       gap  failed
+    1      2021    2.811083    2.655930      1.402346 -0.155153   False
+    2      2022   -0.124013    0.296143      0.248055  0.420156   False
+    3      2023    1.029948    1.424064      1.913682  0.394116   False
+    4      2024    1.833269    0.975468      0.611966 -0.857801   False
+    5      2025   -0.473151    0.395154      0.857521  0.868305   False
+[23:42:17 | +  95.8min] 
+PERIOD B_2020_2026_recent COMPLETE. Total elapsed: 31.3 min
+[23:42:17 | +  95.8min] 
+=== ALL DONE. Total elapsed: 95.8 min ===

@@ -1,0 +1,185 @@
+[2026-10-21 10:56:42 | +   0.0min] Step 0 regression run: designs=['2p_BANK_A'], MAX_WORKERS=10, snapshot=C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\data\snapshot_20261021
+[2026-10-21 10:56:42 | +   0.0min] === 2p_BANK_A: stocks (2951, 12), features (2885, 4) 2008-03-28..2019-12-31, markets ['NSEI', 'NSEBANK']
+[2026-10-21 10:56:42 | +   0.0min] FOLD 1: train 2008-01-01..2012-12-31 (1167 d)  test 2013-01-01..2013-12-31 (248 d)
+[2026-10-21 10:57:12 | +   0.5min]   fold 1 done in 0.5 min (DTW 25s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 345, 'Sideways': 280, 'Bear': 535} warnings=[]
+[2026-10-21 10:57:12 | +   0.5min] FOLD 2: train 2008-01-01..2013-12-31 (1415 d)  test 2014-01-01..2014-12-31 (242 d)
+[2026-10-21 10:57:44 | +   1.0min]   fold 2 done in 0.5 min (DTW 27s); map={2: 'Bear', 0: 'Bear', 1: 'Sideways', 3: 'Bull'} pooled={'Bull': 457, 'Sideways': 133, 'Bear': 814} warnings=[]
+[2026-10-21 10:57:44 | +   1.0min] FOLD 3: train 2008-01-01..2014-12-31 (1657 d)  test 2015-01-01..2015-12-31 (246 d)
+[2026-10-21 10:58:16 | +   1.6min]   fold 3 done in 0.5 min (DTW 28s); map={1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 546, 'Sideways': 97, 'Bear': 1010} warnings=['Sideways: only 97 pooled days across 3 episode(s) - thin']
+[2026-10-21 10:58:16 | +   1.6min] FOLD 4: train 2008-01-01..2015-12-31 (1903 d)  test 2016-01-01..2016-12-31 (246 d)
+[2026-10-21 10:58:51 | +   2.2min]   fold 4 done in 0.6 min (DTW 30s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 655, 'Sideways': 330, 'Bear': 910} warnings=[]
+[2026-10-21 10:58:51 | +   2.2min] FOLD 5: train 2008-01-01..2016-12-31 (2149 d)  test 2017-01-01..2017-12-31 (248 d)
+[2026-10-21 10:59:27 | +   2.7min]   fold 5 done in 0.6 min (DTW 30s); map={0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 562, 'Sideways': 806, 'Bear': 772} warnings=[]
+[2026-10-21 10:59:27 | +   2.7min] FOLD 6: train 2008-01-01..2017-12-31 (2397 d)  test 2018-01-01..2018-12-31 (246 d)
+[2026-10-21 11:00:04 | +   3.4min]   fold 6 done in 0.6 min (DTW 32s); map={1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 635, 'Sideways': 356, 'Bear': 1387} warnings=[]
+[2026-10-21 11:00:04 | +   3.4min] FOLD 7: train 2008-01-01..2018-12-31 (2643 d)  test 2019-01-01..2019-12-31 (242 d)
+[2026-10-21 11:00:40 | +   4.0min]   fold 7 done in 0.6 min (DTW 31s); map={3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 793, 'Sideways': 965, 'Bear': 869} warnings=[]
+[2026-10-21 11:00:42 | +   4.0min]   fold 1 daily-return check: std max|diff|=2.62e-07 (n 248 vs 248), dtw max|diff|=1.34e-04 (n 248 vs 248)
+[2026-10-21 11:00:42 | +   4.0min]   fold 2 daily-return check: std max|diff|=3.62e-07 (n 242 vs 242), dtw max|diff|=6.06e-05 (n 242 vs 242)
+[2026-10-21 11:00:42 | +   4.0min]   fold 3 daily-return check: std max|diff|=2.96e-07 (n 246 vs 246), dtw max|diff|=3.96e-05 (n 246 vs 246)
+[2026-10-21 11:00:42 | +   4.0min]   fold 4 daily-return check: std max|diff|=3.16e-07 (n 246 vs 246), dtw max|diff|=7.99e-05 (n 246 vs 246)
+[2026-10-21 11:00:42 | +   4.0min]   fold 5 daily-return check: std max|diff|=6.93e-07 (n 248 vs 248), dtw max|diff|=1.21e-05 (n 248 vs 248)
+[2026-10-21 11:00:42 | +   4.0min]   fold 6 daily-return check: std max|diff|=2.85e-07 (n 246 vs 246), dtw max|diff|=1.91e-04 (n 246 vs 246)
+[2026-10-21 11:00:42 | +   4.0min]   fold 7 daily-return check: std max|diff|=2.02e-07 (n 242 vs 242), dtw max|diff|=4.80e-05 (n 242 vs 242)
+[2026-10-21 11:00:42 | +   4.0min]   [1d] Sharpe std 0.8207 (orig 0.8207) | dtw 0.6989 (orig 0.6991) | p_one 0.9272 (orig 0.9182) | 3dp match=True
+[2026-10-21 11:00:42 | +   4.0min]   [5d] Sharpe std 0.7934 (orig 0.7934) | dtw 0.6673 (orig 0.6675) | p_one 0.9774 (orig 0.9754) | 3dp match=False
+[2026-10-21 11:00:42 | +   4.0min]   [22d] Sharpe std 0.8514 (orig 0.8514) | dtw 0.7078 (orig 0.7081) | p_one 0.9444 (orig 0.9462) | 3dp match=True
+[2026-10-21 11:00:42 | +   4.0min] === 2p_BANK_A finished in 4.0 min
+[2026-10-21 11:00:42 | +   4.0min] ALL DONE
+[2026-10-21 11:01:18 | +   0.0min] Step 0 regression run: designs=['2p_BANK_B', 'exp_BANK', 'single_N50', 'exp_N50', '2p_N50_B', '2p_N50_A'], MAX_WORKERS=10, snapshot=C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\data\snapshot_20261021
+[2026-10-21 11:01:18 | +   0.0min] === 2p_BANK_B: stocks (1635, 14), features (1572, 4) 2020-03-27..2026-08-07, markets ['NSEI', 'NSEBANK']
+[2026-10-21 11:01:18 | +   0.0min] FOLD 1: train 2020-01-01..2020-12-31 (190 d)  test 2021-01-01..2021-12-31 (248 d)
+[2026-10-21 11:01:45 | +   0.4min]   fold 1 done in 0.4 min (DTW 23s); map={0: 'Bear', 1: 'Bear', 2: 'Sideways', 3: 'Bull'} pooled={'Bull': 0, 'Sideways': 109, 'Bear': 73} warnings=['Bull: 0 pooled days - regime absent from train', 'Bear: only 73 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:01:45 | +   0.4min] FOLD 2: train 2020-01-01..2021-12-31 (438 d)  test 2022-01-01..2022-12-31 (248 d)
+[2026-10-21 11:01:48 | +   0.5min]   seed=99: FIT FAILED (ValueError: array must not contain infs or NaNs)
+[2026-10-21 11:02:02 | +   0.7min]   fold 2 done in 0.3 min (DTW 13s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 64, 'Sideways': 311, 'Bear': 44} warnings=['1/5 HMM seeds failed to fit', 'Bull: only 64 pooled days across 2 episode(s) - thin', 'Bear: only 44 pooled days across 1 episode(s) - thin']
+[2026-10-21 11:02:02 | +   0.7min] FOLD 3: train 2020-01-01..2022-12-31 (686 d)  test 2023-01-01..2023-12-31 (245 d)
+[2026-10-21 11:02:05 | +   0.8min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:02:25 | +   1.1min]   fold 3 done in 0.4 min (DTW 20s); map={2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 215, 'Sideways': 67, 'Bear': 404} warnings=['1/5 HMM seeds failed to fit', 'Sideways: only 67 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:02:25 | +   1.1min] FOLD 4: train 2020-01-01..2023-12-31 (931 d)  test 2024-01-01..2024-12-31 (246 d)
+[2026-10-21 11:02:54 | +   1.6min]   fold 4 done in 0.5 min (DTW 24s); map={0: 'Bear', 3: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 243, 'Sideways': 64, 'Bear': 624} warnings=['Sideways: only 64 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:02:54 | +   1.6min] FOLD 5: train 2020-01-01..2024-12-31 (1177 d)  test 2025-01-01..2025-12-31 (248 d)
+[2026-10-21 11:03:25 | +   2.1min]   fold 5 done in 0.5 min (DTW 26s); map={2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 305, 'Sideways': 68, 'Bear': 804} warnings=['Sideways: only 68 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:03:26 | +   2.1min]   fold 1 daily-return check: std max|diff|=2.41e-07 (n 248 vs 248), dtw max|diff|=2.68e-05 (n 248 vs 248)
+[2026-10-21 11:03:26 | +   2.1min]   fold 2 daily-return check: std max|diff|=1.61e-07 (n 248 vs 248), dtw max|diff|=5.02e-05 (n 248 vs 248)
+[2026-10-21 11:03:26 | +   2.1min]   fold 3 daily-return check: std max|diff|=1.34e-07 (n 245 vs 245), dtw max|diff|=7.59e-05 (n 245 vs 245)
+[2026-10-21 11:03:26 | +   2.1min]   fold 4 daily-return check: std max|diff|=9.30e-08 (n 246 vs 246), dtw max|diff|=2.41e-04 (n 246 vs 246)
+[2026-10-21 11:03:27 | +   2.1min]   fold 5 daily-return check: std max|diff|=9.15e-08 (n 248 vs 248), dtw max|diff|=3.79e-05 (n 248 vs 248)
+[2026-10-21 11:03:27 | +   2.1min]   [1d] Sharpe std 0.9084 (orig 0.9084) | dtw 0.9614 (orig 0.9607) | p_one 0.3826 (orig 0.3616) | 3dp match=True
+[2026-10-21 11:03:27 | +   2.1min]   [5d] Sharpe std 0.9318 (orig 0.9318) | dtw 0.9903 (orig 0.9896) | p_one 0.5018 (orig 0.5046) | 3dp match=True
+[2026-10-21 11:03:27 | +   2.1min]   [22d] Sharpe std 1.0187 (orig 1.0187) | dtw 1.0528 (orig 1.0523) | p_one 0.5664 (orig 0.5684) | 3dp match=False
+[2026-10-21 11:03:27 | +   2.2min] === 2p_BANK_B finished in 2.2 min
+[2026-10-21 11:03:27 | +   2.2min] === exp_BANK: stocks (2864, 14), features (2800, 4) 2015-03-31..2026-08-07, markets ['NSEI', 'NSEBANK']
+[2026-10-21 11:03:27 | +   2.2min] FOLD 1: train 2015-01-01..2019-12-31 (1168 d)  test 2020-01-01..2020-12-31 (250 d)
+[2026-10-21 11:03:31 | +   2.2min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:03:31 | +   2.2min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:04:24 | +   3.1min]   fold 1 done in 0.9 min (DTW 52s); map={1: 'Bear', 0: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 483, 'Sideways': 367, 'Bear': 278} warnings=['2/5 HMM seeds failed to fit']
+[2026-10-21 11:04:24 | +   3.1min] FOLD 2: train 2015-01-01..2020-12-31 (1418 d)  test 2021-01-01..2021-12-31 (248 d)
+[2026-10-21 11:05:21 | +   4.1min]   fold 2 done in 1.0 min (DTW 53s); map={2: 'Bear', 0: 'Bear', 1: 'Sideways', 3: 'Bull'} pooled={'Bull': 555, 'Sideways': 270, 'Bear': 578} warnings=[]
+[2026-10-21 11:05:21 | +   4.1min] FOLD 3: train 2015-01-01..2021-12-31 (1666 d)  test 2022-01-01..2022-12-31 (248 d)
+[2026-10-21 11:05:55 | +   4.6min]   fold 3 done in 0.6 min (DTW 29s); map={1: 'Bear', 2: 'Bear', 3: 'Sideways', 0: 'Bull'} pooled={'Bull': 759, 'Sideways': 320, 'Bear': 574} warnings=[]
+[2026-10-21 11:05:55 | +   4.6min] FOLD 4: train 2015-01-01..2022-12-31 (1914 d)  test 2023-01-01..2023-12-31 (245 d)
+[2026-10-21 11:06:26 | +   5.1min]   fold 4 done in 0.5 min (DTW 26s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 788, 'Sideways': 367, 'Bear': 754} warnings=[]
+[2026-10-21 11:06:26 | +   5.1min] FOLD 5: train 2015-01-01..2023-12-31 (2159 d)  test 2024-01-01..2024-12-31 (246 d)
+[2026-10-21 11:06:58 | +   5.7min]   fold 5 done in 0.5 min (DTW 28s); map={1: 'Bear', 2: 'Bear', 3: 'Sideways', 0: 'Bull'} pooled={'Bull': 828, 'Sideways': 467, 'Bear': 847} warnings=[]
+[2026-10-21 11:06:58 | +   5.7min] FOLD 6: train 2015-01-01..2024-12-31 (2405 d)  test 2025-01-01..2025-12-31 (248 d)
+[2026-10-21 11:07:33 | +   6.2min]   fold 6 done in 0.6 min (DTW 30s); map={1: 'Bear', 2: 'Bear', 0: 'Sideways', 3: 'Bull'} pooled={'Bull': 873, 'Sideways': 698, 'Bear': 818} warnings=[]
+[2026-10-21 11:07:34 | +   6.3min]   fold 1 daily-return check: std max|diff|=3.06e-07 (n 250 vs 250), dtw max|diff|=2.76e-04 (n 250 vs 250)
+[2026-10-21 11:07:34 | +   6.3min]   fold 2 daily-return check: std max|diff|=1.98e-07 (n 248 vs 248), dtw max|diff|=7.19e-06 (n 248 vs 248)
+[2026-10-21 11:07:34 | +   6.3min]   fold 3 daily-return check: std max|diff|=2.14e-07 (n 248 vs 248), dtw max|diff|=5.07e-05 (n 248 vs 248)
+[2026-10-21 11:07:34 | +   6.3min]   fold 4 daily-return check: std max|diff|=1.84e-07 (n 245 vs 245), dtw max|diff|=5.53e-05 (n 245 vs 245)
+[2026-10-21 11:07:34 | +   6.3min]   fold 5 daily-return check: std max|diff|=1.62e-07 (n 246 vs 246), dtw max|diff|=2.51e-05 (n 246 vs 246)
+[2026-10-21 11:07:34 | +   6.3min]   fold 6 daily-return check: std max|diff|=2.31e-07 (n 248 vs 248), dtw max|diff|=8.06e-05 (n 248 vs 248)
+[2026-10-21 11:07:34 | +   6.3min]   [1d] Sharpe std 0.3956 (orig 0.3956) | dtw 0.3446 (orig 0.3445) | p_one 0.5856 (orig 0.5652) | 3dp match=True
+[2026-10-21 11:07:34 | +   6.3min] === exp_BANK finished in 4.1 min
+[2026-10-21 11:07:34 | +   6.3min] === single_N50: stocks (2864, 50), features (2795, 4) 2015-04-01..2026-08-07, markets ['NSEI']
+[2026-10-21 11:07:34 | +   6.3min] FOLD 1: train 2015-01-01..2021-12-31 (1660 d)  test 2022-01-01..2026-08-09 (1135 d)
+[2026-10-21 11:09:09 | +   7.8min]   fold 1 done in 1.6 min (DTW 90s); map={1: 'Bear', 0: 'Bear', 2: 'Sideways', 3: 'Bull'} pooled={'Bull': 669, 'Sideways': 486, 'Bear': 483} warnings=[]
+[2026-10-21 11:09:09 | +   7.9min]   fold 1 daily-return check: std max|diff|=3.16e-07 (n 1135 vs 1135), dtw max|diff|=1.10e-04 (n 1135 vs 1135)
+[2026-10-21 11:09:09 | +   7.9min]   [1d] Sharpe std 0.5411 (orig 0.5411) | dtw 0.6689 (orig 0.6691) | p_one 0.2984 (orig 0.3002) | 3dp match=True
+[2026-10-21 11:09:09 | +   7.9min] === single_N50 finished in 1.6 min
+[2026-10-21 11:09:09 | +   7.9min] === exp_N50: stocks (2864, 50), features (2795, 4) 2015-04-01..2026-08-07, markets ['NSEI']
+[2026-10-21 11:09:09 | +   7.9min] FOLD 1: train 2015-01-01..2019-12-31 (1162 d)  test 2020-01-01..2020-12-31 (250 d)
+[2026-10-21 11:10:40 | +   9.4min]   fold 1 done in 1.5 min (DTW 86s); map={0: 'Bear', 2: 'Bear', 3: 'Sideways', 1: 'Bull'} pooled={'Bull': 259, 'Sideways': 58, 'Bear': 819} warnings=['Sideways: only 58 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:10:40 | +   9.4min] FOLD 2: train 2015-01-01..2020-12-31 (1412 d)  test 2021-01-01..2021-12-31 (248 d)
+[2026-10-21 11:10:43 | +   9.4min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:12:06 | +  10.8min]   fold 2 done in 1.4 min (DTW 82s); map={2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 481, 'Sideways': 517, 'Bear': 397} warnings=['1/5 HMM seeds failed to fit']
+[2026-10-21 11:12:06 | +  10.8min] FOLD 3: train 2015-01-01..2021-12-31 (1660 d)  test 2022-01-01..2022-12-31 (248 d)
+[2026-10-21 11:13:39 | +  12.3min]   fold 3 done in 1.5 min (DTW 88s); map={1: 'Bear', 0: 'Bear', 2: 'Sideways', 3: 'Bull'} pooled={'Bull': 669, 'Sideways': 486, 'Bear': 483} warnings=[]
+[2026-10-21 11:13:39 | +  12.3min] FOLD 4: train 2015-01-01..2022-12-31 (1908 d)  test 2023-01-01..2023-12-31 (245 d)
+[2026-10-21 11:13:42 | +  12.4min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:15:31 | +  14.2min]   fold 4 done in 1.9 min (DTW 107s); map={2: 'Bear', 1: 'Bear', 3: 'Sideways', 0: 'Bull'} pooled={'Bull': 696, 'Sideways': 724, 'Bear': 459} warnings=['1/5 HMM seeds failed to fit']
+[2026-10-21 11:15:31 | +  14.2min] FOLD 5: train 2015-01-01..2023-12-31 (2153 d)  test 2024-01-01..2024-12-31 (246 d)
+[2026-10-21 11:15:34 | +  14.3min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:17:33 | +  16.2min]   fold 5 done in 2.0 min (DTW 118s); map={2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 809, 'Sideways': 379, 'Bear': 934} warnings=['1/5 HMM seeds failed to fit']
+[2026-10-21 11:17:33 | +  16.2min] FOLD 6: train 2015-01-01..2024-12-31 (2399 d)  test 2025-01-01..2025-12-31 (249 d)
+[2026-10-21 11:19:42 | +  18.4min]   fold 6 done in 2.2 min (DTW 124s); map={2: 'Bear', 3: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 925, 'Sideways': 518, 'Bear': 938} warnings=[]
+[2026-10-21 11:19:43 | +  18.4min]   fold 1 daily-return check: std max|diff|=1.49e-07 (n 250 vs 250), dtw max|diff|=1.50e-04 (n 250 vs 250)
+[2026-10-21 11:19:43 | +  18.4min]   fold 2 daily-return check: std max|diff|=2.03e-07 (n 248 vs 248), dtw max|diff|=4.64e-05 (n 248 vs 248)
+[2026-10-21 11:19:43 | +  18.4min]   fold 3 daily-return check: std max|diff|=2.64e-07 (n 248 vs 248), dtw max|diff|=1.47e-04 (n 248 vs 248)
+[2026-10-21 11:19:43 | +  18.4min]   fold 4 daily-return check: std max|diff|=1.28e-07 (n 245 vs 245), dtw max|diff|=4.03e-05 (n 245 vs 245)
+[2026-10-21 11:19:43 | +  18.4min]   fold 5 daily-return check: std max|diff|=1.15e-07 (n 246 vs 246), dtw max|diff|=2.09e-04 (n 246 vs 246)
+[2026-10-21 11:19:43 | +  18.4min]   fold 6 daily-return check: std max|diff|=1.24e-07 (n 249 vs 249), dtw max|diff|=2.99e-05 (n 249 vs 249)
+[2026-10-21 11:19:43 | +  18.4min]   [1d] Sharpe std 1.3094 (orig 1.3094) | dtw 1.0402 (orig 1.0395) | p_one 0.9484 (orig 0.9450) | 3dp match=True
+[2026-10-21 11:19:43 | +  18.4min] === exp_N50 finished in 10.6 min
+[2026-10-21 11:19:43 | +  18.4min] === 2p_N50_B: stocks (1635, 50), features (1573, 4) 2020-03-27..2026-08-07, markets ['NSEI']
+[2026-10-21 11:19:43 | +  18.4min] FOLD 1: train 2020-01-01..2020-12-31 (190 d)  test 2021-01-01..2021-12-31 (248 d)
+[2026-10-21 11:19:45 | +  18.5min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:19:46 | +  18.5min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:20:14 | +  18.9min]   fold 1 done in 0.5 min (DTW 28s); map={3: 'Bear', 0: 'Bear', 2: 'Sideways', 1: 'Bull'} pooled={'Bull': 0, 'Sideways': 0, 'Bear': 182} warnings=['2/5 HMM seeds failed to fit', 'Bull: 0 pooled days - regime absent from train', 'Sideways: 0 pooled days - regime absent from train']
+[2026-10-21 11:20:14 | +  18.9min] FOLD 2: train 2020-01-01..2021-12-31 (438 d)  test 2022-01-01..2022-12-31 (248 d)
+[2026-10-21 11:20:17 | +  19.0min]   seed=42: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:20:17 | +  19.0min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:21:01 | +  19.7min]   fold 2 done in 0.8 min (DTW 43s); map={1: 'Bear', 2: 'Bear', 0: 'Sideways', 3: 'Bull'} pooled={'Bull': 62, 'Sideways': 276, 'Bear': 94} warnings=['2/5 HMM seeds failed to fit', 'Bull: only 62 pooled days across 2 episode(s) - thin', 'Bear: only 94 pooled days across 3 episode(s) - thin']
+[2026-10-21 11:21:01 | +  19.7min] FOLD 3: train 2020-01-01..2022-12-31 (686 d)  test 2023-01-01..2023-12-31 (245 d)
+[2026-10-21 11:21:04 | +  19.8min]   seed=99: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:22:13 | +  20.9min]   fold 3 done in 1.2 min (DTW 68s); map={0: 'Bear', 3: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 64, 'Sideways': 220, 'Bear': 392} warnings=['1/5 HMM seeds failed to fit', 'Bull: only 64 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:22:13 | +  20.9min] FOLD 4: train 2020-01-01..2023-12-31 (931 d)  test 2024-01-01..2024-12-31 (246 d)
+[2026-10-21 11:22:14 | +  20.9min]   seed=7: FIT FAILED (ValueError: 'covars' must be symmetric, positive-definite)
+[2026-10-21 11:23:53 | +  22.6min]   fold 4 done in 1.7 min (DTW 96s); map={0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 63, 'Sideways': 251, 'Bear': 617} warnings=['1/5 HMM seeds failed to fit', 'Bull: only 63 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:23:53 | +  22.6min] FOLD 5: train 2020-01-01..2024-12-31 (1177 d)  test 2025-01-01..2025-12-31 (249 d)
+[2026-10-21 11:25:11 | +  23.9min]   fold 5 done in 1.3 min (DTW 74s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 414, 'Sideways': 70, 'Bear': 670} warnings=['Sideways: only 70 pooled days across 2 episode(s) - thin']
+[2026-10-21 11:25:12 | +  23.9min]   fold 1 daily-return check: std max|diff|=1.63e-07 (n 248 vs 248), dtw max|diff|=1.57e-04 (n 248 vs 248)
+[2026-10-21 11:25:12 | +  23.9min]   fold 2 daily-return check: std max|diff|=2.28e-07 (n 248 vs 248), dtw max|diff|=7.98e-05 (n 248 vs 248)
+[2026-10-21 11:25:12 | +  23.9min]   fold 3 daily-return check: std max|diff|=2.11e-07 (n 245 vs 245), dtw max|diff|=5.65e-05 (n 245 vs 245)
+[2026-10-21 11:25:12 | +  23.9min]   fold 4 daily-return check: std max|diff|=1.23e-07 (n 246 vs 246), dtw max|diff|=8.32e-05 (n 246 vs 246)
+[2026-10-21 11:25:12 | +  23.9min]   fold 5 daily-return check: std max|diff|=9.49e-08 (n 249 vs 249), dtw max|diff|=1.53e-04 (n 249 vs 249)
+[2026-10-21 11:25:12 | +  23.9min]   [1d] Sharpe std 1.0630 (orig 1.0630) | dtw 1.1845 (orig 1.1842) | p_one 0.3068 (orig 0.2930) | 3dp match=False
+[2026-10-21 11:25:12 | +  23.9min]   [5d] Sharpe std 1.0568 (orig 1.0568) | dtw 1.2396 (orig 1.2392) | p_one 0.1912 (orig 0.1924) | 3dp match=False
+[2026-10-21 11:25:12 | +  23.9min]   [22d] Sharpe std 1.0072 (orig 1.0072) | dtw 1.1799 (orig 1.1796) | p_one 0.0930 (orig 0.0958) | 3dp match=True
+[2026-10-21 11:25:12 | +  23.9min] === 2p_N50_B finished in 5.5 min
+[2026-10-21 11:25:12 | +  23.9min] === 2p_N50_A: stocks (2952, 43), features (2869, 4) 2008-03-28..2019-12-31, markets ['NSEI']
+[2026-10-21 11:25:12 | +  23.9min] FOLD 1: train 2008-01-01..2012-12-31 (1160 d)  test 2013-01-01..2013-12-31 (247 d)
+[2026-10-21 11:26:24 | +  25.1min]   fold 1 done in 1.2 min (DTW 67s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 310, 'Sideways': 376, 'Bear': 474} warnings=[]
+[2026-10-21 11:26:24 | +  25.1min] FOLD 2: train 2008-01-01..2013-12-31 (1407 d)  test 2014-01-01..2014-12-31 (240 d)
+[2026-10-21 11:27:48 | +  26.5min]   fold 2 done in 1.4 min (DTW 81s); map={3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 428, 'Sideways': 462, 'Bear': 489} warnings=[]
+[2026-10-21 11:27:48 | +  26.5min] FOLD 3: train 2008-01-01..2014-12-31 (1647 d)  test 2015-01-01..2015-12-31 (244 d)
+[2026-10-21 11:29:29 | +  28.2min]   fold 3 done in 1.7 min (DTW 96s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 389, 'Sideways': 710, 'Bear': 517} warnings=[]
+[2026-10-21 11:29:29 | +  28.2min] FOLD 4: train 2008-01-01..2015-12-31 (1891 d)  test 2016-01-01..2016-12-31 (244 d)
+[2026-10-21 11:31:12 | +  29.9min]   fold 4 done in 1.7 min (DTW 98s); map={3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 738, 'Sideways': 418, 'Bear': 722} warnings=[]
+[2026-10-21 11:31:12 | +  29.9min] FOLD 5: train 2008-01-01..2016-12-31 (2135 d)  test 2017-01-01..2017-12-31 (248 d)
+[2026-10-21 11:33:14 | +  31.9min]   fold 5 done in 2.0 min (DTW 117s); map={0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 900, 'Sideways': 480, 'Bear': 723} warnings=[]
+[2026-10-21 11:33:14 | +  31.9min] FOLD 6: train 2008-01-01..2017-12-31 (2383 d)  test 2018-01-01..2018-12-31 (245 d)
+[2026-10-21 11:35:22 | +  34.1min]   fold 6 done in 2.1 min (DTW 122s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 551, 'Sideways': 809, 'Bear': 977} warnings=[]
+[2026-10-21 11:35:22 | +  34.1min] FOLD 7: train 2008-01-01..2018-12-31 (2628 d)  test 2019-01-01..2019-12-31 (241 d)
+[2026-10-21 11:37:42 | +  36.4min]   fold 7 done in 2.3 min (DTW 134s); map={1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 532, 'Sideways': 306, 'Bear': 1761} warnings=[]
+[2026-10-21 11:37:44 | +  36.4min]   fold 1 daily-return check: std max|diff|=1.08e-03 (n 247 vs 247), dtw max|diff|=1.05e-03 (n 247 vs 247)
+[2026-10-21 11:37:44 | +  36.4min]   fold 2 daily-return check: std max|diff|=1.73e-03 (n 240 vs 240), dtw max|diff|=1.03e-03 (n 240 vs 240)
+[2026-10-21 11:37:44 | +  36.4min]   fold 3 daily-return check: std max|diff|=8.67e-04 (n 244 vs 244), dtw max|diff|=8.99e-04 (n 244 vs 244)
+[2026-10-21 11:37:44 | +  36.4min]   fold 4 daily-return check: std max|diff|=8.37e-04 (n 244 vs 244), dtw max|diff|=8.67e-04 (n 244 vs 244)
+[2026-10-21 11:37:44 | +  36.4min]   fold 5 daily-return check: std max|diff|=1.02e-03 (n 248 vs 248), dtw max|diff|=1.09e-03 (n 248 vs 248)
+[2026-10-21 11:37:44 | +  36.4min]   fold 6 daily-return check: std max|diff|=6.19e-04 (n 245 vs 245), dtw max|diff|=1.26e-03 (n 245 vs 245)
+[2026-10-21 11:37:44 | +  36.4min]   fold 7 daily-return check: std max|diff|=2.60e-04 (n 241 vs 241), dtw max|diff|=5.87e-04 (n 241 vs 241)
+[2026-10-21 11:37:44 | +  36.4min]   [1d] Sharpe std 1.1880 (orig 1.1904) | dtw 1.2088 (orig 1.2141) | p_one 0.4650 (orig 0.4432) | 3dp match=False
+[2026-10-21 11:37:44 | +  36.4min]   [5d] Sharpe std 1.0947 (orig 1.0949) | dtw 1.1310 (orig 1.1342) | p_one 0.3186 (orig 0.3120) | 3dp match=False
+[2026-10-21 11:37:44 | +  36.4min]   [22d] Sharpe std 1.1154 (orig 1.1172) | dtw 1.1309 (orig 1.1334) | p_one 0.1610 (orig 0.1598) | 3dp match=False
+[2026-10-21 11:37:44 | +  36.4min] === 2p_N50_A finished in 12.5 min
+[2026-10-21 11:37:44 | +  36.4min] ALL DONE
+[2026-10-21 11:40:54 | +   0.0min] Step 0 regression run: designs=['2p_N50_A'], MAX_WORKERS=10, snapshot=C:\Users\karth\OneDrive\Desktop\dtw\experiments_v2\data\snapshot_20261021
+[2026-10-21 11:40:54 | +   0.0min] === 2p_N50_A: stocks (2951, 43), features (2869, 4) 2008-03-28..2019-12-31, markets ['NSEI']
+[2026-10-21 11:40:54 | +   0.0min] FOLD 1: train 2008-01-01..2012-12-31 (1160 d)  test 2013-01-01..2013-12-31 (247 d)
+[2026-10-21 11:42:08 | +   1.2min]   fold 1 done in 1.2 min (DTW 67s); map={1: 'Bear', 3: 'Bear', 0: 'Sideways', 2: 'Bull'} pooled={'Bull': 310, 'Sideways': 376, 'Bear': 474} warnings=[]
+[2026-10-21 11:42:08 | +   1.2min] FOLD 2: train 2008-01-01..2013-12-31 (1407 d)  test 2014-01-01..2014-12-31 (240 d)
+[2026-10-21 11:43:47 | +   2.9min]   fold 2 done in 1.7 min (DTW 95s); map={3: 'Bear', 1: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 428, 'Sideways': 462, 'Bear': 489} warnings=[]
+[2026-10-21 11:43:47 | +   2.9min] FOLD 3: train 2008-01-01..2014-12-31 (1647 d)  test 2015-01-01..2015-12-31 (244 d)
+[2026-10-21 11:45:45 | +   4.8min]   fold 3 done in 2.0 min (DTW 113s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 389, 'Sideways': 710, 'Bear': 517} warnings=[]
+[2026-10-21 11:45:45 | +   4.8min] FOLD 4: train 2008-01-01..2015-12-31 (1891 d)  test 2016-01-01..2016-12-31 (244 d)
+[2026-10-21 11:47:35 | +   6.7min]   fold 4 done in 1.8 min (DTW 105s); map={3: 'Bear', 2: 'Bear', 1: 'Sideways', 0: 'Bull'} pooled={'Bull': 738, 'Sideways': 418, 'Bear': 722} warnings=[]
+[2026-10-21 11:47:35 | +   6.7min] FOLD 5: train 2008-01-01..2016-12-31 (2135 d)  test 2017-01-01..2017-12-31 (248 d)
+[2026-10-21 11:49:30 | +   8.6min]   fold 5 done in 1.9 min (DTW 110s); map={0: 'Bear', 1: 'Bear', 3: 'Sideways', 2: 'Bull'} pooled={'Bull': 900, 'Sideways': 480, 'Bear': 723} warnings=[]
+[2026-10-21 11:49:30 | +   8.6min] FOLD 6: train 2008-01-01..2017-12-31 (2383 d)  test 2018-01-01..2018-12-31 (245 d)
+[2026-10-21 11:51:40 | +  10.8min]   fold 6 done in 2.2 min (DTW 124s); map={3: 'Bear', 0: 'Bear', 1: 'Sideways', 2: 'Bull'} pooled={'Bull': 551, 'Sideways': 809, 'Bear': 977} warnings=[]
+[2026-10-21 11:51:40 | +  10.8min] FOLD 7: train 2008-01-01..2018-12-31 (2628 d)  test 2019-01-01..2019-12-31 (241 d)
+[2026-10-21 11:54:01 | +  13.1min]   fold 7 done in 2.4 min (DTW 135s); map={1: 'Bear', 3: 'Bear', 2: 'Sideways', 0: 'Bull'} pooled={'Bull': 532, 'Sideways': 306, 'Bear': 1761} warnings=[]
+[2026-10-21 11:54:04 | +  13.2min]   fold 1 daily-return check: std max|diff|=2.66e-07 (n 247 vs 247), dtw max|diff|=1.19e-04 (n 247 vs 247)
+[2026-10-21 11:54:04 | +  13.2min]   fold 2 daily-return check: std max|diff|=2.40e-07 (n 240 vs 240), dtw max|diff|=5.57e-05 (n 240 vs 240)
+[2026-10-21 11:54:04 | +  13.2min]   fold 3 daily-return check: std max|diff|=2.39e-07 (n 244 vs 244), dtw max|diff|=1.60e-04 (n 244 vs 244)
+[2026-10-21 11:54:04 | +  13.2min]   fold 4 daily-return check: std max|diff|=3.11e-07 (n 244 vs 244), dtw max|diff|=1.47e-04 (n 244 vs 244)
+[2026-10-21 11:54:04 | +  13.2min]   fold 5 daily-return check: std max|diff|=2.05e-07 (n 248 vs 248), dtw max|diff|=1.34e-04 (n 248 vs 248)
+[2026-10-21 11:54:04 | +  13.2min]   fold 6 daily-return check: std max|diff|=3.17e-07 (n 245 vs 245), dtw max|diff|=9.36e-05 (n 245 vs 245)
+[2026-10-21 11:54:04 | +  13.2min]   fold 7 daily-return check: std max|diff|=2.01e-07 (n 241 vs 241), dtw max|diff|=5.56e-05 (n 241 vs 241)
+[2026-10-21 11:54:04 | +  13.2min]   [1d] Sharpe std 1.1904 (orig 1.1904) | dtw 1.2150 (orig 1.2141) | p_one 0.4530 (orig 0.4432) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min]   [5d] Sharpe std 1.0949 (orig 1.0949) | dtw 1.1350 (orig 1.1342) | p_one 0.3088 (orig 0.3120) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min]   [22d] Sharpe std 1.1172 (orig 1.1172) | dtw 1.1340 (orig 1.1334) | p_one 0.1596 (orig 0.1598) | 3dp match=False
+[2026-10-21 11:54:04 | +  13.2min] === 2p_N50_A finished in 13.2 min
+[2026-10-21 11:54:04 | +  13.2min] ALL DONE

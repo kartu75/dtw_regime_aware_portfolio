@@ -1,0 +1,8 @@
+{
+  "stocks_N50_A": {
+    "drop_dates": ["2010-02-06"],
+    "reason": "2010-02-06 is a Saturday. In the 2026-10-21 download only HCLTECH.NS has a price on this date (the other 42 stocks and ^NSEI have none), which creates a near-empty row and turns the next day's return into NaN for 42 stocks. The original August 2026 download used by two_period_study.py had 2951 rows and 0 missing values (two_period_log.txt: 'batch download shape: (2951, 43)', 'final missing total: 0'); dropping this one date reproduces that shape exactly (2951 x 43, 0 missing).",
+    "applied_by": "dtwlib.load_frame",
+    "added": "2026-10-21"
+  }
+}

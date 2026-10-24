@@ -1,0 +1,1006 @@
+timestamp,stage,objective,metric,covariances,design,universe,horizon,counted_in_family,note
+2026-10-21T11:00:42,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,rerun of existing result from snapshot
+2026-10-21T11:00:42,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,rerun of existing result from snapshot
+2026-10-21T11:00:42,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,rerun of existing result from snapshot
+2026-10-21T11:03:27,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,rerun of existing result from snapshot
+2026-10-21T11:03:27,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,rerun of existing result from snapshot
+2026-10-21T11:03:27,step0_regression,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,rerun of existing result from snapshot
+2026-10-21T11:07:34,step0_regression,sharpe,sharpe,"std,dtw",exp_BANK,BANK,1,no,rerun of existing result from snapshot
+2026-10-21T11:09:09,step0_regression,sharpe,sharpe,"std,dtw",single_N50,N50,1,no,rerun of existing result from snapshot
+2026-10-21T11:19:43,step0_regression,sharpe,sharpe,"std,dtw",exp_N50,N50,1,no,rerun of existing result from snapshot
+2026-10-21T11:25:12,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_B,N50,1,no,rerun of existing result from snapshot
+2026-10-21T11:25:12,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_B,N50,5,no,rerun of existing result from snapshot
+2026-10-21T11:25:12,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_B,N50,22,no,rerun of existing result from snapshot
+2026-10-21T11:37:44,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,1,no,rerun of existing result from snapshot
+2026-10-21T11:37:44,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,5,no,rerun of existing result from snapshot
+2026-10-21T11:37:44,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,22,no,rerun of existing result from snapshot
+2026-10-21T11:54:04,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,1,no,rerun of existing result from snapshot
+2026-10-21T11:54:04,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,5,no,rerun of existing result from snapshot
+2026-10-21T11:54:04,step0_regression,sharpe,sharpe,"std,dtw",2p_N50_A,N50,22,no,rerun of existing result from snapshot
+2026-10-21T12:53:33,pilot,sharpe,sharpe,"std,dtw",2p_N50_B,N50,1,yes,matched
+2026-10-21T12:53:33,pilot,sharpe,sortino,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:33,pilot,sharpe,treynor,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:35,pilot,sortino,sharpe,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:35,pilot,sortino,sortino,"std,dtw",2p_N50_B,N50,1,yes,matched
+2026-10-21T12:53:35,pilot,sortino,treynor,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:37,pilot,treynor,sharpe,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:37,pilot,treynor,sortino,"std,dtw",2p_N50_B,N50,1,no,cross-evaluated
+2026-10-21T12:53:37,pilot,treynor,treynor,"std,dtw",2p_N50_B,N50,1,yes,matched
+2026-10-21T12:53:39,pilot,sortino_estrada,sharpe,"std,dtw",2p_N50_B,N50,1,no,robustness: Estrada semicovariance for Standard
+2026-10-21T12:53:39,pilot,sortino_estrada,sortino,"std,dtw",2p_N50_B,N50,1,no,robustness: Estrada semicovariance for Standard
+2026-10-21T12:53:39,pilot,sortino_estrada,treynor,"std,dtw",2p_N50_B,N50,1,no,robustness: Estrada semicovariance for Standard
+2026-10-21T13:05:06,full,sharpe,sortino,"std,dtw",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:05:06,full,sharpe,treynor,"std,dtw",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:05:07,full,sharpe,sortino,"std,dtw",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:07,full,sharpe,treynor,"std,dtw",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:08,full,sharpe,sortino,"std,dtw",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:08,full,sharpe,treynor,"std,dtw",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:10,full,sortino,sharpe,"std,dtw",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:05:10,full,sortino,sortino,"std,dtw",2p_N50_A,N50,1,yes,primary; matched
+2026-10-21T13:05:10,full,sortino,treynor,"std,dtw",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:05:11,full,sortino,sharpe,"std,dtw",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:11,full,sortino,sortino,"std,dtw",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:05:11,full,sortino,treynor,"std,dtw",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:12,full,sortino,sharpe,"std,dtw",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:12,full,sortino,sortino,"std,dtw",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:05:12,full,sortino,treynor,"std,dtw",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:14,full,treynor,sharpe,"std,dtw",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:14,full,treynor,sortino,"std,dtw",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:14,full,treynor,treynor,"std,dtw",2p_N50_A,N50,1,yes,side (compares beta estimates only); matched
+2026-10-21T13:05:15,full,treynor,sharpe,"std,dtw",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:15,full,treynor,sortino,"std,dtw",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:15,full,treynor,treynor,"std,dtw",2p_N50_A,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:05:16,full,treynor,sharpe,"std,dtw",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:16,full,treynor,sortino,"std,dtw",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:16,full,treynor,treynor,"std,dtw",2p_N50_A,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:05:19,full,treynor_cap10,sharpe,"std,dtw",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:05:19,full,treynor_cap10,sortino,"std,dtw",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:05:19,full,treynor_cap10,treynor,"std,dtw",2p_N50_A,N50,1,no,robustness (side); matched
+2026-10-21T13:05:20,full,treynor_cap10,sharpe,"std,dtw",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:05:20,full,treynor_cap10,sortino,"std,dtw",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:05:20,full,treynor_cap10,treynor,"std,dtw",2p_N50_A,N50,5,no,robustness (side); matched
+2026-10-21T13:05:21,full,treynor_cap10,sharpe,"std,dtw",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:05:21,full,treynor_cap10,sortino,"std,dtw",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:05:21,full,treynor_cap10,treynor,"std,dtw",2p_N50_A,N50,22,no,robustness (side); matched
+2026-10-21T13:05:23,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:05:23,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_A,N50,1,no,robustness; matched
+2026-10-21T13:05:23,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:05:24,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:05:24,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_A,N50,5,no,robustness; matched
+2026-10-21T13:05:24,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:05:26,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:05:26,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_A,N50,22,no,robustness; matched
+2026-10-21T13:05:26,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:05:41,full,sharpe,sortino,"std,dtw",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:41,full,sharpe,treynor,"std,dtw",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:42,full,sharpe,sortino,"std,dtw",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:42,full,sharpe,treynor,"std,dtw",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:44,full,sortino,sharpe,"std,dtw",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:44,full,sortino,sortino,"std,dtw",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:05:44,full,sortino,treynor,"std,dtw",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:05:45,full,sortino,sharpe,"std,dtw",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:45,full,sortino,sortino,"std,dtw",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:05:45,full,sortino,treynor,"std,dtw",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:05:47,full,treynor,sharpe,"std,dtw",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:47,full,treynor,sortino,"std,dtw",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:47,full,treynor,treynor,"std,dtw",2p_N50_B,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:05:48,full,treynor,sharpe,"std,dtw",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:48,full,treynor,sortino,"std,dtw",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:05:48,full,treynor,treynor,"std,dtw",2p_N50_B,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:05:50,full,treynor_cap10,sharpe,"std,dtw",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:05:50,full,treynor_cap10,sortino,"std,dtw",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:05:50,full,treynor_cap10,treynor,"std,dtw",2p_N50_B,N50,1,no,robustness (side); matched
+2026-10-21T13:05:52,full,treynor_cap10,sharpe,"std,dtw",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:05:52,full,treynor_cap10,sortino,"std,dtw",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:05:52,full,treynor_cap10,treynor,"std,dtw",2p_N50_B,N50,5,no,robustness (side); matched
+2026-10-21T13:05:53,full,treynor_cap10,sharpe,"std,dtw",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:05:53,full,treynor_cap10,sortino,"std,dtw",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:05:53,full,treynor_cap10,treynor,"std,dtw",2p_N50_B,N50,22,no,robustness (side); matched
+2026-10-21T13:05:55,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:05:55,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_B,N50,1,no,robustness; matched
+2026-10-21T13:05:55,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:05:56,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:05:56,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_B,N50,5,no,robustness; matched
+2026-10-21T13:05:56,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:05:57,full,sortino_estrada_clip,sharpe,"std,dtw",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:05:57,full,sortino_estrada_clip,sortino,"std,dtw",2p_N50_B,N50,22,no,robustness; matched
+2026-10-21T13:05:57,full,sortino_estrada_clip,treynor,"std,dtw",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:06:21,full,sharpe,sortino,"std,dtw",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:21,full,sharpe,treynor,"std,dtw",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:23,full,sharpe,sortino,"std,dtw",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:23,full,sharpe,treynor,"std,dtw",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:25,full,sharpe,sortino,"std,dtw",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:06:25,full,sharpe,treynor,"std,dtw",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:06:27,full,sortino,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:27,full,sortino,sortino,"std,dtw",2p_BANK_A,BANK,1,yes,primary; matched
+2026-10-21T13:06:27,full,sortino,treynor,"std,dtw",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:28,full,sortino,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:28,full,sortino,sortino,"std,dtw",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:06:28,full,sortino,treynor,"std,dtw",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:29,full,sortino,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:06:29,full,sortino,sortino,"std,dtw",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:06:29,full,sortino,treynor,"std,dtw",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:06:31,full,treynor,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:31,full,treynor,sortino,"std,dtw",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:31,full,treynor,treynor,"std,dtw",2p_BANK_A,BANK,1,yes,side (compares beta estimates only); matched
+2026-10-21T13:06:33,full,treynor,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:33,full,treynor,sortino,"std,dtw",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:33,full,treynor,treynor,"std,dtw",2p_BANK_A,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:06:34,full,treynor,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:34,full,treynor,sortino,"std,dtw",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:06:34,full,treynor,treynor,"std,dtw",2p_BANK_A,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:06:36,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:06:36,full,treynor_cap10,sortino,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:06:37,full,treynor_cap10,treynor,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:06:38,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:06:38,full,treynor_cap10,sortino,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:06:38,full,treynor_cap10,treynor,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:06:39,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:06:39,full,treynor_cap10,sortino,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:06:39,full,treynor_cap10,treynor,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:06:40,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:06:40,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_A,BANK,1,no,robustness; matched
+2026-10-21T13:06:40,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:06:41,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:06:41,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_A,BANK,5,no,robustness; matched
+2026-10-21T13:06:41,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:06:42,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:06:42,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_A,BANK,22,no,robustness; matched
+2026-10-21T13:06:42,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:06:44,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:06:44,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:06:44,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:06:45,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:06:45,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:06:45,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:06:45,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:06:45,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:06:45,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:06:56,full,sharpe,sortino,"std,dtw",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:56,full,sharpe,treynor,"std,dtw",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:06:57,full,sharpe,sortino,"std,dtw",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:57,full,sharpe,treynor,"std,dtw",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:06:59,full,sharpe,sortino,"std,dtw",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:06:59,full,sharpe,treynor,"std,dtw",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:07:00,full,sortino,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:07:00,full,sortino,sortino,"std,dtw",2p_BANK_B,BANK,1,yes,primary; matched
+2026-10-21T13:07:00,full,sortino,treynor,"std,dtw",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:07:01,full,sortino,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:07:01,full,sortino,sortino,"std,dtw",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:07:01,full,sortino,treynor,"std,dtw",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:07:02,full,sortino,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:07:02,full,sortino,sortino,"std,dtw",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:07:02,full,sortino,treynor,"std,dtw",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:07:03,full,treynor,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:03,full,treynor,sortino,"std,dtw",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:03,full,treynor,treynor,"std,dtw",2p_BANK_B,BANK,1,yes,side (compares beta estimates only); matched
+2026-10-21T13:07:04,full,treynor,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:04,full,treynor,sortino,"std,dtw",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:04,full,treynor,treynor,"std,dtw",2p_BANK_B,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:07:05,full,treynor,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:05,full,treynor,sortino,"std,dtw",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:05,full,treynor,treynor,"std,dtw",2p_BANK_B,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:07:06,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:06,full,treynor_cap10,sortino,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:06,full,treynor_cap10,treynor,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:07:07,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:07:07,full,treynor_cap10,sortino,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:07:07,full,treynor_cap10,treynor,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:07:07,full,treynor_cap10,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:07:07,full,treynor_cap10,sortino,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:07:07,full,treynor_cap10,treynor,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:07:08,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:07:08,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_B,BANK,1,no,robustness; matched
+2026-10-21T13:07:08,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:07:09,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:07:09,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_B,BANK,5,no,robustness; matched
+2026-10-21T13:07:09,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:07:10,full,sortino_estrada_clip,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:07:10,full,sortino_estrada_clip,sortino,"std,dtw",2p_BANK_B,BANK,22,no,robustness; matched
+2026-10-21T13:07:10,full,sortino_estrada_clip,treynor,"std,dtw",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:07:11,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:11,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:11,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:07:12,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:07:12,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:07:12,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:07:12,full,treynor_ownidx,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:07:12,full,treynor_ownidx,sortino,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:07:12,full,treynor_ownidx,treynor,"std,dtw",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:07:19,full,sharpe,sortino,"std,dtw",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:19,full,sharpe,treynor,"std,dtw",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:21,full,sortino,sharpe,"std,dtw",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:21,full,sortino,sortino,"std,dtw",single_N50,N50,1,no,primary; matched
+2026-10-21T13:07:21,full,sortino,treynor,"std,dtw",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:22,full,treynor,sharpe,"std,dtw",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:22,full,treynor,sortino,"std,dtw",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:22,full,treynor,treynor,"std,dtw",single_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:07:23,full,treynor_cap10,sharpe,"std,dtw",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:23,full,treynor_cap10,sortino,"std,dtw",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:23,full,treynor_cap10,treynor,"std,dtw",single_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:07:24,full,sortino_estrada_clip,sharpe,"std,dtw",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:07:24,full,sortino_estrada_clip,sortino,"std,dtw",single_N50,N50,1,no,robustness; matched
+2026-10-21T13:07:24,full,sortino_estrada_clip,treynor,"std,dtw",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:07:37,full,sharpe,sortino,"std,dtw",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:37,full,sharpe,treynor,"std,dtw",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:39,full,sortino,sharpe,"std,dtw",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:39,full,sortino,sortino,"std,dtw",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:07:39,full,sortino,treynor,"std,dtw",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:07:40,full,treynor,sharpe,"std,dtw",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:40,full,treynor,sortino,"std,dtw",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:07:40,full,treynor,treynor,"std,dtw",exp_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:07:42,full,treynor_cap10,sharpe,"std,dtw",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:42,full,treynor_cap10,sortino,"std,dtw",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:07:42,full,treynor_cap10,treynor,"std,dtw",exp_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:07:44,full,sortino_estrada_clip,sharpe,"std,dtw",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:07:44,full,sortino_estrada_clip,sortino,"std,dtw",exp_N50,N50,1,no,robustness; matched
+2026-10-21T13:07:44,full,sortino_estrada_clip,treynor,"std,dtw",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:07:58,full,sharpe,sortino,"std,dtw",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:07:58,full,sharpe,treynor,"std,dtw",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:08:00,full,sortino,sharpe,"std,dtw",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:08:00,full,sortino,sortino,"std,dtw",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:08:00,full,sortino,treynor,"std,dtw",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:08:01,full,treynor,sharpe,"std,dtw",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:08:01,full,treynor,sortino,"std,dtw",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:08:01,full,treynor,treynor,"std,dtw",exp_BANK,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:08:02,full,treynor_cap10,sharpe,"std,dtw",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:08:02,full,treynor_cap10,sortino,"std,dtw",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:08:02,full,treynor_cap10,treynor,"std,dtw",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:08:04,full,sortino_estrada_clip,sharpe,"std,dtw",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:08:04,full,sortino_estrada_clip,sortino,"std,dtw",exp_BANK,BANK,1,no,robustness; matched
+2026-10-21T13:08:04,full,sortino_estrada_clip,treynor,"std,dtw",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:08:06,full,treynor_ownidx,sharpe,"std,dtw",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:08:06,full,treynor_ownidx,sortino,"std,dtw",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:08:06,full,treynor_ownidx,treynor,"std,dtw",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:52:39,controls,sharpe,sharpe,"std,dtwz",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:52:39,controls,sharpe,sortino,"std,dtwz",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:39,controls,sharpe,treynor,"std,dtwz",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:41,controls,sharpe,sharpe,"std,dtwz",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:52:41,controls,sharpe,sortino,"std,dtwz",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:41,controls,sharpe,treynor,"std,dtwz",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:42,controls,sharpe,sharpe,"std,dtwz",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:52:42,controls,sharpe,sortino,"std,dtwz",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:42,controls,sharpe,treynor,"std,dtwz",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:44,controls,sortino,sharpe,"std,dtwz",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:44,controls,sortino,sortino,"std,dtwz",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:52:44,controls,sortino,treynor,"std,dtwz",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:44,controls,sortino,sharpe,"std,dtwz",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:44,controls,sortino,sortino,"std,dtwz",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:52:44,controls,sortino,treynor,"std,dtwz",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:45,controls,sortino,sharpe,"std,dtwz",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:45,controls,sortino,sortino,"std,dtwz",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:52:45,controls,sortino,treynor,"std,dtwz",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:46,controls,treynor,sharpe,"std,dtwz",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:46,controls,treynor,sortino,"std,dtwz",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:46,controls,treynor,treynor,"std,dtwz",2p_N50_A,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:52:47,controls,treynor,sharpe,"std,dtwz",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:47,controls,treynor,sortino,"std,dtwz",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:47,controls,treynor,treynor,"std,dtwz",2p_N50_A,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:52:47,controls,treynor,sharpe,"std,dtwz",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:47,controls,treynor,sortino,"std,dtwz",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:47,controls,treynor,treynor,"std,dtwz",2p_N50_A,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:52:49,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:52:49,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:52:49,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_A,N50,1,no,robustness (side); matched
+2026-10-21T13:52:49,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:52:49,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:52:49,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_A,N50,5,no,robustness (side); matched
+2026-10-21T13:52:50,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:52:50,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:52:50,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_A,N50,22,no,robustness (side); matched
+2026-10-21T13:52:51,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:52:51,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_A,N50,1,no,robustness; matched
+2026-10-21T13:52:51,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:52:52,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:52:52,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_A,N50,5,no,robustness; matched
+2026-10-21T13:52:52,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:52:52,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:52:52,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_A,N50,22,no,robustness; matched
+2026-10-21T13:52:52,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:52:54,controls,sharpe,sharpe,"std,volk",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:52:54,controls,sharpe,sortino,"std,volk",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:54,controls,sharpe,treynor,"std,volk",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:55,controls,sharpe,sharpe,"std,volk",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:52:55,controls,sharpe,sortino,"std,volk",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:55,controls,sharpe,treynor,"std,volk",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:55,controls,sharpe,sharpe,"std,volk",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:52:55,controls,sharpe,sortino,"std,volk",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:55,controls,sharpe,treynor,"std,volk",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:57,controls,sortino,sharpe,"std,volk",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:57,controls,sortino,sortino,"std,volk",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:52:57,controls,sortino,treynor,"std,volk",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:52:57,controls,sortino,sharpe,"std,volk",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:57,controls,sortino,sortino,"std,volk",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:52:57,controls,sortino,treynor,"std,volk",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:52:58,controls,sortino,sharpe,"std,volk",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:58,controls,sortino,sortino,"std,volk",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:52:58,controls,sortino,treynor,"std,volk",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:52:59,controls,treynor,sharpe,"std,volk",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:59,controls,treynor,sortino,"std,volk",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:52:59,controls,treynor,treynor,"std,volk",2p_N50_A,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:53:00,controls,treynor,sharpe,"std,volk",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:00,controls,treynor,sortino,"std,volk",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:00,controls,treynor,treynor,"std,volk",2p_N50_A,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:53:00,controls,treynor,sharpe,"std,volk",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:00,controls,treynor,sortino,"std,volk",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:00,controls,treynor,treynor,"std,volk",2p_N50_A,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:53:01,controls,treynor_cap10,sharpe,"std,volk",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:01,controls,treynor_cap10,sortino,"std,volk",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:01,controls,treynor_cap10,treynor,"std,volk",2p_N50_A,N50,1,no,robustness (side); matched
+2026-10-21T13:53:02,controls,treynor_cap10,sharpe,"std,volk",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:02,controls,treynor_cap10,sortino,"std,volk",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:02,controls,treynor_cap10,treynor,"std,volk",2p_N50_A,N50,5,no,robustness (side); matched
+2026-10-21T13:53:02,controls,treynor_cap10,sharpe,"std,volk",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:02,controls,treynor_cap10,sortino,"std,volk",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:02,controls,treynor_cap10,treynor,"std,volk",2p_N50_A,N50,22,no,robustness (side); matched
+2026-10-21T13:53:04,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:04,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_A,N50,1,no,robustness; matched
+2026-10-21T13:53:04,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:04,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:04,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_A,N50,5,no,robustness; matched
+2026-10-21T13:53:04,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:05,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:05,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_A,N50,22,no,robustness; matched
+2026-10-21T13:53:05,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:07,controls,sharpe,sharpe,"std,invvol",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:53:07,controls,sharpe,sortino,"std,invvol",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:07,controls,sharpe,treynor,"std,invvol",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:07,controls,sharpe,sharpe,"std,invvol",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:53:07,controls,sharpe,sortino,"std,invvol",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:07,controls,sharpe,treynor,"std,invvol",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:08,controls,sharpe,sharpe,"std,invvol",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:53:08,controls,sharpe,sortino,"std,invvol",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:08,controls,sharpe,treynor,"std,invvol",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:09,controls,sortino,sharpe,"std,invvol",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:09,controls,sortino,sortino,"std,invvol",2p_N50_A,N50,1,no,primary; matched
+2026-10-21T13:53:09,controls,sortino,treynor,"std,invvol",2p_N50_A,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:10,controls,sortino,sharpe,"std,invvol",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:10,controls,sortino,sortino,"std,invvol",2p_N50_A,N50,5,no,primary; matched
+2026-10-21T13:53:10,controls,sortino,treynor,"std,invvol",2p_N50_A,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:10,controls,sortino,sharpe,"std,invvol",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:10,controls,sortino,sortino,"std,invvol",2p_N50_A,N50,22,no,primary; matched
+2026-10-21T13:53:10,controls,sortino,treynor,"std,invvol",2p_N50_A,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:12,controls,treynor,sharpe,"std,invvol",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:12,controls,treynor,sortino,"std,invvol",2p_N50_A,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:12,controls,treynor,treynor,"std,invvol",2p_N50_A,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:53:12,controls,treynor,sharpe,"std,invvol",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:12,controls,treynor,sortino,"std,invvol",2p_N50_A,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:12,controls,treynor,treynor,"std,invvol",2p_N50_A,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:53:13,controls,treynor,sharpe,"std,invvol",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:13,controls,treynor,sortino,"std,invvol",2p_N50_A,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:13,controls,treynor,treynor,"std,invvol",2p_N50_A,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:53:14,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:14,controls,treynor_cap10,sortino,"std,invvol",2p_N50_A,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:14,controls,treynor_cap10,treynor,"std,invvol",2p_N50_A,N50,1,no,robustness (side); matched
+2026-10-21T13:53:15,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:15,controls,treynor_cap10,sortino,"std,invvol",2p_N50_A,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:15,controls,treynor_cap10,treynor,"std,invvol",2p_N50_A,N50,5,no,robustness (side); matched
+2026-10-21T13:53:15,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:15,controls,treynor_cap10,sortino,"std,invvol",2p_N50_A,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:15,controls,treynor_cap10,treynor,"std,invvol",2p_N50_A,N50,22,no,robustness (side); matched
+2026-10-21T13:53:17,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:17,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_A,N50,1,no,robustness; matched
+2026-10-21T13:53:17,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_A,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:17,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:17,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_A,N50,5,no,robustness; matched
+2026-10-21T13:53:17,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_A,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:18,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:18,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_A,N50,22,no,robustness; matched
+2026-10-21T13:53:18,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_A,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:32,controls,sharpe,sharpe,"std,dtwz",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:32,controls,sharpe,sortino,"std,dtwz",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:32,controls,sharpe,treynor,"std,dtwz",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:33,controls,sharpe,sharpe,"std,dtwz",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:33,controls,sharpe,sortino,"std,dtwz",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:33,controls,sharpe,treynor,"std,dtwz",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:33,controls,sharpe,sharpe,"std,dtwz",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:33,controls,sharpe,sortino,"std,dtwz",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:33,controls,sharpe,treynor,"std,dtwz",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:34,controls,sortino,sharpe,"std,dtwz",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:34,controls,sortino,sortino,"std,dtwz",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:34,controls,sortino,treynor,"std,dtwz",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:35,controls,sortino,sharpe,"std,dtwz",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:35,controls,sortino,sortino,"std,dtwz",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:35,controls,sortino,treynor,"std,dtwz",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:36,controls,sortino,sharpe,"std,dtwz",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:36,controls,sortino,sortino,"std,dtwz",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:36,controls,sortino,treynor,"std,dtwz",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:37,controls,treynor,sharpe,"std,dtwz",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:37,controls,treynor,sortino,"std,dtwz",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:37,controls,treynor,treynor,"std,dtwz",2p_N50_B,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:53:37,controls,treynor,sharpe,"std,dtwz",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:37,controls,treynor,sortino,"std,dtwz",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:37,controls,treynor,treynor,"std,dtwz",2p_N50_B,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:53:38,controls,treynor,sharpe,"std,dtwz",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:38,controls,treynor,sortino,"std,dtwz",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:38,controls,treynor,treynor,"std,dtwz",2p_N50_B,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:53:39,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:39,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:39,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_B,N50,1,no,robustness (side); matched
+2026-10-21T13:53:39,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:39,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:39,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_B,N50,5,no,robustness (side); matched
+2026-10-21T13:53:40,controls,treynor_cap10,sharpe,"std,dtwz",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:40,controls,treynor_cap10,sortino,"std,dtwz",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:40,controls,treynor_cap10,treynor,"std,dtwz",2p_N50_B,N50,22,no,robustness (side); matched
+2026-10-21T13:53:41,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:41,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_B,N50,1,no,robustness; matched
+2026-10-21T13:53:41,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:42,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:42,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_B,N50,5,no,robustness; matched
+2026-10-21T13:53:42,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:42,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:42,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_N50_B,N50,22,no,robustness; matched
+2026-10-21T13:53:42,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:43,controls,sharpe,sharpe,"std,volk",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:43,controls,sharpe,sortino,"std,volk",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:43,controls,sharpe,treynor,"std,volk",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:44,controls,sharpe,sharpe,"std,volk",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:44,controls,sharpe,sortino,"std,volk",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:44,controls,sharpe,treynor,"std,volk",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:44,controls,sharpe,sharpe,"std,volk",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:44,controls,sharpe,sortino,"std,volk",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:44,controls,sharpe,treynor,"std,volk",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:45,controls,sortino,sharpe,"std,volk",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:45,controls,sortino,sortino,"std,volk",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:45,controls,sortino,treynor,"std,volk",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:46,controls,sortino,sharpe,"std,volk",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:46,controls,sortino,sortino,"std,volk",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:46,controls,sortino,treynor,"std,volk",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:47,controls,sortino,sharpe,"std,volk",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:47,controls,sortino,sortino,"std,volk",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:47,controls,sortino,treynor,"std,volk",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:48,controls,treynor,sharpe,"std,volk",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:48,controls,treynor,sortino,"std,volk",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:48,controls,treynor,treynor,"std,volk",2p_N50_B,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:53:48,controls,treynor,sharpe,"std,volk",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:48,controls,treynor,sortino,"std,volk",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:48,controls,treynor,treynor,"std,volk",2p_N50_B,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:53:49,controls,treynor,sharpe,"std,volk",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:49,controls,treynor,sortino,"std,volk",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:49,controls,treynor,treynor,"std,volk",2p_N50_B,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:53:50,controls,treynor_cap10,sharpe,"std,volk",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:50,controls,treynor_cap10,sortino,"std,volk",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:53:50,controls,treynor_cap10,treynor,"std,volk",2p_N50_B,N50,1,no,robustness (side); matched
+2026-10-21T13:53:50,controls,treynor_cap10,sharpe,"std,volk",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:50,controls,treynor_cap10,sortino,"std,volk",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:53:50,controls,treynor_cap10,treynor,"std,volk",2p_N50_B,N50,5,no,robustness (side); matched
+2026-10-21T13:53:51,controls,treynor_cap10,sharpe,"std,volk",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:51,controls,treynor_cap10,sortino,"std,volk",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:53:51,controls,treynor_cap10,treynor,"std,volk",2p_N50_B,N50,22,no,robustness (side); matched
+2026-10-21T13:53:52,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:52,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_B,N50,1,no,robustness; matched
+2026-10-21T13:53:52,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:53:53,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:53,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_B,N50,5,no,robustness; matched
+2026-10-21T13:53:53,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:53:53,controls,sortino_estrada_clip,sharpe,"std,volk",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:53,controls,sortino_estrada_clip,sortino,"std,volk",2p_N50_B,N50,22,no,robustness; matched
+2026-10-21T13:53:53,controls,sortino_estrada_clip,treynor,"std,volk",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:53:54,controls,sharpe,sharpe,"std,invvol",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:54,controls,sharpe,sortino,"std,invvol",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:54,controls,sharpe,treynor,"std,invvol",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:55,controls,sharpe,sharpe,"std,invvol",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:55,controls,sharpe,sortino,"std,invvol",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:55,controls,sharpe,treynor,"std,invvol",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:55,controls,sharpe,sharpe,"std,invvol",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:55,controls,sharpe,sortino,"std,invvol",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:55,controls,sharpe,treynor,"std,invvol",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:56,controls,sortino,sharpe,"std,invvol",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:56,controls,sortino,sortino,"std,invvol",2p_N50_B,N50,1,no,primary; matched
+2026-10-21T13:53:57,controls,sortino,treynor,"std,invvol",2p_N50_B,N50,1,no,primary; cross-evaluated
+2026-10-21T13:53:57,controls,sortino,sharpe,"std,invvol",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:57,controls,sortino,sortino,"std,invvol",2p_N50_B,N50,5,no,primary; matched
+2026-10-21T13:53:57,controls,sortino,treynor,"std,invvol",2p_N50_B,N50,5,no,primary; cross-evaluated
+2026-10-21T13:53:58,controls,sortino,sharpe,"std,invvol",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:58,controls,sortino,sortino,"std,invvol",2p_N50_B,N50,22,no,primary; matched
+2026-10-21T13:53:58,controls,sortino,treynor,"std,invvol",2p_N50_B,N50,22,no,primary; cross-evaluated
+2026-10-21T13:53:59,controls,treynor,sharpe,"std,invvol",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:59,controls,treynor,sortino,"std,invvol",2p_N50_B,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:53:59,controls,treynor,treynor,"std,invvol",2p_N50_B,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:54:00,controls,treynor,sharpe,"std,invvol",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:00,controls,treynor,sortino,"std,invvol",2p_N50_B,N50,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:00,controls,treynor,treynor,"std,invvol",2p_N50_B,N50,5,no,side (compares beta estimates only); matched
+2026-10-21T13:54:00,controls,treynor,sharpe,"std,invvol",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:00,controls,treynor,sortino,"std,invvol",2p_N50_B,N50,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:00,controls,treynor,treynor,"std,invvol",2p_N50_B,N50,22,no,side (compares beta estimates only); matched
+2026-10-21T13:54:01,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:01,controls,treynor_cap10,sortino,"std,invvol",2p_N50_B,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:01,controls,treynor_cap10,treynor,"std,invvol",2p_N50_B,N50,1,no,robustness (side); matched
+2026-10-21T13:54:02,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:02,controls,treynor_cap10,sortino,"std,invvol",2p_N50_B,N50,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:02,controls,treynor_cap10,treynor,"std,invvol",2p_N50_B,N50,5,no,robustness (side); matched
+2026-10-21T13:54:02,controls,treynor_cap10,sharpe,"std,invvol",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:02,controls,treynor_cap10,sortino,"std,invvol",2p_N50_B,N50,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:02,controls,treynor_cap10,treynor,"std,invvol",2p_N50_B,N50,22,no,robustness (side); matched
+2026-10-21T13:54:03,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:54:03,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_B,N50,1,no,robustness; matched
+2026-10-21T13:54:03,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_B,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:54:04,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:54:04,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_B,N50,5,no,robustness; matched
+2026-10-21T13:54:04,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_B,N50,5,no,robustness; cross-evaluated
+2026-10-21T13:54:04,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:54:04,controls,sortino_estrada_clip,sortino,"std,invvol",2p_N50_B,N50,22,no,robustness; matched
+2026-10-21T13:54:04,controls,sortino_estrada_clip,treynor,"std,invvol",2p_N50_B,N50,22,no,robustness; cross-evaluated
+2026-10-21T13:54:21,controls,sharpe,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:21,controls,sharpe,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:21,controls,sharpe,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:21,controls,sharpe,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:21,controls,sharpe,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:21,controls,sharpe,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:22,controls,sharpe,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:22,controls,sharpe,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:22,controls,sharpe,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:23,controls,sortino,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:23,controls,sortino,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:23,controls,sortino,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:24,controls,sortino,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:24,controls,sortino,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:24,controls,sortino,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:24,controls,sortino,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:24,controls,sortino,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:24,controls,sortino,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:26,controls,treynor,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:26,controls,treynor,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:26,controls,treynor,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:54:26,controls,treynor,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:26,controls,treynor,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:26,controls,treynor,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:54:27,controls,treynor,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:27,controls,treynor,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:27,controls,treynor,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:54:28,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:28,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:28,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:54:29,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:29,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:29,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:54:29,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:29,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:29,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:54:31,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:54:31,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,robustness; matched
+2026-10-21T13:54:31,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:54:32,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:54:32,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,robustness; matched
+2026-10-21T13:54:32,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:54:32,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:54:32,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,robustness; matched
+2026-10-21T13:54:32,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:54:34,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:34,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:34,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:54:34,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:34,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:34,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:54:35,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:35,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:35,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:54:36,controls,sharpe,sharpe,"std,volk",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:36,controls,sharpe,sortino,"std,volk",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:36,controls,sharpe,treynor,"std,volk",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:37,controls,sharpe,sharpe,"std,volk",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:37,controls,sharpe,sortino,"std,volk",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:37,controls,sharpe,treynor,"std,volk",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:38,controls,sharpe,sharpe,"std,volk",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:38,controls,sharpe,sortino,"std,volk",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:38,controls,sharpe,treynor,"std,volk",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:39,controls,sortino,sharpe,"std,volk",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:39,controls,sortino,sortino,"std,volk",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:39,controls,sortino,treynor,"std,volk",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:40,controls,sortino,sharpe,"std,volk",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:40,controls,sortino,sortino,"std,volk",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:40,controls,sortino,treynor,"std,volk",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:40,controls,sortino,sharpe,"std,volk",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:40,controls,sortino,sortino,"std,volk",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:40,controls,sortino,treynor,"std,volk",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:41,controls,treynor,sharpe,"std,volk",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:41,controls,treynor,sortino,"std,volk",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:41,controls,treynor,treynor,"std,volk",2p_BANK_A,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:54:42,controls,treynor,sharpe,"std,volk",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:42,controls,treynor,sortino,"std,volk",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:42,controls,treynor,treynor,"std,volk",2p_BANK_A,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:54:42,controls,treynor,sharpe,"std,volk",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:42,controls,treynor,sortino,"std,volk",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:42,controls,treynor,treynor,"std,volk",2p_BANK_A,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:54:43,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,sortino,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,treynor,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:54:43,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,sortino,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,treynor,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:54:43,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,sortino,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:43,controls,treynor_cap10,treynor,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:54:45,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:54:45,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_A,BANK,1,no,robustness; matched
+2026-10-21T13:54:45,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:54:45,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:54:45,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_A,BANK,5,no,robustness; matched
+2026-10-21T13:54:45,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:54:46,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:54:46,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_A,BANK,22,no,robustness; matched
+2026-10-21T13:54:46,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:54:47,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:47,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:47,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:54:48,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:48,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:48,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:54:48,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:48,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:48,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:54:50,controls,sharpe,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:50,controls,sharpe,sortino,"std,invvol",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:50,controls,sharpe,treynor,"std,invvol",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:50,controls,sharpe,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:50,controls,sharpe,sortino,"std,invvol",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:50,controls,sharpe,treynor,"std,invvol",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:51,controls,sharpe,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:51,controls,sharpe,sortino,"std,invvol",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:51,controls,sharpe,treynor,"std,invvol",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:52,controls,sortino,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:52,controls,sortino,sortino,"std,invvol",2p_BANK_A,BANK,1,no,primary; matched
+2026-10-21T13:54:52,controls,sortino,treynor,"std,invvol",2p_BANK_A,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:54:53,controls,sortino,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:53,controls,sortino,sortino,"std,invvol",2p_BANK_A,BANK,5,no,primary; matched
+2026-10-21T13:54:53,controls,sortino,treynor,"std,invvol",2p_BANK_A,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:54:53,controls,sortino,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:53,controls,sortino,sortino,"std,invvol",2p_BANK_A,BANK,22,no,primary; matched
+2026-10-21T13:54:53,controls,sortino,treynor,"std,invvol",2p_BANK_A,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:54:54,controls,treynor,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:54,controls,treynor,sortino,"std,invvol",2p_BANK_A,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:54,controls,treynor,treynor,"std,invvol",2p_BANK_A,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:54:55,controls,treynor,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:55,controls,treynor,sortino,"std,invvol",2p_BANK_A,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:55,controls,treynor,treynor,"std,invvol",2p_BANK_A,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:54:56,controls,treynor,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:56,controls,treynor,sortino,"std,invvol",2p_BANK_A,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:54:56,controls,treynor,treynor,"std,invvol",2p_BANK_A,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:54:57,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:57,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:54:57,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:54:58,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:58,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:54:58,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:54:58,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:58,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:54:58,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:00,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:00,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_A,BANK,1,no,robustness; matched
+2026-10-21T13:55:00,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_A,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:00,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:00,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_A,BANK,5,no,robustness; matched
+2026-10-21T13:55:00,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_A,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:01,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:01,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_A,BANK,22,no,robustness; matched
+2026-10-21T13:55:01,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_A,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:02,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:02,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:02,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_A,BANK,1,no,robustness (side); matched
+2026-10-21T13:55:03,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:03,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:03,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_A,BANK,5,no,robustness (side); matched
+2026-10-21T13:55:03,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:03,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:03,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_A,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:15,controls,sharpe,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:55:15,controls,sharpe,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:15,controls,sharpe,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:16,controls,sharpe,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:55:16,controls,sharpe,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:16,controls,sharpe,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:16,controls,sharpe,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:55:16,controls,sharpe,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:16,controls,sharpe,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:17,controls,sortino,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:17,controls,sortino,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:55:17,controls,sortino,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:18,controls,sortino,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:18,controls,sortino,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:55:18,controls,sortino,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:18,controls,sortino,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:18,controls,sortino,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:55:18,controls,sortino,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:19,controls,treynor,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:19,controls,treynor,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:19,controls,treynor,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:55:20,controls,treynor,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:20,controls,treynor,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:20,controls,treynor,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:55:21,controls,treynor,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:21,controls,treynor,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:21,controls,treynor,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:55:22,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:22,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:22,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:55:22,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:22,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:22,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:55:23,controls,treynor_cap10,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:23,controls,treynor_cap10,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:23,controls,treynor_cap10,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:24,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:24,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,robustness; matched
+2026-10-21T13:55:24,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:24,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:24,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,robustness; matched
+2026-10-21T13:55:24,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:25,controls,sortino_estrada_clip,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:25,controls,sortino_estrada_clip,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,robustness; matched
+2026-10-21T13:55:25,controls,sortino_estrada_clip,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:26,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:26,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:26,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:55:27,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:27,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:27,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:55:28,controls,treynor_ownidx,sharpe,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:28,controls,treynor_ownidx,sortino,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:28,controls,treynor_ownidx,treynor,"std,dtwz",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:30,controls,sharpe,sharpe,"std,volk",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:55:30,controls,sharpe,sortino,"std,volk",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:30,controls,sharpe,treynor,"std,volk",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:31,controls,sharpe,sharpe,"std,volk",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:55:31,controls,sharpe,sortino,"std,volk",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:31,controls,sharpe,treynor,"std,volk",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:32,controls,sharpe,sharpe,"std,volk",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:55:32,controls,sharpe,sortino,"std,volk",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:32,controls,sharpe,treynor,"std,volk",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:34,controls,sortino,sharpe,"std,volk",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:34,controls,sortino,sortino,"std,volk",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:55:34,controls,sortino,treynor,"std,volk",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:35,controls,sortino,sharpe,"std,volk",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:35,controls,sortino,sortino,"std,volk",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:55:35,controls,sortino,treynor,"std,volk",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:36,controls,sortino,sharpe,"std,volk",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:36,controls,sortino,sortino,"std,volk",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:55:36,controls,sortino,treynor,"std,volk",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:55:38,controls,treynor,sharpe,"std,volk",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:38,controls,treynor,sortino,"std,volk",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:38,controls,treynor,treynor,"std,volk",2p_BANK_B,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:55:40,controls,treynor,sharpe,"std,volk",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:40,controls,treynor,sortino,"std,volk",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:40,controls,treynor,treynor,"std,volk",2p_BANK_B,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:55:40,controls,treynor,sharpe,"std,volk",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:40,controls,treynor,sortino,"std,volk",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:55:40,controls,treynor,treynor,"std,volk",2p_BANK_B,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:55:42,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:42,controls,treynor_cap10,sortino,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:42,controls,treynor_cap10,treynor,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:55:45,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:45,controls,treynor_cap10,sortino,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:45,controls,treynor_cap10,treynor,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:55:45,controls,treynor_cap10,sharpe,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:45,controls,treynor_cap10,sortino,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:45,controls,treynor_cap10,treynor,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:48,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:48,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_B,BANK,1,no,robustness; matched
+2026-10-21T13:55:48,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:55:49,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:49,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_B,BANK,5,no,robustness; matched
+2026-10-21T13:55:49,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:55:51,controls,sortino_estrada_clip,sharpe,"std,volk",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:51,controls,sortino_estrada_clip,sortino,"std,volk",2p_BANK_B,BANK,22,no,robustness; matched
+2026-10-21T13:55:51,controls,sortino_estrada_clip,treynor,"std,volk",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:55:53,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:53,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:55:53,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:55:54,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:54,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:55:54,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:55:55,controls,treynor_ownidx,sharpe,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:55,controls,treynor_ownidx,sortino,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:55:55,controls,treynor_ownidx,treynor,"std,volk",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:55:58,controls,sharpe,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:55:58,controls,sharpe,sortino,"std,invvol",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:58,controls,sharpe,treynor,"std,invvol",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:55:59,controls,sharpe,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:55:59,controls,sharpe,sortino,"std,invvol",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:55:59,controls,sharpe,treynor,"std,invvol",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:56:01,controls,sharpe,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:56:01,controls,sharpe,sortino,"std,invvol",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:56:01,controls,sharpe,treynor,"std,invvol",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:56:02,controls,sortino,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:56:02,controls,sortino,sortino,"std,invvol",2p_BANK_B,BANK,1,no,primary; matched
+2026-10-21T13:56:02,controls,sortino,treynor,"std,invvol",2p_BANK_B,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:56:04,controls,sortino,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:56:04,controls,sortino,sortino,"std,invvol",2p_BANK_B,BANK,5,no,primary; matched
+2026-10-21T13:56:04,controls,sortino,treynor,"std,invvol",2p_BANK_B,BANK,5,no,primary; cross-evaluated
+2026-10-21T13:56:05,controls,sortino,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:56:05,controls,sortino,sortino,"std,invvol",2p_BANK_B,BANK,22,no,primary; matched
+2026-10-21T13:56:05,controls,sortino,treynor,"std,invvol",2p_BANK_B,BANK,22,no,primary; cross-evaluated
+2026-10-21T13:56:07,controls,treynor,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:07,controls,treynor,sortino,"std,invvol",2p_BANK_B,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:07,controls,treynor,treynor,"std,invvol",2p_BANK_B,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:56:09,controls,treynor,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:09,controls,treynor,sortino,"std,invvol",2p_BANK_B,BANK,5,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:09,controls,treynor,treynor,"std,invvol",2p_BANK_B,BANK,5,no,side (compares beta estimates only); matched
+2026-10-21T13:56:10,controls,treynor,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:10,controls,treynor,sortino,"std,invvol",2p_BANK_B,BANK,22,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:10,controls,treynor,treynor,"std,invvol",2p_BANK_B,BANK,22,no,side (compares beta estimates only); matched
+2026-10-21T13:56:12,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:12,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:12,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:56:13,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:56:13,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:56:13,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:56:14,controls,treynor_cap10,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:56:14,controls,treynor_cap10,sortino,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:56:14,controls,treynor_cap10,treynor,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:56:15,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:56:15,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_B,BANK,1,no,robustness; matched
+2026-10-21T13:56:15,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_B,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:56:17,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:56:17,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_B,BANK,5,no,robustness; matched
+2026-10-21T13:56:17,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_B,BANK,5,no,robustness; cross-evaluated
+2026-10-21T13:56:18,controls,sortino_estrada_clip,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:56:18,controls,sortino_estrada_clip,sortino,"std,invvol",2p_BANK_B,BANK,22,no,robustness; matched
+2026-10-21T13:56:18,controls,sortino_estrada_clip,treynor,"std,invvol",2p_BANK_B,BANK,22,no,robustness; cross-evaluated
+2026-10-21T13:56:19,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:19,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:19,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_B,BANK,1,no,robustness (side); matched
+2026-10-21T13:56:20,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:56:20,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); cross-evaluated
+2026-10-21T13:56:20,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_B,BANK,5,no,robustness (side); matched
+2026-10-21T13:56:22,controls,treynor_ownidx,sharpe,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:56:22,controls,treynor_ownidx,sortino,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); cross-evaluated
+2026-10-21T13:56:22,controls,treynor_ownidx,treynor,"std,invvol",2p_BANK_B,BANK,22,no,robustness (side); matched
+2026-10-21T13:56:34,controls,sharpe,sharpe,"std,dtwz",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:34,controls,sharpe,sortino,"std,dtwz",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:34,controls,sharpe,treynor,"std,dtwz",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:36,controls,sortino,sharpe,"std,dtwz",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:36,controls,sortino,sortino,"std,dtwz",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:36,controls,sortino,treynor,"std,dtwz",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:37,controls,treynor,sharpe,"std,dtwz",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:37,controls,treynor,sortino,"std,dtwz",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:37,controls,treynor,treynor,"std,dtwz",single_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:56:39,controls,treynor_cap10,sharpe,"std,dtwz",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:39,controls,treynor_cap10,sortino,"std,dtwz",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:39,controls,treynor_cap10,treynor,"std,dtwz",single_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:56:41,controls,sortino_estrada_clip,sharpe,"std,dtwz",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:56:41,controls,sortino_estrada_clip,sortino,"std,dtwz",single_N50,N50,1,no,robustness; matched
+2026-10-21T13:56:41,controls,sortino_estrada_clip,treynor,"std,dtwz",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:56:43,controls,sharpe,sharpe,"std,volk",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:43,controls,sharpe,sortino,"std,volk",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:43,controls,sharpe,treynor,"std,volk",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:45,controls,sortino,sharpe,"std,volk",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:45,controls,sortino,sortino,"std,volk",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:45,controls,sortino,treynor,"std,volk",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:46,controls,treynor,sharpe,"std,volk",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:46,controls,treynor,sortino,"std,volk",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:46,controls,treynor,treynor,"std,volk",single_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:56:48,controls,treynor_cap10,sharpe,"std,volk",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:48,controls,treynor_cap10,sortino,"std,volk",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:48,controls,treynor_cap10,treynor,"std,volk",single_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:56:50,controls,sortino_estrada_clip,sharpe,"std,volk",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:56:50,controls,sortino_estrada_clip,sortino,"std,volk",single_N50,N50,1,no,robustness; matched
+2026-10-21T13:56:50,controls,sortino_estrada_clip,treynor,"std,volk",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:56:51,controls,sharpe,sharpe,"std,invvol",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:51,controls,sharpe,sortino,"std,invvol",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:51,controls,sharpe,treynor,"std,invvol",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:52,controls,sortino,sharpe,"std,invvol",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:52,controls,sortino,sortino,"std,invvol",single_N50,N50,1,no,primary; matched
+2026-10-21T13:56:52,controls,sortino,treynor,"std,invvol",single_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:56:53,controls,treynor,sharpe,"std,invvol",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:53,controls,treynor,sortino,"std,invvol",single_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:56:53,controls,treynor,treynor,"std,invvol",single_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:56:55,controls,treynor_cap10,sharpe,"std,invvol",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:55,controls,treynor_cap10,sortino,"std,invvol",single_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:56:55,controls,treynor_cap10,treynor,"std,invvol",single_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:56:56,controls,sortino_estrada_clip,sharpe,"std,invvol",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:56:56,controls,sortino_estrada_clip,sortino,"std,invvol",single_N50,N50,1,no,robustness; matched
+2026-10-21T13:56:56,controls,sortino_estrada_clip,treynor,"std,invvol",single_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:20,controls,sharpe,sharpe,"std,dtwz",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:20,controls,sharpe,sortino,"std,dtwz",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:20,controls,sharpe,treynor,"std,dtwz",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:21,controls,sortino,sharpe,"std,dtwz",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:21,controls,sortino,sortino,"std,dtwz",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:21,controls,sortino,treynor,"std,dtwz",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:23,controls,treynor,sharpe,"std,dtwz",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:23,controls,treynor,sortino,"std,dtwz",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:23,controls,treynor,treynor,"std,dtwz",exp_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:57:25,controls,treynor_cap10,sharpe,"std,dtwz",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:25,controls,treynor_cap10,sortino,"std,dtwz",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:25,controls,treynor_cap10,treynor,"std,dtwz",exp_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:57:26,controls,sortino_estrada_clip,sharpe,"std,dtwz",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:26,controls,sortino_estrada_clip,sortino,"std,dtwz",exp_N50,N50,1,no,robustness; matched
+2026-10-21T13:57:26,controls,sortino_estrada_clip,treynor,"std,dtwz",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:28,controls,sharpe,sharpe,"std,volk",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:28,controls,sharpe,sortino,"std,volk",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:28,controls,sharpe,treynor,"std,volk",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:30,controls,sortino,sharpe,"std,volk",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:30,controls,sortino,sortino,"std,volk",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:30,controls,sortino,treynor,"std,volk",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:31,controls,treynor,sharpe,"std,volk",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:31,controls,treynor,sortino,"std,volk",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:31,controls,treynor,treynor,"std,volk",exp_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:57:32,controls,treynor_cap10,sharpe,"std,volk",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:32,controls,treynor_cap10,sortino,"std,volk",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:32,controls,treynor_cap10,treynor,"std,volk",exp_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:57:34,controls,sortino_estrada_clip,sharpe,"std,volk",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:34,controls,sortino_estrada_clip,sortino,"std,volk",exp_N50,N50,1,no,robustness; matched
+2026-10-21T13:57:34,controls,sortino_estrada_clip,treynor,"std,volk",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:35,controls,sharpe,sharpe,"std,invvol",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:35,controls,sharpe,sortino,"std,invvol",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:35,controls,sharpe,treynor,"std,invvol",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:36,controls,sortino,sharpe,"std,invvol",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:36,controls,sortino,sortino,"std,invvol",exp_N50,N50,1,no,primary; matched
+2026-10-21T13:57:36,controls,sortino,treynor,"std,invvol",exp_N50,N50,1,no,primary; cross-evaluated
+2026-10-21T13:57:38,controls,treynor,sharpe,"std,invvol",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:38,controls,treynor,sortino,"std,invvol",exp_N50,N50,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:57:38,controls,treynor,treynor,"std,invvol",exp_N50,N50,1,no,side (compares beta estimates only); matched
+2026-10-21T13:57:40,controls,treynor_cap10,sharpe,"std,invvol",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:40,controls,treynor_cap10,sortino,"std,invvol",exp_N50,N50,1,no,robustness (side); cross-evaluated
+2026-10-21T13:57:40,controls,treynor_cap10,treynor,"std,invvol",exp_N50,N50,1,no,robustness (side); matched
+2026-10-21T13:57:41,controls,sortino_estrada_clip,sharpe,"std,invvol",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:57:41,controls,sortino_estrada_clip,sortino,"std,invvol",exp_N50,N50,1,no,robustness; matched
+2026-10-21T13:57:41,controls,sortino_estrada_clip,treynor,"std,invvol",exp_N50,N50,1,no,robustness; cross-evaluated
+2026-10-21T13:58:03,controls,sharpe,sharpe,"std,dtwz",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:03,controls,sharpe,sortino,"std,dtwz",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:03,controls,sharpe,treynor,"std,dtwz",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:05,controls,sortino,sharpe,"std,dtwz",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:05,controls,sortino,sortino,"std,dtwz",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:05,controls,sortino,treynor,"std,dtwz",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:06,controls,treynor,sharpe,"std,dtwz",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:06,controls,treynor,sortino,"std,dtwz",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:06,controls,treynor,treynor,"std,dtwz",exp_BANK,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:58:07,controls,treynor_cap10,sharpe,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:07,controls,treynor_cap10,sortino,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:07,controls,treynor_cap10,treynor,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:58:09,controls,sortino_estrada_clip,sharpe,"std,dtwz",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:09,controls,sortino_estrada_clip,sortino,"std,dtwz",exp_BANK,BANK,1,no,robustness; matched
+2026-10-21T13:58:09,controls,sortino_estrada_clip,treynor,"std,dtwz",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:10,controls,treynor_ownidx,sharpe,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:10,controls,treynor_ownidx,sortino,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:10,controls,treynor_ownidx,treynor,"std,dtwz",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:58:12,controls,sharpe,sharpe,"std,volk",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:12,controls,sharpe,sortino,"std,volk",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:12,controls,sharpe,treynor,"std,volk",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:13,controls,sortino,sharpe,"std,volk",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:13,controls,sortino,sortino,"std,volk",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:13,controls,sortino,treynor,"std,volk",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:15,controls,treynor,sharpe,"std,volk",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:15,controls,treynor,sortino,"std,volk",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:15,controls,treynor,treynor,"std,volk",exp_BANK,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:58:16,controls,treynor_cap10,sharpe,"std,volk",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:16,controls,treynor_cap10,sortino,"std,volk",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:16,controls,treynor_cap10,treynor,"std,volk",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:58:17,controls,sortino_estrada_clip,sharpe,"std,volk",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:17,controls,sortino_estrada_clip,sortino,"std,volk",exp_BANK,BANK,1,no,robustness; matched
+2026-10-21T13:58:17,controls,sortino_estrada_clip,treynor,"std,volk",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:19,controls,treynor_ownidx,sharpe,"std,volk",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:19,controls,treynor_ownidx,sortino,"std,volk",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:19,controls,treynor_ownidx,treynor,"std,volk",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:58:21,controls,sharpe,sharpe,"std,invvol",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:21,controls,sharpe,sortino,"std,invvol",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:21,controls,sharpe,treynor,"std,invvol",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:22,controls,sortino,sharpe,"std,invvol",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:22,controls,sortino,sortino,"std,invvol",exp_BANK,BANK,1,no,primary; matched
+2026-10-21T13:58:22,controls,sortino,treynor,"std,invvol",exp_BANK,BANK,1,no,primary; cross-evaluated
+2026-10-21T13:58:24,controls,treynor,sharpe,"std,invvol",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:24,controls,treynor,sortino,"std,invvol",exp_BANK,BANK,1,no,side (compares beta estimates only); cross-evaluated
+2026-10-21T13:58:24,controls,treynor,treynor,"std,invvol",exp_BANK,BANK,1,no,side (compares beta estimates only); matched
+2026-10-21T13:58:25,controls,treynor_cap10,sharpe,"std,invvol",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:25,controls,treynor_cap10,sortino,"std,invvol",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:25,controls,treynor_cap10,treynor,"std,invvol",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T13:58:26,controls,sortino_estrada_clip,sharpe,"std,invvol",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:26,controls,sortino_estrada_clip,sortino,"std,invvol",exp_BANK,BANK,1,no,robustness; matched
+2026-10-21T13:58:26,controls,sortino_estrada_clip,treynor,"std,invvol",exp_BANK,BANK,1,no,robustness; cross-evaluated
+2026-10-21T13:58:28,controls,treynor_ownidx,sharpe,"std,invvol",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:28,controls,treynor_ownidx,sortino,"std,invvol",exp_BANK,BANK,1,no,robustness (side); cross-evaluated
+2026-10-21T13:58:28,controls,treynor_ownidx,treynor,"std,invvol",exp_BANK,BANK,1,no,robustness (side); matched
+2026-10-21T14:01:58,full,sharpe,sharpe,"std,dtw",2p_N50_A,N50,1,yes,primary; matched; logged late: suppressed at run time by de-duplication against the step0_regression rerun row (fixed)
+2026-10-21T14:01:58,full,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,1,yes,primary; matched; logged late: suppressed at run time by de-duplication against the step0_regression rerun row (fixed)
+2026-10-21T14:01:58,full,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,1,yes,primary; matched; logged late: suppressed at run time by de-duplication against the step0_regression rerun row (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,5,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_BANK_A,BANK,22,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,5,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_BANK_B,BANK,22,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_N50_A,N50,5,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_N50_A,N50,22,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_N50_B,N50,5,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",2p_N50_B,N50,22,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",exp_BANK,BANK,1,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",exp_N50,N50,1,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)
+2026-10-21T14:03:13,full,sharpe,sharpe,"std,dtw",single_N50,N50,1,no,primary; matched; logged late: suppressed by de-duplication against step0_regression (fixed)

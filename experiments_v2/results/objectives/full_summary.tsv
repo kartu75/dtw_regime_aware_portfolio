@@ -1,0 +1,347 @@
+
+# NOTE
+# Primary family (12 tests) = the four two-period 1-day tests (Nifty 50 and Bank, Periods A and B) x {Sharpe, Sortino, Treynor}, matched metric, DTW vs Standard. This family was chosen AFTER seeing the earlier Sharpe results. Bonferroni and Benjamini-Hochberg are applied to the two-sided p-values of these 12 only; everything else is descriptive.
+# Treynor is a side result: the Treynor objective uses the covariance only through the betas, so DTW vs Standard Treynor compares beta estimates. DTW betas are negatively correlated with sample betas (see beta diagnostic).
+# Primary DTW = FastDTW (radius 1, |x-y| cost) on raw daily log returns. FastDTW is not continuous in its input (1e-12 relative perturbations change ~7% of pairwise distances by up to 1%), so re-downloaded data moves DTW Sharpe by up to ~0.001; Standard results are unaffected.
+# rf = MAR = 0; annualisation sqrt(252/h); horizons = non-overlapping blocks of daily log returns; bootstrap: paired moving-block, 5000 resamples, block 20 observations, seed 20261021, days resampled jointly for both portfolios and all metrics; p_one = P(boot diff <= 0); p_two = 2 min(p_one, 1 - p_one).
+# Treynor metric = annualised mean / average training-period sample beta (vs ^NSEI) of the portfolio held each day.
+# Nifty Midcap 100 (expanding window) not rerun: its regime index is no longer available from Yahoo. Original Sharpe result kept, labelled NOT REPRODUCED.
+
+# Two-period A, Nifty 50 - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	1.1904	1.2150	0.0247	0.4530	0.9060	1.0000	0.9060
+1	sharpe	sortino	False	1.7793	1.8050	0.0257	0.4800	0.9600		
+1	sharpe	treynor	False	0.3441	0.2953	-0.0489	0.8988	0.2024		
+5	sharpe	sharpe	True	1.0949	1.1350	0.0401	0.3166	0.6332		
+5	sharpe	sortino	False	1.7201	1.8039	0.0838	0.2958	0.5916		
+5	sharpe	treynor	False	0.3453	0.2954	-0.0499	0.8694	0.2612		
+22	sharpe	sharpe	True	1.1172	1.1340	0.0168	0.1598	0.3196		
+22	sharpe	sortino	False	1.7694	1.7899	0.0205	0.1746	0.3492		
+22	sharpe	treynor	False	0.3399	0.2914	-0.0485	0.7394	0.5212		
+1	sortino	sharpe	False	1.2092	1.2490	0.0398	0.3906	0.7812		
+1	sortino	sortino	True	1.8169	1.8740	0.0571	0.4030	0.8060	1.0000	0.8880
+1	sortino	treynor	False	0.3538	0.3174	-0.0364	0.8608	0.2784		
+5	sortino	sharpe	False	1.1091	1.1598	0.0507	0.2586	0.5172		
+5	sortino	sortino	True	1.7475	1.8550	0.1075	0.2332	0.4664		
+5	sortino	treynor	False	0.3549	0.3175	-0.0374	0.8202	0.3596		
+22	sortino	sharpe	False	1.1216	1.1594	0.0379	0.1030	0.2060		
+22	sortino	sortino	True	1.7745	1.8499	0.0755	0.1020	0.2040		
+22	sortino	treynor	False	0.3493	0.3136	-0.0357	0.6730	0.6540		
+1	treynor	sharpe	False	0.9339	1.1905	0.2565	0.2120	0.4240		
+1	treynor	sortino	False	1.4095	1.7940	0.3845	0.2318	0.4636		
+1	treynor	treynor	True	0.3853	0.3279	-0.0573	0.6578	0.6844	1.0000	0.8880
+5	treynor	sharpe	False	0.8785	1.1721	0.2936	0.1232	0.2464		
+5	treynor	sortino	False	1.3737	1.9756	0.6019	0.1020	0.2040		
+5	treynor	treynor	True	0.3863	0.3281	-0.0581	0.6206	0.7588		
+22	treynor	sharpe	False	0.9594	1.2301	0.2708	0.0006	0.0012		
+22	treynor	sortino	False	1.5951	2.1759	0.5808	0.0036	0.0072		
+22	treynor	treynor	True	0.3772	0.3259	-0.0513	0.6618	0.6764		
+
+# Two-period B (strict), Nifty 50 - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	1.0630	1.1845	0.1215	0.3068	0.6136	1.0000	0.8880
+1	sharpe	sortino	False	1.5118	1.6498	0.1380	0.3826	0.7652		
+1	sharpe	treynor	False	0.2728	0.2264	-0.0464	0.8300	0.3400		
+5	sharpe	sharpe	True	1.0568	1.2396	0.1829	0.1936	0.3872		
+5	sharpe	sortino	False	1.6169	1.9451	0.3282	0.2446	0.4892		
+5	sharpe	treynor	False	0.2715	0.2249	-0.0467	0.8004	0.3992		
+22	sharpe	sharpe	True	1.0072	1.1799	0.1728	0.0916	0.1832		
+22	sharpe	sortino	False	1.7725	2.3530	0.5805	0.0440	0.0880		
+22	sharpe	treynor	False	0.2774	0.2272	-0.0501	0.8816	0.2368		
+1	sortino	sharpe	False	0.9969	1.0956	0.0987	0.3304	0.6608		
+1	sortino	sortino	True	1.4121	1.5199	0.1077	0.4026	0.8052	1.0000	0.8880
+1	sortino	treynor	False	0.2650	0.2169	-0.0480	0.8330	0.3340		
+5	sortino	sharpe	False	0.9948	1.1396	0.1449	0.2464	0.4928		
+5	sortino	sortino	True	1.5163	1.7719	0.2556	0.2842	0.5684		
+5	sortino	treynor	False	0.2635	0.2154	-0.0481	0.8094	0.3812		
+22	sortino	sharpe	False	0.9500	1.0799	0.1299	0.1684	0.3368		
+22	sortino	sortino	True	1.6553	2.0723	0.4170	0.0648	0.1296		
+22	sortino	treynor	False	0.2697	0.2181	-0.0516	0.8938	0.2124		
+1	treynor	sharpe	False	0.6258	0.7352	0.1094	0.4594	0.9188		
+1	treynor	sortino	False	0.9197	1.0094	0.0897	0.4954	0.9908		
+1	treynor	treynor	True	0.2867	0.1594	-0.1273	0.7888	0.4224	1.0000	0.8880
+5	treynor	sharpe	False	0.6437	0.7564	0.1126	0.6682	0.6636		
+5	treynor	sortino	False	0.9607	1.0937	0.1330	0.6834	0.6332		
+5	treynor	treynor	True	0.2832	0.1575	-0.1257	0.9506	0.0988		
+22	treynor	sharpe	False	0.7513	0.6910	-0.0604	0.8510	0.2980		
+22	treynor	sortino	False	1.3476	1.1161	-0.2315	0.8454	0.3092		
+22	treynor	treynor	True	0.2984	0.1589	-0.1394	0.9466	0.1068		
+
+# Two-period A, Nifty Bank - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	0.8207	0.6989	-0.1218	0.9272	0.1456	1.0000	0.8736
+1	sharpe	sortino	False	1.2371	1.0425	-0.1946	0.9286	0.1428		
+1	sharpe	treynor	False	0.1946	0.1598	-0.0348	0.9612	0.0776		
+5	sharpe	sharpe	True	0.7934	0.6673	-0.1262	0.9752	0.0496		
+5	sharpe	sortino	False	1.2569	1.0451	-0.2117	0.9732	0.0536		
+5	sharpe	treynor	False	0.1940	0.1590	-0.0349	0.9832	0.0336		
+22	sharpe	sharpe	True	0.8514	0.7078	-0.1436	0.9508	0.0984		
+22	sharpe	sortino	False	1.4174	1.1757	-0.2418	0.9182	0.1636		
+22	sharpe	treynor	False	0.1953	0.1606	-0.0347	0.9518	0.0964		
+1	sortino	sharpe	False	0.8281	0.7100	-0.1180	0.9338	0.1324		
+1	sortino	sortino	True	1.2516	1.0607	-0.1909	0.9370	0.1260	1.0000	0.8736
+1	sortino	treynor	False	0.1971	0.1632	-0.0339	0.9658	0.0684		
+5	sortino	sharpe	False	0.7995	0.6789	-0.1207	0.9778	0.0444		
+5	sortino	sortino	True	1.2695	1.0650	-0.2045	0.9762	0.0476		
+5	sortino	treynor	False	0.1964	0.1624	-0.0340	0.9850	0.0300		
+22	sortino	sharpe	False	0.8569	0.7191	-0.1378	0.9530	0.0940		
+22	sortino	sortino	True	1.4282	1.1939	-0.2343	0.9376	0.1248		
+22	sortino	treynor	False	0.1978	0.1640	-0.0338	0.9552	0.0896		
+1	treynor	sharpe	False	0.6590	0.4716	-0.1874	0.7936	0.4128		
+1	treynor	sortino	False	1.0393	0.6898	-0.3495	0.8256	0.3488		
+1	treynor	treynor	True	0.1784	0.1221	-0.0563	0.8224	0.3552	1.0000	0.8880
+5	treynor	sharpe	False	0.6318	0.4579	-0.1740	0.8610	0.2780		
+5	treynor	sortino	False	1.0546	0.7062	-0.3484	0.8706	0.2588		
+5	treynor	treynor	True	0.1776	0.1210	-0.0566	0.8638	0.2724		
+22	treynor	sharpe	False	0.6945	0.4883	-0.2063	0.9068	0.1864		
+22	treynor	sortino	False	1.1902	0.7658	-0.4245	0.9494	0.1012		
+22	treynor	treynor	True	0.1793	0.1232	-0.0561	0.8394	0.3212		
+
+# Two-period B (strict), Nifty Bank - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	0.9084	0.9614	0.0530	0.3826	0.7652	1.0000	0.8880
+1	sharpe	sortino	False	1.3173	1.3773	0.0600	0.4276	0.8552		
+1	sharpe	treynor	False	0.1502	0.1619	0.0116	0.3234	0.6468		
+5	sharpe	sharpe	True	0.9318	0.9903	0.0585	0.5112	0.9776		
+5	sharpe	sortino	False	1.5261	1.6064	0.0803	0.5798	0.8404		
+5	sharpe	treynor	False	0.1502	0.1619	0.0116	0.4450	0.8900		
+22	sharpe	sharpe	True	1.0187	1.0528	0.0341	0.5522	0.8956		
+22	sharpe	sortino	False	2.2009	2.1376	-0.0633	0.6094	0.7812		
+22	sharpe	treynor	False	0.1477	0.1590	0.0112	0.4730	0.9460		
+1	sortino	sharpe	False	0.8616	0.9148	0.0532	0.3686	0.7372		
+1	sortino	sortino	True	1.2427	1.3062	0.0635	0.4070	0.8140	1.0000	0.8880
+1	sortino	treynor	False	0.1431	0.1535	0.0103	0.3394	0.6788		
+5	sortino	sharpe	False	0.8876	0.9452	0.0575	0.4848	0.9696		
+5	sortino	sortino	True	1.4364	1.5177	0.0813	0.5438	0.9124		
+5	sortino	treynor	False	0.1431	0.1535	0.0103	0.4478	0.8956		
+22	sortino	sharpe	False	0.9678	1.0078	0.0401	0.5828	0.8344		
+22	sortino	sortino	True	2.0210	2.0155	-0.0054	0.6172	0.7656		
+22	sortino	treynor	False	0.1407	0.1506	0.0100	0.5474	0.9052		
+1	treynor	sharpe	False	0.7015	0.7611	0.0596	0.3416	0.6832		
+1	treynor	sortino	False	1.0084	1.0952	0.0868	0.3458	0.6916		
+1	treynor	treynor	True	0.1474	0.1681	0.0206	0.2850	0.5700	1.0000	0.8880
+5	treynor	sharpe	False	0.7265	0.7508	0.0244	0.6046	0.7908		
+5	treynor	sortino	False	1.1585	1.1934	0.0349	0.6172	0.7656		
+5	treynor	treynor	True	0.1474	0.1681	0.0206	0.4200	0.8400		
+22	treynor	sharpe	False	0.8031	0.7820	-0.0211	0.6046	0.7908		
+22	treynor	sortino	False	1.6376	1.4302	-0.2074	0.6658	0.6684		
+22	treynor	treynor	True	0.1449	0.1645	0.0196	0.3472	0.6944		
+
+# Single split, Nifty 50 - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	0.5411	0.6689	0.1279	0.2984	0.5968		
+1	sharpe	sortino	False	0.7776	0.9235	0.1459	0.3386	0.6772		
+1	sharpe	treynor	False	0.1371	0.1287	-0.0084	0.5706	0.8588		
+1	sortino	sharpe	False	0.5795	0.6350	0.0555	0.4158	0.8316		
+1	sortino	sortino	True	0.8359	0.8769	0.0410	0.4644	0.9288		
+1	sortino	treynor	False	0.1499	0.1255	-0.0244	0.6790	0.6420		
+1	treynor	sharpe	False	0.5165	0.6626	0.1460	0.4426	0.8852		
+1	treynor	sortino	False	0.7270	0.8801	0.1531	0.4744	0.9488		
+1	treynor	treynor	True	0.2321	0.1658	-0.0663	0.6874	0.6252		
+
+# Expanding window, Nifty 50 - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	1.3094	1.0402	-0.2692	0.9484	0.1032		
+1	sharpe	sortino	False	1.8367	1.4053	-0.4314	0.9584	0.0832		
+1	sharpe	treynor	False	0.4062	0.2452	-0.1611	0.9994	0.0012		
+1	sortino	sharpe	False	1.2753	1.0062	-0.2690	0.9430	0.1140		
+1	sortino	sortino	True	1.7864	1.3613	-0.4251	0.9528	0.0944		
+1	sortino	treynor	False	0.4081	0.2408	-0.1672	0.9990	0.0020		
+1	treynor	sharpe	False	1.1141	1.0240	-0.0901	0.6030	0.7940		
+1	treynor	sortino	False	1.6083	1.3880	-0.2203	0.6514	0.6972		
+1	treynor	treynor	True	0.5515	0.2722	-0.2793	0.9624	0.0752		
+
+# Expanding window, Nifty Bank - Standard vs DTW (objective = optimised ratio, metric = evaluation ratio)
+horizon	objective	metric	matched	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+1	sharpe	sharpe	True	0.3956	0.3446	-0.0510	0.5856	0.8288		
+1	sharpe	sortino	False	0.5344	0.4632	-0.0712	0.5894	0.8212		
+1	sharpe	treynor	False	0.0948	0.0755	-0.0193	0.6404	0.7192		
+1	sortino	sharpe	False	0.4119	0.1950	-0.2169	0.8422	0.3156		
+1	sortino	sortino	True	0.5577	0.2594	-0.2983	0.8442	0.3116		
+1	sortino	treynor	False	0.0981	0.0428	-0.0553	0.8534	0.2932		
+1	treynor	sharpe	False	0.5011	0.2578	-0.2433	0.7698	0.4604		
+1	treynor	sortino	False	0.6827	0.3249	-0.3578	0.7780	0.4440		
+1	treynor	treynor	True	0.1194	0.0659	-0.0535	0.7902	0.4196		
+
+# PRIMARY FAMILY (12 tests, 1-day, matched)
+design	objective	std	dtw	gap	p_one	p_two	p_bonf	p_bh
+2p_N50_A	sharpe	1.1904	1.2150	0.0247	0.4530	0.9060	1.0000	0.9060
+2p_N50_A	sortino	1.8169	1.8740	0.0571	0.4030	0.8060	1.0000	0.8880
+2p_N50_A	treynor	0.3853	0.3279	-0.0573	0.6578	0.6844	1.0000	0.8880
+2p_N50_B	sharpe	1.0630	1.1845	0.1215	0.3068	0.6136	1.0000	0.8880
+2p_N50_B	sortino	1.4121	1.5199	0.1077	0.4026	0.8052	1.0000	0.8880
+2p_N50_B	treynor	0.2867	0.1594	-0.1273	0.7888	0.4224	1.0000	0.8880
+2p_BANK_A	sharpe	0.8207	0.6989	-0.1218	0.9272	0.1456	1.0000	0.8736
+2p_BANK_A	sortino	1.2516	1.0607	-0.1909	0.9370	0.1260	1.0000	0.8736
+2p_BANK_A	treynor	0.1784	0.1221	-0.0563	0.8224	0.3552	1.0000	0.8880
+2p_BANK_B	sharpe	0.9084	0.9614	0.0530	0.3826	0.7652	1.0000	0.8880
+2p_BANK_B	sortino	1.2427	1.3062	0.0635	0.4070	0.8140	1.0000	0.8880
+2p_BANK_B	treynor	0.1474	0.1681	0.0206	0.2850	0.5700	1.0000	0.8880
+
+# DTW WIN COUNTS (gap > 0)
+method	objective	matched_wins	primary_family_wins	cross_eval_wins	matched_sig_p_two_lt_05
+dtw	sharpe	10 of 15	3 of 4	12 of 30	1
+dtw	sortino	9 of 15	3 of 4	13 of 30	1
+dtw	treynor	3 of 15	1 of 4	16 of 30	0
+
+# REALISED VOLATILITY (annualised) AND AVERAGE TRAINING BETA (vs ^NSEI unless own-index), 1-day
+design	objective	method	std_ann_vol	alt_ann_vol	std_avg_beta	alt_avg_beta
+2p_N50_A	sharpe	dtw	0.1631	0.1771	0.5641	0.7286
+2p_N50_A	sortino	dtw	0.1665	0.1810	0.5691	0.7123
+2p_N50_A	treynor	dtw	0.2009	0.2691	0.4871	0.9771
+2p_N50_A	treynor_cap10	dtw	0.1528	0.1927	0.5622	0.8708
+2p_N50_A	sortino_estrada_clip	dtw	0.1941	0.1810	0.5778	0.7123
+2p_N50_B	sharpe	dtw	0.1773	0.1854	0.6910	0.9698
+2p_N50_B	sortino	dtw	0.1813	0.1848	0.6823	0.9333
+2p_N50_B	treynor	dtw	0.1948	0.3143	0.4253	1.4501
+2p_N50_B	treynor_cap10	dtw	0.1572	0.2226	0.6150	1.2391
+2p_N50_B	sortino_estrada_clip	dtw	0.2271	0.1848	0.7020	0.9333
+2p_BANK_A	sharpe	dtw	0.2536	0.2573	1.0694	1.1257
+2p_BANK_A	sortino	dtw	0.2544	0.2578	1.0685	1.1218
+2p_BANK_A	treynor	dtw	0.2900	0.3335	1.0715	1.2880
+2p_BANK_A	treynor_cap10	dtw	0.2623	0.2688	1.1913	1.2229
+2p_BANK_A	sortino_estrada_clip	dtw	0.2628	0.2578	1.0700	1.1218
+2p_BANK_A	treynor_ownidx	dtw	0.2727	0.3327	0.8588	0.9904
+2p_BANK_B	sharpe	dtw	0.2154	0.2187	1.3024	1.2989
+2p_BANK_B	sortino	dtw	0.2150	0.2181	1.2944	1.3001
+2p_BANK_B	treynor	dtw	0.2442	0.2817	1.1620	1.2757
+2p_BANK_B	treynor_cap10	dtw	0.2131	0.2314	1.2615	1.3231
+2p_BANK_B	sortino_estrada_clip	dtw	0.2186	0.2181	1.3021	1.3001
+2p_BANK_B	treynor_ownidx	dtw	0.2515	0.2885	0.9211	0.9682
+single_N50	sharpe	dtw	0.1768	0.1914	0.6976	0.9948
+single_N50	sortino	dtw	0.1778	0.1914	0.6877	0.9690
+single_N50	treynor	dtw	0.2194	0.2957	0.4882	1.1813
+single_N50	treynor_cap10	dtw	0.1562	0.1956	0.6469	1.1163
+single_N50	sortino_estrada_clip	dtw	0.2093	0.1914	0.7641	0.9690
+exp_N50	sharpe	dtw	0.2200	0.2357	0.7093	0.9998
+exp_N50	sortino	dtw	0.2230	0.2351	0.6969	0.9822
+exp_N50	treynor	dtw	0.2481	0.3510	0.5012	1.3202
+exp_N50	treynor_cap10	dtw	0.1946	0.2534	0.6949	1.1502
+exp_N50	sortino_estrada_clip	dtw	0.2493	0.2351	0.7444	0.9822
+exp_BANK	sharpe	dtw	0.2566	0.2585	1.0702	1.1789
+exp_BANK	sortino	dtw	0.2552	0.2554	1.0714	1.1636
+exp_BANK	treynor	dtw	0.2519	0.3220	1.0574	1.2604
+exp_BANK	treynor_cap10	dtw	0.2638	0.2732	1.2487	1.3183
+exp_BANK	sortino_estrada_clip	dtw	0.2539	0.2554	1.0707	1.1636
+exp_BANK	treynor_ownidx	dtw	0.2531	0.3201	0.8422	1.0157
+
+# DAILY (ALT - STANDARD) RETURN ON MARKET RETURN: alpha (annualised), beta, HAC(5) alpha p-value
+design	objective	method	market	mean_diff_ann	alpha_ann	beta	alpha_p_hac	beta_p_hac	r2	n_days
+2p_N50_A	sharpe	dtw	NSEI	0.0210	0.0075	0.1263	0.7358	0.0000	0.0878	1709
+2p_N50_A	sortino	dtw	NSEI	0.0247	0.0128	0.1123	0.5391	0.0000	0.0802	1709
+2p_N50_A	treynor	dtw	NSEI	0.1327	0.0946	0.3580	0.2544	0.0000	0.0496	1709
+2p_N50_A	treynor_cap10	dtw	NSEI	0.0566	0.0294	0.2549	0.4483	0.0000	0.1191	1709
+2p_N50_A	sortino_estrada_clip	dtw	NSEI	-0.0004	-0.0055	0.0486	0.8203	0.0004	0.0116	1709
+2p_N50_B	sharpe	dtw	NSEI	0.0311	0.0073	0.1870	0.8202	0.0000	0.1166	1236
+2p_N50_B	sortino	dtw	NSEI	0.0217	0.0001	0.1692	0.9972	0.0000	0.1019	1236
+2p_N50_B	treynor	dtw	NSEI	0.1092	-0.0061	0.9038	0.9652	0.0000	0.1524	1236
+2p_N50_B	treynor_cap10	dtw	NSEI	0.0473	-0.0095	0.4461	0.8726	0.0000	0.1886	1236
+2p_N50_B	sortino_estrada_clip	dtw	NSEI	0.0267	0.0100	0.1308	0.8515	0.0000	0.0250	1236
+2p_BANK_A	sharpe	dtw	NSEI	-0.0295	-0.0366	0.0664	0.1039	0.0000	0.0244	1709
+2p_BANK_A	sortino	dtw	NSEI	-0.0288	-0.0357	0.0644	0.0888	0.0000	0.0264	1709
+2p_BANK_A	treynor	dtw	NSEI	-0.0355	-0.0600	0.2299	0.4320	0.0000	0.0248	1709
+2p_BANK_A	treynor_cap10	dtw	NSEI	-0.0160	-0.0188	0.0261	0.1010	0.0000	0.0158	1709
+2p_BANK_A	sortino_estrada_clip	dtw	NSEI	-0.0227	-0.0279	0.0482	0.2214	0.0000	0.0126	1709
+2p_BANK_A	treynor_ownidx	dtw	NSEBANK	-0.0466	-0.0696	0.1657	0.3145	0.0000	0.0340	1718
+2p_BANK_B	sharpe	dtw	NSEI	0.0146	0.0090	0.0436	0.6872	0.0006	0.0145	1235
+2p_BANK_B	sortino	dtw	NSEI	0.0142	0.0090	0.0409	0.6665	0.0009	0.0145	1235
+2p_BANK_B	treynor	dtw	NSEI	0.0431	0.0306	0.0978	0.5962	0.0163	0.0102	1235
+2p_BANK_B	treynor_cap10	dtw	NSEI	0.0147	0.0073	0.0577	0.7282	0.0013	0.0253	1235
+2p_BANK_B	sortino_estrada_clip	dtw	NSEI	-0.0185	-0.0202	0.0132	0.4110	0.4294	0.0011	1235
+2p_BANK_B	treynor_ownidx	dtw	NSEBANK	0.0980	0.0835	0.1100	0.1058	0.0002	0.0248	1235
+single_N50	sharpe	dtw	NSEI	0.0324	0.0203	0.1569	0.6423	0.0000	0.0452	1135
+single_N50	sortino	dtw	NSEI	0.0185	0.0060	0.1623	0.8927	0.0000	0.0460	1135
+single_N50	treynor	dtw	NSEI	0.0826	0.0343	0.6258	0.7891	0.0000	0.0932	1135
+single_N50	treynor_cap10	dtw	NSEI	-0.0058	-0.0281	0.2883	0.5973	0.0000	0.1107	1135
+single_N50	sortino_estrada_clip	dtw	NSEI	-0.0134	-0.0220	0.1108	0.6598	0.0151	0.0174	1135
+exp_N50	sharpe	dtw	NSEI	-0.0430	-0.0629	0.1539	0.1477	0.0000	0.0575	1486
+exp_N50	sortino	dtw	NSEI	-0.0478	-0.0671	0.1484	0.1338	0.0000	0.0508	1486
+exp_N50	treynor	dtw	NSEI	0.0830	0.0143	0.5299	0.9047	0.0000	0.1004	1486
+exp_N50	treynor_cap10	dtw	NSEI	-0.0144	-0.0532	0.2991	0.3103	0.0000	0.1528	1486
+exp_N50	sortino_estrada_clip	dtw	NSEI	-0.0768	-0.0860	0.0704	0.0531	0.0590	0.0108	1486
+exp_BANK	sharpe	dtw	NSEI	-0.0124	-0.0261	0.1054	0.6082	0.0080	0.0258	1485
+exp_BANK	sortino	dtw	NSEI	-0.0553	-0.0680	0.0973	0.1873	0.0206	0.0211	1485
+exp_BANK	treynor	dtw	NSEI	-0.0432	-0.0647	0.1655	0.4503	0.0075	0.0170	1485
+exp_BANK	treynor_cap10	dtw	NSEI	0.0085	0.0058	0.0208	0.8022	0.1130	0.0053	1485
+exp_BANK	sortino_estrada_clip	dtw	NSEI	-0.0606	-0.0738	0.1016	0.1573	0.0156	0.0219	1485
+exp_BANK	treynor_ownidx	dtw	NSEBANK	-0.0590	-0.0749	0.1522	0.3678	0.0013	0.0264	1485
+
+# ROBUSTNESS (matched metric): Estrada (clipped) Standard vs DTW Sortino; Treynor 10% cap; Treynor own index
+design	horizon	objective	method	std	alt	gap	p_one	p_two
+2p_N50_A	1	treynor_cap10	dtw	0.3032	0.2608	-0.0424	0.7580	0.4840
+2p_N50_A	5	treynor_cap10	dtw	0.3040	0.2603	-0.0438	0.6890	0.6220
+2p_N50_A	22	treynor_cap10	dtw	0.2992	0.2568	-0.0424	0.5812	0.8376
+2p_N50_A	1	sortino_estrada_clip	dtw	1.7753	1.8740	0.0987	0.3188	0.6376
+2p_N50_A	5	sortino_estrada_clip	dtw	1.7180	1.8550	0.1371	0.1838	0.3676
+2p_N50_A	22	sortino_estrada_clip	dtw	1.7514	1.8499	0.0986	0.1130	0.2260
+2p_N50_B	1	treynor_cap10	dtw	0.3286	0.2013	-0.1273	0.9608	0.0784
+2p_N50_B	5	treynor_cap10	dtw	0.3277	0.1996	-0.1282	0.9602	0.0796
+2p_N50_B	22	treynor_cap10	dtw	0.3347	0.2007	-0.1340	0.9834	0.0332
+2p_N50_B	1	sortino_estrada_clip	dtw	1.0725	1.5199	0.4474	0.2180	0.4360
+2p_N50_B	5	sortino_estrada_clip	dtw	1.0829	1.7719	0.6890	0.1880	0.3760
+2p_N50_B	22	sortino_estrada_clip	dtw	1.0818	2.0723	0.9905	0.0762	0.1524
+2p_BANK_A	1	treynor_cap10	dtw	0.0709	0.0566	-0.0143	0.9388	0.1224
+2p_BANK_A	5	treynor_cap10	dtw	0.0705	0.0562	-0.0143	0.9446	0.1108
+2p_BANK_A	22	treynor_cap10	dtw	0.0723	0.0579	-0.0144	0.9942	0.0116
+2p_BANK_A	1	sortino_estrada_clip	dtw	1.1847	1.0607	-0.1240	0.8192	0.3616
+2p_BANK_A	5	sortino_estrada_clip	dtw	1.1978	1.0650	-0.1328	0.9118	0.1764
+2p_BANK_A	22	sortino_estrada_clip	dtw	1.3379	1.1939	-0.1440	0.8618	0.2764
+2p_BANK_A	1	treynor_ownidx	dtw	0.2305	0.1528	-0.0777	0.8496	0.3008
+2p_BANK_A	5	treynor_ownidx	dtw	0.2295	0.1513	-0.0782	0.9140	0.1720
+2p_BANK_A	22	treynor_ownidx	dtw	0.2317	0.1542	-0.0774	0.8802	0.2396
+2p_BANK_B	1	treynor_cap10	dtw	0.1682	0.1715	0.0033	0.4728	0.9456
+2p_BANK_B	5	treynor_cap10	dtw	0.1682	0.1715	0.0033	0.5948	0.8104
+2p_BANK_B	22	treynor_cap10	dtw	0.1657	0.1690	0.0033	0.5784	0.8432
+2p_BANK_B	1	sortino_estrada_clip	dtw	1.4544	1.3062	-0.1483	0.8328	0.3344
+2p_BANK_B	5	sortino_estrada_clip	dtw	1.7299	1.5177	-0.2122	0.8996	0.2008
+2p_BANK_B	22	sortino_estrada_clip	dtw	2.4968	2.0155	-0.4812	0.7772	0.4456
+2p_BANK_B	1	treynor_ownidx	dtw	0.1889	0.2809	0.0920	0.0142	0.0284
+2p_BANK_B	5	treynor_ownidx	dtw	0.1889	0.2809	0.0920	0.0152	0.0304
+2p_BANK_B	22	treynor_ownidx	dtw	0.1856	0.2762	0.0906	0.0382	0.0764
+single_N50	1	treynor_cap10	dtw	0.1876	0.1035	-0.0841	0.9064	0.1872
+single_N50	1	sortino_estrada_clip	dtw	0.9339	0.8769	-0.0571	0.5912	0.8176
+exp_N50	1	treynor_cap10	dtw	0.3695	0.2107	-0.1588	0.9962	0.0076
+exp_N50	1	sortino_estrada_clip	dtw	1.7514	1.3613	-0.3901	0.9630	0.0740
+exp_BANK	1	treynor_cap10	dtw	0.0722	0.0748	0.0026	0.4324	0.8648
+exp_BANK	1	sortino_estrada_clip	dtw	0.5909	0.2594	-0.3315	0.8674	0.2652
+exp_BANK	1	treynor_ownidx	dtw	0.1602	0.0748	-0.0854	0.8428	0.3144
+
+# WEIGHT CONCENTRATION (mean over designs, folds, regimes)
+objective	method	n_stocks	n_nonzero	n_at_cap	max_weight	half_l1_diff_vs_sharpe
+sharpe	dtw	28.8889	10.8241	0.2037	0.2598	0.0000
+sharpe	std	30.0648	7.0556	0.6111	0.3296	0.0000
+sortino	dtw	28.8889	10.3704	0.3056	0.2828	0.0705
+sortino	std	30.0648	6.7593	0.7130	0.3404	0.0673
+sortino_estrada_clip	std	30.0648	4.8056	1.1019	0.3861	0.1774
+treynor	dtw	28.8889	3.0000	2.0000	0.4000	0.5717
+treynor	std	30.0648	3.0185	2.0000	0.4000	0.3542
+treynor_cap10	dtw	28.8889	10.0000	10.0000	0.1000	0.4628
+treynor_cap10	std	30.0648	10.0000	10.0000	0.1000	0.5258
+treynor_ownidx	dtw	12.6415	3.0000	2.0000	0.4000	0.4244
+treynor_ownidx	std	13.2075	3.0000	2.0000	0.4000	0.1729
+
+# DEGENERATE TREYNOR OPTIMA (>= 2 names at the cap)
+objective	method	cells	of_cells
+treynor	dtw	108	108
+treynor	std	108	108
+treynor_cap10	dtw	108	108
+treynor_cap10	std	108	108
+treynor_ownidx	dtw	53	53
+treynor_ownidx	std	53	53
+
+# BETA DIAGNOSTIC (method beta vs sample beta, per fold and regime; summary over cells)
+design	method	market	cells	corr_mean	corr_min	corr_max	ratio_median	meth_neg	std_neg
+2p_BANK_A	dtw	NSEBANK	21	0.2424	-0.3628	0.6230	0.4561	0	0
+2p_BANK_A	dtw	NSEI	21	-0.2770	-0.6854	0.0568	0.3931	0	0
+2p_BANK_B	dtw	NSEBANK	14	0.2988	-0.7279	0.7579	0.4821	0	0
+2p_BANK_B	dtw	NSEI	14	-0.1346	-0.9401	0.7945	0.4127	0	2
+2p_N50_A	dtw	NSEI	21	-0.0905	-0.5235	0.3721	0.6515	0	1
+2p_N50_B	dtw	NSEI	13	-0.3887	-0.5389	-0.2571	0.5780	0	2
+exp_BANK	dtw	NSEBANK	18	-0.0707	-0.7397	0.5310	0.4647	0	0
+exp_BANK	dtw	NSEI	18	-0.2982	-0.8674	0.4580	0.3815	0	0
+exp_N50	dtw	NSEI	18	-0.4743	-0.5936	-0.2341	0.6056	0	0
+single_N50	dtw	NSEI	3	-0.5008	-0.5841	-0.3945	0.5817	0	0
+
+# NIFTY MIDCAP 100, expanding window - ORIGINAL RESULT, NOT REPRODUCED (Sharpe only)
+std	dtw	gap	p_one
+0.8072	1.2895	0.4823	0.0818
